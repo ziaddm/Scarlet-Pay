@@ -1,0 +1,134 @@
+"""
+Seed script to populate the database with Rutgers-Newark vendors that accept Raider card.
+Run this script once to create the initial vendor list.
+
+Usage: python seed_vendors.py
+"""
+from app.database import SessionLocal
+from app.models.vendor import Vendor
+
+
+def seed_vendors():
+    """Create vendors for Rutgers-Newark campus."""
+    db = SessionLocal()
+
+    # Check if vendors already exist
+    existing_vendors = db.query(Vendor).count()
+    if existing_vendors > 0:
+        print(f"Vendors already exist ({existing_vendors} found). Skipping seed.")
+        db.close()
+        return
+
+    vendors = [
+        {
+            "name": "Stonsby Commons",
+            "category": "dining",
+            "description": "Attached to Woodward Hall, Stonsby Commons is the main residential dining hall on campus, and is open to any student with a meal plan. Accepts meal plan flex dollars only.",
+            "location": "91 Bleeker Street",
+            "latitude": 40.74260580127387,
+            "longitude": -74.17464409517413,
+            "hours": "Sunday: 11:00 AM - 8:00 PM\nMonday-Wednesday: 7:30 AM - 10:30 PM\nThursday-Friday: 7:30 AM - 8:00 PM\nSaturday: 11:00 AM - 8:00 PM",
+            "accepts_raider_card": True,
+            "is_active": True
+        },
+        {
+            "name": "JBJ Soul Kitchen",
+            "category": "dining",
+            "description": "Located on the second floor of the Paul Robeson Campus Center. JBJ Soul Kitchen is a non-profit Community Restaurant established by the Jon Bon Jovi Soul Foundation. Accepts both meal plan and real money.",
+            "location": "350 Dr Martin Luther King Jr Blvd (PRCC)",
+            "latitude": 40.74197721114958,
+            "longitude": -74.17628336972562,
+            "hours": "Saturday: 5:00 PM - 7:00 PM\nSunday: 11:30 AM - 1:30 PM\nMonday: Closed\nTuesday: Closed\nWednesday: 5:00 PM - 7:00 PM\nThursday: 5:00 PM - 7:00 PM\nFriday: 11:30 AM - 1:30 PM, 5:00 PM - 7:00 PM",
+            "accepts_raider_card": True,
+            "is_active": True
+        },
+        {
+            "name": "On the RU-N",
+            "category": "retail",
+            "description": "Convenience store located in the lower level of the Paul Robeson Campus Center. Accepts flex dollars.",
+            "location": "350 Dr Martin Luther King Jr Blvd (PRCC)",
+            "latitude": 40.74215252601952,
+            "longitude": -74.17602394162405,
+            "hours": "Monday-Thursday: 10:00 AM - 6:00 PM\nFriday: 10:00 AM - 4:00 PM",
+            "accepts_raider_card": True,
+            "is_active": True
+        },
+        {
+            "name": "Robeson Food Court",
+            "category": "dining",
+            "description": "Food court located in the lower level of the Paul Robeson Campus Center. Accepts flex dollars.",
+            "location": "350 Dr Martin Luther King Jr Blvd (PRCC)",
+            "latitude": 40.74232183038403,
+            "longitude": -74.17594088346885,
+            "hours": "Monday-Friday: 11:00 AM - 5:00 PM",
+            "accepts_raider_card": True,
+            "is_active": True
+        },
+        {
+            "name": "Starbucks (PRCC)",
+            "category": "dining",
+            "description": "Starbucks located in the lower level of the Paul Robeson Campus Center. Accepts flex dollars.",
+            "location": "350 Dr Martin Luther King Jr Blvd (PRCC)",
+            "latitude": 40.74171625829827,
+            "longitude": -74.17633805481596,
+            "hours": "Monday-Thursday: 8:00 AM - 8:00 PM\nFriday: 8:00 AM - 4:00 PM\nSaturday: 8:00 AM - 1:00 PM",
+            "accepts_raider_card": True,
+            "is_active": True
+        },
+        {
+            "name": "Starbucks (RBS)",
+            "category": "dining",
+            "description": "Starbucks located in the Rutgers Business School. Accepts flex dollars.",
+            "location": "1 Washington Place (RBS)",
+            "latitude": 40.7405,
+            "longitude": -74.1733,
+            "hours": "Monday-Thursday: 8:00 AM - 8:00 PM\nFriday: 8:00 AM - 4:00 PM",
+            "accepts_raider_card": True,
+            "is_active": True
+        },
+        {
+            "name": "Barnes & Noble University Bookstore Newark",
+            "category": "retail",
+            "description": "Rutgers University's official campus bookstore.",
+            "location": "42 Halsey Street",
+            "latitude": 40.741006547962726,
+            "longitude": -74.17089869774786,
+            "hours": "Monday: 10:00 AM - 5:00 PM\nTuesday: 10:00 AM - 5:00 PM\nWednesday: 10:00 AM - 5:00 PM\nThursday: 10:00 AM - 5:00 PM\nFriday: 10:00 AM - 5:00 PM\nSaturday: Closed\nSunday: Closed",
+            "accepts_raider_card": True,
+            "is_active": True
+        }
+    ]
+
+    try:
+        for vendor_data in vendors:
+            vendor = Vendor(**vendor_data)
+            db.add(vendor)
+
+        db.commit()
+        print(f"[SUCCESS] Successfully seeded {len(vendors)} vendors!")
+
+        # Display the created vendors
+        print("\nCreated vendors:")
+        all_vendors = db.query(Vendor).all()
+        for vendor in all_vendors:
+            raider = "YES" if vendor.accepts_raider_card else "NO"
+            print(f"  {vendor.id}. {vendor.name}")
+            print(f"     Category: {vendor.category} | Location: {vendor.location}")
+            print(f"     Raider Card: {raider}")
+            print()
+
+    except Exception as e:
+        db.rollback()
+        print(f"[ERROR] Error seeding vendors: {e}")
+        import traceback
+        traceback.print_exc()
+    finally:
+        db.close()
+
+
+if __name__ == "__main__":
+    print("=" * 60)
+    print("Seeding Rutgers-Newark Vendors")
+    print("=" * 60)
+    seed_vendors()
+    print("=" * 60)
