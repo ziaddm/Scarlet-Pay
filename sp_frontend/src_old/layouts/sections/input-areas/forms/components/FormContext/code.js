@@ -3,15 +3,15 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Switch from "@mui/material/Switch";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPInput from "components/SPInput";
+import SPButton from "components/SPButton";
 
 function FormContext() {
   return (
-    <MKBox
+    <SPBox
       component="section"
       display="grid"
       position="relative"
@@ -21,7 +21,7 @@ function FormContext() {
       mb={{ xs: 0, lg: -2 }}
       sx={{ overflow: { xs: "hidden", lg: "visible" }, placeItems: "center" }}
     >
-      <MKBox
+      <SPBox
         component="img"
         src="https://images.unsplash.com/photo-1539803442075-48618f39bb3d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=963&amp;q=80"
         alt="lake house"
@@ -39,7 +39,7 @@ function FormContext() {
       <Container>
         <Grid container spacing={{ xs: 0, lg: 3 }} sx={{ mt: { xs: 0, lg: 12 } }}>
           <Grid item xs={12} lg={7} justifyContent="center" flexDirection="column">
-            <MKBox
+            <SPBox
               display="flex"
               justifyContent="center"
               alignItems="center"
@@ -56,14 +56,14 @@ function FormContext() {
                 mt: { xs: 0, lg: -6 },
               }}
             >
-              <MKTypography variant="h3" textAlign="center" mb={2}>
+              <SPTypography variant="h3" textAlign="center" mb={2}>
                 Contact us
-              </MKTypography>
-              <MKBox component="form" method="post" autoComplete="off">
-                <MKBox py={3} px={{ xs: 3, md: 12, lg: 6, xl: 12 }}>
+              </SPTypography>
+              <SPBox component="form" method="post" autoComplete="off">
+                <SPBox py={3} px={{ xs: 3, md: 12, lg: 6, xl: 12 }}>
                   <Grid container spacing={3} sx={{ mb: 3 }}>
                     <Grid item xs={12} md={6} lg={12} xl={6}>
-                      <MKInput
+                      <SPInput
                         variant="standard"
                         placeholder="eg. Michael"
                         label="First Name"
@@ -72,7 +72,7 @@ function FormContext() {
                       />
                     </Grid>
                     <Grid item xs={12} md={6} lg={12} xl={6}>
-                      <MKInput
+                      <SPInput
                         variant="standard"
                         placeholder="eg. Prior"
                         label="Last Name"
@@ -81,7 +81,7 @@ function FormContext() {
                       />
                     </Grid>
                     <Grid item xs={12} sx={{ my: 1 }}>
-                      <MKInput
+                      <SPInput
                         variant="standard"
                         type="email"
                         placeholder="eg. material@design.com"
@@ -91,7 +91,7 @@ function FormContext() {
                       />
                     </Grid>
                     <Grid item xs={12}>
-                      <MKInput
+                      <SPInput
                         variant="standard"
                         label="Your Message"
                         rows={4}
@@ -104,7 +104,7 @@ function FormContext() {
                   <Grid container>
                     <Grid item xs={12} sx={{ mb: 3, ml: -1 }}>
                       <Switch id="flexSwitchCheckDefault" defaultChecked />
-                      <MKTypography
+                      <SPTypography
                         component="label"
                         variant="button"
                         color="text"
@@ -113,25 +113,25 @@ function FormContext() {
                         sx={{ userSelect: "none", cursor: "pointer" }}
                       >
                         I agree to the{" "}
-                        <MKTypography component="a" href="#" variant="button" fontWeight="regular">
+                        <SPTypography component="a" href="#" variant="button" fontWeight="regular">
                           <u>Terms and Conditions</u>
-                        </MKTypography>
+                        </SPTypography>
                         .
-                      </MKTypography>
+                      </SPTypography>
                     </Grid>
                     <Grid item xs={12}>
-                      <MKButton type="submit" variant="gradient" color="dark" fullWidth>
+                      <SPButton type="submit" variant="gradient" color="dark" fullWidth>
                         Send Message
-                      </MKButton>
+                      </SPButton>
                     </Grid>
                   </Grid>
-                </MKBox>
-              </MKBox>
-            </MKBox>
+                </SPBox>
+              </SPBox>
+            </SPBox>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

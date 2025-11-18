@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,14 +23,14 @@ import Icon from "@mui/material/Icon";
 import Divider from "@mui/material/Divider";
 import Fade from "@mui/material/Fade";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Custom styles for the MKSnackbar
-import MKSnackbarIconRoot from "components/MKSnackbar/MKSnackbarIconRoot";
+// Custom styles for the SPSnackbar
+import SPSnackbarIconRoot from "components/SPSnackbar/SPSnackbarIconRoot";
 
-function MKSnackbar({
+function SPSnackbar({
   color = "info",
   icon,
   title,
@@ -73,7 +73,7 @@ function MKSnackbar({
         </IconButton>
       }
     >
-      <MKBox
+      <SPBox
         variant={bgWhite ? "contained" : "gradient"}
         bgColor={bgWhite ? "white" : color}
         minWidth="21.875rem"
@@ -85,30 +85,30 @@ function MKSnackbar({
           backgroundColor: ({ palette }) => palette[color] || palette.white.main,
         }}
       >
-        <MKBox
+        <SPBox
           display="flex"
           justifyContent="space-between"
           alignItems="center"
           color="dark"
           p={1.5}
         >
-          <MKBox display="flex" alignItems="center" lineHeight={0}>
-            <MKSnackbarIconRoot fontSize="small" ownerState={{ color, bgWhite }}>
+          <SPBox display="flex" alignItems="center" lineHeight={0}>
+            <SPSnackbarIconRoot fontSize="small" ownerState={{ color, bgWhite }}>
               {icon}
-            </MKSnackbarIconRoot>
-            <MKTypography
+            </SPSnackbarIconRoot>
+            <SPTypography
               variant="button"
               fontWeight="medium"
               color={titleColor}
               textGradient={bgWhite}
             >
               {title}
-            </MKTypography>
-          </MKBox>
-          <MKBox display="flex" alignItems="center" lineHeight={0}>
-            <MKTypography variant="caption" color={dateTimeColor}>
+            </SPTypography>
+          </SPBox>
+          <SPBox display="flex" alignItems="center" lineHeight={0}>
+            <SPTypography variant="caption" color={dateTimeColor}>
               {dateTime}
-            </MKTypography>
+            </SPTypography>
             <Icon
               sx={{
                 color: ({ palette: { dark, white } }) =>
@@ -122,10 +122,10 @@ function MKSnackbar({
             >
               close
             </Icon>
-          </MKBox>
-        </MKBox>
+          </SPBox>
+        </SPBox>
         <Divider sx={{ margin: 0 }} light={dividerColor} />
-        <MKBox
+        <SPBox
           p={1.5}
           sx={{
             fontSize: ({ typography: { size } }) => size.sm,
@@ -134,14 +134,14 @@ function MKSnackbar({
           }}
         >
           {content}
-        </MKBox>
-      </MKBox>
+        </SPBox>
+      </SPBox>
     </Snackbar>
   );
 }
 
-// Typechecking props for MKSnackbar
-MKSnackbar.propTypes = {
+// Typechecking props for SPSnackbar
+SPSnackbar.propTypes = {
   color: PropTypes.oneOf([
     "primary",
     "secondary",
@@ -160,4 +160,4 @@ MKSnackbar.propTypes = {
   bgWhite: PropTypes.bool,
 };
 
-export default MKSnackbar;
+export default SPSnackbar;

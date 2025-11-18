@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,21 +18,21 @@ import { forwardRef } from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Material Kit 2 PRO React components
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPTypography from "components/SPTypography";
 
-// Custom styles for MKProgress
-import MKProgressRoot from "components/MKProgress/MKProgressRoot";
+// Custom styles for SPProgress
+import SPProgressRoot from "components/SPProgress/SPProgressRoot";
 
-const MKProgress = forwardRef(
+const SPProgress = forwardRef(
   ({ variant = "contained", color = "info", value = 0, label = false, ...rest }, ref) => (
     <>
       {label && (
-        <MKTypography variant="button" fontWeight="medium" color="text">
+        <SPTypography variant="button" fontWeight="medium" color="text">
           {value}%
-        </MKTypography>
+        </SPTypography>
       )}
-      <MKProgressRoot
+      <SPProgressRoot
         {...rest}
         ref={ref}
         variant="determinate"
@@ -43,8 +43,8 @@ const MKProgress = forwardRef(
   )
 );
 
-// Typechecking props for the MKProgress
-MKProgress.propTypes = {
+// Typechecking props for the SPProgress
+SPProgress.propTypes = {
   variant: PropTypes.oneOf(["contained", "gradient"]),
   color: PropTypes.oneOf([
     "primary",
@@ -60,4 +60,4 @@ MKProgress.propTypes = {
   label: PropTypes.bool,
 };
 
-export default MKProgress;
+export default SPProgress;

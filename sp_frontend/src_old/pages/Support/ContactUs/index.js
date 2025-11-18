@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -16,13 +16,13 @@ Coded by www.creative-tim.com
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPInput from "components/SPInput";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
@@ -36,20 +36,20 @@ import bgImage from "assets/images/illustrations/illustration-reset.jpg";
 function ContactUs() {
   return (
     <>
-      <MKBox position="fixed" top="0.5rem" width="100%">
+      <SPBox position="fixed" top="0.5rem" width="100%">
         <DefaultNavbar
           routes={routes}
           action={{
             type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-pro-react",
+            route: "https://www.creative-tim.com/product/scarlet-pay-pro-react",
             label: "buy now",
             color: "info",
           }}
         />
-      </MKBox>
+      </SPBox>
       <Grid container spacing={3} alignItems="center">
         <Grid item xs={12} lg={6}>
-          <MKBox
+          <SPBox
             display={{ xs: "none", lg: "flex" }}
             width="calc(100% - 2rem)"
             height="calc(100vh - 2rem)"
@@ -69,7 +69,7 @@ function ContactUs() {
           ml={{ xs: "auto", lg: 6 }}
           mr={{ xs: "auto", lg: 6 }}
         >
-          <MKBox
+          <SPBox
             bgColor="white"
             borderRadius="xl"
             shadow="lg"
@@ -80,7 +80,7 @@ function ContactUs() {
             mb={{ xs: 20, sm: 18, md: 20 }}
             mx={3}
           >
-            <MKBox
+            <SPBox
               variant="gradient"
               bgColor="info"
               coloredShadow="info"
@@ -89,19 +89,19 @@ function ContactUs() {
               mx={2}
               mt={-3}
             >
-              <MKTypography variant="h3" color="white">
+              <SPTypography variant="h3" color="white">
                 Contact us
-              </MKTypography>
-            </MKBox>
-            <MKBox p={3}>
-              <MKTypography variant="body2" color="text" mb={3}>
+              </SPTypography>
+            </SPBox>
+            <SPBox p={3}>
+              <SPTypography variant="body2" color="text" mb={3}>
                 For further questions, including partnership opportunities, please email
                 hello@creative-tim.com or contact using our contact form.
-              </MKTypography>
-              <MKBox width="100%" component="form" method="post" autoComplete="off">
+              </SPTypography>
+              <SPBox width="100%" component="form" method="post" autoComplete="off">
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={6}>
-                    <MKInput
+                    <SPInput
                       variant="standard"
                       label="Full Name"
                       InputLabelProps={{ shrink: true }}
@@ -109,7 +109,7 @@ function ContactUs() {
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>
-                    <MKInput
+                    <SPInput
                       type="email"
                       variant="standard"
                       label="Email"
@@ -118,7 +118,7 @@ function ContactUs() {
                     />
                   </Grid>
                   <Grid item xs={12}>
-                    <MKInput
+                    <SPInput
                       variant="standard"
                       label="What can we help you?"
                       placeholder="Describe your problem in at least 250 characters"
@@ -130,18 +130,18 @@ function ContactUs() {
                   </Grid>
                 </Grid>
                 <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
-                  <MKButton type="submit" variant="gradient" color="info">
+                  <SPButton type="submit" variant="gradient" color="info">
                     Send Message
-                  </MKButton>
+                  </SPButton>
                 </Grid>
-              </MKBox>
-            </MKBox>
-          </MKBox>
+              </SPBox>
+            </SPBox>
+          </SPBox>
         </Grid>
       </Grid>
-      <MKBox pt={6} px={1} mt={6}>
+      <SPBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      </SPBox>
     </>
   );
 }

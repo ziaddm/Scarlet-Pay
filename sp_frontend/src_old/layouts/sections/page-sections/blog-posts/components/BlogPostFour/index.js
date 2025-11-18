@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -20,11 +20,11 @@ import { Link } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import SimpleBackgroundCard from "examples/Cards/BackgroundCards/SimpleBackgroundCard";
 
 // Images
@@ -34,16 +34,16 @@ import post3 from "assets/images/examples/blog3.jpg";
 
 function BlogPostFour() {
   return (
-    <MKBox component="section" py={6}>
+    <SPBox component="section" py={6}>
       <Container>
         <Grid container item xs={12} lg={6} flexDirection="column">
-          <MKTypography variant="h3" mt={3} mb={1}>
+          <SPTypography variant="h3" mt={3} mb={1}>
             Build something great
-          </MKTypography>
-          <MKTypography variant="body2" color="text" pr={{ xs: 0, lg: 6 }}>
+          </SPTypography>
+          <SPTypography variant="body2" color="text" pr={{ xs: 0, lg: 6 }}>
             We&apos;re constantly trying to express ourselves and actualize our dreams. If you have
             the opportunity to play this game of life you need to appreciate every moment.
-          </MKTypography>
+          </SPTypography>
         </Grid>
         <Grid container spacing={3} mt={3}>
           <Grid item xs={12} lg={4}>
@@ -78,7 +78,7 @@ function BlogPostFour() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

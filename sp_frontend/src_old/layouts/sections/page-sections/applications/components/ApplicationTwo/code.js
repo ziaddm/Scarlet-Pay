@@ -4,11 +4,11 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 import Divider from "@mui/material/Divider";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultBackgroundCard from "examples/Cards/BackgroundCards/DefaultBackgroundCard";
 
 // HelpCenter page components
@@ -20,7 +20,7 @@ import bgImage2 from "assets/images/examples/color3.jpg";
 
 function ApplicationTwo() {
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid
           container
@@ -32,7 +32,7 @@ function ApplicationTwo() {
           lg={5}
           sx={{ mx: "auto", textAlign: "center" }}
         >
-          <MKBox
+          <SPBox
             width="3rem"
             height="3rem"
             borderRadius="lg"
@@ -47,14 +47,14 @@ function ApplicationTwo() {
             <Icon fontSize="small" sx={{ opacity: 0.8 }}>
               settings
             </Icon>
-          </MKBox>
-          <MKTypography variant="h3" mt={3}>
+          </SPBox>
+          <SPTypography variant="h3" mt={3}>
             How To Handle Them
-          </MKTypography>
-          <MKTypography variant="body2" color="text">
+          </SPTypography>
+          <SPTypography variant="body2" color="text">
             We&apos;re constantly trying to express ourselves and actualize our dreams. Don&apos;t
             stop.
-          </MKTypography>
+          </SPTypography>
         </Grid>
         <Grid container spacing={3} alignItems="center" sx={{ mt: 6 }}>
           <Grid item xs={12} md={4} sx={{ ml: "auto" }}>
@@ -113,7 +113,7 @@ function ApplicationTwo() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

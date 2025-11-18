@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,12 +19,12 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Slider from "@mui/material/Slider";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
 
 function Sliders() {
   return (
-    <MKBox component="section" bgColor="white" py={12}>
+    <SPBox component="section" bgColor="white" py={12}>
       <Container>
         <Grid container item xs={12} lg={6} justifyContent="center" mx="auto">
           <Stack spacing={2} width="100%">
@@ -33,7 +33,7 @@ function Sliders() {
           </Stack>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

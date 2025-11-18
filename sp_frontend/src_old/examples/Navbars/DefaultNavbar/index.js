@@ -1,11 +1,11 @@
 /* eslint-disable no-param-reassign */
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -31,20 +31,20 @@ import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPButton from "components/SPButton";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 
-// Material Kit 2 PRO React base styles
+// Scarlet Pay 2 PRO React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
 function DefaultNavbar({
-  brand = "Material Kit 2",
+  brand = "Scarlet Pay 2",
   routes,
   transparent = false,
   light = false,
@@ -138,7 +138,7 @@ function DefaultNavbar({
               <Grid key={gridKey} item xs={12 / columns} sx={{ position: "relative" }}>
                 {cols.map((col, index) => (
                   <Fragment key={col.name}>
-                    <MKTypography
+                    <SPTypography
                       display="block"
                       variant="button"
                       fontWeight="bold"
@@ -148,9 +148,9 @@ function DefaultNavbar({
                       mt={index !== 0 ? 2 : 0}
                     >
                       {col.name}
-                    </MKTypography>
+                    </SPTypography>
                     {col.collapse.map((item) => (
-                      <MKTypography
+                      <SPTypography
                         key={item.name}
                         component={item.route ? Link : MuiLink}
                         to={item.route ? item.route : ""}
@@ -177,7 +177,7 @@ function DefaultNavbar({
                         })}
                       >
                         {item.name}
-                      </MKTypography>
+                      </SPTypography>
                     ))}
                   </Fragment>
                 ))}
@@ -216,7 +216,7 @@ function DefaultNavbar({
         };
 
         return (
-          <MKTypography
+          <SPTypography
             key={item.name}
             {...(item.route ? routeComponent : linkComponent)}
             display="flex"
@@ -257,9 +257,9 @@ function DefaultNavbar({
             }}
           >
             {item.description ? (
-              <MKBox>
+              <SPBox>
                 {item.name}
-                <MKTypography
+                <SPTypography
                   display="block"
                   variant="button"
                   color="text"
@@ -267,8 +267,8 @@ function DefaultNavbar({
                   sx={{ transition: "all 300ms linear" }}
                 >
                   {item.description}
-                </MKTypography>
-              </MKBox>
+                </SPTypography>
+              </SPBox>
             ) : (
               item.name
             )}
@@ -280,7 +280,7 @@ function DefaultNavbar({
                 keyboard_arrow_right
               </Icon>
             )}
-          </MKTypography>
+          </SPTypography>
         );
       });
     }
@@ -322,16 +322,16 @@ function DefaultNavbar({
             background: ({ palette: { white } }) => white.main,
           }}
         >
-          <MKBox borderRadius="lg">
-            <MKTypography variant="h1" color="white">
+          <SPBox borderRadius="lg">
+            <SPTypography variant="h1" color="white">
               <Icon ref={setArrowRef} sx={{ mt: -3 }}>
                 arrow_drop_up
               </Icon>
-            </MKTypography>
-            <MKBox shadow="lg" borderRadius="lg" p={2} mt={2}>
+            </SPTypography>
+            <SPBox shadow="lg" borderRadius="lg" p={2} mt={2}>
               {renderRoutes}
-            </MKBox>
-          </MKBox>
+            </SPBox>
+          </SPBox>
         </Grow>
       )}
     </Popper>
@@ -360,7 +360,7 @@ function DefaultNavbar({
                 };
 
                 return (
-                  <MKTypography
+                  <SPTypography
                     key={item.name}
                     {...(item.route ? routeComponent : linkComponent)}
                     display="flex"
@@ -389,9 +389,9 @@ function DefaultNavbar({
                     })}
                   >
                     {item.description ? (
-                      <MKBox>
+                      <SPBox>
                         {item.name}
-                        <MKTypography
+                        <SPTypography
                           display="block"
                           variant="button"
                           color="text"
@@ -399,8 +399,8 @@ function DefaultNavbar({
                           sx={{ transition: "all 300ms linear" }}
                         >
                           {item.description}
-                        </MKTypography>
-                      </MKBox>
+                        </SPTypography>
+                      </SPBox>
                     ) : (
                       item.name
                     )}
@@ -412,7 +412,7 @@ function DefaultNavbar({
                         keyboard_arrow_right
                       </Icon>
                     )}
-                  </MKTypography>
+                  </SPTypography>
                 );
               });
           }
@@ -448,11 +448,11 @@ function DefaultNavbar({
             background: ({ palette: { white } }) => white.main,
           }}
         >
-          <MKBox ml={2.5} mt={-2.5} borderRadius="lg">
-            <MKBox shadow="lg" borderRadius="lg" py={1.5} px={1} mt={2}>
+          <SPBox ml={2.5} mt={-2.5} borderRadius="lg">
+            <SPBox shadow="lg" borderRadius="lg" py={1.5} px={1} mt={2}>
               {renderNestedRoutes}
-            </MKBox>
-          </MKBox>
+            </SPBox>
+          </SPBox>
         </Grow>
       )}
     </Popper>
@@ -460,7 +460,7 @@ function DefaultNavbar({
 
   return (
     <Container sx={sticky ? { position: "sticky", top: 0, zIndex: 10 } : null}>
-      <MKBox
+      <SPBox
         py={1}
         px={{ xs: 4, sm: transparent ? 2 : 3, lg: transparent ? 0 : 2 }}
         my={relative ? 0 : 2}
@@ -477,30 +477,30 @@ function DefaultNavbar({
           backdropFilter: transparent ? "none" : `saturate(200%) blur(30px)`,
         })}
       >
-        <MKBox display="flex" justifyContent="space-between" alignItems="center">
-          <MKBox
+        <SPBox display="flex" justifyContent="space-between" alignItems="center">
+          <SPBox
             component={Link}
             to="/"
             lineHeight={1}
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
-            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
+            <SPTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
               {brand}
-            </MKTypography>
-          </MKBox>
-          <MKBox
+            </SPTypography>
+          </SPBox>
+          <SPBox
             color="inherit"
             display={{ xs: "none", lg: "flex" }}
             ml="auto"
             mr={center ? "auto" : 0}
           >
             {renderNavbarItems}
-          </MKBox>
-          <MKBox ml={{ xs: "auto", lg: 0 }}>
+          </SPBox>
+          <SPBox ml={{ xs: "auto", lg: 0 }}>
             {action &&
               (action.type === "internal" ? (
-                <MKButton
+                <SPButton
                   component={Link}
                   to={action.route}
                   variant={
@@ -512,9 +512,9 @@ function DefaultNavbar({
                   size="small"
                 >
                   {action.label}
-                </MKButton>
+                </SPButton>
               ) : (
-                <MKButton
+                <SPButton
                   component="a"
                   href={action.route}
                   target="_blank"
@@ -528,10 +528,10 @@ function DefaultNavbar({
                   size="small"
                 >
                   {action.label}
-                </MKButton>
+                </SPButton>
               ))}
-          </MKBox>
-          <MKBox
+          </SPBox>
+          <SPBox
             display={{ xs: "inline-block", lg: "none" }}
             lineHeight={0}
             py={1.5}
@@ -541,17 +541,17 @@ function DefaultNavbar({
             onClick={openMobileNavbar}
           >
             <Icon fontSize="default">{mobileNavbar ? "close" : "menu"}</Icon>
-          </MKBox>
-        </MKBox>
-        <MKBox
+          </SPBox>
+        </SPBox>
+        <SPBox
           bgColor={transparent ? "white" : "transparent"}
           shadow={transparent ? "lg" : "none"}
           borderRadius="xl"
           px={transparent ? 2 : 0}
         >
           {mobileView && <DefaultNavbarMobile routes={routes} open={mobileNavbar} />}
-        </MKBox>
-      </MKBox>
+        </SPBox>
+      </SPBox>
       {dropdownMenu}
       {nestedDropdownMenu}
     </Container>

@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,29 +18,29 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPAvatar from "components/SPAvatar";
 
 // Images
 import team4 from "assets/images/team-4.jpg";
 
 function AvatarSize() {
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid container justifyContent="center">
           <Stack direction="row" alignItems="flex-end" spacing={1}>
-            <MKAvatar src={team4} alt="xs" size="xs" />
-            <MKAvatar src={team4} alt="sm" size="sm" />
-            <MKAvatar src={team4} alt="md" size="md" />
-            <MKAvatar src={team4} alt="lg" size="lg" />
-            <MKAvatar src={team4} alt="xl" size="xl" />
-            <MKAvatar src={team4} alt="xxl" size="xxl" />
+            <SPAvatar src={team4} alt="xs" size="xs" />
+            <SPAvatar src={team4} alt="sm" size="sm" />
+            <SPAvatar src={team4} alt="md" size="md" />
+            <SPAvatar src={team4} alt="lg" size="lg" />
+            <SPAvatar src={team4} alt="xl" size="xl" />
+            <SPAvatar src={team4} alt="xxl" size="xxl" />
           </Stack>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

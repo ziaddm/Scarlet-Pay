@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,11 +17,11 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultBlogCard from "examples/Cards/BlogCards/DefaultBlogCard";
 
 // Images
@@ -34,17 +34,17 @@ import author3 from "assets/images/marie.jpg";
 
 function Posts() {
   return (
-    <MKBox component="section" py={7}>
+    <SPBox component="section" py={7}>
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={9} textAlign="center" mx="auto">
-            <MKTypography variant="h3" mb={0.5}>
+            <SPTypography variant="h3" mb={0.5}>
               See other articles
-            </MKTypography>
-            <MKTypography variant="body2" color="text" px={{ xs: 0, md: 6 }} mb={4}>
+            </SPTypography>
+            <SPTypography variant="body2" color="text" px={{ xs: 0, md: 6 }} mb={4}>
               Create a unique and beautiful blog posts. You can also connect your blog directly to
               Google Analytics to have a more detailed look.
-            </MKTypography>
+            </SPTypography>
           </Grid>
           <Grid item xs={12} lg={4} mb={{ xs: 3, lg: 0 }}>
             <DefaultBlogCard
@@ -90,7 +90,7 @@ function Posts() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

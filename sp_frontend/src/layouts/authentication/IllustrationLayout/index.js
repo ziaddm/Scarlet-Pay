@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -19,14 +19,14 @@ import PropTypes from "prop-types";
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
 
-// Material Kit 2 PRO React example components
+// Scarlet Pay 2 PRO React example components
 import DefaultNavbar from "components/custom/DefaultNavbar";
 
-// Material Kit 2 PRO React page layout routes
+// Scarlet Pay 2 PRO React page layout routes
 
 function IllustrationLayout({
   header = "",
@@ -36,20 +36,20 @@ function IllustrationLayout({
   children,
 }) {
   return (
-    <MKBox width="100%" height="100%" bgColor="white">
-      <MKBox position="absolute" width="100%" mt={1}>
+    <SPBox width="100%" height="100%" bgColor="white">
+      <SPBox position="absolute" width="100%" mt={1}>
         <DefaultNavbar
           action={{
             type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-pro-react",
+            route: "https://www.scarlet-pay.com/product/scarlet-pay-pro-react",
             label: "buy now",
             color: "dark",
           }}
         />
-      </MKBox>
+      </SPBox>
       <Grid container>
         <Grid item xs={12} lg={6}>
-          <MKBox
+          <SPBox
             display={{ xs: "none", lg: "flex" }}
             width="calc(100% - 2rem)"
             height="calc(100vh - 2rem)"
@@ -60,28 +60,28 @@ function IllustrationLayout({
           />
         </Grid>
         <Grid item xs={11} sm={8} md={5} lg={4} xl={3} sx={{ mx: "auto" }}>
-          <MKBox display="flex" flexDirection="column" justifyContent="center" height="100vh">
-            <MKBox p={3} textAlign="center">
+          <SPBox display="flex" flexDirection="column" justifyContent="center" height="100vh">
+            <SPBox p={3} textAlign="center">
               {!header ? (
                 <>
-                  <MKBox mb={1} textAlign="center">
-                    <MKTypography variant="h4" fontWeight="bold">
+                  <SPBox mb={1} textAlign="center">
+                    <SPTypography variant="h4" fontWeight="bold">
                       {title}
-                    </MKTypography>
-                  </MKBox>
-                  <MKTypography variant="body2" color="text">
+                    </SPTypography>
+                  </SPBox>
+                  <SPTypography variant="body2" color="text">
                     {description}
-                  </MKTypography>
+                  </SPTypography>
                 </>
               ) : (
                 header
               )}
-            </MKBox>
-            <MKBox p={3}>{children}</MKBox>
-          </MKBox>
+            </SPBox>
+            <SPBox p={3}>{children}</SPBox>
+          </SPBox>
         </Grid>
       </Grid>
-    </MKBox>
+    </SPBox>
   );
 }
 

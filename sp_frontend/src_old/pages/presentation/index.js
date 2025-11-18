@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,13 +18,13 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
-import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPBadge from "components/SPBadge";
+import SPTypography from "components/SPTypography";
+import SPSocialButton from "components/SPSocialButton";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
@@ -55,13 +55,13 @@ function Presentation() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-pro-react",
+          route: "https://www.creative-tim.com/product/scarlet-pay-pro-react",
           label: "buy now",
           color: "info",
         }}
         sticky
       />
-      <MKBox
+      <SPBox
         minHeight="75vh"
         width="100%"
         sx={{
@@ -74,7 +74,7 @@ function Presentation() {
       >
         <Container>
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            <MKTypography
+            <SPTypography
               variant="h1"
               color="white"
               mt={-6}
@@ -85,8 +85,8 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
-              <MKBadge
+              Scarlet Pay 2 React{" "}
+              <SPBadge
                 badgeContent="pro"
                 size="lg"
                 variant="contained"
@@ -94,13 +94,13 @@ function Presentation() {
                 container
                 sx={{ mt: -4 }}
               />
-            </MKTypography>
-            <MKTypography variant="body1" color="white" textAlign="center" px={6} mt={1}>
+            </SPTypography>
+            <SPTypography variant="body1" color="white" textAlign="center" px={6} mt={1}>
               Start the Development with a ReactJS & MUI Design System inspired by Material Design.
-            </MKTypography>
+            </SPTypography>
           </Grid>
         </Container>
-      </MKBox>
+      </SPBox>
       <Card
         sx={{
           p: 2,
@@ -131,7 +131,7 @@ function Presentation() {
                 description="Check the possible ways of working with our product and the necessary files for building your own project."
                 action={{
                   type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
+                  route: "https://www.creative-tim.com/learning-lab/react/overview/scarlet-pay/",
                   label: "Let's start",
                 }}
               />
@@ -141,10 +141,10 @@ function Presentation() {
                 color="info"
                 icon="precision_manufacturing"
                 title="Plugins"
-                description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
+                description="Get inspiration and have an overview about the plugins that we used to create the Scarlet Pay."
                 action={{
                   type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
+                  route: "https://www.creative-tim.com/learning-lab/react/datepicker/scarlet-pay/",
                   label: "Read more",
                 }}
               />
@@ -154,10 +154,10 @@ function Presentation() {
                 color="info"
                 icon="apps"
                 title="Components"
-                description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
+                description="Scarlet Pay is giving you a lot of pre-made components, that will help you to build UI's faster."
                 action={{
                   type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+                  route: "https://www.creative-tim.com/learning-lab/react/alerts/scarlet-pay/",
                   label: "Read more",
                 }}
               />
@@ -166,16 +166,16 @@ function Presentation() {
         </Container>
         <Testimonials />
         <Pricing />
-        <MKBox pt={18} pb={6}>
+        <SPBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
-                <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
+                <SPTypography variant="h4" fontWeight="bold" mb={0.5}>
                   Thank you for your support!
-                </MKTypography>
-                <MKTypography variant="body1" color="text">
+                </SPTypography>
+                <SPTypography variant="body1" color="text">
                   We deliver the best web products
-                </MKTypography>
+                </SPTypography>
               </Grid>
               <Grid
                 item
@@ -185,7 +185,7 @@ function Presentation() {
                 mr={{ xs: 0, lg: "auto" }}
                 sx={{ textAlign: { xs: "center", lg: "right" } }}
               >
-                <MKSocialButton
+                <SPSocialButton
                   component="a"
                   href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-design-system-pro"
                   target="_blank"
@@ -194,8 +194,8 @@ function Presentation() {
                 >
                   <i className="fab fa-twitter" />
                   &nbsp;Tweet
-                </MKSocialButton>
-                <MKSocialButton
+                </SPSocialButton>
+                <SPSocialButton
                   component="a"
                   href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-design-system-pro"
                   target="_blank"
@@ -204,8 +204,8 @@ function Presentation() {
                 >
                   <i className="fab fa-facebook" />
                   &nbsp;Share
-                </MKSocialButton>
-                <MKSocialButton
+                </SPSocialButton>
+                <SPSocialButton
                   component="a"
                   href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-design-system-pro"
                   target="_blank"
@@ -213,15 +213,15 @@ function Presentation() {
                 >
                   <i className="fab fa-pinterest" />
                   &nbsp;Pin it
-                </MKSocialButton>
+                </SPSocialButton>
               </Grid>
             </Grid>
           </Container>
-        </MKBox>
+        </SPBox>
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
+      <SPBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      </SPBox>
     </>
   );
 }

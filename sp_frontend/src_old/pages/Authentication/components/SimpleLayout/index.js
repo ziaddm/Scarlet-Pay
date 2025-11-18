@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,11 +19,11 @@ import PropTypes from "prop-types";
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-// import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+// import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React example components
+// Scarlet Pay 2 PRO React example components
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import CenteredFooter from "examples/Footers/CenteredFooter";
 
@@ -32,26 +32,26 @@ import routes from "routes";
 
 function SimpleLayout({ children }) {
   return (
-    <MKBox height="100vh" display="flex" flexDirection="column" justifyContent="space-between">
+    <SPBox height="100vh" display="flex" flexDirection="column" justifyContent="space-between">
       <DefaultNavbar
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-pro-react",
+          route: "https://www.creative-tim.com/product/scarlet-pay-pro-react",
           label: "buy now",
           color: "info",
         }}
         transparent
       />
-      <MKBox width="calc(100% - 2rem)" px={1} mx="auto">
+      <SPBox width="calc(100% - 2rem)" px={1} mx="auto">
         <Grid container spacing={1} justifyContent="center">
           <Grid item xs={11} sm={9} md={5} lg={4} xl={3}>
             {children}
           </Grid>
         </Grid>
         <CenteredFooter />
-      </MKBox>
-    </MKBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

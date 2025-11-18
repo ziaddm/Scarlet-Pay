@@ -6,15 +6,15 @@
 */
 
 import PropTypes from "prop-types";
-import MKBox from "components/base/MKBox";
-import MKAvatar from "components/base/MKAvatar";
-import MKTypography from "components/base/MKTypography";
-import MKBadge from "components/base/MKBadge";
+import SPBox from "components/base/SPBox";
+import SPAvatar from "components/base/SPAvatar";
+import SPTypography from "components/base/SPTypography";
+import SPBadge from "components/base/SPBadge";
 import { getStatusColor } from "core/utils";
 
 function UserCard({ user, onClick }) {
   return (
-    <MKBox
+    <SPBox
       p={2}
       borderRadius="lg"
       sx={{
@@ -29,8 +29,8 @@ function UserCard({ user, onClick }) {
       }}
       onClick={onClick}
     >
-      <MKBox display="flex" alignItems="center" gap={2}>
-        <MKAvatar
+      <SPBox display="flex" alignItems="center" gap={2}>
+        <SPAvatar
           sx={{
             width: 48,
             height: 48,
@@ -38,25 +38,25 @@ function UserCard({ user, onClick }) {
           }}
         >
           {user.name?.charAt(0) || "U"}
-        </MKAvatar>
-        <MKBox flex={1} minWidth={0}>
-          <MKTypography variant="h6" fontWeight="medium" noWrap>
+        </SPAvatar>
+        <SPBox flex={1} minWidth={0}>
+          <SPTypography variant="h6" fontWeight="medium" noWrap>
             {user.name}
-          </MKTypography>
-          <MKTypography variant="caption" color="text" sx={{ opacity: 0.7 }}>
+          </SPTypography>
+          <SPTypography variant="caption" color="text" sx={{ opacity: 0.7 }}>
             {user.email}
-          </MKTypography>
-        </MKBox>
+          </SPTypography>
+        </SPBox>
         {user.status && (
-          <MKBadge
+          <SPBadge
             variant="contained"
             badgeContent={user.status}
             color={getStatusColor(user.status)}
             size="xs"
           />
         )}
-      </MKBox>
-    </MKBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

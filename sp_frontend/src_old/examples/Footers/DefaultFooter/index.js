@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,27 +23,27 @@ import PropTypes from "prop-types";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function DefaultFooter({ content }) {
   const { brand, socials, menus, copyright } = content;
 
   return (
-    <MKBox component="footer">
+    <SPBox component="footer">
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} md={3} sx={{ ml: "auto", mb: 3 }}>
-            <MKBox>
+            <SPBox>
               <Link to={brand.route}>
-                <MKBox component="img" src={brand.image} alt={brand.name} maxWidth="2rem" mb={2} />
+                <SPBox component="img" src={brand.image} alt={brand.name} maxWidth="2rem" mb={2} />
               </Link>
-              <MKTypography variant="h6">{brand.name}</MKTypography>
-            </MKBox>
-            <MKBox display="flex" alignItems="center" mt={3}>
+              <SPTypography variant="h6">{brand.name}</SPTypography>
+            </SPBox>
+            <SPBox display="flex" alignItems="center" mt={3}>
               {socials.map(({ icon, link }, key) => (
-                <MKTypography
+                <SPTypography
                   key={link}
                   component="a"
                   href={link}
@@ -55,13 +55,13 @@ function DefaultFooter({ content }) {
                   mr={key === socials.length - 1 ? 0 : 2.5}
                 >
                   {icon}
-                </MKTypography>
+                </SPTypography>
               ))}
-            </MKBox>
+            </SPBox>
           </Grid>
           {menus.map(({ name: title, items }) => (
             <Grid key={title} item xs={6} md={2} sx={{ mb: 3 }}>
-              <MKTypography
+              <SPTypography
                 display="block"
                 variant="button"
                 fontWeight="bold"
@@ -69,12 +69,12 @@ function DefaultFooter({ content }) {
                 mb={1}
               >
                 {title}
-              </MKTypography>
-              <MKBox component="ul" p={0} m={0} sx={{ listStyle: "none" }}>
+              </SPTypography>
+              <SPBox component="ul" p={0} m={0} sx={{ listStyle: "none" }}>
                 {items.map(({ name, route, href }) => (
-                  <MKBox key={name} component="li" p={0} m={0} lineHeight={1.25}>
+                  <SPBox key={name} component="li" p={0} m={0} lineHeight={1.25}>
                     {href ? (
-                      <MKTypography
+                      <SPTypography
                         component="a"
                         href={href}
                         target="_blank"
@@ -84,9 +84,9 @@ function DefaultFooter({ content }) {
                         textTransform="capitalize"
                       >
                         {name}
-                      </MKTypography>
+                      </SPTypography>
                     ) : (
-                      <MKTypography
+                      <SPTypography
                         component={Link}
                         to={route}
                         variant="button"
@@ -94,11 +94,11 @@ function DefaultFooter({ content }) {
                         textTransform="capitalize"
                       >
                         {name}
-                      </MKTypography>
+                      </SPTypography>
                     )}
-                  </MKBox>
+                  </SPBox>
                 ))}
-              </MKBox>
+              </SPBox>
             </Grid>
           ))}
           <Grid item xs={12} sx={{ textAlign: "center", my: 3 }}>
@@ -106,7 +106,7 @@ function DefaultFooter({ content }) {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

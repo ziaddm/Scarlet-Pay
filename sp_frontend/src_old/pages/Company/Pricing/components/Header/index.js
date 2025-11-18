@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -21,17 +21,17 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 function Header({ image, label, title, description, cards }) {
   return (
     <>
-      <MKBox
+      <SPBox
         minHeight="75vh"
         width="100%"
         sx={{
@@ -56,10 +56,10 @@ function Header({ image, label, title, description, cards }) {
             flexDirection="column"
             sx={{ px: { xs: 1, lg: 0 } }}
           >
-            <MKTypography variant="h4" color="white">
+            <SPTypography variant="h4" color="white">
               {label}
-            </MKTypography>
-            <MKTypography
+            </SPTypography>
+            <SPTypography
               variant="h1"
               color="white"
               mb={1}
@@ -70,13 +70,13 @@ function Header({ image, label, title, description, cards }) {
               })}
             >
               {title}
-            </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8}>
+            </SPTypography>
+            <SPTypography variant="body1" color="white" opacity={0.8}>
               {description}
-            </MKTypography>
+            </SPTypography>
           </Grid>
         </Container>
-      </MKBox>
+      </SPBox>
       <Card
         sx={{
           p: 2,

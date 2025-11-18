@@ -1,4 +1,4 @@
-const footerTwoCode = `// Material Kit 2 PRO React examples
+const footerTwoCode = `// Scarlet Pay 2 PRO React examples
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // routes

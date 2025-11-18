@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -20,14 +20,14 @@ import PropTypes from "prop-types";
 import Icon from "@mui/material/Icon";
 import Collapse from "@mui/material/Collapse";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function FaqCollapse({ title, open, children, ...rest }) {
   return (
-    <MKBox mb={2}>
-      <MKBox
+    <SPBox mb={2}>
+      <SPBox
         {...rest}
         display="flex"
         justifyContent="space-between"
@@ -39,23 +39,23 @@ function FaqCollapse({ title, open, children, ...rest }) {
             `${borderWidth[1]} solid ${borderColor}`,
         }}
       >
-        <MKTypography variant="h6" color={open ? "dark" : "text"} sx={{ userSelect: "none" }}>
+        <SPTypography variant="h6" color={open ? "dark" : "text"} sx={{ userSelect: "none" }}>
           {title}
-        </MKTypography>
-        <MKBox color={open ? "dark" : "text"}>
+        </SPTypography>
+        <SPBox color={open ? "dark" : "text"}>
           <Icon sx={{ fontWeight: "bold" }} fontSize="small">
             {open ? "remove" : "add"}
           </Icon>
-        </MKBox>
-      </MKBox>
+        </SPBox>
+      </SPBox>
       <Collapse timeout={400} in={open}>
-        <MKBox py={2} lineHeight={1}>
-          <MKTypography variant="button" color="text" opacity={0.8} fontWeight="regular">
+        <SPBox py={2} lineHeight={1}>
+          <SPTypography variant="button" color="text" opacity={0.8} fontWeight="regular">
             {children}
-          </MKTypography>
-        </MKBox>
+          </SPTypography>
+        </SPBox>
       </Collapse>
-    </MKBox>
+    </SPBox>
   );
 }
 

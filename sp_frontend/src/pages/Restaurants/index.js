@@ -3,9 +3,9 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import Chip from "@mui/material/Chip";
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
 
 // Example restaurant data
 const restaurants = [
@@ -46,9 +46,9 @@ const restaurants = [
 function Restaurants() {
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
-      <MKTypography variant="h4" fontWeight="bold" mb={3}>
+      <SPTypography variant="h4" fontWeight="bold" mb={3}>
         Campus Restaurants
-      </MKTypography>
+      </SPTypography>
       <Grid container spacing={3}>
         {restaurants.map((restaurant, index) => (
           <Grid item xs={12} md={6} lg={4} key={index}>
@@ -64,27 +64,27 @@ function Restaurants() {
                 },
               }}
             >
-              <MKBox mb={1}>
-                <MKTypography variant="h6" fontWeight="bold">
+              <SPBox mb={1}>
+                <SPTypography variant="h6" fontWeight="bold">
                   {restaurant.name}
-                </MKTypography>
-              </MKBox>
-              <MKTypography variant="body2" color="text.secondary" mb={2}>
+                </SPTypography>
+              </SPBox>
+              <SPTypography variant="body2" color="text.secondary" mb={2}>
                 {restaurant.address}
-              </MKTypography>
-              <MKBox display="flex" flexWrap="wrap" gap={1} mb={2}>
+              </SPTypography>
+              <SPBox display="flex" flexWrap="wrap" gap={1} mb={2}>
                 {restaurant.flex && <Chip label="Flex Dollars" color="primary" size="small" />}
                 {restaurant.mealSwipe && <Chip label="Meal Swipes" color="success" size="small" />}
                 {restaurant.raider && <Chip label="Raider Dollars" color="warning" size="small" />}
-              </MKBox>
-              <MKButton
+              </SPBox>
+              <SPButton
                 variant="gradient"
                 color="info"
                 size="small"
                 onClick={() => window.open(restaurant.link, "_blank")}
               >
                 View Location
-              </MKButton>
+              </SPButton>
             </Card>
           </Grid>
         ))}

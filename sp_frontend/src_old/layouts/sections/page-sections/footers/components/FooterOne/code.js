@@ -1,7 +1,7 @@
-const footerOneCode = `// Material Kit 2 PRO React components
-import MKTypography from "components/MKTypography";
+const footerOneCode = `// Scarlet Pay 2 PRO React components
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DetailedFooter from "examples/Footers/DetailedFooter";
 
 function FooterOne() {
@@ -73,9 +73,9 @@ function FooterOne() {
       },
     ],
     copyright: (
-      <MKTypography variant="button" color="secondary">
+      <SPTypography variant="button" color="secondary">
         Copyright &copy; {date} Material Design by{" "}
-        <MKTypography
+        <SPTypography
           component="a"
           href="https://www.creative-tim.com"
           target="_blank"
@@ -83,10 +83,10 @@ function FooterOne() {
           variant="button"
           color="secondary"
         >
-          Creative Tim
-        </MKTypography>
+          Scarlet Pay Team
+        </SPTypography>
         .
-      </MKTypography>
+      </SPTypography>
     ),
   };
 

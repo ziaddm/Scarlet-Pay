@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -21,17 +21,17 @@ import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React base styles
+// Scarlet Pay 2 PRO React base styles
 import typography from "assets/theme/base/typography";
 
 function SimpleFooter({
-  company = { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company = { href: "https://www.creative-tim.com/", name: "Scarlet Pay Team" },
   links = [
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+    { href: "https://www.creative-tim.com/", name: "Scarlet Pay Team" },
     { href: "https://www.creative-tim.com/presentation", name: "About Us" },
     { href: "https://www.creative-tim.com/blog", name: "Blog" },
     { href: "https://www.creative-tim.com/license", name: "License" },
@@ -43,7 +43,7 @@ function SimpleFooter({
 
   const renderLinks = () =>
     links.map((link, key) => (
-      <MKBox
+      <SPBox
         key={link.name}
         component="li"
         pl={key === 0 ? 0 : 2}
@@ -51,23 +51,23 @@ function SimpleFooter({
         lineHeight={1}
       >
         <Link href={link.href} target="_blank">
-          <MKTypography variant="button" fontWeight="regular" color={light ? "white" : "text"}>
+          <SPTypography variant="button" fontWeight="regular" color={light ? "white" : "text"}>
             {link.name}
-          </MKTypography>
+          </SPTypography>
         </Link>
-      </MKBox>
+      </SPBox>
     ));
 
   return (
     <Container>
-      <MKBox
+      <SPBox
         width="100%"
         display="flex"
         flexDirection={{ xs: "column", lg: "row" }}
         justifyContent="space-between"
         alignItems="center"
       >
-        <MKBox
+        <SPBox
           display="flex"
           justifyContent="center"
           alignItems="center"
@@ -76,20 +76,20 @@ function SimpleFooter({
           fontSize={size.sm}
         >
           &copy; {new Date().getFullYear()}, made with
-          <MKBox fontSize={size.md} color={light ? "white" : "text"} mb={-0.5} mx={0.25}>
+          <SPBox fontSize={size.md} color={light ? "white" : "text"} mb={-0.5} mx={0.25}>
             <Icon color="inherit" fontSize="inherit">
               favorite
             </Icon>
-          </MKBox>
+          </SPBox>
           by
           <Link href={href} target="_blank">
-            <MKTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
+            <SPTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
               &nbsp;{name}&nbsp;
-            </MKTypography>
+            </SPTypography>
           </Link>
           for a better web.
-        </MKBox>
-        <MKBox
+        </SPBox>
+        <SPBox
           component="ul"
           sx={({ breakpoints }) => ({
             display: "flex",
@@ -107,8 +107,8 @@ function SimpleFooter({
           })}
         >
           {renderLinks()}
-        </MKBox>
-      </MKBox>
+        </SPBox>
+      </SPBox>
     </Container>
   );
 }

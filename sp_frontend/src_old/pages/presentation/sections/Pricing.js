@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,12 +18,12 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPBadge from "components/SPBadge";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import SimplePricingCard from "examples/Cards/PricingCards/SimplePricingCard";
 
 // Images
@@ -32,8 +32,8 @@ import bgPattern from "assets/images/shapes/pattern-lines.svg";
 function Pricing() {
   return (
     <>
-      <MKBox position="relative" variant="gradient" bgColor="info" mt={{ xs: 0, lg: 12 }} mx={-2}>
-        <MKBox
+      <SPBox position="relative" variant="gradient" bgColor="info" mt={{ xs: 0, lg: 12 }} mx={-2}>
+        <SPBox
           component="img"
           src={bgPattern}
           alt="background-pattern"
@@ -47,19 +47,19 @@ function Pricing() {
         <Container>
           <Grid container justifyContent="center" sx={{ pt: 6, pb: 18 }}>
             <Grid item xs={12} md={7} sx={{ textAlign: "center" }}>
-              <MKBadge badgeContent="pricing" color="dark" size="sm" container sx={{ mb: 1 }} />
-              <MKTypography variant="h3" color="white" mb={1}>
-                Ready to get Material Kit?
-              </MKTypography>
-              <MKTypography variant="body2" color="white">
+              <SPBadge badgeContent="pricing" color="dark" size="sm" container sx={{ mb: 1 }} />
+              <SPTypography variant="h3" color="white" mb={1}>
+                Ready to get Scarlet Pay?
+              </SPTypography>
+              <SPTypography variant="body2" color="white">
                 Based on the license you get, you will have direct access to our team <br /> of
                 developers who built the product.
-              </MKTypography>
+              </SPTypography>
             </Grid>
           </Grid>
         </Container>
-      </MKBox>
-      <MKBox mt={-19}>
+      </SPBox>
+      <SPBox mt={-19}>
         <Container>
           <Grid container spacing={3} sx={{ mt: 6 }}>
             <Grid item xs={12} sm={6} lg={3}>
@@ -135,10 +135,10 @@ function Pricing() {
             </Grid>
           </Grid>
           <Grid container item xs={12} flexDirection="column" sx={{ textAlign: "center" }}>
-            <MKTypography variant="body2" color="text" mt={6} mb={3} mx="auto">
+            <SPTypography variant="body2" color="text" mt={6} mb={3} mx="auto">
               <Icon>lock</Icon> Secured Payment by <b>2Checkout</b> with:
-            </MKTypography>
-            <MKTypography variant="body2" color="text" mb={2} mx="auto">
+            </SPTypography>
+            <SPTypography variant="body2" color="text" mb={2} mx="auto">
               <i className="fa fa-cc-paypal fa-2x" />
               &nbsp;
               <i className="fa fa-cc-visa fa-2x" />
@@ -146,14 +146,14 @@ function Pricing() {
               <i className="fa fa-cc-mastercard fa-2x" />
               &nbsp;
               <i className="fa fa-cc-amex fa-2x" />
-            </MKTypography>
-            <MKTypography variant="body2" color="text" mx="auto" sx={{ maxWidth: "500px" }}>
+            </SPTypography>
+            <SPTypography variant="body2" color="text" mx="auto" sx={{ maxWidth: "500px" }}>
               <b>Info:</b> If you are a Registered Company inside the European Union you will be
               able to add your VAT ID after your Press &quot;Buy Now&quot;
-            </MKTypography>
+            </SPTypography>
           </Grid>
         </Container>
-      </MKBox>
+      </SPBox>
     </>
   );
 }

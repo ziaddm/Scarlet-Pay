@@ -30,12 +30,12 @@ import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
-import MKAvatar from "components/base/MKAvatar";
-import MKSnackbar from "components/base/MKSnackbar";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
+import SPAvatar from "components/base/SPAvatar";
+import SPSnackbar from "components/base/SPSnackbar";
 
 // Shared hooks
 import { useSnackbar } from "shared/hooks";
@@ -168,7 +168,7 @@ function ChatBot() {
   return (
     <ContainerComponent {...containerProps}>
       {/* Header */}
-      <MKBox
+      <SPBox
         mb={isFullscreen ? 0 : 2}
         p={2}
         borderRadius={isFullscreen ? 0 : 2}
@@ -179,9 +179,9 @@ function ChatBot() {
           boxShadow: ({ boxShadows: { md } }) => md,
         }}
       >
-        <MKBox display="flex" alignItems="center" justifyContent="space-between" gap={2}>
-          <MKBox display="flex" alignItems="center" gap={2}>
-            <MKAvatar
+        <SPBox display="flex" alignItems="center" justifyContent="space-between" gap={2}>
+          <SPBox display="flex" alignItems="center" gap={2}>
+            <SPAvatar
               sx={{
                 width: 48,
                 height: 48,
@@ -190,16 +190,16 @@ function ChatBot() {
               }}
             >
               <SmartToyIcon sx={{ fontSize: 28 }} />
-            </MKAvatar>
-            <MKBox>
-              <MKTypography variant="h5" fontWeight="bold" color="white">
+            </SPAvatar>
+            <SPBox>
+              <SPTypography variant="h5" fontWeight="bold" color="white">
                 AI Chat Assistant - {botName}
-              </MKTypography>
-              <MKTypography variant="body2" color="white" sx={{ opacity: 0.9, mt: 0.25 }}>
+              </SPTypography>
+              <SPTypography variant="body2" color="white" sx={{ opacity: 0.9, mt: 0.25 }}>
                 Ask me anything! I&apos;m here to help.
-              </MKTypography>
-            </MKBox>
-          </MKBox>
+              </SPTypography>
+            </SPBox>
+          </SPBox>
           <IconButton
             onClick={handleFullscreenToggle}
             sx={{
@@ -225,8 +225,8 @@ function ChatBot() {
               <FullscreenIcon sx={{ color: "white !important" }} />
             )}
           </IconButton>
-        </MKBox>
-      </MKBox>
+        </SPBox>
+      </SPBox>
 
       <Card
         sx={{
@@ -242,7 +242,7 @@ function ChatBot() {
         }}
       >
         {/* Messages Area */}
-        <MKBox
+        <SPBox
           sx={{
             flex: 1,
             overflowY: "auto",
@@ -268,14 +268,14 @@ function ChatBot() {
           }}
         >
           {messages.length === 0 ? (
-            <MKBox
+            <SPBox
               display="flex"
               flexDirection="column"
               alignItems="center"
               justifyContent="center"
               sx={{ flex: 1, textAlign: "center", py: 6 }}
             >
-              <MKBox
+              <SPBox
                 sx={{
                   width: 80,
                   height: 80,
@@ -290,22 +290,22 @@ function ChatBot() {
                 }}
               >
                 <SmartToyIcon sx={{ fontSize: 40, color: "white" }} />
-              </MKBox>
-              <MKTypography variant="h5" fontWeight="bold" mb={1} color="text.primary">
+              </SPBox>
+              <SPTypography variant="h5" fontWeight="bold" mb={1} color="text.primary">
                 Start a conversation
-              </MKTypography>
-              <MKTypography
+              </SPTypography>
+              <SPTypography
                 variant="body2"
                 color="text.secondary"
                 sx={{ maxWidth: 400, lineHeight: 1.6 }}
               >
                 Ask me anything! I&apos;m here to help you with questions, explanations, coding
                 help, or just have a friendly chat.
-              </MKTypography>
-            </MKBox>
+              </SPTypography>
+            </SPBox>
           ) : (
             messages.map((message, index) => (
-              <MKBox
+              <SPBox
                 key={index}
                 display="flex"
                 justifyContent={message.role === "user" ? "flex-end" : "flex-start"}
@@ -320,7 +320,7 @@ function ChatBot() {
                 }}
               >
                 {message.role === "assistant" && (
-                  <MKAvatar
+                  <SPAvatar
                     sx={{
                       width: 32,
                       height: 32,
@@ -330,10 +330,10 @@ function ChatBot() {
                     }}
                   >
                     <SmartToyIcon sx={{ fontSize: 18 }} />
-                  </MKAvatar>
+                  </SPAvatar>
                 )}
 
-                <MKBox
+                <SPBox
                   sx={{
                     maxWidth: "70%",
                     p: 2,
@@ -426,7 +426,7 @@ function ChatBot() {
                       rehypePlugins={[rehypeKatex]}
                       components={{
                         p: ({ children }) => (
-                          <MKTypography
+                          <SPTypography
                             variant="body2"
                             component="p"
                             sx={{
@@ -440,45 +440,45 @@ function ChatBot() {
                             }}
                           >
                             {children}
-                          </MKTypography>
+                          </SPTypography>
                         ),
                         strong: ({ children }) => (
-                          <MKTypography
+                          <SPTypography
                             component="strong"
                             variant="body2"
                             fontWeight="bold"
                             sx={{ color: "inherit" }}
                           >
                             {children}
-                          </MKTypography>
+                          </SPTypography>
                         ),
                         em: ({ children }) => (
-                          <MKTypography
+                          <SPTypography
                             component="em"
                             variant="body2"
                             sx={{ fontStyle: "italic", color: "inherit" }}
                           >
                             {children}
-                          </MKTypography>
+                          </SPTypography>
                         ),
                         ul: ({ children }) => (
-                          <MKBox
+                          <SPBox
                             component="ul"
                             sx={{ margin: 0, paddingLeft: 1.5, marginBottom: 0.75 }}
                           >
                             {children}
-                          </MKBox>
+                          </SPBox>
                         ),
                         ol: ({ children }) => (
-                          <MKBox
+                          <SPBox
                             component="ol"
                             sx={{ margin: 0, paddingLeft: 1.5, marginBottom: 0.75 }}
                           >
                             {children}
-                          </MKBox>
+                          </SPBox>
                         ),
                         li: ({ children }) => (
-                          <MKTypography
+                          <SPTypography
                             component="li"
                             variant="body2"
                             sx={{
@@ -490,7 +490,7 @@ function ChatBot() {
                             }}
                           >
                             {children}
-                          </MKTypography>
+                          </SPTypography>
                         ),
                         code: ({ children, className }) => {
                           // Check if this is a math code block (from remark-math)
@@ -506,7 +506,7 @@ function ChatBot() {
 
                           if (isInline && !className?.startsWith("language-")) {
                             return (
-                              <MKBox
+                              <SPBox
                                 component="code"
                                 sx={{
                                   backgroundColor: "rgba(0,0,0,0.1)",
@@ -518,11 +518,11 @@ function ChatBot() {
                                 }}
                               >
                                 {children}
-                              </MKBox>
+                              </SPBox>
                             );
                           }
                           return (
-                            <MKBox
+                            <SPBox
                               component="pre"
                               sx={{
                                 backgroundColor: "rgba(0,0,0,0.1)",
@@ -532,7 +532,7 @@ function ChatBot() {
                                 marginBottom: 1,
                               }}
                             >
-                              <MKTypography
+                              <SPTypography
                                 component="code"
                                 variant="body2"
                                 sx={{
@@ -541,45 +541,45 @@ function ChatBot() {
                                 }}
                               >
                                 {children}
-                              </MKTypography>
-                            </MKBox>
+                              </SPTypography>
+                            </SPBox>
                           );
                         },
                         h1: ({ children }) => (
-                          <MKTypography
+                          <SPTypography
                             variant="h6"
                             component="h1"
                             sx={{ color: "inherit", marginBottom: 0.75, fontSize: "1.1rem" }}
                           >
                             {children}
-                          </MKTypography>
+                          </SPTypography>
                         ),
                         h2: ({ children }) => (
-                          <MKTypography
+                          <SPTypography
                             variant="body1"
                             component="h2"
                             fontWeight="bold"
                             sx={{ color: "inherit", marginBottom: 0.75, fontSize: "1rem" }}
                           >
                             {children}
-                          </MKTypography>
+                          </SPTypography>
                         ),
                         h3: ({ children }) => (
-                          <MKTypography
+                          <SPTypography
                             variant="body2"
                             component="h3"
                             fontWeight="bold"
                             sx={{ color: "inherit", marginBottom: 0.75, fontSize: "0.9375rem" }}
                           >
                             {children}
-                          </MKTypography>
+                          </SPTypography>
                         ),
                       }}
                     >
                       {message.content}
                     </ReactMarkdown>
                   ) : (
-                    <MKTypography
+                    <SPTypography
                       variant="body2"
                       sx={{
                         whiteSpace: "pre-wrap",
@@ -591,12 +591,12 @@ function ChatBot() {
                       }}
                     >
                       {message.content}
-                    </MKTypography>
+                    </SPTypography>
                   )}
                   {message.files && message.files.length > 0 && (
-                    <MKBox mt={0.75} display="flex" flexDirection="column" gap={0.5}>
+                    <SPBox mt={0.75} display="flex" flexDirection="column" gap={0.5}>
                       {message.files.map((file, fileIndex) => (
-                        <MKBox
+                        <SPBox
                           key={fileIndex}
                           display="flex"
                           alignItems="center"
@@ -616,7 +616,7 @@ function ChatBot() {
                             fontSize="small"
                             sx={{ color: message.role === "user" ? "white !important" : "inherit" }}
                           />
-                          <MKTypography
+                          <SPTypography
                             variant="caption"
                             sx={{
                               flex: 1,
@@ -625,9 +625,9 @@ function ChatBot() {
                             }}
                           >
                             {file.name || file.fileName}
-                          </MKTypography>
+                          </SPTypography>
                           {file.size && (
-                            <MKTypography
+                            <SPTypography
                               variant="caption"
                               sx={{
                                 opacity: message.role === "user" ? 0.9 : 0.7,
@@ -635,16 +635,16 @@ function ChatBot() {
                               }}
                             >
                               {(file.size / 1024).toFixed(1)} KB
-                            </MKTypography>
+                            </SPTypography>
                           )}
-                        </MKBox>
+                        </SPBox>
                       ))}
-                    </MKBox>
+                    </SPBox>
                   )}
-                </MKBox>
+                </SPBox>
 
                 {message.role === "user" && (
-                  <MKAvatar
+                  <SPAvatar
                     sx={{
                       width: 32,
                       height: 32,
@@ -654,15 +654,15 @@ function ChatBot() {
                     }}
                   >
                     <PersonIcon sx={{ fontSize: 18 }} />
-                  </MKAvatar>
+                  </SPAvatar>
                 )}
-              </MKBox>
+              </SPBox>
             ))
           )}
 
           {loading && (
-            <MKBox display="flex" justifyContent="flex-start" alignItems="flex-end" gap={1.5}>
-              <MKAvatar
+            <SPBox display="flex" justifyContent="flex-start" alignItems="flex-end" gap={1.5}>
+              <SPAvatar
                 sx={{
                   width: 32,
                   height: 32,
@@ -672,8 +672,8 @@ function ChatBot() {
                 }}
               >
                 <SmartToyIcon sx={{ fontSize: 18 }} />
-              </MKAvatar>
-              <MKBox
+              </SPAvatar>
+              <SPBox
                 sx={{
                   p: 2,
                   borderRadius: ({ borders: { borderRadius } }) =>
@@ -686,18 +686,18 @@ function ChatBot() {
                 }}
               >
                 <CircularProgress size={16} thickness={4} />
-                <MKTypography variant="body2" color="text.secondary" sx={{ fontSize: "0.875rem" }}>
+                <SPTypography variant="body2" color="text.secondary" sx={{ fontSize: "0.875rem" }}>
                   Thinking...
-                </MKTypography>
-              </MKBox>
-            </MKBox>
+                </SPTypography>
+              </SPBox>
+            </SPBox>
           )}
 
           <div ref={messagesEndRef} />
-        </MKBox>
+        </SPBox>
 
         {/* Input Area */}
-        <MKBox
+        <SPBox
           sx={{
             p: 2.5,
             borderTop: ({ borders: { borderWidth, borderColor } }) =>
@@ -708,9 +708,9 @@ function ChatBot() {
         >
           {/* Attached Files Preview */}
           {attachedFiles.length > 0 && (
-            <MKBox mb={2} display="flex" flexWrap="wrap" gap={1}>
+            <SPBox mb={2} display="flex" flexWrap="wrap" gap={1}>
               {attachedFiles.map((file, index) => (
-                <MKBox
+                <SPBox
                   key={index}
                   display="flex"
                   alignItems="center"
@@ -733,7 +733,7 @@ function ChatBot() {
                   <InsertDriveFileIcon
                     sx={{ fontSize: 20, color: ({ palette: { info } }) => info.main }}
                   />
-                  <MKTypography
+                  <SPTypography
                     variant="body2"
                     sx={{
                       flex: 1,
@@ -745,7 +745,7 @@ function ChatBot() {
                     title={file.name}
                   >
                     {file.name}
-                  </MKTypography>
+                  </SPTypography>
                   <IconButton
                     size="small"
                     onClick={() => handleRemoveFile(index)}
@@ -759,12 +759,12 @@ function ChatBot() {
                   >
                     <CloseIcon fontSize="small" />
                   </IconButton>
-                </MKBox>
+                </SPBox>
               ))}
-            </MKBox>
+            </SPBox>
           )}
 
-          <MKBox display="flex" gap={2} alignItems="flex-end">
+          <SPBox display="flex" gap={2} alignItems="flex-end">
             <TextField
               fullWidth
               multiline
@@ -819,7 +819,7 @@ function ChatBot() {
             >
               <AttachFileIcon sx={{ fontSize: 22 }} />
             </IconButton>
-            <MKBox display="flex" flexDirection="column" gap={1}>
+            <SPBox display="flex" flexDirection="column" gap={1}>
               <IconButton
                 onClick={handleSend}
                 disabled={loading || (!inputMessage.trim() && attachedFiles.length === 0)}
@@ -849,7 +849,7 @@ function ChatBot() {
                 )}
               </IconButton>
               {messages.length > 0 && (
-                <MKButton
+                <SPButton
                   variant="text"
                   color="secondary"
                   size="small"
@@ -869,15 +869,15 @@ function ChatBot() {
                   }}
                 >
                   Clear
-                </MKButton>
+                </SPButton>
               )}
-            </MKBox>
-          </MKBox>
-        </MKBox>
+            </SPBox>
+          </SPBox>
+        </SPBox>
       </Card>
 
       {/* Snackbar */}
-      <MKSnackbar
+      <SPSnackbar
         color={snackbar.color}
         icon={<Icon>{snackbar.icon}</Icon>}
         title={snackbar.title}

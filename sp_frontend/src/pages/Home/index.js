@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -53,12 +53,12 @@ import InputAdornment from "@mui/material/InputAdornment";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
-import MKInput from "components/base/MKInput";
-import MKSnackbar from "components/base/MKSnackbar";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
+import SPInput from "components/base/SPInput";
+import SPSnackbar from "components/base/SPSnackbar";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -80,7 +80,7 @@ import { ROUTES } from "core/config";
 // React Router
 import { useNavigate } from "react-router-dom";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 
 // Custom components
 import RutgersWalletCardFinal from "components/custom/RutgersWalletCardFinal";
@@ -549,7 +549,7 @@ function Home() {
       }}
     >
       {/* Rewards Balance Section */}
-      <MKBox mb={3} sx={{ px: { xs: 0, sm: 1, md: 3 } }}>
+      <SPBox mb={3} sx={{ px: { xs: 0, sm: 1, md: 3 } }}>
         <Card
           sx={{
             p: 3,
@@ -560,30 +560,30 @@ function Home() {
             color: "white",
           }}
         >
-          <MKBox display="flex" alignItems="center" justifyContent="space-between">
-            <MKBox>
-              <MKTypography variant="h6" fontWeight="medium" opacity={0.9} mb={1}>
+          <SPBox display="flex" alignItems="center" justifyContent="space-between">
+            <SPBox>
+              <SPTypography variant="h6" fontWeight="medium" opacity={0.9} mb={1}>
                 Rewards Balance
-              </MKTypography>
+              </SPTypography>
               {rewardsLoading ? (
                 <CircularProgress size={24} sx={{ color: "white", mt: 1 }} />
               ) : (
-                <MKTypography variant="h3" fontWeight="bold" mt={1}>
+                <SPTypography variant="h3" fontWeight="bold" mt={1}>
                   {formatCurrency(rewardsBalance)}
-                </MKTypography>
+                </SPTypography>
               )}
-              <MKTypography variant="caption" opacity={0.8} mt={1} display="block">
+              <SPTypography variant="caption" opacity={0.8} mt={1} display="block">
                 Cashback earned from vendor payments
-              </MKTypography>
-            </MKBox>
+              </SPTypography>
+            </SPBox>
             <Icon sx={{ fontSize: 48, opacity: 0.3 }}>card_giftcard</Icon>
-          </MKBox>
+          </SPBox>
         </Card>
-      </MKBox>
+      </SPBox>
 
       {/* Wallet Card Section with Carousel */}
-      <MKBox mb={{ xs: 4, md: 6 }} sx={{ px: { xs: 0, sm: 1, md: 3 } }}>
-        <MKBox
+      <SPBox mb={{ xs: 4, md: 6 }} sx={{ px: { xs: 0, sm: 1, md: 3 } }}>
+        <SPBox
           sx={{
             position: "relative",
             maxWidth: "600px",
@@ -595,7 +595,7 @@ function Home() {
         >
           {/* Left Navigation Button - Outside */}
           {walletCards.length > 1 && (
-            <MKBox
+            <SPBox
               onClick={handlePreviousCard}
               sx={{
                 cursor: "pointer",
@@ -634,11 +634,11 @@ function Home() {
                   filter: "drop-shadow(0 2px 4px rgba(204, 0, 0, 0.2))",
                 }}
               />
-            </MKBox>
+            </SPBox>
           )}
 
           {/* Carousel Container */}
-          <MKBox
+          <SPBox
             sx={{
               position: "relative",
               overflow: "hidden",
@@ -646,7 +646,7 @@ function Home() {
             }}
           >
             {/* Cards Container */}
-            <MKBox
+            <SPBox
               sx={{
                 display: "flex",
                 transform: `translateX(-${currentCardIndex * 100}%)`,
@@ -655,7 +655,7 @@ function Home() {
               }}
             >
               {walletCards.map((card, index) => (
-                <MKBox
+                <SPBox
                   key={card.id}
                   sx={{
                     minWidth: "100%",
@@ -688,13 +688,13 @@ function Home() {
                         : null
                     }
                   />
-                </MKBox>
+                </SPBox>
               ))}
-            </MKBox>
+            </SPBox>
 
             {/* Carousel Indicators */}
             {walletCards.length > 1 && (
-              <MKBox
+              <SPBox
                 sx={{
                   position: "absolute",
                   bottom: "24px",
@@ -712,7 +712,7 @@ function Home() {
                 }}
               >
                 {walletCards.map((_, index) => (
-                  <MKBox
+                  <SPBox
                     key={index}
                     onClick={() => setCurrentCardIndex(index)}
                     sx={{
@@ -743,13 +743,13 @@ function Home() {
                     }}
                   />
                 ))}
-              </MKBox>
+              </SPBox>
             )}
-          </MKBox>
+          </SPBox>
 
           {/* Right Navigation Button - Outside */}
           {walletCards.length > 1 && (
-            <MKBox
+            <SPBox
               onClick={handleNextCard}
               sx={{
                 cursor: "pointer",
@@ -788,12 +788,12 @@ function Home() {
                   filter: "drop-shadow(0 2px 4px rgba(204, 0, 0, 0.2))",
                 }}
               />
-            </MKBox>
+            </SPBox>
           )}
-        </MKBox>
+        </SPBox>
 
         {/* Action Buttons Below Carousel - Fixed Position */}
-        <MKBox
+        <SPBox
           sx={{
             maxWidth: "480px",
             margin: { xs: "16px auto 0", sm: "24px auto 0" },
@@ -808,7 +808,7 @@ function Home() {
         >
           {/* Pay Button - Main Button - Only show for Virtual Wallet (first card) */}
           {currentCardIndex === 0 && (
-            <MKButton
+            <SPButton
               onClick={() => setOpenSendMoneyDialog(true)}
               disabled={walletLoading}
               variant="gradient"
@@ -850,12 +850,12 @@ function Home() {
                 <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
               </svg>
               Pay
-            </MKButton>
+            </SPButton>
           )}
 
           {/* Refresh, Load Money, and Add Background Buttons */}
-          <MKBox sx={{ display: "flex", gap: { xs: "8px", sm: "12px" }, flexWrap: "wrap" }}>
-            <MKButton
+          <SPBox sx={{ display: "flex", gap: { xs: "8px", sm: "12px" }, flexWrap: "wrap" }}>
+            <SPButton
               onClick={refetch}
               disabled={walletLoading}
               variant="outlined"
@@ -901,10 +901,10 @@ function Home() {
                 <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" />
               </svg>
               Refresh
-            </MKButton>
+            </SPButton>
             {/* Load Money Button - Only show for Virtual Wallet (first card) */}
             {currentCardIndex === 0 && (
-              <MKButton
+              <SPButton
                 onClick={handleOpenDialog}
                 disabled={walletLoading}
                 variant="outlined"
@@ -947,10 +947,10 @@ function Home() {
                   <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
                 </svg>
                 Load Money
-              </MKButton>
+              </SPButton>
             )}
             {/* Add Background Button */}
-            <MKButton
+            <SPButton
               onClick={() => {
                 // Trigger background upload for the current card
                 if (cardRefs.current[currentCardIndex]) {
@@ -996,10 +996,10 @@ function Home() {
                 <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
               </svg>
               Add Background
-            </MKButton>
-          </MKBox>
-        </MKBox>
-      </MKBox>
+            </SPButton>
+          </SPBox>
+        </SPBox>
+      </SPBox>
 
       {/* Send Money Dialog */}
       <Dialog
@@ -1009,16 +1009,16 @@ function Home() {
         fullWidth
       >
         <DialogTitle>
-          <MKTypography variant="h5" fontWeight="bold">
+          <SPTypography variant="h5" fontWeight="bold">
             Pay
-          </MKTypography>
+          </SPTypography>
         </DialogTitle>
         <DialogContent>
-          <MKBox sx={{ pt: 2 }}>
-            <MKTypography variant="body2" color="text.secondary" mb={3}>
+          <SPBox sx={{ pt: 2 }}>
+            <SPTypography variant="body2" color="text.secondary" mb={3}>
               Choose how you want to pay
-            </MKTypography>
-            <MKBox
+            </SPTypography>
+            <SPBox
               sx={{
                 display: "flex",
                 flexDirection: { xs: "column", sm: "row" },
@@ -1053,7 +1053,7 @@ function Home() {
                   },
                 }}
               >
-                <MKBox
+                <SPBox
                   sx={{
                     display: "flex",
                     flexDirection: "column",
@@ -1061,7 +1061,7 @@ function Home() {
                     textAlign: "center",
                   }}
                 >
-                  <MKBox
+                  <SPBox
                     sx={{
                       width: 64,
                       height: 64,
@@ -1074,14 +1074,14 @@ function Home() {
                     }}
                   >
                     <PersonIcon sx={{ fontSize: 32, color: "primary.main" }} />
-                  </MKBox>
-                  <MKTypography variant="h6" fontWeight="bold" mb={1}>
+                  </SPBox>
+                  <SPTypography variant="h6" fontWeight="bold" mb={1}>
                     Pay a Friend
-                  </MKTypography>
-                  <MKTypography variant="body2" color="text.secondary">
+                  </SPTypography>
+                  <SPTypography variant="body2" color="text.secondary">
                     Send money to another user
-                  </MKTypography>
-                </MKBox>
+                  </SPTypography>
+                </SPBox>
               </Card>
 
               {/* Pay a Vendor Option */}
@@ -1111,7 +1111,7 @@ function Home() {
                   },
                 }}
               >
-                <MKBox
+                <SPBox
                   sx={{
                     display: "flex",
                     flexDirection: "column",
@@ -1119,7 +1119,7 @@ function Home() {
                     textAlign: "center",
                   }}
                 >
-                  <MKBox
+                  <SPBox
                     sx={{
                       width: 64,
                       height: 64,
@@ -1132,14 +1132,14 @@ function Home() {
                     }}
                   >
                     <StoreIcon sx={{ fontSize: 32, color: "primary.main" }} />
-                  </MKBox>
-                  <MKTypography variant="h6" fontWeight="bold" mb={1}>
+                  </SPBox>
+                  <SPTypography variant="h6" fontWeight="bold" mb={1}>
                     Marketplace
-                  </MKTypography>
-                  <MKTypography variant="body2" color="text.secondary">
+                  </SPTypography>
+                  <SPTypography variant="body2" color="text.secondary">
                     Make a payment to a campus vendor
-                  </MKTypography>
-                </MKBox>
+                  </SPTypography>
+                </SPBox>
               </Card>
 
               {/* Donate Option */}
@@ -1162,7 +1162,7 @@ function Home() {
                   },
                 }}
               >
-                <MKBox
+                <SPBox
                   sx={{
                     display: "flex",
                     flexDirection: "column",
@@ -1170,7 +1170,7 @@ function Home() {
                     textAlign: "center",
                   }}
                 >
-                  <MKBox
+                  <SPBox
                     sx={{
                       width: 64,
                       height: 64,
@@ -1183,45 +1183,45 @@ function Home() {
                     }}
                   >
                     <FavoriteIcon sx={{ fontSize: 32, color: "error.main" }} />
-                  </MKBox>
-                  <MKTypography variant="h6" fontWeight="bold" mb={1}>
+                  </SPBox>
+                  <SPTypography variant="h6" fontWeight="bold" mb={1}>
                     Donate
-                  </MKTypography>
-                  <MKTypography variant="body2" color="text.secondary">
+                  </SPTypography>
+                  <SPTypography variant="body2" color="text.secondary">
                     Support campus initiatives
-                  </MKTypography>
+                  </SPTypography>
                   {donationBox && (
-                    <MKTypography variant="caption" color="text.secondary" mt={1}>
+                    <SPTypography variant="caption" color="text.secondary" mt={1}>
                       Total: {formatCurrency(donationBox.total_amount || 0)}
-                    </MKTypography>
+                    </SPTypography>
                   )}
-                </MKBox>
+                </SPBox>
               </Card>
-            </MKBox>
-          </MKBox>
+            </SPBox>
+          </SPBox>
         </DialogContent>
         <DialogActions sx={{ p: 2 }}>
-          <MKButton onClick={() => setOpenSendMoneyDialog(false)} color="secondary">
+          <SPButton onClick={() => setOpenSendMoneyDialog(false)} color="secondary">
             Cancel
-          </MKButton>
+          </SPButton>
         </DialogActions>
       </Dialog>
 
       {/* Donation Dialog */}
       <Dialog open={openDonationDialog} onClose={handleCloseDonationDialog} maxWidth="sm" fullWidth>
-        <MKBox component="form" onSubmit={handleDonationSubmit}>
+        <SPBox component="form" onSubmit={handleDonationSubmit}>
           <DialogTitle>
-            <MKBox display="flex" alignItems="center" gap={1}>
+            <SPBox display="flex" alignItems="center" gap={1}>
               <FavoriteIcon sx={{ color: "error.main" }} />
-              <MKTypography variant="h5" fontWeight="bold">
+              <SPTypography variant="h5" fontWeight="bold">
                 Make a Donation
-              </MKTypography>
-            </MKBox>
+              </SPTypography>
+            </SPBox>
           </DialogTitle>
           <DialogContent>
-            <MKBox sx={{ pt: 2 }}>
+            <SPBox sx={{ pt: 2 }}>
               {donationBox && (
-                <MKBox
+                <SPBox
                   sx={{
                     p: 2,
                     mb: 3,
@@ -1230,13 +1230,13 @@ function Home() {
                     border: ({ palette: { error } }) => `1px solid ${error.main}30`,
                   }}
                 >
-                  <MKTypography variant="body2" color="text.secondary" mb={0.5}>
+                  <SPTypography variant="body2" color="text.secondary" mb={0.5}>
                     Total Donated
-                  </MKTypography>
-                  <MKTypography variant="h5" fontWeight="bold" color="error.main">
+                  </SPTypography>
+                  <SPTypography variant="h5" fontWeight="bold" color="error.main">
                     {formatCurrency(donationBox.total_amount || 0)}
-                  </MKTypography>
-                </MKBox>
+                  </SPTypography>
+                </SPBox>
               )}
 
               <Grid container spacing={3}>
@@ -1298,18 +1298,18 @@ function Home() {
                   />
                 </Grid>
               </Grid>
-            </MKBox>
+            </SPBox>
           </DialogContent>
           <DialogActions sx={{ p: 2 }}>
-            <MKButton
+            <SPButton
               type="button"
               onClick={handleCloseDonationDialog}
               color="secondary"
               disabled={submittingDonation}
             >
               Cancel
-            </MKButton>
-            <MKButton
+            </SPButton>
+            <SPButton
               type="submit"
               variant="gradient"
               color="error"
@@ -1323,27 +1323,27 @@ function Home() {
               }
             >
               {submittingDonation ? "Processing..." : "Donate"}
-            </MKButton>
+            </SPButton>
           </DialogActions>
-        </MKBox>
+        </SPBox>
       </Dialog>
 
       {/* Load Money Dialog */}
       <Dialog open={openDialog} onClose={handleCloseDialog} maxWidth="sm" fullWidth>
         <DialogTitle>
-          <MKTypography variant="h5" fontWeight="bold">
+          <SPTypography variant="h5" fontWeight="bold">
             Load Money into Flex Dollars
-          </MKTypography>
+          </SPTypography>
         </DialogTitle>
         <DialogContent>
-          <MKBox sx={{ pt: 2 }}>
-            <MKBox mb={3}>
-              <MKTypography variant="body2" color="text.secondary">
+          <SPBox sx={{ pt: 2 }}>
+            <SPBox mb={3}>
+              <SPTypography variant="body2" color="text.secondary">
                 Current Balance: <strong>{formatCurrency(balance)}</strong>
-              </MKTypography>
-            </MKBox>
-            <MKBox mb={2}>
-              <MKInput
+              </SPTypography>
+            </SPBox>
+            <SPBox mb={2}>
+              <SPInput
                 type="number"
                 label="Amount ($)"
                 name="amount"
@@ -1354,8 +1354,8 @@ function Home() {
                 fullWidth
                 inputProps={{ min: 0.01, max: 10000, step: 0.01 }}
               />
-            </MKBox>
-            <MKBox mb={2}>
+            </SPBox>
+            <SPBox mb={2}>
               <FormControl fullWidth error={!!formErrors.card_id}>
                 <InputLabel>Select Card</InputLabel>
                 <Select
@@ -1365,21 +1365,21 @@ function Home() {
                 >
                   {cards.map((card) => (
                     <MenuItem key={card.id} value={card.id.toString()}>
-                      <MKBox display="flex" alignItems="center" gap={1}>
+                      <SPBox display="flex" alignItems="center" gap={1}>
                         <CreditCardIcon fontSize="small" />
-                        <MKTypography variant="body2">
+                        <SPTypography variant="body2">
                           {maskCardNumber(card.card_number)} - {card.cardholder_name}
                           {card.is_default && " (Default)"}
-                        </MKTypography>
-                      </MKBox>
+                        </SPTypography>
+                      </SPBox>
                     </MenuItem>
                   ))}
                 </Select>
                 {formErrors.card_id && <FormHelperText>{formErrors.card_id}</FormHelperText>}
               </FormControl>
-            </MKBox>
+            </SPBox>
             {formData.amount && parseFloat(formData.amount) > 0 && (
-              <MKBox
+              <SPBox
                 sx={{
                   p: 2,
                   borderRadius: 2,
@@ -1387,29 +1387,29 @@ function Home() {
                   mt: 2,
                 }}
               >
-                <MKTypography variant="body2" color="text.secondary" mb={0.5}>
+                <SPTypography variant="body2" color="text.secondary" mb={0.5}>
                   New Balance After Loading:
-                </MKTypography>
-                <MKTypography variant="h6" fontWeight="bold" color="primary">
+                </SPTypography>
+                <SPTypography variant="h6" fontWeight="bold" color="primary">
                   {formatCurrency(balance + parseFloat(formData.amount || 0))}
-                </MKTypography>
-              </MKBox>
+                </SPTypography>
+              </SPBox>
             )}
-          </MKBox>
+          </SPBox>
         </DialogContent>
         <DialogActions sx={{ p: 2 }}>
-          <MKButton onClick={handleCloseDialog} color="secondary">
+          <SPButton onClick={handleCloseDialog} color="secondary">
             Cancel
-          </MKButton>
-          <MKButton onClick={handleSubmit} variant="gradient" color="info" disabled={submitting}>
+          </SPButton>
+          <SPButton onClick={handleSubmit} variant="gradient" color="info" disabled={submitting}>
             {submitting ? "Loading..." : "Load Money"}
-          </MKButton>
+          </SPButton>
         </DialogActions>
       </Dialog>
 
       {/* Transactions Section */}
-      <MKBox mb={6} sx={{ px: { xs: 0, sm: 1, md: 3 } }}>
-        <MKBox
+      <SPBox mb={6} sx={{ px: { xs: 0, sm: 1, md: 3 } }}>
+        <SPBox
           display="flex"
           justifyContent="space-between"
           alignItems="center"
@@ -1417,7 +1417,7 @@ function Home() {
           flexDirection={{ xs: "column", sm: "row" }}
           gap={2}
         >
-          <MKTypography
+          <SPTypography
             variant="h5"
             fontWeight="bold"
             sx={{
@@ -1429,9 +1429,9 @@ function Home() {
             {currentCardIndex > 0
               ? ` - ${walletCards[currentCardIndex]?.type || "Transactions"}`
               : ""}
-          </MKTypography>
+          </SPTypography>
           {currentCardIndex === 0 && (
-            <MKButton
+            <SPButton
               variant="outlined"
               color="info"
               size="medium"
@@ -1439,9 +1439,9 @@ function Home() {
               endIcon={<Icon>arrow_forward</Icon>}
             >
               View All Transactions
-            </MKButton>
+            </SPButton>
           )}
-        </MKBox>
+        </SPBox>
         <Card
           sx={{
             borderRadius: 3,
@@ -1462,24 +1462,24 @@ function Home() {
           {currentCardIndex === 0 ? (
             // Actual transactions from API for Virtual Wallet
             transactionsLoading ? (
-              <MKBox display="flex" justifyContent="center" alignItems="center" py={6}>
+              <SPBox display="flex" justifyContent="center" alignItems="center" py={6}>
                 <CircularProgress />
-              </MKBox>
+              </SPBox>
             ) : transactionsError ? (
-              <MKBox p={3} textAlign="center">
-                <MKTypography variant="body2" color="error">
+              <SPBox p={3} textAlign="center">
+                <SPTypography variant="body2" color="error">
                   Error loading transactions: {transactionsError}
-                </MKTypography>
-              </MKBox>
+                </SPTypography>
+              </SPBox>
             ) : recentTransactions.length === 0 ? (
-              <MKBox p={3} textAlign="center">
-                <MKTypography variant="body2" color="text.secondary">
+              <SPBox p={3} textAlign="center">
+                <SPTypography variant="body2" color="text.secondary">
                   No transactions found
-                </MKTypography>
-              </MKBox>
+                </SPTypography>
+              </SPBox>
             ) : (
               recentTransactions.map((transaction, index) => (
-                <MKBox
+                <SPBox
                   key={transaction.id}
                   sx={{
                     p: { xs: 2, md: 3 },
@@ -1501,8 +1501,8 @@ function Home() {
                     },
                   }}
                 >
-                  <MKBox sx={{ flex: 1, width: { xs: "100%", sm: "auto" } }}>
-                    <MKTypography
+                  <SPBox sx={{ flex: 1, width: { xs: "100%", sm: "auto" } }}>
+                    <SPTypography
                       variant="body1"
                       fontWeight="bold"
                       mb={0.5}
@@ -1512,8 +1512,8 @@ function Home() {
                       }}
                     >
                       {transaction.description || "Transaction"}
-                    </MKTypography>
-                    <MKTypography
+                    </SPTypography>
+                    <SPTypography
                       variant="body2"
                       sx={{
                         color: ({ palette: { mode, grey, text } }) =>
@@ -1524,9 +1524,9 @@ function Home() {
                       {formatTransactionDate(
                         transaction.transaction_date || transaction.created_at
                       )}
-                    </MKTypography>
-                  </MKBox>
-                  <MKTypography
+                    </SPTypography>
+                  </SPBox>
+                  <SPTypography
                     variant="h6"
                     fontWeight="bold"
                     sx={{
@@ -1541,14 +1541,14 @@ function Home() {
                   >
                     {transaction.payment_method ? "-" : "+"}
                     {formatCurrency(Math.abs(transaction.amount))}
-                  </MKTypography>
-                </MKBox>
+                  </SPTypography>
+                </SPBox>
               ))
             )
           ) : // Sample transactions for other cards
           currentCardTransactions.length > 0 ? (
             currentCardTransactions.map((transaction, index) => (
-              <MKBox
+              <SPBox
                 key={transaction.id}
                 sx={{
                   p: { xs: 2, md: 3 },
@@ -1570,8 +1570,8 @@ function Home() {
                   },
                 }}
               >
-                <MKBox sx={{ flex: 1, width: { xs: "100%", sm: "auto" } }}>
-                  <MKTypography
+                <SPBox sx={{ flex: 1, width: { xs: "100%", sm: "auto" } }}>
+                  <SPTypography
                     variant="body1"
                     fontWeight="bold"
                     mb={0.5}
@@ -1581,8 +1581,8 @@ function Home() {
                     }}
                   >
                     {transaction.merchant}
-                  </MKTypography>
-                  <MKTypography
+                  </SPTypography>
+                  <SPTypography
                     variant="body2"
                     sx={{
                       color: ({ palette: { mode, grey, text } }) =>
@@ -1591,9 +1591,9 @@ function Home() {
                     }}
                   >
                     {transaction.date}
-                  </MKTypography>
-                </MKBox>
-                <MKTypography
+                  </SPTypography>
+                </SPBox>
+                <SPTypography
                   variant="h6"
                   fontWeight="bold"
                   sx={{
@@ -1604,17 +1604,17 @@ function Home() {
                 >
                   {transaction.amount > 0 ? "+" : ""}
                   {formatCurrency(Math.abs(transaction.amount))}
-                </MKTypography>
-              </MKBox>
+                </SPTypography>
+              </SPBox>
             ))
           ) : (
-            <MKBox
+            <SPBox
               sx={{
                 p: { xs: 4, md: 6 },
                 textAlign: "center",
               }}
             >
-              <MKTypography
+              <SPTypography
                 variant="body1"
                 color="text.secondary"
                 sx={{
@@ -1622,14 +1622,14 @@ function Home() {
                 }}
               >
                 No transactions found for this card
-              </MKTypography>
-            </MKBox>
+              </SPTypography>
+            </SPBox>
           )}
         </Card>
-      </MKBox>
+      </SPBox>
 
       {/* Snackbar */}
-      <MKSnackbar
+      <SPSnackbar
         color={snackbar.color}
         icon={<Icon>{snackbar.icon}</Icon>}
         title={snackbar.title}

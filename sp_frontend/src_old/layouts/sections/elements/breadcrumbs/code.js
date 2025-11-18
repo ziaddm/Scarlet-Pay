@@ -3,14 +3,14 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 // Mataerial Kit 2 PRO React components
-import MKBox from "components/MKBox";
+import SPBox from "components/SPBox";
 
 // Mataerial Kit 2 PRO React examples
 import Breadcrumbs from "examples/Breadcrumbs";
 
 function BreadcrumbsEL() {
   return (
-    <MKBox component="section" bgColor="white" py={8}>
+    <SPBox component="section" bgColor="white" py={8}>
       <Container>
         <Grid container spacing={2} item xs={12} lg={10} mx="auto">
           <Grid item xs={12}>
@@ -37,7 +37,7 @@ function BreadcrumbsEL() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

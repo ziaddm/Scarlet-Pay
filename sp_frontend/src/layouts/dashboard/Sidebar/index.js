@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -40,9 +40,9 @@ import AssessmentIcon from "@mui/icons-material/Assessment";
 import CloseIcon from "@mui/icons-material/Close";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
 
 // react-router-dom components
 import { Link, useLocation } from "react-router-dom";
@@ -86,7 +86,7 @@ function Sidebar({ open, onClose }) {
         },
       }}
     >
-      <MKBox
+      <SPBox
         sx={{
           background: "linear-gradient(135deg, #CC0000 0%, #8b0000 100%)",
           display: "flex",
@@ -99,7 +99,7 @@ function Sidebar({ open, onClose }) {
           boxShadow: ({ boxShadows: { md } }) => md,
         }}
       >
-        <MKBox display="flex" alignItems="center">
+        <SPBox display="flex" alignItems="center">
           <Avatar
             sx={{
               width: 32,
@@ -110,15 +110,15 @@ function Sidebar({ open, onClose }) {
           >
             <AccountCircleIcon />
           </Avatar>
-          <MKTypography
+          <SPTypography
             variant="h6"
             fontWeight="bold"
             color="white"
             sx={{ textTransform: "uppercase" }}
           >
             Scarlet Pay
-          </MKTypography>
-        </MKBox>
+          </SPTypography>
+        </SPBox>
         <Tooltip title="Close sidebar" arrow>
           <IconButton
             onClick={onClose}
@@ -137,7 +137,7 @@ function Sidebar({ open, onClose }) {
             <CloseIcon sx={{ color: "white !important" }} />
           </IconButton>
         </Tooltip>
-      </MKBox>
+      </SPBox>
       <Divider />
       <List sx={{ px: 1, py: 1 }}>
         {menuItems.map((item) => (

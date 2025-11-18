@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -20,9 +20,9 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 // Pricing page components
 import FaqCollapse from "pages/Company/Pricing/components/FaqCollapse";
@@ -31,12 +31,12 @@ function Faq() {
   const [collapse, setCollapse] = useState(false);
 
   return (
-    <MKBox component="section" py={6}>
+    <SPBox component="section" py={6}>
       <Container>
         <Grid container justifyContent="center">
           <Grid item xs={12} md={10}>
             <Card>
-              <MKBox
+              <SPBox
                 variant="gradient"
                 bgColor="error"
                 borderRadius="lg"
@@ -45,14 +45,14 @@ function Faq() {
                 mt={-3}
                 mx={2}
               >
-                <MKTypography variant="h4" color="white">
+                <SPTypography variant="h4" color="white">
                   Frequently Asked Questions
-                </MKTypography>
-                <MKTypography variant="body2" color="white" opacity={0.8}>
+                </SPTypography>
+                <SPTypography variant="body2" color="white" opacity={0.8}>
                   Last modified: Sept 07 2021
-                </MKTypography>
-              </MKBox>
-              <MKBox py={2} px={3}>
+                </SPTypography>
+              </SPBox>
+              <SPBox py={2} px={3}>
                 <FaqCollapse
                   title="How do I order?"
                   open={collapse === 1}
@@ -125,12 +125,12 @@ function Faq() {
                   you can&apos;t do anything, you won&apos;t do anything. I was taught I could do
                   everything.
                 </FaqCollapse>
-              </MKBox>
+              </SPBox>
             </Card>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

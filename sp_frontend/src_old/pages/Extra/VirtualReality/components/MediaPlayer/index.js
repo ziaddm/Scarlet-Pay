@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,10 +18,10 @@ import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 import Tooltip from "@mui/material/Tooltip";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPButton from "components/SPButton";
 
 function MediaPlayer() {
   const bgImage =
@@ -46,17 +46,17 @@ function MediaPlayer() {
         backgroundPosition: "center",
       })}
     >
-      <MKBox p={3} position="relative" lineHeight={0}>
-        <MKTypography variant="h5" color="white" fontWeight="medium">
+      <SPBox p={3} position="relative" lineHeight={0}>
+        <SPTypography variant="h5" color="white" fontWeight="medium">
           Some Kind Of Blues
-        </MKTypography>
-        <MKTypography variant="button" color="white" fontWeight="regular">
+        </SPTypography>
+        <SPTypography variant="button" color="white" fontWeight="regular">
           Deftones
-        </MKTypography>
-        <MKBox display="flex" mt={6} pt={1}>
-          <MKBox display="flex" alignItems="center" justifyContent="center">
+        </SPTypography>
+        <SPBox display="flex" mt={6} pt={1}>
+          <SPBox display="flex" alignItems="center" justifyContent="center">
             <Tooltip title="Prev" placement="top">
-              <MKButton
+              <SPButton
                 variant="outlined"
                 size="large"
                 circular
@@ -64,10 +64,10 @@ function MediaPlayer() {
                 sx={mediaPlayerButtonStyles}
               >
                 <Icon>skip_previous</Icon>
-              </MKButton>
+              </SPButton>
             </Tooltip>
             <Tooltip title="Pause" placement="top">
-              <MKButton
+              <SPButton
                 variant="outlined"
                 size="large"
                 circular
@@ -75,10 +75,10 @@ function MediaPlayer() {
                 sx={mediaPlayerButtonStyles}
               >
                 <Icon>play_arrow</Icon>
-              </MKButton>
+              </SPButton>
             </Tooltip>
             <Tooltip title="Next" placement="top">
-              <MKButton
+              <SPButton
                 variant="outlined"
                 size="large"
                 circular
@@ -86,11 +86,11 @@ function MediaPlayer() {
                 sx={mediaPlayerButtonStyles}
               >
                 <Icon>skip_next</Icon>
-              </MKButton>
+              </SPButton>
             </Tooltip>
-          </MKBox>
-        </MKBox>
-      </MKBox>
+          </SPBox>
+        </SPBox>
+      </SPBox>
     </Card>
   );
 }

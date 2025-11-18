@@ -4,8 +4,8 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
-// Material Kit 2 PRO React components
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPTypography from "components/SPTypography";
 
 // Images
 import logoCT from "assets/images/logo-ct-dark.png";
@@ -14,7 +14,7 @@ const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "Material Kit 2 PRO",
+    name: "Scarlet Pay 2 PRO",
     image: logoCT,
     route: "/",
   },
@@ -73,9 +73,9 @@ export default {
     },
   ],
   copyright: (
-    <MKTypography variant="button" fontWeight="regular">
-      All rights reserved. Copyright &copy; {date} Material Kit by{" "}
-      <MKTypography
+    <SPTypography variant="button" fontWeight="regular">
+      All rights reserved. Copyright &copy; {date} Scarlet Pay by{" "}
+      <SPTypography
         component="a"
         href="https://www.creative-tim.com"
         target="_blank"
@@ -83,9 +83,9 @@ export default {
         variant="button"
         fontWeight="regular"
       >
-        Creative Tim
-      </MKTypography>
+        Scarlet Pay Team
+      </SPTypography>
       .
-    </MKTypography>
+    </SPTypography>
   ),
 };

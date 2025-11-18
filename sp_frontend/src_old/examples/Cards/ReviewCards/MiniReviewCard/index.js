@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -16,48 +16,48 @@ Coded by www.creative-tim.com
 // prop-types is library for typechecking of props
 import PropTypes from "prop-types";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPAvatar from "components/SPAvatar";
+import SPTypography from "components/SPTypography";
 
 function MiniReviewCard({ color = "transparent", review, author }) {
   return (
-    <MKBox
+    <SPBox
       variant={color === "transparent" ? "contained" : "gradient"}
       bgColor={color}
       borderRadius="xl"
       coloredShadow={color === "transparent" ? "none" : color}
       p={3}
     >
-      <MKTypography
+      <SPTypography
         variant="body2"
         color={color === "transparent" || color === "light" ? "text" : "white"}
         my={2}
       >
         &quot;{review}&quot;
-      </MKTypography>
-      <MKBox display="flex" alignItems="center" mt={3}>
-        <MKAvatar src={author.image} alt={author.name} shadow="md" />
-        <MKBox pl={1.5} lineHeight={1}>
-          <MKTypography
+      </SPTypography>
+      <SPBox display="flex" alignItems="center" mt={3}>
+        <SPAvatar src={author.image} alt={author.name} shadow="md" />
+        <SPBox pl={1.5} lineHeight={1}>
+          <SPTypography
             display="block"
             variant="button"
             fontWeight="bold"
             color={color === "transparent" || color === "light" ? "dark" : "white"}
           >
             {author.name}
-          </MKTypography>
-          <MKTypography
+          </SPTypography>
+          <SPTypography
             variant="caption"
             fontWeight="regular"
             color={color === "transparent" || color === "light" ? "text" : "white"}
           >
             {author.date}
-          </MKTypography>
-        </MKBox>
-      </MKBox>
-    </MKBox>
+          </SPTypography>
+        </SPBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

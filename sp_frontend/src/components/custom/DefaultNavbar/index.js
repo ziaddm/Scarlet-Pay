@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -22,13 +22,13 @@ import Container from "@mui/material/Container";
 // react-router components
 import { Link } from "react-router-dom";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
 
 function DefaultNavbar({
-  brand = "Material Kit 2",
+  brand = "Scarlet Pay 2",
   transparent = false,
   light = false,
   action = false,
@@ -37,7 +37,7 @@ function DefaultNavbar({
 }) {
   return (
     <Container sx={sticky ? { position: "sticky", top: 0, zIndex: 10 } : null}>
-      <MKBox
+      <SPBox
         py={1}
         px={{ xs: 4, sm: transparent ? 2 : 3, lg: transparent ? 0 : 2 }}
         my={relative ? 0 : 2}
@@ -54,22 +54,22 @@ function DefaultNavbar({
           backdropFilter: transparent ? "none" : `saturate(200%) blur(30px)`,
         })}
       >
-        <MKBox display="flex" justifyContent="space-between" alignItems="center">
-          <MKBox
+        <SPBox display="flex" justifyContent="space-between" alignItems="center">
+          <SPBox
             component={Link}
             to="/"
             lineHeight={1}
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
-            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
+            <SPTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
               {brand}
-            </MKTypography>
-          </MKBox>
-          <MKBox ml={{ xs: "auto", lg: 0 }}>
+            </SPTypography>
+          </SPBox>
+          <SPBox ml={{ xs: "auto", lg: 0 }}>
             {action &&
               (action.type === "internal" ? (
-                <MKButton
+                <SPButton
                   component={Link}
                   to={action.route}
                   variant={
@@ -81,9 +81,9 @@ function DefaultNavbar({
                   size="small"
                 >
                   {action.label}
-                </MKButton>
+                </SPButton>
               ) : (
-                <MKButton
+                <SPButton
                   component="a"
                   href={action.route}
                   target="_blank"
@@ -97,11 +97,11 @@ function DefaultNavbar({
                   size="small"
                 >
                   {action.label}
-                </MKButton>
+                </SPButton>
               ))}
-          </MKBox>
-        </MKBox>
-      </MKBox>
+          </SPBox>
+        </SPBox>
+      </SPBox>
     </Container>
   );
 }

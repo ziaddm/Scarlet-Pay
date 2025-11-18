@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -22,9 +22,9 @@ import Icon from "@mui/material/Icon";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
 
 function DropdownAndDropup() {
   const [dropdown, setDropdown] = useState(null);
@@ -54,13 +54,13 @@ function DropdownAndDropup() {
   };
 
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={6} textAlign="center">
-            <MKButton variant="gradient" color="info" onClick={openDropdown}>
+            <SPButton variant="gradient" color="info" onClick={openDropdown}>
               Dropdown <Icon sx={dropdownIconStyles}>expand_more</Icon>
-            </MKButton>
+            </SPButton>
             <Menu anchorEl={dropdown} open={Boolean(dropdown)} onClose={closeDropdown}>
               <MenuItem onClick={closeDropdown}>Action</MenuItem>
               <MenuItem onClick={closeDropdown}>Another action</MenuItem>
@@ -68,9 +68,9 @@ function DropdownAndDropup() {
             </Menu>
           </Grid>
           <Grid item xs={12} lg={6} textAlign="center">
-            <MKButton variant="gradient" color="info" onClick={openDropup}>
+            <SPButton variant="gradient" color="info" onClick={openDropup}>
               Dropup <Icon sx={dropupIconStyles}>expand_more</Icon>
-            </MKButton>
+            </SPButton>
             <Menu
               anchorEl={dropup}
               open={Boolean(dropup)}
@@ -91,7 +91,7 @@ function DropdownAndDropup() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

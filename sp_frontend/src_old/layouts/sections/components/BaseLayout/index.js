@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -20,11 +20,11 @@ import PropTypes from "prop-types";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import CenteredFooter from "examples/Footers/CenteredFooter";
 import Breadcrumbs from "examples/Breadcrumbs";
@@ -34,35 +34,35 @@ import routes from "routes";
 
 function BaseLayout({ breadcrumb, title, children }) {
   return (
-    <MKBox display="flex" flexDirection="column" bgColor="white" minHeight="100vh">
-      <MKBox bgColor="white" shadow="sm" py={0.25}>
+    <SPBox display="flex" flexDirection="column" bgColor="white" minHeight="100vh">
+      <SPBox bgColor="white" shadow="sm" py={0.25}>
         <DefaultNavbar
           routes={routes}
           action={{
             type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-pro-react",
+            route: "https://www.creative-tim.com/product/scarlet-pay-pro-react",
             label: "buy now",
             color: "info",
           }}
           transparent
           relative
         />
-      </MKBox>
+      </SPBox>
       <Container sx={{ mt: 6 }}>
         <Grid container item xs={12} flexDirection="column" justifyContent="center" mx="auto">
-          <MKBox width={{ xs: "100%", md: "50%", lg: "25%" }} mb={3}>
+          <SPBox width={{ xs: "100%", md: "50%", lg: "25%" }} mb={3}>
             <Breadcrumbs routes={breadcrumb} />
-          </MKBox>
-          <MKTypography variant="h3" mb={1}>
+          </SPBox>
+          <SPTypography variant="h3" mb={1}>
             {title}
-          </MKTypography>
+          </SPTypography>
           {children}
         </Grid>
       </Container>
-      <MKBox mt="auto">
+      <SPBox mt="auto">
         <CenteredFooter />
-      </MKBox>
-    </MKBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

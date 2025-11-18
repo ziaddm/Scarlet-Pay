@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,10 +18,10 @@ import { forwardRef } from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Custom styles for MKBox
-import MKBoxRoot from "components/MKBox/MKBoxRoot";
+// Custom styles for SPBox
+import SPBoxRoot from "components/SPBox/SPBoxRoot";
 
-const MKBox = forwardRef(
+const SPBox = forwardRef(
   (
     {
       variant = "contained",
@@ -35,7 +35,7 @@ const MKBox = forwardRef(
     },
     ref
   ) => (
-    <MKBoxRoot
+    <SPBoxRoot
       {...rest}
       ref={ref}
       ownerState={{ variant, bgColor, color, opacity, borderRadius, shadow, coloredShadow }}
@@ -43,8 +43,8 @@ const MKBox = forwardRef(
   )
 );
 
-// Typechecking props for the MKBox
-MKBox.propTypes = {
+// Typechecking props for the SPBox
+SPBox.propTypes = {
   variant: PropTypes.oneOf(["contained", "gradient"]),
   bgColor: PropTypes.string,
   color: PropTypes.string,
@@ -64,4 +64,4 @@ MKBox.propTypes = {
   ]),
 };
 
-export default MKBox;
+export default SPBox;

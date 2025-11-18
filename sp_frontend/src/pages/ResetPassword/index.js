@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 *
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 *
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 *
  =========================================================
 *
@@ -18,12 +18,12 @@ import { useState } from "react";
 // react-router-dom components
 import { Link, useSearchParams } from "react-router-dom";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKInput from "components/base/MKInput";
-import MKButton from "components/base/MKButton";
-import MKSnackbar from "components/base/MKSnackbar";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPInput from "components/base/SPInput";
+import SPButton from "components/base/SPButton";
+import SPSnackbar from "components/base/SPSnackbar";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -182,17 +182,17 @@ function ResetPassword() {
   return (
     <>
       {step === "forgot" ? (
-        <MKBox component="form" role="form" onSubmit={handleForgotPassword}>
-          <MKBox mb={2}>
-            <MKTypography variant="h4" fontWeight="medium" mb={1}>
+        <SPBox component="form" role="form" onSubmit={handleForgotPassword}>
+          <SPBox mb={2}>
+            <SPTypography variant="h4" fontWeight="medium" mb={1}>
               Forgot Password?
-            </MKTypography>
-            <MKTypography variant="body2" color="text" mb={3}>
+            </SPTypography>
+            <SPTypography variant="body2" color="text" mb={3}>
               Enter your email address and we&apos;ll send you a password reset token.
-            </MKTypography>
-          </MKBox>
-          <MKBox mb={2}>
-            <MKInput
+            </SPTypography>
+          </SPBox>
+          <SPBox mb={2}>
+            <SPInput
               type="email"
               label="Email"
               name="email"
@@ -202,9 +202,9 @@ function ResetPassword() {
               helperText={errors.email}
               fullWidth
             />
-          </MKBox>
-          <MKBox mt={4} mb={1}>
-            <MKButton
+          </SPBox>
+          <SPBox mt={4} mb={1}>
+            <SPButton
               variant="gradient"
               color="info"
               size="large"
@@ -213,12 +213,12 @@ function ResetPassword() {
               disabled={loading}
             >
               {loading ? "Sending..." : "Send Reset Token"}
-            </MKButton>
-          </MKBox>
-          <MKBox mt={3} textAlign="center">
-            <MKTypography variant="button" color="text">
+            </SPButton>
+          </SPBox>
+          <SPBox mt={3} textAlign="center">
+            <SPTypography variant="button" color="text">
               Remember your password?{" "}
-              <MKTypography
+              <SPTypography
                 component={Link}
                 to={ROUTES.LOGIN}
                 variant="button"
@@ -227,22 +227,22 @@ function ResetPassword() {
                 textGradient
               >
                 Back to Login
-              </MKTypography>
-            </MKTypography>
-          </MKBox>
-        </MKBox>
+              </SPTypography>
+            </SPTypography>
+          </SPBox>
+        </SPBox>
       ) : (
-        <MKBox component="form" role="form" onSubmit={handleResetPassword}>
-          <MKBox mb={2}>
-            <MKTypography variant="h4" fontWeight="medium" mb={1}>
+        <SPBox component="form" role="form" onSubmit={handleResetPassword}>
+          <SPBox mb={2}>
+            <SPTypography variant="h4" fontWeight="medium" mb={1}>
               Reset Password
-            </MKTypography>
-            <MKTypography variant="body2" color="text" mb={3}>
+            </SPTypography>
+            <SPTypography variant="body2" color="text" mb={3}>
               Enter your reset token and new password.
-            </MKTypography>
-          </MKBox>
-          <MKBox mb={2}>
-            <MKInput
+            </SPTypography>
+          </SPBox>
+          <SPBox mb={2}>
+            <SPInput
               type="text"
               label="Reset Token"
               name="token"
@@ -252,9 +252,9 @@ function ResetPassword() {
               helperText={errors.token || "Enter the token sent to your email"}
               fullWidth
             />
-          </MKBox>
-          <MKBox mb={2}>
-            <MKInput
+          </SPBox>
+          <SPBox mb={2}>
+            <SPInput
               type="password"
               label="New Password"
               name="newPassword"
@@ -264,9 +264,9 @@ function ResetPassword() {
               helperText={errors.newPassword}
               fullWidth
             />
-          </MKBox>
-          <MKBox mb={2}>
-            <MKInput
+          </SPBox>
+          <SPBox mb={2}>
+            <SPInput
               type="password"
               label="Confirm New Password"
               name="confirmPassword"
@@ -276,9 +276,9 @@ function ResetPassword() {
               helperText={errors.confirmPassword}
               fullWidth
             />
-          </MKBox>
-          <MKBox mt={4} mb={1}>
-            <MKButton
+          </SPBox>
+          <SPBox mt={4} mb={1}>
+            <SPButton
               variant="gradient"
               color="info"
               size="large"
@@ -287,22 +287,22 @@ function ResetPassword() {
               disabled={loading}
             >
               {loading ? "Resetting..." : "Reset Password"}
-            </MKButton>
-          </MKBox>
-          <MKBox mt={2} textAlign="center">
-            <MKButton
+            </SPButton>
+          </SPBox>
+          <SPBox mt={2} textAlign="center">
+            <SPButton
               variant="text"
               color="info"
               onClick={() => setStep("forgot")}
               disabled={loading}
             >
               Back to Forgot Password
-            </MKButton>
-          </MKBox>
-          <MKBox mt={2} textAlign="center">
-            <MKTypography variant="button" color="text">
+            </SPButton>
+          </SPBox>
+          <SPBox mt={2} textAlign="center">
+            <SPTypography variant="button" color="text">
               Remember your password?{" "}
-              <MKTypography
+              <SPTypography
                 component={Link}
                 to={ROUTES.LOGIN}
                 variant="button"
@@ -311,14 +311,14 @@ function ResetPassword() {
                 textGradient
               >
                 Back to Login
-              </MKTypography>
-            </MKTypography>
-          </MKBox>
-        </MKBox>
+              </SPTypography>
+            </SPTypography>
+          </SPBox>
+        </SPBox>
       )}
 
       {/* Snackbar */}
-      <MKSnackbar
+      <SPSnackbar
         color={snackbar.color}
         icon={<Icon>{snackbar.icon}</Icon>}
         title={snackbar.title}

@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 *
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 *
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 *
  =========================================================
 *
@@ -34,10 +34,10 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
 
 // Features
 import { useTransactionAnalytics } from "features/transactions";
@@ -246,23 +246,23 @@ function Analytics() {
   return (
     <Container maxWidth={false} sx={{ px: 0 }}>
       {/* Header Section */}
-      <MKBox mb={6} sx={{ px: 3 }}>
-        <MKBox
+      <SPBox mb={6} sx={{ px: 3 }}>
+        <SPBox
           display="flex"
           justifyContent="space-between"
           alignItems="center"
           flexWrap="wrap"
           gap={2}
         >
-          <MKBox>
-            <MKTypography variant="h4" fontWeight="bold" mb={1}>
+          <SPBox>
+            <SPTypography variant="h4" fontWeight="bold" mb={1}>
               Transaction Analytics
-            </MKTypography>
-            <MKTypography variant="body2" color="text.secondary">
+            </SPTypography>
+            <SPTypography variant="body2" color="text.secondary">
               Analyze your spending patterns and track your financial activity
-            </MKTypography>
-          </MKBox>
-          <MKButton
+            </SPTypography>
+          </SPBox>
+          <SPButton
             variant="gradient"
             color="info"
             size="small"
@@ -271,12 +271,12 @@ function Analytics() {
             startIcon={<RefreshIcon />}
           >
             Refresh
-          </MKButton>
-        </MKBox>
-      </MKBox>
+          </SPButton>
+        </SPBox>
+      </SPBox>
 
       {/* Date Range Selector */}
-      <MKBox mb={4} sx={{ px: 3 }}>
+      <SPBox mb={4} sx={{ px: 3 }}>
         <Card
           sx={{
             p: 3,
@@ -289,12 +289,12 @@ function Analytics() {
               mode === "dark" ? "1px solid rgba(255,255,255,0.1)" : "none",
           }}
         >
-          <MKBox display="flex" alignItems="center" mb={2.5}>
+          <SPBox display="flex" alignItems="center" mb={2.5}>
             <CalendarTodayIcon sx={{ fontSize: 24, mr: 1.5, color: "primary.main" }} />
-            <MKTypography variant="h6" fontWeight="bold">
+            <SPTypography variant="h6" fontWeight="bold">
               Select Date Range
-            </MKTypography>
-          </MKBox>
+            </SPTypography>
+          </SPBox>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={5}>
               <TextField
@@ -332,11 +332,11 @@ function Analytics() {
             </Grid>
           </Grid>
         </Card>
-      </MKBox>
+      </SPBox>
 
       {/* Error State */}
       {error && (
-        <MKBox sx={{ px: 3, mb: 4 }}>
+        <SPBox sx={{ px: 3, mb: 4 }}>
           <Card
             sx={{
               p: 3,
@@ -346,16 +346,16 @@ function Analytics() {
               borderColor: "error.main",
             }}
           >
-            <MKTypography variant="body1" color="error">
+            <SPTypography variant="body1" color="error">
               {error}
-            </MKTypography>
+            </SPTypography>
           </Card>
-        </MKBox>
+        </SPBox>
       )}
 
       {/* Loading State */}
       {loading && (
-        <MKBox sx={{ px: 3, mb: 4 }}>
+        <SPBox sx={{ px: 3, mb: 4 }}>
           <Card
             sx={{
               p: 4,
@@ -367,14 +367,14 @@ function Analytics() {
           >
             <CircularProgress />
           </Card>
-        </MKBox>
+        </SPBox>
       )}
 
       {/* Analytics Content */}
       {!loading && analytics && (
         <>
           {/* Key Metrics Cards */}
-          <MKBox mb={4} sx={{ px: 3 }}>
+          <SPBox mb={4} sx={{ px: 3 }}>
             <Grid container spacing={3}>
               {/* Total Spending Card */}
               <Grid item xs={12} sm={6} lg={3}>
@@ -401,8 +401,8 @@ function Analytics() {
                     },
                   }}
                 >
-                  <MKBox display="flex" alignItems="center" mb={2}>
-                    <MKBox
+                  <SPBox display="flex" alignItems="center" mb={2}>
+                    <SPBox
                       sx={{
                         p: 1.5,
                         borderRadius: 2,
@@ -412,21 +412,21 @@ function Analytics() {
                       }}
                     >
                       <AttachMoneyIcon sx={{ fontSize: 28, color: "error.main" }} />
-                    </MKBox>
-                    <MKBox>
-                      <MKTypography variant="body2" color="text.secondary" fontWeight="medium">
+                    </SPBox>
+                    <SPBox>
+                      <SPTypography variant="body2" color="text.secondary" fontWeight="medium">
                         Total Spending
-                      </MKTypography>
-                      <MKTypography variant="h4" fontWeight="bold" color="error.main">
+                      </SPTypography>
+                      <SPTypography variant="h4" fontWeight="bold" color="error.main">
                         {formatCurrency(totalSpending)}
-                      </MKTypography>
-                    </MKBox>
-                  </MKBox>
+                      </SPTypography>
+                    </SPBox>
+                  </SPBox>
                   {analytics.period && (
-                    <MKTypography variant="caption" color="text.secondary">
+                    <SPTypography variant="caption" color="text.secondary">
                       {formatDate(analytics.period.start_date)} -{" "}
                       {formatDate(analytics.period.end_date)}
-                    </MKTypography>
+                    </SPTypography>
                   )}
                 </Card>
               </Grid>
@@ -456,8 +456,8 @@ function Analytics() {
                     },
                   }}
                 >
-                  <MKBox display="flex" alignItems="center" mb={2}>
-                    <MKBox
+                  <SPBox display="flex" alignItems="center" mb={2}>
+                    <SPBox
                       sx={{
                         p: 1.5,
                         borderRadius: 2,
@@ -467,19 +467,19 @@ function Analytics() {
                       }}
                     >
                       <TrendingUpIcon sx={{ fontSize: 28, color: "info.main" }} />
-                    </MKBox>
-                    <MKBox>
-                      <MKTypography variant="body2" color="text.secondary" fontWeight="medium">
+                    </SPBox>
+                    <SPBox>
+                      <SPTypography variant="body2" color="text.secondary" fontWeight="medium">
                         Average Daily
-                      </MKTypography>
-                      <MKTypography variant="h4" fontWeight="bold" color="info.main">
+                      </SPTypography>
+                      <SPTypography variant="h4" fontWeight="bold" color="info.main">
                         {formatCurrency(averageSpending)}
-                      </MKTypography>
-                    </MKBox>
-                  </MKBox>
-                  <MKTypography variant="caption" color="text.secondary">
+                      </SPTypography>
+                    </SPBox>
+                  </SPBox>
+                  <SPTypography variant="caption" color="text.secondary">
                     Per time period
-                  </MKTypography>
+                  </SPTypography>
                 </Card>
               </Grid>
 
@@ -508,8 +508,8 @@ function Analytics() {
                     },
                   }}
                 >
-                  <MKBox display="flex" alignItems="center" mb={2}>
-                    <MKBox
+                  <SPBox display="flex" alignItems="center" mb={2}>
+                    <SPBox
                       sx={{
                         p: 1.5,
                         borderRadius: 2,
@@ -519,19 +519,19 @@ function Analytics() {
                       }}
                     >
                       <CategoryIcon sx={{ fontSize: 28, color: "success.main" }} />
-                    </MKBox>
-                    <MKBox>
-                      <MKTypography variant="body2" color="text.secondary" fontWeight="medium">
+                    </SPBox>
+                    <SPBox>
+                      <SPTypography variant="body2" color="text.secondary" fontWeight="medium">
                         Categories
-                      </MKTypography>
-                      <MKTypography variant="h4" fontWeight="bold" color="success.main">
+                      </SPTypography>
+                      <SPTypography variant="h4" fontWeight="bold" color="success.main">
                         {categoryCount}
-                      </MKTypography>
-                    </MKBox>
-                  </MKBox>
-                  <MKTypography variant="caption" color="text.secondary">
+                      </SPTypography>
+                    </SPBox>
+                  </SPBox>
+                  <SPTypography variant="caption" color="text.secondary">
                     Active categories
-                  </MKTypography>
+                  </SPTypography>
                 </Card>
               </Grid>
 
@@ -560,8 +560,8 @@ function Analytics() {
                     },
                   }}
                 >
-                  <MKBox display="flex" alignItems="center" mb={2}>
-                    <MKBox
+                  <SPBox display="flex" alignItems="center" mb={2}>
+                    <SPBox
                       sx={{
                         p: 1.5,
                         borderRadius: 2,
@@ -571,31 +571,31 @@ function Analytics() {
                       }}
                     >
                       <ShoppingCartIcon sx={{ fontSize: 28, color: "warning.main" }} />
-                    </MKBox>
-                    <MKBox>
-                      <MKTypography variant="body2" color="text.secondary" fontWeight="medium">
+                    </SPBox>
+                    <SPBox>
+                      <SPTypography variant="body2" color="text.secondary" fontWeight="medium">
                         Top Category
-                      </MKTypography>
-                      <MKTypography
+                      </SPTypography>
+                      <SPTypography
                         variant="h6"
                         fontWeight="bold"
                         color="warning.main"
                         textTransform="capitalize"
                       >
                         {topCategory ? topCategory.category : "N/A"}
-                      </MKTypography>
-                    </MKBox>
-                  </MKBox>
-                  <MKTypography variant="caption" color="text.secondary">
+                      </SPTypography>
+                    </SPBox>
+                  </SPBox>
+                  <SPTypography variant="caption" color="text.secondary">
                     {topCategory ? formatCurrency(topCategory.total) : "No data"}
-                  </MKTypography>
+                  </SPTypography>
                 </Card>
               </Grid>
             </Grid>
-          </MKBox>
+          </SPBox>
 
           {/* Daily Spending Graph with Projections */}
-          <MKBox mb={4} sx={{ px: 3 }}>
+          <SPBox mb={4} sx={{ px: 3 }}>
             <Card
               sx={{
                 p: 4,
@@ -608,8 +608,8 @@ function Analytics() {
                   mode === "dark" ? "1px solid rgba(255,255,255,0.1)" : "none",
               }}
             >
-              <MKBox display="flex" alignItems="center" mb={3}>
-                <MKBox
+              <SPBox display="flex" alignItems="center" mb={3}>
+                <SPBox
                   sx={{
                     p: 1.5,
                     borderRadius: 2,
@@ -619,11 +619,11 @@ function Analytics() {
                   }}
                 >
                   <TrendingUpIcon sx={{ fontSize: 28, color: "error.main" }} />
-                </MKBox>
-                <MKTypography variant="h5" fontWeight="bold">
+                </SPBox>
+                <SPTypography variant="h5" fontWeight="bold">
                   Daily Spending Trend & Projection
-                </MKTypography>
-              </MKBox>
+                </SPTypography>
+              </SPBox>
 
               {chartData.length > 0 ? (
                 <ResponsiveContainer width="100%" height={400}>
@@ -700,7 +700,7 @@ function Analytics() {
                   </LineChart>
                 </ResponsiveContainer>
               ) : (
-                <MKBox
+                <SPBox
                   p={4}
                   textAlign="center"
                   sx={{
@@ -712,13 +712,13 @@ function Analytics() {
                   <TrendingUpIcon
                     sx={{ fontSize: 48, color: "text.secondary", mb: 1, opacity: 0.5 }}
                   />
-                  <MKTypography variant="body2" color="text.secondary">
+                  <SPTypography variant="body2" color="text.secondary">
                     No spending data available for chart
-                  </MKTypography>
-                </MKBox>
+                  </SPTypography>
+                </SPBox>
               )}
             </Card>
-          </MKBox>
+          </SPBox>
 
           <Grid container spacing={4} sx={{ px: 3 }}>
             {/* Spending by Category */}
@@ -736,8 +736,8 @@ function Analytics() {
                     mode === "dark" ? "1px solid rgba(255,255,255,0.1)" : "none",
                 }}
               >
-                <MKBox display="flex" alignItems="center" mb={3}>
-                  <MKBox
+                <SPBox display="flex" alignItems="center" mb={3}>
+                  <SPBox
                     sx={{
                       p: 1.5,
                       borderRadius: 2,
@@ -747,14 +747,14 @@ function Analytics() {
                     }}
                   >
                     <CategoryIcon sx={{ fontSize: 28, color: "primary.main" }} />
-                  </MKBox>
-                  <MKTypography variant="h5" fontWeight="bold">
+                  </SPBox>
+                  <SPTypography variant="h5" fontWeight="bold">
                     Spending by Category
-                  </MKTypography>
-                </MKBox>
+                  </SPTypography>
+                </SPBox>
 
                 {analytics.spending_by_category && analytics.spending_by_category.length > 0 ? (
-                  <MKBox>
+                  <SPBox>
                     {analytics.spending_by_category
                       .sort((a, b) => b.total - a.total)
                       .map((item, index) => {
@@ -763,7 +763,7 @@ function Analytics() {
                         const categoryPercentage =
                           totalSpending > 0 ? (item.total / totalSpending) * 100 : 0;
                         return (
-                          <MKBox
+                          <SPBox
                             key={index}
                             mb={3}
                             p={2}
@@ -778,40 +778,40 @@ function Analytics() {
                               },
                             }}
                           >
-                            <MKBox
+                            <SPBox
                               display="flex"
                               justifyContent="space-between"
                               alignItems="center"
                               mb={1.5}
                             >
-                              <MKBox display="flex" alignItems="center" gap={1.5}>
-                                <MKTypography variant="h5">
+                              <SPBox display="flex" alignItems="center" gap={1.5}>
+                                <SPTypography variant="h5">
                                   {getCategoryIcon(item.category)}
-                                </MKTypography>
-                                <MKBox>
-                                  <MKTypography
+                                </SPTypography>
+                                <SPBox>
+                                  <SPTypography
                                     variant="body1"
                                     fontWeight="bold"
                                     textTransform="capitalize"
                                     mb={0.25}
                                   >
                                     {item.category}
-                                  </MKTypography>
-                                  <MKTypography variant="caption" color="text.secondary">
+                                  </SPTypography>
+                                  <SPTypography variant="caption" color="text.secondary">
                                     {categoryPercentage.toFixed(1)}% of total
-                                  </MKTypography>
-                                </MKBox>
-                              </MKBox>
-                              <MKBox textAlign="right">
-                                <MKTypography
+                                  </SPTypography>
+                                </SPBox>
+                              </SPBox>
+                              <SPBox textAlign="right">
+                                <SPTypography
                                   variant="h6"
                                   fontWeight="bold"
                                   color={getCategoryColor(item.category) + ".main"}
                                 >
                                   {formatCurrency(item.total)}
-                                </MKTypography>
-                              </MKBox>
-                            </MKBox>
+                                </SPTypography>
+                              </SPBox>
+                            </SPBox>
                             <LinearProgress
                               variant="determinate"
                               value={percentage}
@@ -828,12 +828,12 @@ function Analytics() {
                                 },
                               }}
                             />
-                          </MKBox>
+                          </SPBox>
                         );
                       })}
-                  </MKBox>
+                  </SPBox>
                 ) : (
-                  <MKBox
+                  <SPBox
                     p={4}
                     textAlign="center"
                     sx={{
@@ -845,10 +845,10 @@ function Analytics() {
                     <CategoryIcon
                       sx={{ fontSize: 48, color: "text.secondary", mb: 1, opacity: 0.5 }}
                     />
-                    <MKTypography variant="body2" color="text.secondary">
+                    <SPTypography variant="body2" color="text.secondary">
                       No category data available
-                    </MKTypography>
-                  </MKBox>
+                    </SPTypography>
+                  </SPBox>
                 )}
               </Card>
             </Grid>
@@ -868,8 +868,8 @@ function Analytics() {
                     mode === "dark" ? "1px solid rgba(255,255,255,0.1)" : "none",
                 }}
               >
-                <MKBox display="flex" alignItems="center" mb={3}>
-                  <MKBox
+                <SPBox display="flex" alignItems="center" mb={3}>
+                  <SPBox
                     sx={{
                       p: 1.5,
                       borderRadius: 2,
@@ -879,19 +879,19 @@ function Analytics() {
                     }}
                   >
                     <TimelineIcon sx={{ fontSize: 28, color: "info.main" }} />
-                  </MKBox>
-                  <MKTypography variant="h5" fontWeight="bold">
+                  </SPBox>
+                  <SPTypography variant="h5" fontWeight="bold">
                     Spending Over Time
-                  </MKTypography>
-                </MKBox>
+                  </SPTypography>
+                </SPBox>
 
                 {analytics.spending_over_time && analytics.spending_over_time.length > 0 ? (
-                  <MKBox>
+                  <SPBox>
                     {analytics.spending_over_time.map((item, index) => {
                       const percentage =
                         maxTimeSpending > 0 ? (item.total / maxTimeSpending) * 100 : 0;
                       return (
-                        <MKBox
+                        <SPBox
                           key={index}
                           mb={3}
                           p={2}
@@ -906,29 +906,29 @@ function Analytics() {
                             },
                           }}
                         >
-                          <MKBox
+                          <SPBox
                             display="flex"
                             justifyContent="space-between"
                             alignItems="center"
                             mb={1.5}
                           >
-                            <MKBox display="flex" alignItems="center" gap={1.5}>
+                            <SPBox display="flex" alignItems="center" gap={1.5}>
                               <CalendarTodayIcon
                                 sx={{ fontSize: 20, color: "info.main", opacity: 0.7 }}
                               />
-                              <MKBox>
-                                <MKTypography variant="body1" fontWeight="medium">
+                              <SPBox>
+                                <SPTypography variant="body1" fontWeight="medium">
                                   {formatDate(item.period)}
-                                </MKTypography>
-                                <MKTypography variant="caption" color="text.secondary">
+                                </SPTypography>
+                                <SPTypography variant="caption" color="text.secondary">
                                   {percentage.toFixed(1)}% of peak
-                                </MKTypography>
-                              </MKBox>
-                            </MKBox>
-                            <MKTypography variant="h6" fontWeight="bold" color="info.main">
+                                </SPTypography>
+                              </SPBox>
+                            </SPBox>
+                            <SPTypography variant="h6" fontWeight="bold" color="info.main">
                               {formatCurrency(item.total)}
-                            </MKTypography>
-                          </MKBox>
+                            </SPTypography>
+                          </SPBox>
                           <Box
                             sx={{
                               height: 10,
@@ -953,12 +953,12 @@ function Analytics() {
                               }}
                             />
                           </Box>
-                        </MKBox>
+                        </SPBox>
                       );
                     })}
-                  </MKBox>
+                  </SPBox>
                 ) : (
-                  <MKBox
+                  <SPBox
                     p={4}
                     textAlign="center"
                     sx={{
@@ -970,10 +970,10 @@ function Analytics() {
                     <TimelineIcon
                       sx={{ fontSize: 48, color: "text.secondary", mb: 1, opacity: 0.5 }}
                     />
-                    <MKTypography variant="body2" color="text.secondary">
+                    <SPTypography variant="body2" color="text.secondary">
                       No time series data available
-                    </MKTypography>
-                  </MKBox>
+                    </SPTypography>
+                  </SPBox>
                 )}
               </Card>
             </Grid>
@@ -983,7 +983,7 @@ function Analytics() {
 
       {/* Empty State */}
       {!loading && !error && !analytics && (
-        <MKBox sx={{ px: 3 }}>
+        <SPBox sx={{ px: 3 }}>
           <Card
             sx={{
               p: 4,
@@ -991,11 +991,11 @@ function Analytics() {
               textAlign: "center",
             }}
           >
-            <MKTypography variant="body1" color="text.secondary">
+            <SPTypography variant="body1" color="text.secondary">
               Select a date range to view analytics
-            </MKTypography>
+            </SPTypography>
           </Card>
-        </MKBox>
+        </SPBox>
       )}
     </Container>
   );

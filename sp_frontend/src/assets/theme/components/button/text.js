@@ -1,23 +1,23 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// Material Kit 2 PRO React Base Styles
+// Scarlet Pay 2 PRO React Base Styles
 import colors from "assets/theme/base/colors";
 import typography from "assets/theme/base/typography";
 
-// Material Kit 2 PRO React Helper Functions
+// Scarlet Pay 2 PRO React Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { text, info, secondary, transparent } = colors;

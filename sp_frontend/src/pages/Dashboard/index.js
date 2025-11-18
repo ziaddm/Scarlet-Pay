@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -18,24 +18,24 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
 
 function Dashboard() {
   return (
     <Container maxWidth={false} sx={{ px: 0 }}>
       {/* Header Section */}
-      <MKBox mb={6}>
-        <MKTypography variant="h4" fontWeight="bold" mb={2}>
+      <SPBox mb={6}>
+        <SPTypography variant="h4" fontWeight="bold" mb={2}>
           Dashboard Overview
-        </MKTypography>
-        <MKTypography variant="body1" color="text">
+        </SPTypography>
+        <SPTypography variant="body1" color="text">
           Welcome to your comprehensive dashboard. Here you can view key metrics and manage your
           data.
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
 
       {/* Stats Cards */}
       <Grid container spacing={3} mb={6} sx={{ px: 3 }}>
@@ -51,12 +51,12 @@ function Dashboard() {
               boxShadow: "0 8px 32px rgba(102, 126, 234, 0.3)",
             }}
           >
-            <MKTypography variant="h4" fontWeight="bold" mb={1}>
+            <SPTypography variant="h4" fontWeight="bold" mb={1}>
               1,234
-            </MKTypography>
-            <MKTypography variant="body2" sx={{ opacity: 0.9 }}>
+            </SPTypography>
+            <SPTypography variant="body2" sx={{ opacity: 0.9 }}>
               Total Users
-            </MKTypography>
+            </SPTypography>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
@@ -71,12 +71,12 @@ function Dashboard() {
               boxShadow: "0 8px 32px rgba(240, 147, 251, 0.3)",
             }}
           >
-            <MKTypography variant="h4" fontWeight="bold" mb={1}>
+            <SPTypography variant="h4" fontWeight="bold" mb={1}>
               98.5%
-            </MKTypography>
-            <MKTypography variant="body2" sx={{ opacity: 0.9 }}>
+            </SPTypography>
+            <SPTypography variant="body2" sx={{ opacity: 0.9 }}>
               Uptime
-            </MKTypography>
+            </SPTypography>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
@@ -91,12 +91,12 @@ function Dashboard() {
               boxShadow: "0 8px 32px rgba(79, 172, 254, 0.3)",
             }}
           >
-            <MKTypography variant="h4" fontWeight="bold" mb={1}>
+            <SPTypography variant="h4" fontWeight="bold" mb={1}>
               567
-            </MKTypography>
-            <MKTypography variant="body2" sx={{ opacity: 0.9 }}>
+            </SPTypography>
+            <SPTypography variant="body2" sx={{ opacity: 0.9 }}>
               Reports
-            </MKTypography>
+            </SPTypography>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
@@ -111,12 +111,12 @@ function Dashboard() {
               boxShadow: "0 8px 32px rgba(67, 233, 123, 0.3)",
             }}
           >
-            <MKTypography variant="h4" fontWeight="bold" mb={1}>
+            <SPTypography variant="h4" fontWeight="bold" mb={1}>
               89
-            </MKTypography>
-            <MKTypography variant="body2" sx={{ opacity: 0.9 }}>
+            </SPTypography>
+            <SPTypography variant="body2" sx={{ opacity: 0.9 }}>
               Active Teams
-            </MKTypography>
+            </SPTypography>
           </Card>
         </Grid>
       </Grid>
@@ -133,15 +133,15 @@ function Dashboard() {
               border: "1px solid rgba(0,0,0,0.05)",
             }}
           >
-            <MKTypography variant="h5" fontWeight="bold" mb={2}>
+            <SPTypography variant="h5" fontWeight="bold" mb={2}>
               Recent Activity
-            </MKTypography>
-            <MKTypography variant="body2" color="text" mb={3}>
+            </SPTypography>
+            <SPTypography variant="body2" color="text" mb={3}>
               Track your recent activities and system events.
-            </MKTypography>
-            <MKButton variant="gradient" color="info" size="large" fullWidth>
+            </SPTypography>
+            <SPButton variant="gradient" color="info" size="large" fullWidth>
               View Activity
-            </MKButton>
+            </SPButton>
           </Card>
         </Grid>
         <Grid item xs={12} lg={6}>
@@ -154,15 +154,15 @@ function Dashboard() {
               border: "1px solid rgba(0,0,0,0.05)",
             }}
           >
-            <MKTypography variant="h5" fontWeight="bold" mb={2}>
+            <SPTypography variant="h5" fontWeight="bold" mb={2}>
               Quick Actions
-            </MKTypography>
-            <MKTypography variant="body2" color="text" mb={3}>
+            </SPTypography>
+            <SPTypography variant="body2" color="text" mb={3}>
               Access frequently used features and tools.
-            </MKTypography>
-            <MKButton variant="gradient" color="success" size="large" fullWidth>
+            </SPTypography>
+            <SPButton variant="gradient" color="success" size="large" fullWidth>
               Get Started
-            </MKButton>
+            </SPButton>
           </Card>
         </Grid>
       </Grid>

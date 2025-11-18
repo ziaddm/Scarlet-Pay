@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,22 +19,22 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 // import Stack from "@mui/material/Stack";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function Testimonials() {
   const image =
     "https://images.unsplash.com/photo-1521668576204-57ae3afee860?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80";
 
   return (
-    <MKBox component="section" position="relative" py={6}>
+    <SPBox component="section" position="relative" py={6}>
       <Container sx={{ maxWidth: "100% !important" }}>
         <Grid container item xs={10} sx={{ mx: "auto" }}>
-          <MKBox variant="gradient" bgColor="dark" borderRadius="lg" width="100%" py={6}>
+          <SPBox variant="gradient" bgColor="dark" borderRadius="lg" width="100%" py={6}>
             <Grid container>
               <Grid item xs={12} md={6} xl={4} sx={{ position: "relative", px: 6 }}>
-                <MKBox
+                <SPBox
                   component="img"
                   src={image}
                   alt="image"
@@ -59,7 +59,7 @@ function Testimonials() {
                 }}
               >
                 <Icon fontSize="large">format_quote</Icon>
-                <MKTypography
+                <SPTypography
                   variant="body2"
                   color="white"
                   fontWeight="light"
@@ -70,13 +70,13 @@ function Testimonials() {
                   paths, choose the one more painful in the short term (pain avoidance is creating
                   an illusion of equality). Choose the path that leaves you more equanimous in the
                   long term.
-                </MKTypography>
-                <MKTypography variant="button" fontWeight="bold" color="white">
+                </SPTypography>
+                <SPTypography variant="button" fontWeight="bold" color="white">
                   Michael -{" "}
-                  <MKTypography variant="caption" color="white">
+                  <SPTypography variant="caption" color="white">
                     Writter
-                  </MKTypography>
-                </MKTypography>
+                  </SPTypography>
+                </SPTypography>
               </Grid>
               <Grid item xs={1} />
               <Grid
@@ -85,13 +85,13 @@ function Testimonials() {
                 xl={2}
                 sx={{ px: { xs: 6, xl: 0 }, my: { xs: 0, xl: "auto" }, lineHeight: 1 }}
               >
-                <MKTypography variant="h3" color="white" mt={{ xs: 6, xl: 0 }} mb={1}>
+                <SPTypography variant="h3" color="white" mt={{ xs: 6, xl: 0 }} mb={1}>
                   1,679,700 +
-                </MKTypography>
-                <MKTypography component="p" variant="button" color="white" opacity={0.8} mb={2}>
+                </SPTypography>
+                <SPTypography component="p" variant="button" color="white" opacity={0.8} mb={2}>
                   Developers and Companies around the world using our products.
-                </MKTypography>
-                <MKTypography
+                </SPTypography>
+                <SPTypography
                   component="a"
                   href="#"
                   variant="button"
@@ -115,13 +115,13 @@ function Testimonials() {
                 >
                   See all products
                   <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-                </MKTypography>
+                </SPTypography>
               </Grid>
             </Grid>
-          </MKBox>
+          </SPBox>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,10 +23,10 @@ import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKAvatar from "components/MKAvatar";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPAvatar from "components/SPAvatar";
 
 function DefaultBlogCard({
   image,
@@ -39,7 +39,7 @@ function DefaultBlogCard({
 }) {
   const imageTemplate = (
     <>
-      <MKBox
+      <SPBox
         component="img"
         src={image}
         alt={title}
@@ -49,7 +49,7 @@ function DefaultBlogCard({
         position="relative"
         zIndex={1}
       />
-      <MKBox
+      <SPBox
         borderRadius="lg"
         shadow={raised ? "md" : "none"}
         width="100%"
@@ -73,7 +73,7 @@ function DefaultBlogCard({
 
   return (
     <Card>
-      <MKBox position="relative" borderRadius="lg" mx={2} mt={raised ? -3 : 2}>
+      <SPBox position="relative" borderRadius="lg" mx={2} mt={raised ? -3 : 2}>
         {action.type === "internal" ? (
           <Link to={action.route}>{imageTemplate}</Link>
         ) : (
@@ -81,10 +81,10 @@ function DefaultBlogCard({
             {imageTemplate}
           </MuiLink>
         )}
-      </MKBox>
-      <MKBox p={3}>
+      </SPBox>
+      <SPBox p={3}>
         {category && (
-          <MKTypography
+          <SPTypography
             variant="caption"
             color={category.color}
             textTransform="uppercase"
@@ -93,22 +93,22 @@ function DefaultBlogCard({
             sx={{ display: "block" }}
           >
             {category.label}
-          </MKTypography>
+          </SPTypography>
         )}
         {action.type === "internal" ? (
           <Link to={action.route}>
-            <MKTypography
+            <SPTypography
               variant="h5"
               textTransform="capitalize"
               my={1}
               sx={{ display: "inline-block" }}
             >
               {title}
-            </MKTypography>
+            </SPTypography>
           </Link>
         ) : (
           <MuiLink href={action.route} target="_blank" rel="noreferrer">
-            <MKTypography
+            <SPTypography
               variant="h5"
               textTransform="capitalize"
               mt={2}
@@ -116,31 +116,31 @@ function DefaultBlogCard({
               sx={{ display: "inline-block" }}
             >
               {title}
-            </MKTypography>
+            </SPTypography>
           </MuiLink>
         )}
-        <MKTypography variant="body2" component="p" color="text">
+        <SPTypography variant="body2" component="p" color="text">
           {description}
-        </MKTypography>
+        </SPTypography>
         {author && (
-          <MKBox display="flex" alignItems="center" mt={3}>
-            <MKAvatar
+          <SPBox display="flex" alignItems="center" mt={3}>
+            <SPAvatar
               src={author.image}
               alt={author.name}
               shadow="md"
               variant={raised ? "circular" : "rounded"}
             />
-            <MKBox pl={2} lineHeight={0}>
-              <MKTypography component="h6" variant="button" fontWeight="medium" gutterBottom>
+            <SPBox pl={2} lineHeight={0}>
+              <SPTypography component="h6" variant="button" fontWeight="medium" gutterBottom>
                 {author.name}
-              </MKTypography>
-              <MKTypography variant="caption" color="text">
+              </SPTypography>
+              <SPTypography variant="caption" color="text">
                 {author.date}
-              </MKTypography>
-            </MKBox>
-          </MKBox>
+              </SPTypography>
+            </SPBox>
+          </SPBox>
         )}
-      </MKBox>
+      </SPBox>
     </Card>
   );
 }

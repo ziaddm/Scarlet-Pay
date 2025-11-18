@@ -2,91 +2,91 @@ const alertsWithLinksCode = `// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKAlert from "components/MKAlert";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPAlert from "components/SPAlert";
+import SPTypography from "components/SPTypography";
 
 function AlertsWithLinks() {
   return (
-    <MKBox component="section" py={6}>
+    <SPBox component="section" py={6}>
       <Container>
         <Grid container item xs={12} lg={10} mx="auto">
           <Grid item xs={12}>
-            <MKAlert color="primary">
+            <SPAlert color="primary">
               A simple primary alert with an&nbsp;
-              <MKTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
+              <SPTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
                 example link
-              </MKTypography>
+              </SPTypography>
               . Give it a click if you like.
-            </MKAlert>
+            </SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="secondary">
+            <SPAlert color="secondary">
               A simple secondary alert with an&nbsp;
-              <MKTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
+              <SPTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
                 example link
-              </MKTypography>
+              </SPTypography>
               . Give it a click if you like.
-            </MKAlert>
+            </SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="success">
+            <SPAlert color="success">
               A simple success alert with an&nbsp;
-              <MKTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
+              <SPTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
                 example link
-              </MKTypography>
+              </SPTypography>
               . Give it a click if you like.
-            </MKAlert>
+            </SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="error">
+            <SPAlert color="error">
               A simple error alert with an&nbsp;
-              <MKTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
+              <SPTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
                 example link
-              </MKTypography>
+              </SPTypography>
               . Give it a click if you like.
-            </MKAlert>
+            </SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="warning">
+            <SPAlert color="warning">
               A simple warning alert with an&nbsp;
-              <MKTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
+              <SPTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
                 example link
-              </MKTypography>
+              </SPTypography>
               . Give it a click if you like.
-            </MKAlert>
+            </SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="info">
+            <SPAlert color="info">
               A simple info alert with an&nbsp;
-              <MKTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
+              <SPTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
                 example link
-              </MKTypography>
+              </SPTypography>
               . Give it a click if you like.
-            </MKAlert>
+            </SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="light">
+            <SPAlert color="light">
               A simple light alert with an&nbsp;
-              <MKTypography component="a" href="#" variant="body2" fontWeight="bold" color="dark">
+              <SPTypography component="a" href="#" variant="body2" fontWeight="bold" color="dark">
                 example link
-              </MKTypography>
+              </SPTypography>
               . Give it a click if you like.
-            </MKAlert>
+            </SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="dark">
+            <SPAlert color="dark">
               A simple dark alert with an&nbsp;
-              <MKTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
+              <SPTypography component="a" href="#" variant="body2" fontWeight="bold" color="white">
                 example link
-              </MKTypography>
+              </SPTypography>
               . Give it a click if you like.
-            </MKAlert>
+            </SPAlert>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

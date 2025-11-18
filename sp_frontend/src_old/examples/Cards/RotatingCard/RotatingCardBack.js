@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -22,14 +22,14 @@ import { Link } from "react-router-dom";
 // @mui material components
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPButton from "components/SPButton";
 
 function RotatingCard({ color = "info", image, title, description, action }) {
   return (
-    <MKBox
+    <SPBox
       display="flex"
       justifyContent="center"
       alignItems="center"
@@ -52,17 +52,17 @@ function RotatingCard({ color = "info", image, title, description, action }) {
         transform: "rotateY(180deg)",
       }}
     >
-      <MKBox pt={12} pb={2} px={2} textAlign="center" lineHeight={1}>
-        <MKTypography variant="h3" color="white" gutterBottom>
+      <SPBox pt={12} pb={2} px={2} textAlign="center" lineHeight={1}>
+        <SPTypography variant="h3" color="white" gutterBottom>
           {title}
-        </MKTypography>
-        <MKTypography variant="body2" color="white" opacity={0.8}>
+        </SPTypography>
+        <SPTypography variant="body2" color="white" opacity={0.8}>
           {description}
-        </MKTypography>
+        </SPTypography>
         {action && (
-          <MKBox width="50%" mt={4} mb={2} mx="auto">
+          <SPBox width="50%" mt={4} mb={2} mx="auto">
             {action.type === "external" ? (
-              <MKButton
+              <SPButton
                 component={MuiLink}
                 href={action.route}
                 target="_blank"
@@ -72,16 +72,16 @@ function RotatingCard({ color = "info", image, title, description, action }) {
                 fullWidth
               >
                 {action.label}
-              </MKButton>
+              </SPButton>
             ) : (
-              <MKButton component={Link} to={action.route} color="white" size="small" fullWidth>
+              <SPButton component={Link} to={action.route} color="white" size="small" fullWidth>
                 {action.label}
-              </MKButton>
+              </SPButton>
             )}
-          </MKBox>
+          </SPBox>
         )}
-      </MKBox>
-    </MKBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

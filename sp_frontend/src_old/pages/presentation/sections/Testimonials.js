@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,11 +18,11 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
 
 // Images
@@ -34,7 +34,7 @@ import digitalOceanLogo from "assets/images/logos/gray-logos/logo-digitalocean.s
 
 function Information() {
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid
           container
@@ -44,14 +44,14 @@ function Information() {
           justifyContent="center"
           sx={{ mx: "auto", textAlign: "center" }}
         >
-          <MKTypography variant="h2">Trusted by over</MKTypography>
-          <MKTypography variant="h2" color="info" textGradient mb={2}>
+          <SPTypography variant="h2">Trusted by over</SPTypography>
+          <SPTypography variant="h2" color="info" textGradient mb={2}>
             1,679,477+ web developers
-          </MKTypography>
-          <MKTypography variant="body1" color="text" mb={2}>
+          </SPTypography>
+          <SPTypography variant="body1" color="text" mb={2}>
             Many Fortune 500 companies, startups, universities and governmental institutions love
-            Creative Tim&apos;s products.
-          </MKTypography>
+            Scarlet Pay Team&apos;s products.
+          </SPTypography>
         </Grid>
         <Grid container spacing={3} sx={{ mt: 8 }}>
           <Grid item xs={12} md={6} lg={4}>
@@ -67,7 +67,7 @@ function Information() {
               color="info"
               name="Shailesh Kushwaha"
               date="1 week ago"
-              review="I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
+              review="I found solution to all my design needs from Scarlet Pay Team. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
               rating={5}
             />
           </Grid>
@@ -83,19 +83,19 @@ function Information() {
         <Divider sx={{ my: 6 }} />
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={appleLogo} alt="Apple" width="100%" opacity={0.6} />
+            <SPBox component="img" src={appleLogo} alt="Apple" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={facebookLogo} alt="Facebook" width="100%" opacity={0.6} />
+            <SPBox component="img" src={facebookLogo} alt="Facebook" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={nasaLogo} alt="Nasa" width="100%" opacity={0.6} />
+            <SPBox component="img" src={nasaLogo} alt="Nasa" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={vodafoneLogo} alt="Vodafone" width="100%" opacity={0.6} />
+            <SPBox component="img" src={vodafoneLogo} alt="Vodafone" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox
+            <SPBox
               component="img"
               src={digitalOceanLogo}
               alt="DigitalOcean"
@@ -105,7 +105,7 @@ function Information() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-2-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-2-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -13,9 +13,9 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function Separator() {
   const separatorStyles = {
@@ -28,8 +28,8 @@ function Separator() {
   };
 
   return (
-    <MKBox my={3} position="relative" textAlign="center">
-      <MKTypography
+    <SPBox my={3} position="relative" textAlign="center">
+      <SPTypography
         variant="button"
         fontWeight="bold"
         color="secondary"
@@ -58,8 +58,8 @@ function Separator() {
         }}
       >
         or continue with
-      </MKTypography>
-    </MKBox>
+      </SPTypography>
+    </SPBox>
   );
 }
 

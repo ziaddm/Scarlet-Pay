@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,9 +23,9 @@ import { Link } from "react-router-dom";
 import Collapse from "@mui/material/Collapse";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function DefaultNavbarDropdown({
   name,
@@ -52,7 +52,7 @@ function DefaultNavbarDropdown({
 
   return (
     <>
-      <MKBox
+      <SPBox
         {...rest}
         mx={1}
         p={1}
@@ -64,15 +64,15 @@ function DefaultNavbarDropdown({
         {...(route && routeComponent)}
         {...(href && linkComponent)}
       >
-        <MKTypography
+        <SPTypography
           variant="body2"
           lineHeight={1}
           color="inherit"
           sx={{ alignSelf: "center", "& *": { verticalAlign: "middle" } }}
         >
           {icon}
-        </MKTypography>
-        <MKTypography
+        </SPTypography>
+        <SPTypography
           variant="button"
           fontWeight="regular"
           textTransform="capitalize"
@@ -80,13 +80,13 @@ function DefaultNavbarDropdown({
           sx={{ fontWeight: "100%", ml: 1, mr: 0.25 }}
         >
           {name}
-        </MKTypography>
-        <MKTypography variant="body2" color={light ? "white" : "dark"} ml="auto">
+        </SPTypography>
+        <SPTypography variant="body2" color={light ? "white" : "dark"} ml="auto">
           <Icon sx={{ fontWeight: "normal", verticalAlign: "middle" }}>
             {collapse && "keyboard_arrow_down"}
           </Icon>
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
       {children && (
         <Collapse in={Boolean(collapseStatus)} timeout={400} unmountOnExit>
           {children}

@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,11 +23,11 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
@@ -60,20 +60,20 @@ function SingleArticle() {
 
   return (
     <>
-      <MKBox bgColor="white" py={0.25}>
+      <SPBox bgColor="white" py={0.25}>
         <DefaultNavbar
           routes={routes}
           action={{
             type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-pro-react",
+            route: "https://www.creative-tim.com/product/scarlet-pay-pro-react",
             label: "buy now",
             color: "success",
           }}
           transparent
           relative
         />
-      </MKBox>
-      <MKBox
+      </SPBox>
+      <SPBox
         ref={headerRef}
         minHeight="85vh"
         width="100%"
@@ -91,7 +91,7 @@ function SingleArticle() {
       >
         <Container>
           <Grid container item xs={12} lg={7} justifyContent="center" flexDirection="column">
-            <MKTypography
+            <SPTypography
               variant="h1"
               color="white"
               sx={({ breakpoints, typography: { size } }) => ({
@@ -101,8 +101,8 @@ function SingleArticle() {
               })}
             >
               Material Design - News
-            </MKTypography>
-            <MKTypography
+            </SPTypography>
+            <SPTypography
               variant="body1"
               color="white"
               opacity={0.8}
@@ -112,27 +112,27 @@ function SingleArticle() {
             >
               The time is now for it be okay to be great. People in this world shun people for being
               nice.
-            </MKTypography>
-            <MKTypography variant="h5" color="white" mt={2} mb={1}>
+            </SPTypography>
+            <SPTypography variant="h5" color="white" mt={2} mb={1}>
               Connect with us on
-            </MKTypography>
-            <MKBox display="flex" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+            </SPTypography>
+            <SPBox display="flex" alignItems="center">
+              <SPTypography component="a" variant="body1" color="white" href="#" mr={3}>
                 <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              </SPTypography>
+              <SPTypography component="a" variant="body1" color="white" href="#" mr={3}>
                 <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              </SPTypography>
+              <SPTypography component="a" variant="body1" color="white" href="#" mr={3}>
                 <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
+              </SPTypography>
+              <SPTypography component="a" variant="body1" color="white" href="#">
                 <i className="fab fa-google-plus" />
-              </MKTypography>
-            </MKBox>
+              </SPTypography>
+            </SPBox>
           </Grid>
         </Container>
-      </MKBox>
+      </SPBox>
       <Card
         sx={{
           p: 2,
@@ -149,9 +149,9 @@ function SingleArticle() {
         <Posts />
         <Support />
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
+      <SPBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      </SPBox>
     </>
   );
 }

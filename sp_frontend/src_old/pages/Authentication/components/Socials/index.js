@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v3.0.0
+* Scarlet Pay 2 PRO React - v3.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-2-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-2-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -13,14 +13,14 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// Material Kit 2 PRO React components
-import MKButton from "components/MKButton";
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPButton from "components/SPButton";
+import SPBox from "components/SPBox";
 
 function Socials() {
   return (
-    <MKBox display="flex" justifyContent="center">
-      <MKButton variant="outlined" color="light" sx={{ py: 1.75, px: 1.25 }}>
+    <SPBox display="flex" justifyContent="center">
+      <SPButton variant="outlined" color="light" sx={{ py: 1.75, px: 1.25 }}>
         <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1">
           <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
             <g transform="translate(3.000000, 3.000000)" fillRule="nonzero">
@@ -32,9 +32,9 @@ function Socials() {
             </g>
           </g>
         </svg>
-      </MKButton>
-      <MKBox px={1}>
-        <MKButton variant="outlined" color="light" sx={{ py: 1.75, px: 1.25 }}>
+      </SPButton>
+      <SPBox px={1}>
+        <SPButton variant="outlined" color="light" sx={{ py: 1.75, px: 1.25 }}>
           <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1">
             <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
               <g transform="translate(7.000000, 0.564551)" fill="#000000" fillRule="nonzero">
@@ -42,9 +42,9 @@ function Socials() {
               </g>
             </g>
           </svg>
-        </MKButton>
-      </MKBox>
-      <MKButton variant="outlined" color="light" sx={{ py: 1.75, px: 1.25 }}>
+        </SPButton>
+      </SPBox>
+      <SPButton variant="outlined" color="light" sx={{ py: 1.75, px: 1.25 }}>
         <svg width="24px" height="32px" viewBox="0 0 64 64" version="1.1">
           {" "}
           <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -68,8 +68,8 @@ function Socials() {
             </g>
           </g>
         </svg>
-      </MKButton>
-    </MKBox>
+      </SPButton>
+    </SPBox>
   );
 }
 

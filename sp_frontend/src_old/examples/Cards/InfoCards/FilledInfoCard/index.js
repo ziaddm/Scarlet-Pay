@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,9 +23,9 @@ import { Link } from "react-router-dom";
 import Icon from "@mui/material/Icon";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function FilledInfoCard({
   variant = "contained",
@@ -60,7 +60,7 @@ function FilledInfoCard({
   }
 
   return (
-    <MKBox
+    <SPBox
       display={{ xs: "block", md: "flex" }}
       variant={variant}
       bgColor={variant === "contained" ? "grey-100" : color}
@@ -69,7 +69,7 @@ function FilledInfoCard({
       pb={3}
       px={3}
     >
-      <MKTypography
+      <SPTypography
         display="block"
         variant="h3"
         color={iconColor}
@@ -77,9 +77,9 @@ function FilledInfoCard({
         mt={-0.625}
       >
         {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
-      </MKTypography>
-      <MKBox pt={{ xs: 3, md: 0 }} pl={{ xs: 0, md: 2 }} lineHeight={1}>
-        <MKTypography
+      </SPTypography>
+      <SPBox pt={{ xs: 3, md: 0 }} pl={{ xs: 0, md: 2 }} lineHeight={1}>
+        <SPTypography
           display="block"
           variant="5"
           color={variant === "contained" || color === "light" ? "dark" : "white"}
@@ -87,17 +87,17 @@ function FilledInfoCard({
           mb={1}
         >
           {title}
-        </MKTypography>
-        <MKTypography
+        </SPTypography>
+        <SPTypography
           display="block"
           variant="body2"
           color={variant === "contained" || color === "light" ? "text" : "white"}
           mb={2}
         >
           {description}
-        </MKTypography>
+        </SPTypography>
         {action && action.type === "external" ? (
-          <MKTypography
+          <SPTypography
             component={MuiLink}
             href={action.route}
             target="_blank"
@@ -108,10 +108,10 @@ function FilledInfoCard({
             sx={buttonStyles}
           >
             {action.label} <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-          </MKTypography>
+          </SPTypography>
         ) : null}
         {action && action.type === "internal" ? (
-          <MKTypography
+          <SPTypography
             component={Link}
             to={action.route}
             variant="body2"
@@ -120,10 +120,10 @@ function FilledInfoCard({
             sx={buttonStyles}
           >
             {action.label} <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-          </MKTypography>
+          </SPTypography>
         ) : null}
-      </MKBox>
-    </MKBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

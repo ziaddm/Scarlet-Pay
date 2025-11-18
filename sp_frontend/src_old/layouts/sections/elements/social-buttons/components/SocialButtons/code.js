@@ -2,68 +2,68 @@ const socialButtonsCode = `// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKSocialButton from "components/MKSocialButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPSocialButton from "components/SPSocialButton";
 
 function SocialButtons() {
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid container justifyContent="center">
-          <MKBox display="flex" flexWrap="wrap" justifyContent="center" gap={1}>
-            <MKSocialButton color="facebook">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-facebook" />
+          <SPBox display="flex" flexWrap="wrap" justifyContent="center" gap={1}>
+            <SPSocialButton color="facebook">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-facebook" />
               facebook
-            </MKSocialButton>
-            <MKSocialButton color="twitter">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-twitter" />
+            </SPSocialButton>
+            <SPSocialButton color="twitter">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-twitter" />
               twitter
-            </MKSocialButton>
-            <MKSocialButton color="instagram">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-instagram" />
+            </SPSocialButton>
+            <SPSocialButton color="instagram">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-instagram" />
               instagram
-            </MKSocialButton>
-            <MKSocialButton color="github">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-github" />
+            </SPSocialButton>
+            <SPSocialButton color="github">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-github" />
               github
-            </MKSocialButton>
-            <MKSocialButton color="pinterest">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-pinterest" />
+            </SPSocialButton>
+            <SPSocialButton color="pinterest">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-pinterest" />
               pinterest
-            </MKSocialButton>
-            <MKSocialButton color="youtube">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-youtube" />
+            </SPSocialButton>
+            <SPSocialButton color="youtube">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-youtube" />
               youtube
-            </MKSocialButton>
-            <MKSocialButton color="vimeo">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-vimeo" />
+            </SPSocialButton>
+            <SPSocialButton color="vimeo">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-vimeo" />
               vimeo
-            </MKSocialButton>
-            <MKSocialButton color="slack">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-slack" />
+            </SPSocialButton>
+            <SPSocialButton color="slack">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-slack" />
               slack
-            </MKSocialButton>
-            <MKSocialButton color="dribbble">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-dribbble" />
+            </SPSocialButton>
+            <SPSocialButton color="dribbble">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-dribbble" />
               dribbble
-            </MKSocialButton>
-            <MKSocialButton color="reddit">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-reddit" />
+            </SPSocialButton>
+            <SPSocialButton color="reddit">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-reddit" />
               reddit
-            </MKSocialButton>
-            <MKSocialButton color="tumblr">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-tumblr" />
+            </SPSocialButton>
+            <SPSocialButton color="tumblr">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-tumblr" />
               tumblr
-            </MKSocialButton>
-            <MKSocialButton color="linkedin">
-              <MKBox component="i" color="inherit" mr={0.5} className="fab fa-linkedin" />
+            </SPSocialButton>
+            <SPSocialButton color="linkedin">
+              <SPBox component="i" color="inherit" mr={0.5} className="fab fa-linkedin" />
               linkedin
-            </MKSocialButton>
-          </MKBox>
+            </SPSocialButton>
+          </SPBox>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

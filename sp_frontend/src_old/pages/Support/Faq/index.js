@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -20,11 +20,11 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import SimpleFooter from "examples/Footers/SimpleFooter";
 import SimpleInfoCard from "examples/Cards/InfoCards/SimpleInfoCard";
@@ -44,13 +44,13 @@ function Faq() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-pro-react",
+          route: "https://www.creative-tim.com/product/scarlet-pay-pro-react",
           label: "buy now",
           color: "info",
         }}
         sticky
       />
-      <MKBox component="section" pt={20} pb={12}>
+      <SPBox component="section" pt={20} pb={12}>
         <Container sx={{ mb: 8 }}>
           <Grid container spacing={3}>
             <Grid item xs={12} md={6} lg={4}>
@@ -83,7 +83,7 @@ function Faq() {
           <Grid container justifyContent="center">
             <Grid item xs={12}>
               <Card>
-                <MKBox
+                <SPBox
                   variant="gradient"
                   bgColor="info"
                   borderRadius="lg"
@@ -92,17 +92,17 @@ function Faq() {
                   mt={-3}
                   mx={2}
                 >
-                  <MKTypography variant="h3" color="white">
+                  <SPTypography variant="h3" color="white">
                     FAQ
-                  </MKTypography>
-                  <MKTypography variant="body2" color="white" opacity={0.8}>
+                  </SPTypography>
+                  <SPTypography variant="body2" color="white" opacity={0.8}>
                     Last modified: Sept 07 2021
-                  </MKTypography>
-                </MKBox>
-                <MKBox p={6}>
-                  <MKTypography variant="h5" my={3}>
+                  </SPTypography>
+                </SPBox>
+                <SPBox p={6}>
+                  <SPTypography variant="h5" my={3}>
                     Basics
-                  </MKTypography>
+                  </SPTypography>
                   <FaqCollapse
                     title="How do I order?"
                     open={collapse === 1}
@@ -175,9 +175,9 @@ function Faq() {
                     you&apos;re taught you can&apos;t do anything, you won&apos;t do anything. I was
                     taught I could do everything.
                   </FaqCollapse>
-                  <MKTypography variant="h5" mt={6} mb={3}>
+                  <SPTypography variant="h5" mt={6} mb={3}>
                     Account & Settings
-                  </MKTypography>
+                  </SPTypography>
                   <FaqCollapse
                     title="How do I change my password?"
                     open={collapse === 6}
@@ -221,9 +221,9 @@ function Faq() {
                     doers. Because I&apos;m here to follow my dreams and inspire other people to
                     follow their dreams, too.
                   </FaqCollapse>
-                  <MKTypography variant="h5" mt={6} mb={3}>
+                  <SPTypography variant="h5" mt={6} mb={3}>
                     Licenses
-                  </MKTypography>
+                  </SPTypography>
                   <FaqCollapse
                     title="What are the differences between the licenses on the website?"
                     open={collapse === 10}
@@ -266,15 +266,15 @@ function Faq() {
                     that we give them all we have. Then we lose family over time. What else could
                     rust the heart more over time? Blackgold.
                   </FaqCollapse>
-                </MKBox>
+                </SPBox>
               </Card>
             </Grid>
           </Grid>
         </Container>
-      </MKBox>
-      <MKBox pt={{ xs: 0, lg: 3 }} pb={3}>
+      </SPBox>
+      <SPBox pt={{ xs: 0, lg: 3 }} pb={3}>
         <SimpleFooter />
-      </MKBox>
+      </SPBox>
     </>
   );
 }

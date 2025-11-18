@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,16 +17,16 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import SimpleInfoCard from "examples/Cards/InfoCards/SimpleInfoCard";
 
 function FeaturesThree() {
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid
           container
@@ -38,13 +38,13 @@ function FeaturesThree() {
           textAlign="center"
           pb={6}
         >
-          <MKTypography variant="h2" mb={1}>
+          <SPTypography variant="h2" mb={1}>
             Turn your idea into a startup
-          </MKTypography>
-          <MKTypography variant="body1" color="text">
+          </SPTypography>
+          <SPTypography variant="body1" color="text">
             We&apos;re constantly trying to express ourselves and actualize our dreams. If you have
             the opportunity to play{" "}
-          </MKTypography>
+          </SPTypography>
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6} lg={4}>
@@ -75,7 +75,7 @@ function FeaturesThree() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

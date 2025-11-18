@@ -32,12 +32,12 @@ import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import PersonIcon from "@mui/icons-material/Person";
 import OpenInFullIcon from "@mui/icons-material/OpenInFull";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
-import MKAvatar from "components/base/MKAvatar";
-import MKSnackbar from "components/base/MKSnackbar";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
+import SPAvatar from "components/base/SPAvatar";
+import SPSnackbar from "components/base/SPSnackbar";
 
 // Shared hooks
 import { useSnackbar } from "shared/hooks";
@@ -441,7 +441,7 @@ function FloatingChatBot() {
           }}
         >
           {/* Header */}
-          <MKBox
+          <SPBox
             sx={{
               p: 2,
               background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
@@ -508,7 +508,7 @@ function FloatingChatBot() {
               },
             }}
           >
-            <MKBox
+            <SPBox
               display="flex"
               alignItems="center"
               gap={1}
@@ -553,7 +553,7 @@ function FloatingChatBot() {
                   },
                 }}
               />
-              <MKTypography
+              <SPTypography
                 variant="h6"
                 fontWeight="bold"
                 sx={{
@@ -596,9 +596,9 @@ function FloatingChatBot() {
                 }}
               >
                 Chat Assistant - {botName}
-              </MKTypography>
-            </MKBox>
-            <MKBox display="flex" gap={0.5}>
+              </SPTypography>
+            </SPBox>
+            <SPBox display="flex" gap={0.5}>
               <IconButton
                 size="small"
                 onClick={handleOpenFullscreen}
@@ -625,11 +625,11 @@ function FloatingChatBot() {
               >
                 <CloseIcon />
               </IconButton>
-            </MKBox>
-          </MKBox>
+            </SPBox>
+          </SPBox>
 
           {/* Messages Area */}
-          <MKBox
+          <SPBox
             sx={{
               flex: 1,
               overflowY: "auto",
@@ -727,7 +727,7 @@ function FloatingChatBot() {
             }}
           >
             {messages.length === 0 ? (
-              <MKBox
+              <SPBox
                 display="flex"
                 flexDirection="column"
                 alignItems="center"
@@ -767,7 +767,7 @@ function FloatingChatBot() {
                     },
                   }}
                 />
-                <MKTypography
+                <SPTypography
                   variant="h6"
                   color="text.secondary"
                   mb={1}
@@ -791,8 +791,8 @@ function FloatingChatBot() {
                   }}
                 >
                   Start a conversation
-                </MKTypography>
-                <MKTypography
+                </SPTypography>
+                <SPTypography
                   variant="body2"
                   color="text.secondary"
                   sx={{
@@ -811,12 +811,12 @@ function FloatingChatBot() {
                   }}
                 >
                   Ask me anything or attach files for assistance
-                </MKTypography>
-              </MKBox>
+                </SPTypography>
+              </SPBox>
             ) : (
-              <MKBox sx={{ position: "relative", zIndex: 1 }}>
+              <SPBox sx={{ position: "relative", zIndex: 1 }}>
                 {messages.map((message, index) => (
-                  <MKBox
+                  <SPBox
                     key={index}
                     display="flex"
                     justifyContent={message.role === "user" ? "flex-end" : "flex-start"}
@@ -841,7 +841,7 @@ function FloatingChatBot() {
                       },
                     }}
                   >
-                    <MKBox
+                    <SPBox
                       sx={{
                         maxWidth: "75%",
                         display: "flex",
@@ -849,7 +849,7 @@ function FloatingChatBot() {
                         flexDirection: message.role === "user" ? "row-reverse" : "row",
                       }}
                     >
-                      <MKAvatar
+                      <SPAvatar
                         sx={{
                           width: 32,
                           height: 32,
@@ -866,7 +866,7 @@ function FloatingChatBot() {
                         ) : (
                           <SmartToyIcon fontSize="small" />
                         )}
-                      </MKAvatar>
+                      </SPAvatar>
                       <Card
                         sx={{
                           p: 1.5,
@@ -881,9 +881,9 @@ function FloatingChatBot() {
                         }}
                       >
                         {message.files && message.files.length > 0 && (
-                          <MKBox mb={1}>
+                          <SPBox mb={1}>
                             {message.files.map((file, fileIndex) => (
-                              <MKBox
+                              <SPBox
                                 key={fileIndex}
                                 display="flex"
                                 alignItems="center"
@@ -894,7 +894,7 @@ function FloatingChatBot() {
                                   fontSize="small"
                                   sx={{ color: message.role === "user" ? "white" : "inherit" }}
                                 />
-                                <MKTypography
+                                <SPTypography
                                   variant="caption"
                                   sx={{
                                     color: message.role === "user" ? "white" : "inherit",
@@ -902,12 +902,12 @@ function FloatingChatBot() {
                                   }}
                                 >
                                   {file.name}
-                                </MKTypography>
-                              </MKBox>
+                                </SPTypography>
+                              </SPBox>
                             ))}
-                          </MKBox>
+                          </SPBox>
                         )}
-                        <MKTypography
+                        <SPTypography
                           variant="body2"
                           sx={{
                             color: message.role === "user" ? "white" : "inherit",
@@ -979,13 +979,13 @@ function FloatingChatBot() {
                           <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
                             {message.content}
                           </ReactMarkdown>
-                        </MKTypography>
+                        </SPTypography>
                       </Card>
-                    </MKBox>
-                  </MKBox>
+                    </SPBox>
+                  </SPBox>
                 ))}
                 {loading && (
-                  <MKBox
+                  <SPBox
                     display="flex"
                     justifyContent="flex-start"
                     mb={2}
@@ -1005,24 +1005,24 @@ function FloatingChatBot() {
                       },
                     }}
                   >
-                    <MKBox display="flex" gap={1} alignItems="center">
-                      <MKAvatar sx={{ width: 32, height: 32, bgcolor: "success.main" }}>
+                    <SPBox display="flex" gap={1} alignItems="center">
+                      <SPAvatar sx={{ width: 32, height: 32, bgcolor: "success.main" }}>
                         <SmartToyIcon fontSize="small" />
-                      </MKAvatar>
+                      </SPAvatar>
                       <Card sx={{ p: 1.5 }}>
                         <CircularProgress size={20} />
                       </Card>
-                    </MKBox>
-                  </MKBox>
+                    </SPBox>
+                  </SPBox>
                 )}
                 <div ref={messagesEndRef} />
-              </MKBox>
+              </SPBox>
             )}
-          </MKBox>
+          </SPBox>
 
           {/* Attached Files */}
           {attachedFiles.length > 0 && (
-            <MKBox
+            <SPBox
               sx={{
                 p: 1,
                 borderTop: "1px solid rgba(0,0,0,0.1)",
@@ -1031,9 +1031,9 @@ function FloatingChatBot() {
                 overflowY: "auto",
               }}
             >
-              <MKBox display="flex" flexWrap="wrap" gap={1}>
+              <SPBox display="flex" flexWrap="wrap" gap={1}>
                 {attachedFiles.map((file, index) => (
-                  <MKBox
+                  <SPBox
                     key={index}
                     display="flex"
                     alignItems="center"
@@ -1046,9 +1046,9 @@ function FloatingChatBot() {
                     }}
                   >
                     <InsertDriveFileIcon fontSize="small" />
-                    <MKTypography variant="caption" sx={{ maxWidth: 150, overflow: "hidden" }}>
+                    <SPTypography variant="caption" sx={{ maxWidth: 150, overflow: "hidden" }}>
                       {file.name}
-                    </MKTypography>
+                    </SPTypography>
                     <IconButton
                       size="small"
                       onClick={() => handleRemoveFile(index)}
@@ -1056,21 +1056,21 @@ function FloatingChatBot() {
                     >
                       <CloseIcon fontSize="small" />
                     </IconButton>
-                  </MKBox>
+                  </SPBox>
                 ))}
-              </MKBox>
-            </MKBox>
+              </SPBox>
+            </SPBox>
           )}
 
           {/* Input Area */}
-          <MKBox
+          <SPBox
             sx={{
               p: 1.5,
               borderTop: "1px solid rgba(0,0,0,0.1)",
               backgroundColor: "white",
             }}
           >
-            <MKBox display="flex" gap={1} alignItems="flex-end">
+            <SPBox display="flex" gap={1} alignItems="flex-end">
               <IconButton
                 size="small"
                 onClick={() => fileInputRef.current?.click()}
@@ -1118,13 +1118,13 @@ function FloatingChatBot() {
               >
                 <SendIcon />
               </IconButton>
-            </MKBox>
-          </MKBox>
+            </SPBox>
+          </SPBox>
         </Paper>
       </Slide>
 
       {/* Snackbar */}
-      <MKSnackbar
+      <SPSnackbar
         color={snackbar.color}
         icon={<SmartToyIcon />}
         title={snackbar.title}

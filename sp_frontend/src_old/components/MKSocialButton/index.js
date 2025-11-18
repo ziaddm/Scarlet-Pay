@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,15 +18,15 @@ import { forwardRef } from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Custom styles for MKSocialButton
-import MKSocialButtonRoot from "components/MKSocialButton/MKSocialButtonRoot";
+// Custom styles for SPSocialButton
+import SPSocialButtonRoot from "components/SPSocialButton/SPSocialButtonRoot";
 
-const MKSocialButton = forwardRef(
+const SPSocialButton = forwardRef(
   (
     { color = "facebook", size = "medium", iconOnly = false, circular = false, children, ...rest },
     ref
   ) => (
-    <MKSocialButtonRoot
+    <SPSocialButtonRoot
       {...rest}
       ref={ref}
       variant="contained"
@@ -35,12 +35,12 @@ const MKSocialButton = forwardRef(
       ownerState={{ color, size, iconOnly, circular }}
     >
       {children}
-    </MKSocialButtonRoot>
+    </SPSocialButtonRoot>
   )
 );
 
-// Typechecking props for the MKSocialButton
-MKSocialButton.propTypes = {
+// Typechecking props for the SPSocialButton
+SPSocialButton.propTypes = {
   size: PropTypes.oneOf(["small", "medium", "large"]),
   color: PropTypes.oneOf([
     "facebook",
@@ -61,4 +61,4 @@ MKSocialButton.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default MKSocialButton;
+export default SPSocialButton;

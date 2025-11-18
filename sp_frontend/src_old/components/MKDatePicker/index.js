@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -22,23 +22,23 @@ import Flatpickr from "react-flatpickr";
 // react-flatpickr styles
 import "flatpickr/dist/flatpickr.css";
 
-// Material Kit 2 PRO React components
-import MKInput from "components/MKInput";
+// Scarlet Pay 2 PRO React components
+import SPInput from "components/SPInput";
 
-function MKDatePicker({ input = {}, ...rest }) {
+function SPDatePicker({ input = {}, ...rest }) {
   return (
     <Flatpickr
       {...rest}
       render={({ defaultValue }, ref) => (
-        <MKInput {...input} defaultValue={defaultValue} inputRef={ref} />
+        <SPInput {...input} defaultValue={defaultValue} inputRef={ref} />
       )}
     />
   );
 }
 
-// Typechecking props for the MKDatePicker
-MKDatePicker.propTypes = {
+// Typechecking props for the SPDatePicker
+SPDatePicker.propTypes = {
   input: PropTypes.objectOf(PropTypes.any),
 };
 
-export default MKDatePicker;
+export default SPDatePicker;

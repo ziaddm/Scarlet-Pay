@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -24,27 +24,27 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function DetailedFooter({ content }) {
   const { brand, socials, menus, copyright } = content;
 
   return (
-    <MKBox component="footer">
+    <SPBox component="footer">
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={3} mb={{ xs: 6, lg: 0 }}>
-            <MKTypography variant="h6" textTransform="uppercase" mb={1}>
+            <SPTypography variant="h6" textTransform="uppercase" mb={1}>
               {brand.name}
-            </MKTypography>
-            <MKTypography variant="body2" color="text" mb={3} pb={1} pr={3}>
+            </SPTypography>
+            <SPTypography variant="body2" color="text" mb={3} pb={1} pr={3}>
               {brand.description}
-            </MKTypography>
-            <MKBox display="flex" alignItems="center">
+            </SPTypography>
+            <SPBox display="flex" alignItems="center">
               {socials.map(({ icon, link }, key) => (
-                <MKTypography
+                <SPTypography
                   key={link}
                   component="a"
                   href={link}
@@ -56,13 +56,13 @@ function DetailedFooter({ content }) {
                   sx={{ fontSize: "1.125rem" }}
                 >
                   {icon}
-                </MKTypography>
+                </SPTypography>
               ))}
-            </MKBox>
+            </SPBox>
           </Grid>
           {menus.map(({ name: title, items }, key) => (
             <Grid key={title} item xs={6} md={2} ml={key === 0 ? { xs: 0, lg: "auro" } : 0}>
-              <MKTypography
+              <SPTypography
                 component="h6"
                 variant="button"
                 fontWeight="bold"
@@ -70,12 +70,12 @@ function DetailedFooter({ content }) {
                 mb={1}
               >
                 {title}
-              </MKTypography>
-              <MKBox component="ul" p={0} m={0} sx={{ listStyle: "none" }}>
+              </SPTypography>
+              <SPBox component="ul" p={0} m={0} sx={{ listStyle: "none" }}>
                 {items.map(({ name, route, href }) => (
-                  <MKBox key={name} component="li" p={0} m={0} lineHeight={1.25}>
+                  <SPBox key={name} component="li" p={0} m={0} lineHeight={1.25}>
                     {href ? (
-                      <MKTypography
+                      <SPTypography
                         component="a"
                         href={href}
                         target="_blank"
@@ -87,9 +87,9 @@ function DetailedFooter({ content }) {
                         pb={0.5}
                       >
                         {name}
-                      </MKTypography>
+                      </SPTypography>
                     ) : (
-                      <MKTypography
+                      <SPTypography
                         component={Link}
                         to={route}
                         variant="button"
@@ -99,11 +99,11 @@ function DetailedFooter({ content }) {
                         pb={0.5}
                       >
                         {name}
-                      </MKTypography>
+                      </SPTypography>
                     )}
-                  </MKBox>
+                  </SPBox>
                 ))}
-              </MKBox>
+              </SPBox>
             </Grid>
           ))}
           <Grid item xs={12} pr={3} sx={{ textAlign: "center", mb: 3 }}>
@@ -112,7 +112,7 @@ function DetailedFooter({ content }) {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

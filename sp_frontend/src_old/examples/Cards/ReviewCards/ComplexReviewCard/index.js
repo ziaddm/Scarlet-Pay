@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,17 +19,17 @@ import PropTypes from "prop-types";
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPAvatar from "components/SPAvatar";
+import SPTypography from "components/SPTypography";
 
 function ComplexReviewCard({ image, color = "dark", title, review, author }) {
   return (
     <Grid container alignItems="center" spacing={3}>
       <Grid item xs={12} md={5} sx={{ ml: { xs: 0, lg: "auto" } }}>
-        <MKBox p={{ xs: 0, lg: 6 }}>
-          <MKBox
+        <SPBox p={{ xs: 0, lg: 6 }}>
+          <SPBox
             component="img"
             src={image}
             alt={title}
@@ -37,20 +37,20 @@ function ComplexReviewCard({ image, color = "dark", title, review, author }) {
             borderRadius="md"
             shadow="md"
           />
-        </MKBox>
+        </SPBox>
       </Grid>
       <Grid item xs={12} md={7} lg={5} sx={{ mr: { xs: 0, lg: "auto" } }}>
-        <MKTypography variant="button" color="text" fontWeight="bold" mb={0.5}>
+        <SPTypography variant="button" color="text" fontWeight="bold" mb={0.5}>
           - Customer Story
-        </MKTypography>
-        <MKTypography variant="h3" color={color}>
+        </SPTypography>
+        <SPTypography variant="h3" color={color}>
           {title}
-        </MKTypography>
-        <MKTypography variant="body2" color="text" my={3}>
+        </SPTypography>
+        <SPTypography variant="body2" color="text" my={3}>
           <em>&quot;{review}&quot;</em>
-        </MKTypography>
-        <MKBox display="flex" alignItems="center">
-          <MKAvatar
+        </SPTypography>
+        <SPBox display="flex" alignItems="center">
+          <SPAvatar
             src={author.logo}
             alt="Logo"
             size="md"
@@ -58,16 +58,16 @@ function ComplexReviewCard({ image, color = "dark", title, review, author }) {
             bgColor={color}
             sx={{ p: 0.5 }}
           />
-          <MKBox pl={1.5}>
-            <MKTypography display="block" variant="button" color={color} fontWeight="bold">
+          <SPBox pl={1.5}>
+            <SPTypography display="block" variant="button" color={color} fontWeight="bold">
               {author.name}
-            </MKTypography>
-            <MKTypography display="block" variant="button" color="text" fontWeight="regular">
+            </SPTypography>
+            <SPTypography display="block" variant="button" color="text" fontWeight="regular">
               {author.role}
-            </MKTypography>
-          </MKBox>
-        </MKBox>
-        <MKBox width="25%" mt={-16} ml="auto" opacity={0.2}>
+            </SPTypography>
+          </SPBox>
+        </SPBox>
+        <SPBox width="25%" mt={-16} ml="auto" opacity={0.2}>
           <svg
             width="110px"
             height="110px"
@@ -86,7 +86,7 @@ function ComplexReviewCard({ image, color = "dark", title, review, author }) {
               />
             </g>
           </svg>
-        </MKBox>
+        </SPBox>
       </Grid>
     </Grid>
   );

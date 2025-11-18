@@ -2,16 +2,16 @@ const applicationOneCode = `// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import ColoredBackgroundCard from "examples/Cards/BackgroundCards/ColoredBackgroundCard";
 
 function ApplicationOne() {
   return (
-    <MKBox component="section" py={6}>
+    <SPBox component="section" py={6}>
       <Container>
         <Grid
           container
@@ -23,7 +23,7 @@ function ApplicationOne() {
           mx="auto"
           mb={3}
         >
-          <MKTypography
+          <SPTypography
             variant="body2"
             color="info"
             fontWeight="bold"
@@ -31,8 +31,8 @@ function ApplicationOne() {
             textGradient
           >
             Our Work
-          </MKTypography>
-          <MKTypography variant="h3">Some of our awesome projects - 3</MKTypography>
+          </SPTypography>
+          <SPTypography variant="h3">Some of our awesome projects - 3</SPTypography>
         </Grid>
         <Grid container spacing={3} mt={4}>
           <Grid item xs={12} md={6} lg={4}>
@@ -82,7 +82,7 @@ function ApplicationOne() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

@@ -3,63 +3,63 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKPagination from "components/MKPagination";
+// Scarlet Pay 2 PRO React components
+import SPPagination from "components/SPPagination";
 
 function PaginationSizing() {
   return (
     <Container sx={{ height: "100%" }}>
       <Grid container spacing={3} alignItems="center" mx="auto" height="100%">
         <Grid item xs={12}>
-          <MKPagination size="small" placement="center">
-            <MKPagination item>
+          <SPPagination size="small" placement="center">
+            <SPPagination item>
               <Icon>keyboard_arrow_left</Icon>
-            </MKPagination>
-            <MKPagination item active>
+            </SPPagination>
+            <SPPagination item active>
               1
-            </MKPagination>
-            <MKPagination item>2</MKPagination>
-            <MKPagination item>3</MKPagination>
-            <MKPagination item>4</MKPagination>
-            <MKPagination item>5</MKPagination>
-            <MKPagination item>
+            </SPPagination>
+            <SPPagination item>2</SPPagination>
+            <SPPagination item>3</SPPagination>
+            <SPPagination item>4</SPPagination>
+            <SPPagination item>5</SPPagination>
+            <SPPagination item>
               <Icon>keyboard_arrow_right</Icon>
-            </MKPagination>
-          </MKPagination>
+            </SPPagination>
+          </SPPagination>
         </Grid>
         <Grid item xs={12}>
-          <MKPagination placement="center">
-            <MKPagination item>
+          <SPPagination placement="center">
+            <SPPagination item>
               <Icon>keyboard_arrow_left</Icon>
-            </MKPagination>
-            <MKPagination item active>
+            </SPPagination>
+            <SPPagination item active>
               1
-            </MKPagination>
-            <MKPagination item>2</MKPagination>
-            <MKPagination item>3</MKPagination>
-            <MKPagination item>4</MKPagination>
-            <MKPagination item>5</MKPagination>
-            <MKPagination item>
+            </SPPagination>
+            <SPPagination item>2</SPPagination>
+            <SPPagination item>3</SPPagination>
+            <SPPagination item>4</SPPagination>
+            <SPPagination item>5</SPPagination>
+            <SPPagination item>
               <Icon>keyboard_arrow_right</Icon>
-            </MKPagination>
-          </MKPagination>
+            </SPPagination>
+          </SPPagination>
         </Grid>
         <Grid item xs={12}>
-          <MKPagination size="large" placement="center">
-            <MKPagination item>
+          <SPPagination size="large" placement="center">
+            <SPPagination item>
               <Icon>keyboard_arrow_left</Icon>
-            </MKPagination>
-            <MKPagination item active>
+            </SPPagination>
+            <SPPagination item active>
               1
-            </MKPagination>
-            <MKPagination item>2</MKPagination>
-            <MKPagination item>3</MKPagination>
-            <MKPagination item>4</MKPagination>
-            <MKPagination item>5</MKPagination>
-            <MKPagination item>
+            </SPPagination>
+            <SPPagination item>2</SPPagination>
+            <SPPagination item>3</SPPagination>
+            <SPPagination item>4</SPPagination>
+            <SPPagination item>5</SPPagination>
+            <SPPagination item>
               <Icon>keyboard_arrow_right</Icon>
-            </MKPagination>
-          </MKPagination>
+            </SPPagination>
+          </SPPagination>
         </Grid>
       </Grid>
     </Container>

@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,42 +17,42 @@ Coded by www.creative-tim.com
 import Icon from "@mui/material/Icon";
 import Tooltip from "@mui/material/Tooltip";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function TodoCard() {
   return (
-    <MKBox bgColor="dark" variant="gradient" borderRadius="xl" shadow="lg">
-      <MKBox p={3}>
-        <MKBox display="flex" justifyContent="space-between">
-          <MKTypography variant="h5" color="white">
+    <SPBox bgColor="dark" variant="gradient" borderRadius="xl" shadow="lg">
+      <SPBox p={3}>
+        <SPBox display="flex" justifyContent="space-between">
+          <SPTypography variant="h5" color="white">
             To Do
-          </MKTypography>
-          <MKBox textAlign="center" lineHeight={1}>
-            <MKTypography variant="h1" color="white" fontWeight="bold">
+          </SPTypography>
+          <SPBox textAlign="center" lineHeight={1}>
+            <SPTypography variant="h1" color="white" fontWeight="bold">
               7
-            </MKTypography>
-            <MKTypography variant="button" color="white" fontWeight="regular">
+            </SPTypography>
+            <SPTypography variant="button" color="white" fontWeight="regular">
               items
-            </MKTypography>
-          </MKBox>
-        </MKBox>
-        <MKTypography variant="body2" color="white" fontWeight="regular">
+            </SPTypography>
+          </SPBox>
+        </SPBox>
+        <SPTypography variant="body2" color="white" fontWeight="regular">
           Shopping
-        </MKTypography>
-        <MKTypography variant="body2" color="white" fontWeight="regular">
+        </SPTypography>
+        <SPTypography variant="body2" color="white" fontWeight="regular">
           Meeting
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
       <Tooltip title="Show More" placement="top" sx={{ cursor: "pointer" }}>
-        <MKBox textAlign="center" color="white" py={0.5} lineHeight={0}>
+        <SPBox textAlign="center" color="white" py={0.5} lineHeight={0}>
           <Icon sx={{ fontWeight: "bold" }} color="inherit" fontSize="default">
             keyboard_arrow_down
           </Icon>
-        </MKBox>
+        </SPBox>
       </Tooltip>
-    </MKBox>
+    </SPBox>
   );
 }
 

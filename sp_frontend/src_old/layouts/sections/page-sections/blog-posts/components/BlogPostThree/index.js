@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,10 +17,10 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultBlogCard from "examples/Cards/BlogCards/DefaultBlogCard";
 
 // Images
@@ -37,7 +37,7 @@ function BlogPostThree() {
     "https://images.unsplash.com/photo-1444877466744-dc2f2af2b931?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2300&q=80";
 
   return (
-    <MKBox component="section" py={7}>
+    <SPBox component="section" py={7}>
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={4} mb={{ xs: 3, lg: 0 }}>
@@ -84,7 +84,7 @@ function BlogPostThree() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

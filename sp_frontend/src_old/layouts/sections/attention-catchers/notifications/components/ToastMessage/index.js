@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,9 +23,9 @@ import Snackbar from "@mui/material/Snackbar";
 // @mui icons
 import CloseIcon from "@mui/icons-material/Close";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
 
 function ToastMessage() {
   const [show, setShow] = useState(false);
@@ -49,18 +49,18 @@ function ToastMessage() {
   });
 
   const toastTemplate = (
-    <MKBox display="flex" justifyContent="space-between" alignItems="center" color="white">
+    <SPBox display="flex" justifyContent="space-between" alignItems="center" color="white">
       Hello, world! This is a notification message.
-    </MKBox>
+    </SPBox>
   );
 
   return (
-    <MKBox component="section" py={6}>
+    <SPBox component="section" py={6}>
       <Container>
         <Grid container item xs={12} lg={10} justifyContent="center" mx="auto">
-          <MKButton variant="gradient" color="info" onClick={toggleSnackbar}>
+          <SPButton variant="gradient" color="info" onClick={toggleSnackbar}>
             Show Snackbar
-          </MKButton>
+          </SPButton>
         </Grid>
         <Snackbar
           anchorOrigin={{ vertical: "top", horizontal: "center" }}
@@ -74,7 +74,7 @@ function ToastMessage() {
           sx={toastStyles}
         />
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

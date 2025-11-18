@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,13 +19,13 @@ import Grid from "@mui/material/Grid";
 import Tooltip from "@mui/material/Tooltip";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
-import MKAvatar from "components/MKAvatar";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
+import SPAvatar from "components/SPAvatar";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
@@ -52,12 +52,12 @@ function VirtualReality() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-pro-react",
+          route: "https://www.creative-tim.com/product/scarlet-pay-pro-react",
           label: "buy now",
           color: "dark",
         }}
       />
-      <MKBox
+      <SPBox
         component="header"
         minHeight="100vh"
         width="100%"
@@ -76,7 +76,7 @@ function VirtualReality() {
         <Container>
           <Grid container spacing={3} justifyContent="center" pt={{ xs: 16, lg: 6 }}>
             <Grid item xs={12} md={1}>
-              <MKBox
+              <SPBox
                 display="flex"
                 flexDirection={{ xs: "row", md: "column" }}
                 justifyContent="center"
@@ -85,7 +85,7 @@ function VirtualReality() {
                 mb={{ xs: 8, md: 0 }}
               >
                 <Tooltip title="My Profile" placement="right">
-                  <MKAvatar
+                  <SPAvatar
                     src={team1}
                     alt="Profile Picture"
                     size="lg"
@@ -94,9 +94,9 @@ function VirtualReality() {
                   />
                 </Tooltip>
 
-                <MKBox my={{ xs: 0, md: 2 }} mx={{ xs: 2, md: 0 }}>
+                <SPBox my={{ xs: 0, md: 2 }} mx={{ xs: 2, md: 0 }}>
                   <Tooltip title="Home" placement="right">
-                    <MKButton
+                    <SPButton
                       iconOnly
                       size="large"
                       sx={({ palette: { black }, borders: { borderRadius } }) => ({
@@ -105,12 +105,12 @@ function VirtualReality() {
                       })}
                     >
                       <Icon color="inherit">home</Icon>
-                    </MKButton>
+                    </SPButton>
                   </Tooltip>
-                </MKBox>
-                <MKBox mb={{ xs: 0, md: 2 }} mr={{ xs: 2, md: 0 }}>
+                </SPBox>
+                <SPBox mb={{ xs: 0, md: 2 }} mr={{ xs: 2, md: 0 }}>
                   <Tooltip title="Search" placement="right">
-                    <MKButton
+                    <SPButton
                       iconOnly
                       size="large"
                       sx={({ palette: { black }, borders: { borderRadius } }) => ({
@@ -119,11 +119,11 @@ function VirtualReality() {
                       })}
                     >
                       <Icon color="inherit">search</Icon>
-                    </MKButton>
+                    </SPButton>
                   </Tooltip>
-                </MKBox>
+                </SPBox>
                 <Tooltip title="Minimize" placement="right">
-                  <MKButton
+                  <SPButton
                     iconOnly
                     size="large"
                     sx={({ palette: { black }, borders: { borderRadius } }) => ({
@@ -132,20 +132,20 @@ function VirtualReality() {
                     })}
                   >
                     <Icon color="inherit">more_horiz</Icon>
-                  </MKButton>
+                  </SPButton>
                 </Tooltip>
-              </MKBox>
+              </SPBox>
             </Grid>
             <Grid item xs={12} lg={11} xl={8}>
-              <MKBox
+              <SPBox
                 display="flex"
                 justifyContent="space-between"
                 alignItems={{ xs: "center", md: "flex-start" }}
                 ml={{ xs: 1, md: 4 }}
                 mt={-1}
               >
-                <MKBox>
-                  <MKTypography
+                <SPBox>
+                  <SPTypography
                     variant="h1"
                     sx={{
                       fontSize: ({ typography: { d1, h2 } }) => ({
@@ -157,44 +157,44 @@ function VirtualReality() {
                     lineHeight={1}
                   >
                     28&deg;C
-                  </MKTypography>
-                  <MKTypography
+                  </SPTypography>
+                  <SPTypography
                     variant="h6"
                     color="white"
                     fontWeight="medium"
                     textTransform="uppercase"
                   >
                     cloudy
-                  </MKTypography>
-                </MKBox>
-                <MKBox component="img" src={sunCloud} width="30%" />
-              </MKBox>
-              <MKBox mt={3} mb={8} ml={{ xs: 1, md: 4 }} mr={{ xs: 1, md: 0 }}>
+                  </SPTypography>
+                </SPBox>
+                <SPBox component="img" src={sunCloud} width="30%" />
+              </SPBox>
+              <SPBox mt={3} mb={8} ml={{ xs: 1, md: 4 }} mr={{ xs: 1, md: 0 }}>
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={4}>
                     <TodoList />
                   </Grid>
                   <Grid item xs={12} md={4}>
-                    <MKBox mb={3}>
+                    <SPBox mb={3}>
                       <TodoCard />
-                    </MKBox>
+                    </SPBox>
                     <Emails />
                   </Grid>
                   <Grid item xs={12} md={4}>
-                    <MKBox mb={3}>
+                    <SPBox mb={3}>
                       <MediaPlayer />
-                    </MKBox>
+                    </SPBox>
                     <Messages />
                   </Grid>
                 </Grid>
-              </MKBox>
+              </SPBox>
             </Grid>
           </Grid>
         </Container>
-      </MKBox>
-      <MKBox pt={6} px={1} mt={6}>
+      </SPBox>
+      <SPBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      </SPBox>
     </>
   );
 }

@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,11 +17,11 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 
 // Images
@@ -32,7 +32,7 @@ import team4 from "assets/images/ivana-square.jpg";
 
 function Team() {
   return (
-    <MKBox
+    <SPBox
       component="section"
       variant="gradient"
       bgColor="dark"
@@ -44,59 +44,59 @@ function Team() {
       <Container>
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-            <MKTypography variant="h3" color="white">
+            <SPTypography variant="h3" color="white">
               The Executive Team
-            </MKTypography>
-            <MKTypography variant="body2" color="white" opacity={0.8}>
+            </SPTypography>
+            <SPTypography variant="body2" color="white" opacity={0.8}>
               There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
               at. That&apos;s my skill.
-            </MKTypography>
+            </SPTypography>
           </Grid>
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
+            <SPBox mb={1}>
               <HorizontalTeamCard
                 image={team1}
                 name="Emma Roberts"
                 position={{ color: "info", label: "UI Designer" }}
                 description="Artist is a term applied to a person who engages in an activity deemed to be an art."
               />
-            </MKBox>
+            </SPBox>
           </Grid>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={1}>
+            <SPBox mb={1}>
               <HorizontalTeamCard
                 image={team2}
                 name="William Pearce"
                 position={{ color: "info", label: "Boss" }}
                 description="Artist is a term applied to a person who engages in an activity deemed to be an art."
               />
-            </MKBox>
+            </SPBox>
           </Grid>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
+            <SPBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
                 image={team3}
                 name="Ivana Flow"
                 position={{ color: "info", label: "Athlete" }}
                 description="Artist is a term applied to a person who engages in an activity deemed to be an art."
               />
-            </MKBox>
+            </SPBox>
           </Grid>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
+            <SPBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
                 image={team4}
                 name="Marquez Garcia"
                 position={{ color: "info", label: "JS Developer" }}
                 description="Artist is a term applied to a person who engages in an activity deemed to be an art."
               />
-            </MKBox>
+            </SPBox>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,40 +19,40 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Tooltip from "@mui/material/Tooltip";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
 
 function Tooltips() {
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid container justifyContent="center">
           <Stack direction="row" spacing={1}>
             <Tooltip title="Tooltip on top" placement="top">
-              <MKButton variant="gradient" color="info">
+              <SPButton variant="gradient" color="info">
                 tooltip on top
-              </MKButton>
+              </SPButton>
             </Tooltip>
             <Tooltip title="Tooltip on right" placement="right">
-              <MKButton variant="gradient" color="info">
+              <SPButton variant="gradient" color="info">
                 tooltip on right
-              </MKButton>
+              </SPButton>
             </Tooltip>
             <Tooltip title="Tooltip on bottom" placement="bottom">
-              <MKButton variant="gradient" color="info">
+              <SPButton variant="gradient" color="info">
                 tooltip on bottom
-              </MKButton>
+              </SPButton>
             </Tooltip>
             <Tooltip title="Tooltip on left" placement="left">
-              <MKButton variant="gradient" color="info">
+              <SPButton variant="gradient" color="info">
                 tooltip on left
-              </MKButton>
+              </SPButton>
             </Tooltip>
           </Stack>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

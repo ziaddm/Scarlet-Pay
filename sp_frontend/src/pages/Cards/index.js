@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 *
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 *
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 *
  =========================================================
 *
@@ -44,12 +44,12 @@ import RefreshIcon from "@mui/icons-material/Refresh";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
-import MKInput from "components/base/MKInput";
-import MKSnackbar from "components/base/MKSnackbar";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
+import SPInput from "components/base/SPInput";
+import SPSnackbar from "components/base/SPSnackbar";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -252,9 +252,9 @@ function Cards() {
   if (loading) {
     return (
       <Container maxWidth={false} sx={{ px: 0 }}>
-        <MKBox display="flex" justifyContent="center" alignItems="center" minHeight="400px">
+        <SPBox display="flex" justifyContent="center" alignItems="center" minHeight="400px">
           <CircularProgress />
-        </MKBox>
+        </SPBox>
       </Container>
     );
   }
@@ -262,13 +262,13 @@ function Cards() {
   return (
     <Container maxWidth={false} sx={{ px: 0 }}>
       {/* Header Section */}
-      <MKBox mb={6}>
-        <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-          <MKTypography variant="h4" fontWeight="bold">
+      <SPBox mb={6}>
+        <SPBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+          <SPTypography variant="h4" fontWeight="bold">
             Card Management
-          </MKTypography>
-          <MKBox display="flex" gap={2}>
-            <MKButton
+          </SPTypography>
+          <SPBox display="flex" gap={2}>
+            <SPButton
               variant="outlined"
               color="info"
               size="large"
@@ -277,8 +277,8 @@ function Cards() {
               disabled={loading}
             >
               Refresh
-            </MKButton>
-            <MKButton
+            </SPButton>
+            <SPButton
               variant="gradient"
               color="info"
               size="large"
@@ -286,36 +286,36 @@ function Cards() {
               startIcon={<AddIcon />}
             >
               Add Card
-            </MKButton>
-          </MKBox>
-        </MKBox>
-        <MKTypography variant="body1" color="text">
+            </SPButton>
+          </SPBox>
+        </SPBox>
+        <SPTypography variant="body1" color="text">
           Manage your payment cards. Add, update, or remove cards for easy payment processing.
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
 
       {/* Error Message */}
       {error && (
-        <MKBox mb={3} sx={{ px: 3 }}>
-          <MKTypography variant="body2" color="error">
+        <SPBox mb={3} sx={{ px: 3 }}>
+          <SPTypography variant="body2" color="error">
             Error: {error}
-          </MKTypography>
-        </MKBox>
+          </SPTypography>
+        </SPBox>
       )}
 
       {/* Cards List */}
       {!cards || cards.length === 0 ? (
-        <MKBox sx={{ px: 3, textAlign: "center", py: 8 }}>
-          <MKTypography variant="h6" color="text.secondary" mb={2}>
+        <SPBox sx={{ px: 3, textAlign: "center", py: 8 }}>
+          <SPTypography variant="h6" color="text.secondary" mb={2}>
             No cards found
-          </MKTypography>
-          <MKTypography variant="body2" color="text.secondary" mb={3}>
+          </SPTypography>
+          <SPTypography variant="body2" color="text.secondary" mb={3}>
             Add your first payment card to get started.
-          </MKTypography>
-          <MKButton variant="gradient" color="info" onClick={() => handleOpenDialog()}>
+          </SPTypography>
+          <SPButton variant="gradient" color="info" onClick={() => handleOpenDialog()}>
             Add Card
-          </MKButton>
-        </MKBox>
+          </SPButton>
+        </SPBox>
       ) : (
         <Grid container spacing={3} sx={{ px: 3 }}>
           {cards.map((card, index) => (
@@ -354,18 +354,18 @@ function Cards() {
                     }}
                   />
                 )}
-                <MKBox display="flex" justifyContent="space-between" alignItems="start" mb={2}>
-                  <MKBox display="flex" alignItems="center" gap={1}>
+                <SPBox display="flex" justifyContent="space-between" alignItems="start" mb={2}>
+                  <SPBox display="flex" alignItems="center" gap={1}>
                     <CreditCardIcon sx={{ fontSize: 32 }} />
-                    <MKBox>
-                      <MKTypography variant="h6" fontWeight="bold" mb={0.5}>
+                    <SPBox>
+                      <SPTypography variant="h6" fontWeight="bold" mb={0.5}>
                         {maskCardNumber(card.card_number)}
-                      </MKTypography>
-                      <MKTypography variant="body2" opacity={0.8}>
+                      </SPTypography>
+                      <SPTypography variant="body2" opacity={0.8}>
                         {card.cardholder_name}
-                      </MKTypography>
-                    </MKBox>
-                  </MKBox>
+                      </SPTypography>
+                    </SPBox>
+                  </SPBox>
                   <IconButton
                     size="small"
                     onClick={(e) => handleMenuOpen(e, card.id)}
@@ -376,9 +376,9 @@ function Cards() {
                   >
                     <MoreVertIcon />
                   </IconButton>
-                </MKBox>
+                </SPBox>
 
-                <MKBox
+                <SPBox
                   sx={{
                     p: 2,
                     borderRadius: 2,
@@ -386,18 +386,18 @@ function Cards() {
                     mb: 2,
                   }}
                 >
-                  <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-                    <MKTypography variant="caption" opacity={0.8}>
+                  <SPBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
+                    <SPTypography variant="caption" opacity={0.8}>
                       Expires
-                    </MKTypography>
-                    <MKTypography variant="body2" fontWeight="bold">
+                    </SPTypography>
+                    <SPTypography variant="body2" fontWeight="bold">
                       {formatDate(card.expiry_date)}
-                    </MKTypography>
-                  </MKBox>
-                  <MKBox display="flex" justifyContent="space-between" alignItems="center">
-                    <MKTypography variant="caption" opacity={0.8}>
+                    </SPTypography>
+                  </SPBox>
+                  <SPBox display="flex" justifyContent="space-between" alignItems="center">
+                    <SPTypography variant="caption" opacity={0.8}>
                       Type
-                    </MKTypography>
+                    </SPTypography>
                     <Chip
                       label={card.card_type.charAt(0).toUpperCase() + card.card_type.slice(1)}
                       size="small"
@@ -412,18 +412,18 @@ function Cards() {
                         fontSize: "0.7rem",
                       }}
                     />
-                  </MKBox>
+                  </SPBox>
                   {card.bank_name && (
-                    <MKBox display="flex" justifyContent="space-between" alignItems="center" mt={1}>
-                      <MKTypography variant="caption" opacity={0.8}>
+                    <SPBox display="flex" justifyContent="space-between" alignItems="center" mt={1}>
+                      <SPTypography variant="caption" opacity={0.8}>
                         Bank
-                      </MKTypography>
-                      <MKTypography variant="body2" fontWeight="medium">
+                      </SPTypography>
+                      <SPTypography variant="body2" fontWeight="medium">
                         {card.bank_name}
-                      </MKTypography>
-                    </MKBox>
+                      </SPTypography>
+                    </SPBox>
                   )}
-                </MKBox>
+                </SPBox>
               </Card>
             </Grid>
           ))}
@@ -433,16 +433,16 @@ function Cards() {
       {/* Create/Edit Card Dialog */}
       <Dialog open={openDialog} onClose={handleCloseDialog} maxWidth="sm" fullWidth>
         <DialogTitle>
-          <MKTypography variant="h5" fontWeight="bold">
+          <SPTypography variant="h5" fontWeight="bold">
             {editingCard ? "Edit Card" : "Add New Card"}
-          </MKTypography>
+          </SPTypography>
         </DialogTitle>
         <DialogContent>
-          <MKBox sx={{ pt: 2 }}>
+          <SPBox sx={{ pt: 2 }}>
             {!editingCard && (
               <>
-                <MKBox mb={2}>
-                  <MKInput
+                <SPBox mb={2}>
+                  <SPInput
                     type="text"
                     label="Card Number (Last 4 digits)"
                     name="card_number"
@@ -456,8 +456,8 @@ function Cards() {
                     fullWidth
                     inputProps={{ maxLength: 4 }}
                   />
-                </MKBox>
-                <MKBox mb={2}>
+                </SPBox>
+                <SPBox mb={2}>
                   <FormControl fullWidth error={!!formErrors.card_type}>
                     <InputLabel>Card Type</InputLabel>
                     <Select
@@ -472,11 +472,11 @@ function Cards() {
                       <FormHelperText>{formErrors.card_type}</FormHelperText>
                     )}
                   </FormControl>
-                </MKBox>
+                </SPBox>
               </>
             )}
-            <MKBox mb={2}>
-              <MKInput
+            <SPBox mb={2}>
+              <SPInput
                 type="text"
                 label="Cardholder Name"
                 name="cardholder_name"
@@ -486,9 +486,9 @@ function Cards() {
                 helperText={formErrors.cardholder_name}
                 fullWidth
               />
-            </MKBox>
-            <MKBox mb={2}>
-              <MKInput
+            </SPBox>
+            <SPBox mb={2}>
+              <SPInput
                 type="date"
                 label="Expiry Date"
                 name="expiry_date"
@@ -501,9 +501,9 @@ function Cards() {
                   shrink: true,
                 }}
               />
-            </MKBox>
-            <MKBox mb={2}>
-              <MKInput
+            </SPBox>
+            <SPBox mb={2}>
+              <SPInput
                 type="text"
                 label="Bank Name (Optional)"
                 name="bank_name"
@@ -513,8 +513,8 @@ function Cards() {
                 helperText={formErrors.bank_name}
                 fullWidth
               />
-            </MKBox>
-            <MKBox mb={2}>
+            </SPBox>
+            <SPBox mb={2}>
               <FormControlLabel
                 control={
                   <Switch
@@ -525,19 +525,19 @@ function Cards() {
                 }
                 label="Set as default card"
               />
-              <MKTypography variant="caption" color="text.secondary" display="block" mt={0.5}>
+              <SPTypography variant="caption" color="text.secondary" display="block" mt={0.5}>
                 Setting this as default will unset other default cards
-              </MKTypography>
-            </MKBox>
-          </MKBox>
+              </SPTypography>
+            </SPBox>
+          </SPBox>
         </DialogContent>
         <DialogActions sx={{ p: 2 }}>
-          <MKButton onClick={handleCloseDialog} color="secondary">
+          <SPButton onClick={handleCloseDialog} color="secondary">
             Cancel
-          </MKButton>
-          <MKButton onClick={handleSubmit} variant="gradient" color="info" disabled={submitting}>
+          </SPButton>
+          <SPButton onClick={handleSubmit} variant="gradient" color="info" disabled={submitting}>
             {submitting ? "Saving..." : editingCard ? "Update" : "Add"}
-          </MKButton>
+          </SPButton>
         </DialogActions>
       </Dialog>
 
@@ -566,7 +566,7 @@ function Cards() {
       </Menu>
 
       {/* Snackbar */}
-      <MKSnackbar
+      <SPSnackbar
         color={snackbar.color}
         icon={<Icon>{snackbar.icon}</Icon>}
         title={snackbar.title}

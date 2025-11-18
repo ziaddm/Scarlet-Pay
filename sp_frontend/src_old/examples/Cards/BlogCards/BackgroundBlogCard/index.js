@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -24,9 +24,9 @@ import Card from "@mui/material/Card";
 import MuiLink from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function BackgroundBlogCard({ image, title, description, action }) {
   const cardActionStyles = {
@@ -53,9 +53,9 @@ function BackgroundBlogCard({ image, title, description, action }) {
         backgroundSize: "cover",
       }}
     >
-      <MKBox p={3}>
-        <MKBox minHeight="20.625rem" my="auto" py={3}>
-          <MKTypography
+      <SPBox p={3}>
+        <SPBox minHeight="20.625rem" my="auto" py={3}>
+          <SPTypography
             variant="h2"
             color="white"
             mb={1}
@@ -66,12 +66,12 @@ function BackgroundBlogCard({ image, title, description, action }) {
             })}
           >
             {title}
-          </MKTypography>
-          <MKTypography variant="body2" color="white" my={3}>
+          </SPTypography>
+          <SPTypography variant="body2" color="white" my={3}>
             {description}
-          </MKTypography>
+          </SPTypography>
           {action.type === "internal" ? (
-            <MKTypography
+            <SPTypography
               component={Link}
               to={action.route}
               variant="body2"
@@ -82,9 +82,9 @@ function BackgroundBlogCard({ image, title, description, action }) {
             >
               {action.label}
               <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-            </MKTypography>
+            </SPTypography>
           ) : (
-            <MKTypography
+            <SPTypography
               component={MuiLink}
               href={action.route}
               target="_blank"
@@ -97,10 +97,10 @@ function BackgroundBlogCard({ image, title, description, action }) {
             >
               {action.label}
               <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-            </MKTypography>
+            </SPTypography>
           )}
-        </MKBox>
-      </MKBox>
+        </SPBox>
+      </SPBox>
     </Card>
   );
 }

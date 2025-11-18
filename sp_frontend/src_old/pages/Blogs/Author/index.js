@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -16,10 +16,10 @@ Coded by www.creative-tim.com
 // @mui material components
 import Card from "@mui/material/Card";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // Author page sections
@@ -41,15 +41,15 @@ function Author() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-pro-react",
+          route: "https://www.creative-tim.com/product/scarlet-pay-pro-react",
           label: "buy now",
           color: "info",
         }}
         transparent
         light
       />
-      <MKBox bgColor="white">
-        <MKBox
+      <SPBox bgColor="white">
+        <SPBox
           minHeight="25rem"
           width="100%"
           sx={{
@@ -80,7 +80,7 @@ function Author() {
         </Card>
         <Contact />
         <Footer />
-      </MKBox>
+      </SPBox>
     </>
   );
 }

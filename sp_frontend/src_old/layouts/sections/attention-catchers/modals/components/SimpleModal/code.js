@@ -10,26 +10,26 @@ import Slide from "@mui/material/Slide";
 // @mui icons
 import CloseIcon from "@mui/icons-material/Close";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 function SimpleModal() {
   const [show, setShow] = useState(false);
   const toggleModal = () => setShow(!show);
 
   return (
-    <MKBox component="section" py={6}>
+    <SPBox component="section" py={6}>
       <Container>
         <Grid container item xs={12} lg={10} justifyContent="center" mx="auto">
-          <MKButton variant="gradient" color="info" onClick={toggleModal}>
+          <SPButton variant="gradient" color="info" onClick={toggleModal}>
             Launch Demo Modal
-          </MKButton>
+          </SPButton>
         </Grid>
         <Modal open={show} onClose={toggleModal} sx={{ display: "grid", placeItems: "center" }}>
           <Slide direction="down" in={show} timeout={500}>
-            <MKBox
+            <SPBox
               position="relative"
               width="500px"
               display="flex"
@@ -38,13 +38,13 @@ function SimpleModal() {
               bgColor="white"
               shadow="xl"
             >
-              <MKBox display="flex" alginItems="center" justifyContent="space-between" p={2}>
-                <MKTypography variant="h5">Your modal title</MKTypography>
+              <SPBox display="flex" alginItems="center" justifyContent="space-between" p={2}>
+                <SPTypography variant="h5">Your modal title</SPTypography>
                 <CloseIcon fontSize="medium" sx={{ cursor: "pointer" }} onClick={toggleModal} />
-              </MKBox>
+              </SPBox>
               <Divider sx={{ my: 0 }} />
-              <MKBox p={2}>
-                <MKTypography variant="body2" color="secondary" fontWeight="regular">
+              <SPBox p={2}>
+                <SPTypography variant="body2" color="secondary" fontWeight="regular">
                   Society has put up so many boundaries, so many limitations on what&apos;s right
                   and wrong that it&apos;s almost impossible to get a pure thought out.
                   <br />
@@ -52,22 +52,22 @@ function SimpleModal() {
                   It&apos;s like a little kid, a little boy, looking at colors, and no one told him
                   what colors are good, before somebody tells you you shouldn&apos;t like pink
                   because that&apos;s for girls, or you&apos;d instantly become a gay two-year-old.
-                </MKTypography>
-              </MKBox>
+                </SPTypography>
+              </SPBox>
               <Divider sx={{ my: 0 }} />
-              <MKBox display="flex" justifyContent="space-between" p={1.5}>
-                <MKButton variant="gradient" color="dark" onClick={toggleModal}>
+              <SPBox display="flex" justifyContent="space-between" p={1.5}>
+                <SPButton variant="gradient" color="dark" onClick={toggleModal}>
                   close
-                </MKButton>
-                <MKButton variant="gradient" color="info">
+                </SPButton>
+                <SPButton variant="gradient" color="info">
                   save changes
-                </MKButton>
-              </MKBox>
-            </MKBox>
+                </SPButton>
+              </SPBox>
+            </SPBox>
           </Slide>
         </Modal>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

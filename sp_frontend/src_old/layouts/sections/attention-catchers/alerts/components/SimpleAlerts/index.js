@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,42 +17,42 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKAlert from "components/MKAlert";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPAlert from "components/SPAlert";
 
 function SimpleAlerts() {
   return (
-    <MKBox component="section" py={6}>
+    <SPBox component="section" py={6}>
       <Container>
         <Grid container item xs={12} lg={10} mx="auto">
           <Grid item xs={12}>
-            <MKAlert color="primary">A simple primary alert—check it out!</MKAlert>
+            <SPAlert color="primary">A simple primary alert—check it out!</SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="secondary">A simple secondary alert—check it out!</MKAlert>
+            <SPAlert color="secondary">A simple secondary alert—check it out!</SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="success">A simple success alert—check it out!</MKAlert>
+            <SPAlert color="success">A simple success alert—check it out!</SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="error">A simple error alert—check it out!</MKAlert>
+            <SPAlert color="error">A simple error alert—check it out!</SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="warning">A simple warning alert—check it out!</MKAlert>
+            <SPAlert color="warning">A simple warning alert—check it out!</SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="info">A simple info alert—check it out!</MKAlert>
+            <SPAlert color="info">A simple info alert—check it out!</SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="light">A simple light alert—check it out!</MKAlert>
+            <SPAlert color="light">A simple light alert—check it out!</SPAlert>
           </Grid>
           <Grid item xs={12}>
-            <MKAlert color="dark">A simple dark alert—check it out!</MKAlert>
+            <SPAlert color="dark">A simple dark alert—check it out!</SPAlert>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

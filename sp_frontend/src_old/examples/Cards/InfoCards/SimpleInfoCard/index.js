@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,9 +19,9 @@ import PropTypes from "prop-types";
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function SimpleInfoCard({ color = "info", icon, title, description, direction = "left" }) {
   let alignment = "flex-start";
@@ -33,7 +33,7 @@ function SimpleInfoCard({ color = "info", icon, title, description, direction = 
   }
 
   return (
-    <MKBox
+    <SPBox
       display="flex"
       flexDirection="column"
       alignItems={alignment}
@@ -41,7 +41,7 @@ function SimpleInfoCard({ color = "info", icon, title, description, direction = 
       p={direction === "center" ? 2 : 0}
       lineHeight={1}
     >
-      <MKBox
+      <SPBox
         display="flex"
         justifyContent="center"
         alignItems="center"
@@ -54,14 +54,14 @@ function SimpleInfoCard({ color = "info", icon, title, description, direction = 
         coloredShadow={color}
       >
         {typeof icon === "string" ? <Icon fontSize="small">{icon}</Icon> : icon}
-      </MKBox>
-      <MKTypography display="block" variant="5" fontWeight="bold" mt={2.5} mb={1.5}>
+      </SPBox>
+      <SPTypography display="block" variant="5" fontWeight="bold" mt={2.5} mb={1.5}>
         {title}
-      </MKTypography>
-      <MKTypography display="block" variant="body2" color="text">
+      </SPTypography>
+      <SPTypography display="block" variant="body2" color="text">
         {description}
-      </MKTypography>
-    </MKBox>
+      </SPTypography>
+    </SPBox>
   );
 }
 

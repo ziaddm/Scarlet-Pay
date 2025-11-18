@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,15 +17,15 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 function Information() {
   return (
-    <MKBox component="section" py={3} mt={8}>
+    <SPBox component="section" py={3} mt={8}>
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6} lg={3}>
@@ -66,7 +66,7 @@ function Information() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

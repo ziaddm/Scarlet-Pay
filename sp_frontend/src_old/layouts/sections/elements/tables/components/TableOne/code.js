@@ -5,13 +5,13 @@ import PropTypes from "prop-types";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
-import MKAvatar from "components/MKAvatar";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPBadge from "components/SPBadge";
+import SPAvatar from "components/SPAvatar";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import Table from "examples/Tables/Table";
 
 // Images
@@ -22,19 +22,19 @@ import team4 from "assets/images/team-4.jpg";
 // Components
 function Author({ image, name, email }) {
   return (
-    <MKBox display="flex" alignItems="center" px={1} py={0.5}>
-      <MKBox mr={2}>
-        <MKAvatar src={image} alt={name} size="sm" variant="rounded" />
-      </MKBox>
-      <MKBox display="flex" flexDirection="column">
-        <MKTypography variant="button" fontWeight="medium">
+    <SPBox display="flex" alignItems="center" px={1} py={0.5}>
+      <SPBox mr={2}>
+        <SPAvatar src={image} alt={name} size="sm" variant="rounded" />
+      </SPBox>
+      <SPBox display="flex" flexDirection="column">
+        <SPTypography variant="button" fontWeight="medium">
           {name}
-        </MKTypography>
-        <MKTypography variant="caption" color="secondary">
+        </SPTypography>
+        <SPTypography variant="caption" color="secondary">
           {email}
-        </MKTypography>
-      </MKBox>
-    </MKBox>
+        </SPTypography>
+      </SPBox>
+    </SPBox>
   );
 }
 
@@ -47,14 +47,14 @@ Author.propTypes = {
 
 function Role({ job, org }) {
   return (
-    <MKBox display="flex" flexDirection="column">
-      <MKTypography variant="caption" fontWeight="medium" color="text">
+    <SPBox display="flex" flexDirection="column">
+      <SPTypography variant="caption" fontWeight="medium" color="text">
         {job}
-      </MKTypography>
-      <MKTypography variant="caption" color="secondary">
+      </SPTypography>
+      <SPTypography variant="caption" color="secondary">
         {org}
-      </MKTypography>
-    </MKBox>
+      </SPTypography>
+    </SPBox>
   );
 }
 
@@ -79,15 +79,15 @@ function TableOne() {
         author: <Author image={team2} name="John Michael" email="john@creative-tim.com" />,
         function: <Role job="Manager" org="Organization" />,
         status: (
-          <MKBadge variant="contained" badgeContent="online" color="success" size="xs" container />
+          <SPBadge variant="contained" badgeContent="online" color="success" size="xs" container />
         ),
         employed: (
-          <MKTypography variant="caption" color="secondary" fontWeight="medium">
+          <SPTypography variant="caption" color="secondary" fontWeight="medium">
             23/04/18
-          </MKTypography>
+          </SPTypography>
         ),
         action: (
-          <MKTypography
+          <SPTypography
             component="a"
             href="#"
             variant="caption"
@@ -95,14 +95,14 @@ function TableOne() {
             fontWeight="medium"
           >
             Edit
-          </MKTypography>
+          </SPTypography>
         ),
       },
       {
         author: <Author image={team3} name="Alexa Liras" email="alexa@creative-tim.com" />,
         function: <Role job="Programator" org="Developer" />,
         status: (
-          <MKBadge
+          <SPBadge
             variant="contained"
             badgeContent="offline"
             color="secondary"
@@ -111,12 +111,12 @@ function TableOne() {
           />
         ),
         employed: (
-          <MKTypography variant="caption" color="secondary" fontWeight="medium">
+          <SPTypography variant="caption" color="secondary" fontWeight="medium">
             11/01/19
-          </MKTypography>
+          </SPTypography>
         ),
         action: (
-          <MKTypography
+          <SPTypography
             component="a"
             href="#"
             variant="caption"
@@ -124,22 +124,22 @@ function TableOne() {
             fontWeight="medium"
           >
             Edit
-          </MKTypography>
+          </SPTypography>
         ),
       },
       {
         author: <Author image={team4} name="Laurent Perrier" email="laurent@creative-tim.com" />,
         function: <Role job="Executive" org="Projects" />,
         status: (
-          <MKBadge variant="contained" badgeContent="online" color="success" size="xs" container />
+          <SPBadge variant="contained" badgeContent="online" color="success" size="xs" container />
         ),
         employed: (
-          <MKTypography variant="caption" color="secondary" fontWeight="medium">
+          <SPTypography variant="caption" color="secondary" fontWeight="medium">
             19/09/17
-          </MKTypography>
+          </SPTypography>
         ),
         action: (
-          <MKTypography
+          <SPTypography
             component="a"
             href="#"
             variant="caption"
@@ -147,22 +147,22 @@ function TableOne() {
             fontWeight="medium"
           >
             Edit
-          </MKTypography>
+          </SPTypography>
         ),
       },
       {
         author: <Author image={team3} name="Michael Levi" email="michael@creative-tim.com" />,
         function: <Role job="Programator" org="Developer" />,
         status: (
-          <MKBadge variant="contained" badgeContent="online" color="success" size="xs" container />
+          <SPBadge variant="contained" badgeContent="online" color="success" size="xs" container />
         ),
         employed: (
-          <MKTypography variant="caption" color="secondary" fontWeight="medium">
+          <SPTypography variant="caption" color="secondary" fontWeight="medium">
             24/12/08
-          </MKTypography>
+          </SPTypography>
         ),
         action: (
-          <MKTypography
+          <SPTypography
             component="a"
             href="#"
             variant="caption"
@@ -170,14 +170,14 @@ function TableOne() {
             fontWeight="medium"
           >
             Edit
-          </MKTypography>
+          </SPTypography>
         ),
       },
       {
         author: <Author image={team2} name="Richard Gran" email="richard@creative-tim.com" />,
         function: <Role job="Manager" org="Executive" />,
         status: (
-          <MKBadge
+          <SPBadge
             variant="contained"
             badgeContent="offline"
             color="secondary"
@@ -186,12 +186,12 @@ function TableOne() {
           />
         ),
         employed: (
-          <MKTypography variant="caption" color="secondary" fontWeight="medium">
+          <SPTypography variant="caption" color="secondary" fontWeight="medium">
             04/10/21
-          </MKTypography>
+          </SPTypography>
         ),
         action: (
-          <MKTypography
+          <SPTypography
             component="a"
             href="#"
             variant="caption"
@@ -199,14 +199,14 @@ function TableOne() {
             fontWeight="medium"
           >
             Edit
-          </MKTypography>
+          </SPTypography>
         ),
       },
       {
         author: <Author image={team4} name="Miriam Eric" email="miriam@creative-tim.com" />,
         function: <Role job="Programtor" org="Developer" />,
         status: (
-          <MKBadge
+          <SPBadge
             variant="contained"
             badgeContent="offline"
             color="secondary"
@@ -215,12 +215,12 @@ function TableOne() {
           />
         ),
         employed: (
-          <MKTypography variant="caption" color="secondary" fontWeight="medium">
+          <SPTypography variant="caption" color="secondary" fontWeight="medium">
             14/09/20
-          </MKTypography>
+          </SPTypography>
         ),
         action: (
-          <MKTypography
+          <SPTypography
             component="a"
             href="#"
             variant="caption"
@@ -228,20 +228,20 @@ function TableOne() {
             fontWeight="medium"
           >
             Edit
-          </MKTypography>
+          </SPTypography>
         ),
       },
     ],
   };
 
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid container item xs={12} lg={10} mx="auto">
           <Table columns={columns} rows={rows} />
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

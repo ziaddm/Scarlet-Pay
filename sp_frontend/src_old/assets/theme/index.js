@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-material-ui
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,7 +17,7 @@ Coded by www.creative-tim.com
 import { createTheme } from "@mui/material/styles";
 // import Fade from "@mui/material/Fade";
 
-// Material Kit 2 PRO React base styles
+// Scarlet Pay 2 PRO React base styles
 import colors from "assets/theme/base/colors";
 import breakpoints from "assets/theme/base/breakpoints";
 import typography from "assets/theme/base/typography";
@@ -25,14 +25,14 @@ import boxShadows from "assets/theme/base/boxShadows";
 import borders from "assets/theme/base/borders";
 import globals from "assets/theme/base/globals";
 
-// Material Kit 2 PRO React helper functions
+// Scarlet Pay 2 PRO React helper functions
 import boxShadow from "assets/theme/functions/boxShadow";
 import hexToRgb from "assets/theme/functions/hexToRgb";
 import linearGradient from "assets/theme/functions/linearGradient";
 import pxToRem from "assets/theme/functions/pxToRem";
 import rgba from "assets/theme/functions/rgba";
 
-// Material Kit 2 PRO React components base styles for @mui material components
+// Scarlet Pay 2 PRO React components base styles for @mui material components
 import list from "assets/theme/components/list";
 import listItem from "assets/theme/components/list/listItem";
 import listItemText from "assets/theme/components/list/listItemText";

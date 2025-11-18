@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -22,17 +22,17 @@ import { Link } from "react-router-dom";
 // @mui material components
 import MuiBreadcrumbs from "@mui/material/Breadcrumbs";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function Breadcrumbs({ routes, ...rest }) {
   return (
-    <MKBox bgColor="light" borderRadius="md" py={1} px={2} width="100%">
+    <SPBox bgColor="light" borderRadius="md" py={1} px={2} width="100%">
       <MuiBreadcrumbs {...rest}>
         {routes.map(({ label, route }) =>
           route ? (
-            <MKTypography
+            <SPTypography
               key={label}
               component={Link}
               to={route}
@@ -47,15 +47,15 @@ function Breadcrumbs({ routes, ...rest }) {
               }}
             >
               {label}
-            </MKTypography>
+            </SPTypography>
           ) : (
-            <MKTypography key={label} variant="button" fontWeight="regular">
+            <SPTypography key={label} variant="button" fontWeight="regular">
               {label}
-            </MKTypography>
+            </SPTypography>
           )
         )}
       </MuiBreadcrumbs>
-    </MKBox>
+    </SPBox>
   );
 }
 

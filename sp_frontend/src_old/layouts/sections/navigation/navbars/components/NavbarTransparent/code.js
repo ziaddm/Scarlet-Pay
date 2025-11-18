@@ -1,4 +1,4 @@
-const navbarTransparentCode = `// Material Kit 2 PRO React examples
+const navbarTransparentCode = `// Scarlet Pay 2 PRO React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // Routes
@@ -10,7 +10,7 @@ function NavbarTransparent() {
       routes={routes}
       action={{
         type: "external",
-        route: "https://www.creative-tim.com/product/material-kit-pro-react",
+        route: "https://www.creative-tim.com/product/scarlet-pay-pro-react",
         label: "buy now",
         color: "info",
       }}

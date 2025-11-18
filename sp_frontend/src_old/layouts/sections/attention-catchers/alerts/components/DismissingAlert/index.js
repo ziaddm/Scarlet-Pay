@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,23 +17,23 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKAlert from "components/MKAlert";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPAlert from "components/SPAlert";
 
 function DismissingAlert() {
   return (
-    <MKBox component="section" py={6}>
+    <SPBox component="section" py={6}>
       <Container>
         <Grid container item xs={12} lg={10} mx="auto">
           <Grid item xs={12}>
-            <MKAlert color="warning" dismissible>
+            <SPAlert color="warning" dismissible>
               <strong>Holy molly!</strong>&nbsp; You should check in on some of those fields below.
-            </MKAlert>
+            </SPAlert>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

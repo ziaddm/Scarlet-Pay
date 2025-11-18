@@ -3,15 +3,15 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPInput from "components/SPInput";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 function NewsletterTwo() {
   return (
-    <MKBox component="section" py={20}>
+    <SPBox component="section" py={20}>
       <Container>
         <Grid
           container
@@ -23,7 +23,7 @@ function NewsletterTwo() {
           textAlign="center"
           mx="auto"
         >
-          <MKBox
+          <SPBox
             width="3rem"
             height="3rem"
             display="flex"
@@ -38,13 +38,13 @@ function NewsletterTwo() {
             mb={3}
           >
             <Icon>person</Icon>
-          </MKBox>
-          <MKTypography variant="h3" mb={1}>
+          </SPBox>
+          <SPTypography variant="h3" mb={1}>
             Subscribe
-          </MKTypography>
-          <MKTypography variant="body2" color="text">
+          </SPTypography>
+          <SPTypography variant="body2" color="text">
             This is the paragraph where you can write more details about your product.
-          </MKTypography>
+          </SPTypography>
         </Grid>
         <Grid
           container
@@ -56,21 +56,21 @@ function NewsletterTwo() {
           mx="auto"
           mt={6}
         >
-          <MKBox component="form" method="" action="">
+          <SPBox component="form" method="" action="">
             <Grid container spacing={2}>
               <Grid item xs={12} sm={8}>
-                <MKInput label="Your Email..." fullWidth />
+                <SPInput label="Your Email..." fullWidth />
               </Grid>
               <Grid item xs={12} sm={4}>
-                <MKButton variant="gradient" color="warning" fullWidth sx={{ height: "100%" }}>
+                <SPButton variant="gradient" color="warning" fullWidth sx={{ height: "100%" }}>
                   Subscribe
-                </MKButton>
+                </SPButton>
               </Grid>
             </Grid>
-          </MKBox>
+          </SPBox>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

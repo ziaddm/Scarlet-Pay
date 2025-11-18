@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,9 +19,9 @@ import { useState } from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 // Rental page components
 import FaqCollapse from "pages/LandingPages/Rental/components/FaqCollapse";
@@ -30,19 +30,19 @@ function Faq() {
   const [collapse, setCollapse] = useState(false);
 
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid container justifyContent="center">
           <Grid item xs={12} md={8}>
-            <MKTypography variant="h2" align="center" fontWeight="bold" gutterBottom>
+            <SPTypography variant="h2" align="center" fontWeight="bold" gutterBottom>
               Frequently Asked Questions
-            </MKTypography>
-            <MKBox mb={2}>
-              <MKTypography variant="body2" align="center" color="text">
+            </SPTypography>
+            <SPBox mb={2}>
+              <SPTypography variant="body2" align="center" color="text">
                 A lot of people don&apos;t appreciate the moment until it&apos;s passed. I&apos;m
                 not trying my hardest, and I&apos;m not trying to do
-              </MKTypography>
-            </MKBox>
+              </SPTypography>
+            </SPBox>
           </Grid>
           <Grid item xs={12} md={10}>
             <FaqCollapse
@@ -119,7 +119,7 @@ function Faq() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

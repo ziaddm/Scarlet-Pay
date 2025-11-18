@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -13,8 +13,8 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
 
 // Sections components
 import BaseLayout from "layouts/sections/components/BaseLayout";
@@ -40,19 +40,19 @@ function NavTabs() {
       ]}
     >
       <View title="Tabs simple" code={tabsSimpleCode}>
-        <MKBox bgColor="white" py={6}>
+        <SPBox bgColor="white" py={6}>
           <TabsSimple />
-        </MKBox>
+        </SPBox>
       </View>
       <View title="Tabs with icon" code={tabsWithIconsCode}>
-        <MKBox bgColor="white" py={6}>
+        <SPBox bgColor="white" py={6}>
           <TabsWithIcons />
-        </MKBox>
+        </SPBox>
       </View>
       <View title="Tabs vertical" code={tabsVerticalCode}>
-        <MKBox bgColor="white" py={6}>
+        <SPBox bgColor="white" py={6}>
           <TabsVertical />
-        </MKBox>
+        </SPBox>
       </View>
     </BaseLayout>
   );

@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,11 +18,11 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React components
+// Scarlet Pay 2 PRO React components
 import MiniReviewCard from "examples/Cards/ReviewCards/MiniReviewCard";
 
 // Images
@@ -38,7 +38,7 @@ import pinterest from "assets/images/logos/gray-logos/logo-pinterest.svg";
 
 function Testimonials() {
   return (
-    <MKBox py={6}>
+    <SPBox py={6}>
       <Container>
         <Grid
           container
@@ -50,16 +50,16 @@ function Testimonials() {
           mx="auto"
           sx={{ textAlign: "center" }}
         >
-          <MKTypography variant="h2" color="warning" textGradient>
+          <SPTypography variant="h2" color="warning" textGradient>
             What random people
-          </MKTypography>
-          <MKTypography variant="h2" mb={2}>
+          </SPTypography>
+          <SPTypography variant="h2" mb={2}>
             Think about us
-          </MKTypography>
-          <MKTypography variant="body2" color="text">
+          </SPTypography>
+          <SPTypography variant="body2" color="text">
             That&apos;s the main thing people are controlled by! Thoughts- their perception of
             themselves!{" "}
-          </MKTypography>
+          </SPTypography>
         </Grid>
         <Grid container spacing={3} mt={8}>
           <Grid item xs={12} md={8} lg={4}>
@@ -85,26 +85,26 @@ function Testimonials() {
         <Divider sx={{ my: 6 }} />
         <Grid container spacing={3}>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={apple} alt="apple" width="100%" opacity={0.6} />
+            <SPBox component="img" src={apple} alt="apple" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={facebook} alt="facebook" width="100%" opacity={0.6} />
+            <SPBox component="img" src={facebook} alt="facebook" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={behance} alt="behance" width="100%" opacity={0.6} />
+            <SPBox component="img" src={behance} alt="behance" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={spotify} alt="spotify" width="100%" opacity={0.6} />
+            <SPBox component="img" src={spotify} alt="spotify" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={coinbase} alt="coinbase" width="100%" opacity={0.6} />
+            <SPBox component="img" src={coinbase} alt="coinbase" width="100%" opacity={0.6} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={pinterest} alt="pinterest" width="100%" opacity={0.6} />
+            <SPBox component="img" src={pinterest} alt="pinterest" width="100%" opacity={0.6} />
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

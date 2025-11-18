@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -16,11 +16,11 @@ Coded by www.creative-tim.com
 // @mui material components
 import Card from "@mui/material/Card";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPInput from "components/SPInput";
+import SPButton from "components/SPButton";
 
 // Authentication layout components
 import CoverLayout from "pages/Authentication/components/CoverLayout";
@@ -32,7 +32,7 @@ function Cover() {
   return (
     <CoverLayout coverHeight="50vh" image={bgImage}>
       <Card>
-        <MKBox
+        <SPBox
           variant="gradient"
           bgColor="info"
           borderRadius="lg"
@@ -43,17 +43,17 @@ function Cover() {
           mb={1}
           textAlign="center"
         >
-          <MKTypography variant="h3" fontWeight="medium" color="white" mt={1}>
+          <SPTypography variant="h3" fontWeight="medium" color="white" mt={1}>
             Reset Password
-          </MKTypography>
-          <MKTypography display="block" variant="button" color="white" my={1}>
+          </SPTypography>
+          <SPTypography display="block" variant="button" color="white" my={1}>
             You will receive an e-mail in maximum 60 seconds
-          </MKTypography>
-        </MKBox>
-        <MKBox pt={4} pb={3} px={3}>
-          <MKBox component="form" role="form">
-            <MKBox mb={4}>
-              <MKInput
+          </SPTypography>
+        </SPBox>
+        <SPBox pt={4} pb={3} px={3}>
+          <SPBox component="form" role="form">
+            <SPBox mb={4}>
+              <SPInput
                 type="email"
                 label="Email"
                 variant="standard"
@@ -61,14 +61,14 @@ function Cover() {
                 InputLabelProps={{ shrink: true }}
                 placeholder="john@email.com"
               />
-            </MKBox>
-            <MKBox mt={6} mb={1}>
-              <MKButton variant="gradient" color="info" fullWidth>
+            </SPBox>
+            <SPBox mt={6} mb={1}>
+              <SPButton variant="gradient" color="info" fullWidth>
                 reset
-              </MKButton>
-            </MKBox>
-          </MKBox>
-        </MKBox>
+              </SPButton>
+            </SPBox>
+          </SPBox>
+        </SPBox>
       </Card>
     </CoverLayout>
   );

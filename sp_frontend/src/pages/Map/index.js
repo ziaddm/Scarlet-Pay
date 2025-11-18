@@ -17,11 +17,11 @@ import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 import CircularProgress from "@mui/material/CircularProgress";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
-import MKBadge from "components/base/MKBadge";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
+import SPBadge from "components/base/SPBadge";
 
 // Features
 import { useVendors } from "features/vendors";
@@ -112,37 +112,37 @@ function MapPage() {
 
   if (loading) {
     return (
-      <MKBox display="flex" justifyContent="center" alignItems="center" minHeight="80vh">
+      <SPBox display="flex" justifyContent="center" alignItems="center" minHeight="80vh">
         <CircularProgress />
-      </MKBox>
+      </SPBox>
     );
   }
 
   return (
-    <MKBox py={6}>
+    <SPBox py={6}>
       <Grid container spacing={3} justifyContent="center">
         <Grid item xs={12} lg={10}>
           {/* Header */}
-          <MKBox mb={3}>
-            <MKTypography variant="h3" fontWeight="bold" mb={1}>
+          <SPBox mb={3}>
+            <SPTypography variant="h3" fontWeight="bold" mb={1}>
               Campus Map
-            </MKTypography>
-            <MKTypography variant="body1" color="text">
+            </SPTypography>
+            <SPTypography variant="body1" color="text">
               Find vendors that accept Raider wallet payments
-            </MKTypography>
-          </MKBox>
+            </SPTypography>
+          </SPBox>
 
           {/* Category Filters */}
-          <MKBox mb={3} display="flex" gap={1} flexWrap="wrap">
-            <MKButton
+          <SPBox mb={3} display="flex" gap={1} flexWrap="wrap">
+            <SPButton
               variant={selectedCategory === null ? "gradient" : "outlined"}
               color="dark"
               size="small"
               onClick={() => setSelectedCategory(null)}
             >
               All ({vendors.length})
-            </MKButton>
-            <MKButton
+            </SPButton>
+            <SPButton
               variant={selectedCategory === "dining" ? "gradient" : "outlined"}
               color="success"
               size="small"
@@ -150,8 +150,8 @@ function MapPage() {
             >
               <Icon sx={{ mr: 0.5 }}>restaurant</Icon>
               Dining
-            </MKButton>
-            <MKButton
+            </SPButton>
+            <SPButton
               variant={selectedCategory === "retail" ? "gradient" : "outlined"}
               color="info"
               size="small"
@@ -159,12 +159,12 @@ function MapPage() {
             >
               <Icon sx={{ mr: 0.5 }}>shopping_bag</Icon>
               Retail
-            </MKButton>
-          </MKBox>
+            </SPButton>
+          </SPBox>
 
           {/* Map */}
           <Card>
-            <MKBox p={0} sx={{ height: "600px", borderRadius: "12px", overflow: "hidden" }}>
+            <SPBox p={0} sx={{ height: "600px", borderRadius: "12px", overflow: "hidden" }}>
               <MapContainer
                 center={campusCenter}
                 zoom={16}
@@ -187,17 +187,17 @@ function MapPage() {
                     icon={createCustomIcon(vendor.category)}
                   >
                     <Popup>
-                      <MKBox p={1} sx={{ minWidth: "200px" }}>
-                        <MKBox
+                      <SPBox p={1} sx={{ minWidth: "200px" }}>
+                        <SPBox
                           display="flex"
                           justifyContent="space-between"
                           alignItems="center"
                           mb={1}
                         >
-                          <MKTypography variant="h6" fontWeight="bold">
+                          <SPTypography variant="h6" fontWeight="bold">
                             {vendor.name}
-                          </MKTypography>
-                          <MKBadge
+                          </SPTypography>
+                          <SPBadge
                             variant="contained"
                             badgeContent={vendor.category}
                             color={
@@ -209,18 +209,18 @@ function MapPage() {
                             }
                             size="xs"
                           />
-                        </MKBox>
+                        </SPBox>
 
                         {vendor.location && (
-                          <MKTypography variant="caption" color="text" display="block" mb={1}>
+                          <SPTypography variant="caption" color="text" display="block" mb={1}>
                             <Icon fontSize="small" sx={{ mr: 0.5, verticalAlign: "middle" }}>
                               location_on
                             </Icon>
                             {vendor.location}
-                          </MKTypography>
+                          </SPTypography>
                         )}
 
-                        <MKButton
+                        <SPButton
                           variant="gradient"
                           color="info"
                           size="small"
@@ -228,17 +228,17 @@ function MapPage() {
                           onClick={() => handleMarkerClick(vendor)}
                         >
                           Learn More
-                        </MKButton>
-                      </MKBox>
+                        </SPButton>
+                      </SPBox>
                     </Popup>
                   </Marker>
                 ))}
               </MapContainer>
-            </MKBox>
+            </SPBox>
           </Card>
         </Grid>
       </Grid>
-    </MKBox>
+    </SPBox>
   );
 }
 

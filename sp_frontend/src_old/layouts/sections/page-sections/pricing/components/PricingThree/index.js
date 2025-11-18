@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,14 +19,14 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 function PricingThree() {
   return (
-    <MKBox component="section" py={{ xs: 12, lg: 18 }}>
+    <SPBox component="section" py={{ xs: 12, lg: 18 }}>
       <Container>
         <Grid
           container
@@ -36,90 +36,90 @@ function PricingThree() {
           justifyContent="center"
           sx={{ mx: "auto", mb: 8, textAlign: "center" }}
         >
-          <MKTypography variant="h2" mb={1}>
+          <SPTypography variant="h2" mb={1}>
             Best no-tricks pricing
-          </MKTypography>
-          <MKTypography variant="body1" color="text">
+          </SPTypography>
+          <SPTypography variant="body1" color="text">
             If you&apos;re not satisfied, contact us within the first 30 days and we&apos;ll send
             you a full refund.
-          </MKTypography>
+          </SPTypography>
         </Grid>
         <Grid container item xs={12}>
           <Card sx={{ width: "100%" }}>
             <Grid container alignItems="center">
               <Grid item xs={12} lg={8}>
-                <MKBox py={3} px={4}>
-                  <MKTypography variant="h3" mb={1}>
+                <SPBox py={3} px={4}>
+                  <SPTypography variant="h3" mb={1}>
                     Lifetime Membership
-                  </MKTypography>
-                  <MKTypography variant="body2" color="text" fontWeight="regular">
+                  </SPTypography>
+                  <SPTypography variant="body2" color="text" fontWeight="regular">
                     You have Free Unlimited Updates and Premium Support on each package. You also
                     have 30 days to request a refund.
-                  </MKTypography>
+                  </SPTypography>
                   <Grid container item xs={12} lg={3} sx={{ mt: 6, mb: 1 }}>
-                    <MKTypography variant="h6">What&apos;s included</MKTypography>
+                    <SPTypography variant="h6">What&apos;s included</SPTypography>
                   </Grid>
                   <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
-                      <MKBox display="flex" py={1} pr={1} lineHeight={0}>
-                        <MKTypography variant="body1" color="dark">
+                      <SPBox display="flex" py={1} pr={1} lineHeight={0}>
+                        <SPTypography variant="body1" color="dark">
                           <Icon sx={{ fontWeight: "bold" }}>done</Icon>
-                        </MKTypography>
-                        <MKTypography variant="body2" color="text" fontWeight="regular" pl={1}>
+                        </SPTypography>
+                        <SPTypography variant="body2" color="text" fontWeight="regular" pl={1}>
                           Private code access
-                        </MKTypography>
-                      </MKBox>
-                      <MKBox display="flex" py={1} pr={1} lineHeight={0}>
-                        <MKTypography variant="body1" color="dark">
+                        </SPTypography>
+                      </SPBox>
+                      <SPBox display="flex" py={1} pr={1} lineHeight={0}>
+                        <SPTypography variant="body1" color="dark">
                           <Icon sx={{ fontWeight: "bold" }}>done</Icon>
-                        </MKTypography>
-                        <MKTypography variant="body2" color="text" fontWeight="regular" pl={1}>
+                        </SPTypography>
+                        <SPTypography variant="body2" color="text" fontWeight="regular" pl={1}>
                           Free entry to all repositories
-                        </MKTypography>
-                      </MKBox>
+                        </SPTypography>
+                      </SPBox>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <MKBox display="flex" py={1} pr={1} lineHeight={0}>
-                        <MKTypography variant="body1" color="dark">
+                      <SPBox display="flex" py={1} pr={1} lineHeight={0}>
+                        <SPTypography variant="body1" color="dark">
                           <Icon sx={{ fontWeight: "bold" }}>done</Icon>
-                        </MKTypography>
-                        <MKTypography variant="body2" color="text" fontWeight="regular" pl={1}>
+                        </SPTypography>
+                        <SPTypography variant="body2" color="text" fontWeight="regular" pl={1}>
                           Pro member accounts
-                        </MKTypography>
-                      </MKBox>
-                      <MKBox display="flex" py={1} pr={1} lineHeight={0}>
-                        <MKTypography variant="body1" color="dark">
+                        </SPTypography>
+                      </SPBox>
+                      <SPBox display="flex" py={1} pr={1} lineHeight={0}>
+                        <SPTypography variant="body1" color="dark">
                           <Icon sx={{ fontWeight: "bold" }}>done</Icon>
-                        </MKTypography>
-                        <MKTypography variant="body2" color="text" fontWeight="regular" pl={1}>
+                        </SPTypography>
+                        <SPTypography variant="body2" color="text" fontWeight="regular" pl={1}>
                           Support team full assist
-                        </MKTypography>
-                      </MKBox>
+                        </SPTypography>
+                      </SPBox>
                     </Grid>
                   </Grid>
-                </MKBox>
+                </SPBox>
               </Grid>
               <Grid item xs={12} lg={4}>
-                <MKBox p={3} textAlign="center">
-                  <MKTypography variant="h6" mt={{ xs: 0, sm: 3 }}>
+                <SPBox p={3} textAlign="center">
+                  <SPTypography variant="h6" mt={{ xs: 0, sm: 3 }}>
                     Pay once, own it forever
-                  </MKTypography>
-                  <MKTypography variant="h1">
-                    <MKBox component="small">$</MKBox>399
-                  </MKTypography>
-                  <MKButton variant="gradient" color="error" size="large" sx={{ my: 2 }}>
+                  </SPTypography>
+                  <SPTypography variant="h1">
+                    <SPBox component="small">$</SPBox>399
+                  </SPTypography>
+                  <SPButton variant="gradient" color="error" size="large" sx={{ my: 2 }}>
                     Get Access
-                  </MKButton>
-                  <MKTypography display="block" variant="button" color="text" fontWeight="regular">
+                  </SPButton>
+                  <SPTypography display="block" variant="button" color="text" fontWeight="regular">
                     Get a free sample (20MB)
-                  </MKTypography>
-                </MKBox>
+                  </SPTypography>
+                </SPBox>
               </Grid>
             </Grid>
           </Card>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

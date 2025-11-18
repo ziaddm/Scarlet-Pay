@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -22,11 +22,11 @@ import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import Switch from "@mui/material/Switch";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPInput from "components/SPInput";
+import SPButton from "components/SPButton";
 
 // Authentication layout components
 import SimpleLayout from "pages/Authentication/components/SimpleLayout";
@@ -41,7 +41,7 @@ function SignInSimple() {
   return (
     <SimpleLayout>
       <Card>
-        <MKBox
+        <SPBox
           variant="gradient"
           bgColor="info"
           borderRadius="lg"
@@ -54,24 +54,24 @@ function SignInSimple() {
           textAlign="center"
           lineHeight={1}
         >
-          <MKTypography variant="h4" fontWeight="medium" color="white" mt={1}>
+          <SPTypography variant="h4" fontWeight="medium" color="white" mt={1}>
             Sign in
-          </MKTypography>
-          <MKTypography variant="button" color="white">
+          </SPTypography>
+          <SPTypography variant="button" color="white">
             Welcome back
-          </MKTypography>
-        </MKBox>
-        <MKBox p={3}>
-          <MKBox component="form" role="form">
-            <MKBox mb={2}>
-              <MKInput type="email" label="Email" fullWidth />
-            </MKBox>
-            <MKBox mb={2}>
-              <MKInput type="password" label="Password" fullWidth />
-            </MKBox>
-            <MKBox display="flex" alignItems="center" ml={-1}>
+          </SPTypography>
+        </SPBox>
+        <SPBox p={3}>
+          <SPBox component="form" role="form">
+            <SPBox mb={2}>
+              <SPInput type="email" label="Email" fullWidth />
+            </SPBox>
+            <SPBox mb={2}>
+              <SPInput type="password" label="Password" fullWidth />
+            </SPBox>
+            <SPBox display="flex" alignItems="center" ml={-1}>
               <Switch checked={rememberMe} onChange={handleSetRememberMe} />
-              <MKTypography
+              <SPTypography
                 variant="button"
                 fontWeight="regular"
                 color="text"
@@ -79,19 +79,19 @@ function SignInSimple() {
                 sx={{ cursor: "pointer", userSelect: "none", ml: -1 }}
               >
                 &nbsp;&nbsp;Remember me
-              </MKTypography>
-            </MKBox>
-            <MKBox mt={2} mb={1}>
-              <MKButton variant="gradient" color="info" fullWidth>
+              </SPTypography>
+            </SPBox>
+            <SPBox mt={2} mb={1}>
+              <SPButton variant="gradient" color="info" fullWidth>
                 sign in
-              </MKButton>
-            </MKBox>
+              </SPButton>
+            </SPBox>
             <Separator />
             <Socials />
-            <MKBox mt={3} textAlign="center">
-              <MKTypography variant="button" color="text">
+            <SPBox mt={3} textAlign="center">
+              <SPTypography variant="button" color="text">
                 Don&apos;t have an account?{" "}
-                <MKTypography
+                <SPTypography
                   component={Link}
                   to="/authentication/sign-up/cover"
                   variant="button"
@@ -100,11 +100,11 @@ function SignInSimple() {
                   textGradient
                 >
                   Sign up
-                </MKTypography>
-              </MKTypography>
-            </MKBox>
-          </MKBox>
-        </MKBox>
+                </SPTypography>
+              </SPTypography>
+            </SPBox>
+          </SPBox>
+        </SPBox>
       </Card>
     </SimpleLayout>
   );

@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 /** 
-  All of the routes for the Material Kit 2 PRO React React are added here,
+  All of the routes for the Scarlet Pay 2 PRO React React are added here,
   You can add a new route, customize the routes and delete the routes here.
 
   Once you add a new route on this file it will be visible automatically on
@@ -474,22 +474,22 @@ const routes = [
       {
         name: "getting started",
         description: "All about overview, quick start, license and contents",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+        href: "https://www.creative-tim.com/learning-lab/react/quick-start/scarlet-pay/",
       },
       {
         name: "foundation",
         description: "See our colors, icons and typography",
-        href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
+        href: "https://www.creative-tim.com/learning-lab/react/colors/scarlet-pay/",
       },
       {
         name: "components",
         description: "Explore our collection of fully designed components",
-        href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+        href: "https://www.creative-tim.com/learning-lab/react/alerts/scarlet-pay/",
       },
       {
         name: "plugins",
         description: "Check how you can integrate our plugins",
-        href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
+        href: "https://www.creative-tim.com/learning-lab/react/datepicker/scarlet-pay/",
       },
     ],
   },

@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -21,10 +21,10 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Popover from "@mui/material/Popover";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 function Popovers() {
   const [popover, setPopover] = useState(null);
@@ -44,21 +44,21 @@ function Popovers() {
 
   const popoverTemplate = (
     <Popover open={Boolean(popover)} anchorEl={popover} onClose={closePopover} {...popoverOrigin}>
-      <MKBox bgColor="white" py={1.5} px={2} lineHeight={0.8}>
-        <MKTypography variant="caption" color="text">
+      <SPBox bgColor="white" py={1.5} px={2} lineHeight={0.8}>
+        <SPTypography variant="caption" color="text">
           That&apos;s the main thing people are controlled
           <br /> by! Thoughts- their perception of themselves!
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
     </Popover>
   );
 
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid container justifyContent="center">
           <Stack direction="row" spacing={1}>
-            <MKButton
+            <SPButton
               variant="gradient"
               color="info"
               onClick={(event) => {
@@ -76,8 +76,8 @@ function Popovers() {
               }}
             >
               popover on top
-            </MKButton>
-            <MKButton
+            </SPButton>
+            <SPButton
               variant="gradient"
               color="info"
               onClick={(event) => {
@@ -95,8 +95,8 @@ function Popovers() {
               }}
             >
               popover on right
-            </MKButton>
-            <MKButton
+            </SPButton>
+            <SPButton
               variant="gradient"
               color="info"
               onClick={(event) => {
@@ -114,8 +114,8 @@ function Popovers() {
               }}
             >
               popover on left
-            </MKButton>
-            <MKButton
+            </SPButton>
+            <SPButton
               variant="gradient"
               color="info"
               onClick={(event) => {
@@ -133,12 +133,12 @@ function Popovers() {
               }}
             >
               popover on bottom
-            </MKButton>
+            </SPButton>
           </Stack>
         </Grid>
         {popoverTemplate}
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

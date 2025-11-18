@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 *
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 *
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 *
  =========================================================
 *
@@ -42,10 +42,10 @@ import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
 import RefreshIcon from "@mui/icons-material/Refresh";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
 
 // Features
 import { useTransactions } from "features/transactions";
@@ -202,12 +202,12 @@ function Transactions() {
   return (
     <Container maxWidth={false} sx={{ px: 0 }}>
       {/* Header Section */}
-      <MKBox mb={6}>
-        <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-          <MKTypography variant="h4" fontWeight="bold">
+      <SPBox mb={6}>
+        <SPBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+          <SPTypography variant="h4" fontWeight="bold">
             Transactions
-          </MKTypography>
-          <MKButton
+          </SPTypography>
+          <SPButton
             variant="outlined"
             color="info"
             size="medium"
@@ -233,21 +233,21 @@ function Transactions() {
             disabled={loading}
           >
             Refresh
-          </MKButton>
-        </MKBox>
-        <MKTypography variant="body1" color="text">
+          </SPButton>
+        </SPBox>
+        <SPTypography variant="body1" color="text">
           View and filter your transaction history. Transactions are automatically created when
           payments are completed.
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
 
       {/* Error Message */}
       {error && (
-        <MKBox mb={3} sx={{ px: 3 }}>
-          <MKTypography variant="body2" color="error">
+        <SPBox mb={3} sx={{ px: 3 }}>
+          <SPTypography variant="body2" color="error">
             Error: {error}
-          </MKTypography>
-        </MKBox>
+          </SPTypography>
+        </SPBox>
       )}
 
       {/* Filters Section */}
@@ -260,7 +260,7 @@ function Transactions() {
           boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
         }}
       >
-        <MKBox display="flex" flexWrap="wrap" gap={2} alignItems="center">
+        <SPBox display="flex" flexWrap="wrap" gap={2} alignItems="center">
           {/* Search */}
           <TextField
             size="small"
@@ -336,7 +336,7 @@ function Transactions() {
           />
 
           {/* Clear Filters */}
-          <MKButton
+          <SPButton
             variant="outlined"
             color="secondary"
             size="small"
@@ -344,8 +344,8 @@ function Transactions() {
             sx={{ ml: "auto" }}
           >
             Clear Filters
-          </MKButton>
-        </MKBox>
+          </SPButton>
+        </SPBox>
       </Card>
 
       {/* Transactions Table */}
@@ -405,9 +405,9 @@ function Transactions() {
                         direction={orderBy === "transaction_date" ? order : "asc"}
                         onClick={() => handleRequestSort("transaction_date")}
                       >
-                        <MKTypography variant="caption" fontWeight="bold" color="secondary">
+                        <SPTypography variant="caption" fontWeight="bold" color="secondary">
                           DATE
-                        </MKTypography>
+                        </SPTypography>
                       </TableSortLabel>
                     </TableCell>
                     <TableCell>
@@ -416,9 +416,9 @@ function Transactions() {
                         direction={orderBy === "description" ? order : "asc"}
                         onClick={() => handleRequestSort("description")}
                       >
-                        <MKTypography variant="caption" fontWeight="bold" color="secondary">
+                        <SPTypography variant="caption" fontWeight="bold" color="secondary">
                           DESCRIPTION
-                        </MKTypography>
+                        </SPTypography>
                       </TableSortLabel>
                     </TableCell>
                     <TableCell align="center">
@@ -427,9 +427,9 @@ function Transactions() {
                         direction={orderBy === "category" ? order : "asc"}
                         onClick={() => handleRequestSort("category")}
                       >
-                        <MKTypography variant="caption" fontWeight="bold" color="secondary">
+                        <SPTypography variant="caption" fontWeight="bold" color="secondary">
                           CATEGORY
-                        </MKTypography>
+                        </SPTypography>
                       </TableSortLabel>
                     </TableCell>
                     <TableCell align="right">
@@ -438,20 +438,20 @@ function Transactions() {
                         direction={orderBy === "amount" ? order : "asc"}
                         onClick={() => handleRequestSort("amount")}
                       >
-                        <MKTypography variant="caption" fontWeight="bold" color="secondary">
+                        <SPTypography variant="caption" fontWeight="bold" color="secondary">
                           AMOUNT
-                        </MKTypography>
+                        </SPTypography>
                       </TableSortLabel>
                     </TableCell>
                     <TableCell align="center">
-                      <MKTypography
+                      <SPTypography
                         variant="caption"
                         fontWeight="bold"
                         color="secondary"
                         sx={{ whiteSpace: "nowrap" }}
                       >
                         PAYMENT METHOD
-                      </MKTypography>
+                      </SPTypography>
                     </TableCell>
                   </TableRow>
                 </TableHead>
@@ -459,11 +459,11 @@ function Transactions() {
                   {paginatedData.length === 0 ? (
                     <TableRow>
                       <TableCell colSpan={5} align="center" sx={{ py: 8 }}>
-                        <MKTypography variant="body1" color="text.secondary">
+                        <SPTypography variant="body1" color="text.secondary">
                           {transactions.length === 0
                             ? "No transactions found"
                             : "No transactions match your filters"}
-                        </MKTypography>
+                        </SPTypography>
                       </TableCell>
                     </TableRow>
                   ) : (
@@ -475,14 +475,14 @@ function Transactions() {
                       return (
                         <TableRow key={transaction.id} hover>
                           <TableCell>
-                            <MKTypography variant="body2" color="text">
+                            <SPTypography variant="body2" color="text">
                               {formatDate(transaction.transaction_date || transaction.created_at)}
-                            </MKTypography>
+                            </SPTypography>
                           </TableCell>
                           <TableCell>
-                            <MKTypography variant="body2" fontWeight="medium">
+                            <SPTypography variant="body2" fontWeight="medium">
                               {transaction.description || "N/A"}
-                            </MKTypography>
+                            </SPTypography>
                           </TableCell>
                           <TableCell align="center">
                             <Chip
@@ -496,15 +496,15 @@ function Transactions() {
                             />
                           </TableCell>
                           <TableCell align="right">
-                            <MKTypography variant="body2" fontWeight="bold" color="error">
+                            <SPTypography variant="body2" fontWeight="bold" color="error">
                               {formatCurrency(transaction.amount)}
-                            </MKTypography>
+                            </SPTypography>
                           </TableCell>
                           <TableCell align="center">
-                            <MKTypography variant="body2" color="text.secondary">
+                            <SPTypography variant="body2" color="text.secondary">
                               {transaction.payment_method?.charAt(0).toUpperCase() +
                                 transaction.payment_method?.slice(1) || "N/A"}
-                            </MKTypography>
+                            </SPTypography>
                           </TableCell>
                         </TableRow>
                       );

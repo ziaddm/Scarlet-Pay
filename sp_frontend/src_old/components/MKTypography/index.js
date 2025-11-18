@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,10 +18,10 @@ import { forwardRef } from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Custom styles for MKTypography
-import MKTypographyRoot from "components/MKTypography/MKTypographyRoot";
+// Custom styles for SPTypography
+import SPTypographyRoot from "components/SPTypography/SPTypographyRoot";
 
-const MKTypography = forwardRef(
+const SPTypography = forwardRef(
   (
     {
       color = "dark",
@@ -35,7 +35,7 @@ const MKTypography = forwardRef(
     },
     ref
   ) => (
-    <MKTypographyRoot
+    <SPTypographyRoot
       {...rest}
       ref={ref}
       ownerState={{
@@ -48,12 +48,12 @@ const MKTypography = forwardRef(
       }}
     >
       {children}
-    </MKTypographyRoot>
+    </SPTypographyRoot>
   )
 );
 
-// Typechecking props for the MKTypography
-MKTypography.propTypes = {
+// Typechecking props for the SPTypography
+SPTypography.propTypes = {
   color: PropTypes.oneOf([
     "inherit",
     "primary",
@@ -85,4 +85,4 @@ MKTypography.propTypes = {
   opacity: PropTypes.number,
 };
 
-export default MKTypography;
+export default SPTypography;

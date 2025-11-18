@@ -8,21 +8,21 @@ import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 // Images
 import bgImage from "assets/images/bg-presentation.jpg";
 
 function HeaderThree() {
   return (
-    <MKBox component="header" position="relative">
-      <MKBox component="nav" position="absolute" top="0.5rem" width="100%">
+    <SPBox component="header" position="relative">
+      <SPBox component="nav" position="absolute" top="0.5rem" width="100%">
         <Container>
           <Grid container flexDirection="row" alignItems="center">
-            <MKTypography
+            <SPTypography
               component={Link}
               href="#"
               variant="button"
@@ -32,15 +32,15 @@ function HeaderThree() {
               mr={2}
             >
               Material Design
-            </MKTypography>
-            <MKButton
+            </SPTypography>
+            <SPButton
               variant="outlined"
               color="white"
               sx={{ display: { xs: "block", lg: "none" }, ml: "auto" }}
             >
-              <MKBox component="i" color="white" className="fas fa-bars" />
-            </MKButton>
-            <MKBox
+              <SPBox component="i" color="white" className="fas fa-bars" />
+            </SPButton>
+            <SPBox
               component="ul"
               display={{ xs: "none", lg: "flex" }}
               p={0}
@@ -48,8 +48,8 @@ function HeaderThree() {
               mx="auto"
               sx={{ listStyle: "none" }}
             >
-              <MKBox component="li">
-                <MKTypography
+              <SPBox component="li">
+                <SPTypography
                   component={Link}
                   href="#"
                   variant="button"
@@ -59,10 +59,10 @@ function HeaderThree() {
                   onClick={(e) => e.preventDefault()}
                 >
                   Home
-                </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
+                </SPTypography>
+              </SPBox>
+              <SPBox component="li">
+                <SPTypography
                   component={Link}
                   href="#"
                   variant="button"
@@ -72,10 +72,10 @@ function HeaderThree() {
                   onClick={(e) => e.preventDefault()}
                 >
                   About Us
-                </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
+                </SPTypography>
+              </SPBox>
+              <SPBox component="li">
+                <SPTypography
                   component={Link}
                   href="#"
                   variant="button"
@@ -85,14 +85,14 @@ function HeaderThree() {
                   onClick={(e) => e.preventDefault()}
                 >
                   Contact Us
-                </MKTypography>
-              </MKBox>
-            </MKBox>
-            <MKButton color="default">buy now</MKButton>
+                </SPTypography>
+              </SPBox>
+            </SPBox>
+            <SPButton color="default">buy now</SPButton>
           </Grid>
         </Container>
-      </MKBox>
-      <MKBox
+      </SPBox>
+      <SPBox
         display="flex"
         alignItems="center"
         minHeight="100vh"
@@ -114,7 +114,7 @@ function HeaderThree() {
             textAlign="center"
             mx="auto"
           >
-            <MKTypography
+            <SPTypography
               variant="h1"
               color="white"
               sx={({ breakpoints, typography: { size } }) => ({
@@ -125,52 +125,52 @@ function HeaderThree() {
               mb={3}
             >
               Work with an amazing
-            </MKTypography>
-            <MKTypography variant="body1" color="white" mt={1} mb={{ xs: 3, sm: 8 }} px={3}>
+            </SPTypography>
+            <SPTypography variant="body1" color="white" mt={1} mb={{ xs: 3, sm: 8 }} px={3}>
               We&apos;re constantly trying to express ourselves and actualize our dreams. If you
               have the opportunity to play this game. If you have the opportunity to play this game.
-            </MKTypography>
-            <MKTypography variant="h6" color="white" textTransform="uppercase" mb={3}>
+            </SPTypography>
+            <SPTypography variant="h6" color="white" textTransform="uppercase" mb={3}>
               connect with us on:
-            </MKTypography>
+            </SPTypography>
             <Stack direction="row" spacing={6} mx="auto">
-              <MKTypography
+              <SPTypography
                 component={Link}
                 href="#"
                 variant="body2"
                 onClick={(e) => e.preventDefault()}
               >
-                <MKBox component="i" color="white" className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography
+                <SPBox component="i" color="white" className="fab fa-facebook" />
+              </SPTypography>
+              <SPTypography
                 component={Link}
                 href="#"
                 variant="body2"
                 onClick={(e) => e.preventDefault()}
               >
-                <MKBox component="i" color="white" className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography
+                <SPBox component="i" color="white" className="fab fa-instagram" />
+              </SPTypography>
+              <SPTypography
                 component={Link}
                 href="#"
                 variant="body2"
                 onClick={(e) => e.preventDefault()}
               >
-                <MKBox component="i" color="white" className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography
+                <SPBox component="i" color="white" className="fab fa-twitter" />
+              </SPTypography>
+              <SPTypography
                 component={Link}
                 href="#"
                 variant="body2"
                 onClick={(e) => e.preventDefault()}
               >
-                <MKBox component="i" color="white" className="fab fa-google-plus" />
-              </MKTypography>
+                <SPBox component="i" color="white" className="fab fa-google-plus" />
+              </SPTypography>
             </Stack>
           </Grid>
         </Container>
-      </MKBox>
-    </MKBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

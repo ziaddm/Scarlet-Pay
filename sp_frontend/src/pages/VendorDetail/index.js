@@ -26,10 +26,10 @@ import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
 
 // Features
 import { useVendorPayment } from "features/vendors";
@@ -299,28 +299,28 @@ function VendorDetailPage() {
 
   if (!vendor) {
     return (
-      <MKBox textAlign="center" py={6}>
-        <MKTypography variant="h5" color="text" mb={2}>
+      <SPBox textAlign="center" py={6}>
+        <SPTypography variant="h5" color="text" mb={2}>
           Vendor not found
-        </MKTypography>
-        <MKButton color="info" onClick={() => navigate(ROUTES.MARKETPLACE)}>
+        </SPTypography>
+        <SPButton color="info" onClick={() => navigate(ROUTES.MARKETPLACE)}>
           Back to Vendors
-        </MKButton>
-      </MKBox>
+        </SPButton>
+      </SPBox>
     );
   }
 
   return (
-    <MKBox>
+    <SPBox>
       <Grid container spacing={3} alignItems="stretch">
         {/* Vendor Info Card */}
         <Grid item xs={12} md={8} sx={{ display: "flex" }}>
           <Card sx={{ width: "100%", display: "flex", flexDirection: "column" }}>
             <CardContent sx={{ flexGrow: 1, display: "flex", flexDirection: "column" }}>
-              <MKBox sx={{ flexGrow: 1 }}>
+              <SPBox sx={{ flexGrow: 1 }}>
                 {/* Header with Icon */}
-                <MKBox display="flex" alignItems="center" mb={3}>
-                  <MKBox
+                <SPBox display="flex" alignItems="center" mb={3}>
+                  <SPBox
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
@@ -335,40 +335,40 @@ function VendorDetailPage() {
                     }}
                   >
                     <Icon sx={{ fontSize: "2rem" }}>{getCategoryIcon(vendor.category)}</Icon>
-                  </MKBox>
-                  <MKBox>
-                    <MKTypography variant="h3" fontWeight="bold">
+                  </SPBox>
+                  <SPBox>
+                    <SPTypography variant="h3" fontWeight="bold">
                       {vendor.name}
-                    </MKTypography>
-                    <MKTypography variant="button" color="text" textTransform="capitalize">
+                    </SPTypography>
+                    <SPTypography variant="button" color="text" textTransform="capitalize">
                       {vendor.category}
-                    </MKTypography>
-                  </MKBox>
-                </MKBox>
+                    </SPTypography>
+                  </SPBox>
+                </SPBox>
 
                 {/* Location */}
-                <MKBox display="flex" alignItems="center" mb={2}>
+                <SPBox display="flex" alignItems="center" mb={2}>
                   <Icon sx={{ mr: 1, color: "text.secondary" }}>location_on</Icon>
-                  <MKTypography variant="body1" color="text">
+                  <SPTypography variant="body1" color="text">
                     {vendor.location}
-                  </MKTypography>
-                </MKBox>
+                  </SPTypography>
+                </SPBox>
 
                 {/* Description */}
                 {vendor.description && (
-                  <MKBox mb={3}>
-                    <MKTypography variant="h6" fontWeight="medium" mb={1}>
+                  <SPBox mb={3}>
+                    <SPTypography variant="h6" fontWeight="medium" mb={1}>
                       About
-                    </MKTypography>
-                    <MKTypography variant="body1" color="text" sx={{ lineHeight: 1.8 }}>
+                    </SPTypography>
+                    <SPTypography variant="body1" color="text" sx={{ lineHeight: 1.8 }}>
                       {vendor.description}
-                    </MKTypography>
-                  </MKBox>
+                    </SPTypography>
+                  </SPBox>
                 )}
-              </MKBox>
+              </SPBox>
 
               {/* Payment Button at Bottom */}
-              <MKButton
+              <SPButton
                 variant="gradient"
                 color="info"
                 fullWidth
@@ -378,7 +378,7 @@ function VendorDetailPage() {
                 startIcon={<Icon>payment</Icon>}
               >
                 Pay {vendor.name}
-              </MKButton>
+              </SPButton>
             </CardContent>
           </Card>
         </Grid>
@@ -387,18 +387,18 @@ function VendorDetailPage() {
         <Grid item xs={12} md={4} sx={{ display: "flex" }}>
           <Card sx={{ width: "100%", display: "flex", flexDirection: "column" }}>
             <CardContent sx={{ flexGrow: 1, display: "flex", flexDirection: "column" }}>
-              <MKBox display="flex" alignItems="center" mb={2}>
+              <SPBox display="flex" alignItems="center" mb={2}>
                 <Icon sx={{ mr: 1, color: "info.main" }}>schedule</Icon>
-                <MKTypography variant="h5" fontWeight="bold">
+                <SPTypography variant="h5" fontWeight="bold">
                   Hours
-                </MKTypography>
-              </MKBox>
+                </SPTypography>
+              </SPBox>
 
-              <MKBox>
+              <SPBox>
                 {vendor.hours ? (
                   typeof vendor.hours === "string" ? (
                     <>
-                      <MKBox component="ul" sx={{ listStyle: "none", p: 0, m: 0 }}>
+                      <SPBox component="ul" sx={{ listStyle: "none", p: 0, m: 0 }}>
                         {vendor.hours.split(/\r?\n/).map((line, idx) => {
                           const raw = line.replace(/^[\s\-\u2013\u2014\u2022\u00B7]+/, "").trim();
                           const colonIndex = raw.indexOf(":");
@@ -407,44 +407,44 @@ function VendorDetailPage() {
                             const dayPart = raw.slice(0, colonIndex).trim();
                             const hoursPart = raw.slice(colonIndex + 1).trim();
                             return (
-                              <MKBox component="li" key={idx} mb={1}>
-                                <MKTypography
+                              <SPBox component="li" key={idx} mb={1}>
+                                <SPTypography
                                   variant="body2"
                                   component="span"
                                   fontWeight="bold"
                                   sx={{ mr: 0.5 }}
                                 >
                                   {dayPart}:
-                                </MKTypography>
-                                <MKTypography variant="body2" color="text" component="span">
+                                </SPTypography>
+                                <SPTypography variant="body2" color="text" component="span">
                                   {hoursPart}
-                                </MKTypography>
-                              </MKBox>
+                                </SPTypography>
+                              </SPBox>
                             );
                           }
 
                           // Fallback: no colon found — render the whole line
                           return (
-                            <MKBox component="li" key={idx} mb={1}>
-                              <MKTypography variant="body2" color="text">
+                            <SPBox component="li" key={idx} mb={1}>
+                              <SPTypography variant="body2" color="text">
                                 {raw}
-                              </MKTypography>
-                            </MKBox>
+                              </SPTypography>
+                            </SPBox>
                           );
                         })}
-                      </MKBox>
+                      </SPBox>
                     </>
                   ) : (
-                    <MKTypography variant="body2" color="text">
+                    <SPTypography variant="body2" color="text">
                       {String(vendor.hours)}
-                    </MKTypography>
+                    </SPTypography>
                   )
                 ) : (
-                  <MKTypography variant="body2" color="text" sx={{ fontStyle: "italic" }}>
+                  <SPTypography variant="body2" color="text" sx={{ fontStyle: "italic" }}>
                     Hours not available
-                  </MKTypography>
+                  </SPTypography>
                 )}
-              </MKBox>
+              </SPBox>
             </CardContent>
           </Card>
         </Grid>
@@ -453,7 +453,7 @@ function VendorDetailPage() {
         {vendor.latitude && vendor.longitude && (
           <Grid item xs={12}>
             <Card>
-              <MKBox p={0} sx={{ height: "400px", borderRadius: "12px", overflow: "hidden" }}>
+              <SPBox p={0} sx={{ height: "400px", borderRadius: "12px", overflow: "hidden" }}>
                 <MapContainer
                   center={[vendor.latitude, vendor.longitude]}
                   zoom={18}
@@ -476,7 +476,7 @@ function VendorDetailPage() {
                     icon={createCustomIcon(vendor.category)}
                   />
                 </MapContainer>
-              </MKBox>
+              </SPBox>
             </Card>
           </Grid>
         )}
@@ -485,22 +485,22 @@ function VendorDetailPage() {
       {/* Payment Dialog */}
       <Dialog open={paymentDialogOpen} onClose={handleClosePaymentDialog} maxWidth="sm" fullWidth>
         <DialogTitle>
-          <MKTypography variant="h5" fontWeight="bold">
+          <SPTypography variant="h5" fontWeight="bold">
             Pay {vendor.name}
-          </MKTypography>
+          </SPTypography>
         </DialogTitle>
         <DialogContent>
           {isPolling ? (
-            <MKBox>
+            <SPBox>
               <Alert severity="info" sx={{ mb: 2 }}>
-                <MKBox display="flex" alignItems="center" gap={2}>
+                <SPBox display="flex" alignItems="center" gap={2}>
                   <CircularProgress size={20} />
-                  <MKTypography variant="body1">Processing payment... Please wait.</MKTypography>
-                </MKBox>
+                  <SPTypography variant="body1">Processing payment... Please wait.</SPTypography>
+                </SPBox>
               </Alert>
-            </MKBox>
+            </SPBox>
           ) : paymentSuccess ? (
-            <MKBox>
+            <SPBox>
               <Alert severity="success" sx={{ mb: 2 }}>
                 Payment successful! Redirecting...
               </Alert>
@@ -522,16 +522,16 @@ function VendorDetailPage() {
                     },
                   }}
                 >
-                  <MKBox>
-                    <MKBox display="flex" alignItems="center" gap={1} mb={1.5}>
-                      <MKTypography variant="h5" fontWeight="bold" sx={{ fontSize: "1.75rem" }}>
+                  <SPBox>
+                    <SPBox display="flex" alignItems="center" gap={1} mb={1.5}>
+                      <SPTypography variant="h5" fontWeight="bold" sx={{ fontSize: "1.75rem" }}>
                         🎉
-                      </MKTypography>
-                      <MKTypography variant="h6" fontWeight="bold" color="primary">
+                      </SPTypography>
+                      <SPTypography variant="h6" fontWeight="bold" color="primary">
                         You earned a reward!
-                      </MKTypography>
-                    </MKBox>
-                    <MKBox
+                      </SPTypography>
+                    </SPBox>
+                    <SPBox
                       sx={{
                         p: 2,
                         borderRadius: 2,
@@ -540,35 +540,35 @@ function VendorDetailPage() {
                         mb: 1.5,
                       }}
                     >
-                      <MKTypography variant="h4" fontWeight="bold" color="warning.main" mb={0.5}>
+                      <SPTypography variant="h4" fontWeight="bold" color="warning.main" mb={0.5}>
                         ${parseFloat(earnedReward.amount || 0).toFixed(2)}
-                      </MKTypography>
-                      <MKTypography variant="body2" color="text.secondary">
+                      </SPTypography>
+                      <SPTypography variant="body2" color="text.secondary">
                         Reward Amount
-                      </MKTypography>
-                    </MKBox>
-                    <MKBox display="flex" gap={2} flexWrap="wrap">
-                      <MKBox>
-                        <MKTypography variant="caption" color="text.secondary" display="block">
+                      </SPTypography>
+                    </SPBox>
+                    <SPBox display="flex" gap={2} flexWrap="wrap">
+                      <SPBox>
+                        <SPTypography variant="caption" color="text.secondary" display="block">
                           Cashback
-                        </MKTypography>
-                        <MKTypography variant="body2" fontWeight="bold" color="success.main">
+                        </SPTypography>
+                        <SPTypography variant="body2" fontWeight="bold" color="success.main">
                           {(earnedReward.cashback_percentage * 100).toFixed(1)}%
-                        </MKTypography>
-                      </MKBox>
-                      <MKBox>
-                        <MKTypography variant="caption" color="text.secondary" display="block">
+                        </SPTypography>
+                      </SPBox>
+                      <SPBox>
+                        <SPTypography variant="caption" color="text.secondary" display="block">
                           Expires
-                        </MKTypography>
-                        <MKTypography variant="body2" fontWeight="bold">
+                        </SPTypography>
+                        <SPTypography variant="body2" fontWeight="bold">
                           {new Date(earnedReward.expires_at).toLocaleDateString()}
-                        </MKTypography>
-                      </MKBox>
-                    </MKBox>
-                  </MKBox>
+                        </SPTypography>
+                      </SPBox>
+                    </SPBox>
+                  </SPBox>
                 </Alert>
               )}
-            </MKBox>
+            </SPBox>
           ) : (
             <>
               {(error || paymentError) && (
@@ -603,18 +603,18 @@ function VendorDetailPage() {
           sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", p: 2 }}
         >
           <Box>
-            <MKTypography variant="body2" color="text.secondary">
+            <SPTypography variant="body2" color="text.secondary">
               Current Balance:
-            </MKTypography>
-            <MKTypography variant="h6" fontWeight="bold" sx={{ mt: 0.5 }}>
+            </SPTypography>
+            <SPTypography variant="h6" fontWeight="bold" sx={{ mt: 0.5 }}>
               {walletLoading ? "Loading..." : `$${parseFloat(balance || 0).toFixed(2)}`}
-            </MKTypography>
+            </SPTypography>
           </Box>
           <Box sx={{ display: "flex", gap: 1 }}>
-            <MKButton variant="text" color="dark" onClick={handleClosePaymentDialog}>
+            <SPButton variant="text" color="dark" onClick={handleClosePaymentDialog}>
               Cancel
-            </MKButton>
-            <MKButton
+            </SPButton>
+            <SPButton
               variant="gradient"
               color="info"
               onClick={handlePayment}
@@ -623,11 +623,11 @@ function VendorDetailPage() {
               }
             >
               {loading || isPolling ? "Processing..." : "Confirm Payment"}
-            </MKButton>
+            </SPButton>
           </Box>
         </DialogActions>
       </Dialog>
-    </MKBox>
+    </SPBox>
   );
 }
 

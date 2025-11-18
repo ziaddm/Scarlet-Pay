@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -41,20 +41,20 @@ import SearchIcon from "@mui/icons-material/Search";
 import ClearIcon from "@mui/icons-material/Clear";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
-import MKAvatar from "components/base/MKAvatar";
-import MKBadge from "components/base/MKBadge";
-import MKSnackbar from "components/base/MKSnackbar";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
+import SPAvatar from "components/base/SPAvatar";
+import SPBadge from "components/base/SPBadge";
+import SPSnackbar from "components/base/SPSnackbar";
 
 // Sample data
 const initialData = [
   {
     id: 1,
     name: "John Michael",
-    email: "john@creative-tim.com",
+    email: "john@scarlet-pay.com",
     role: "Manager",
     status: "Active",
     department: "Sales",
@@ -63,7 +63,7 @@ const initialData = [
   {
     id: 2,
     name: "Alexa Liras",
-    email: "alexa@creative-tim.com",
+    email: "alexa@scarlet-pay.com",
     role: "Programator",
     status: "Active",
     department: "Development",
@@ -72,7 +72,7 @@ const initialData = [
   {
     id: 3,
     name: "Laurent Perrier",
-    email: "laurent@creative-tim.com",
+    email: "laurent@scarlet-pay.com",
     role: "Executive",
     status: "Inactive",
     department: "Marketing",
@@ -81,7 +81,7 @@ const initialData = [
   {
     id: 4,
     name: "Michael Levi",
-    email: "michael@creative-tim.com",
+    email: "michael@scarlet-pay.com",
     role: "Programator",
     status: "Active",
     department: "Development",
@@ -90,7 +90,7 @@ const initialData = [
   {
     id: 5,
     name: "Richard Gran",
-    email: "richard@creative-tim.com",
+    email: "richard@scarlet-pay.com",
     role: "Manager",
     status: "Inactive",
     department: "Sales",
@@ -99,7 +99,7 @@ const initialData = [
   {
     id: 6,
     name: "Miriam Eric",
-    email: "miriam@creative-tim.com",
+    email: "miriam@scarlet-pay.com",
     role: "Designer",
     status: "Active",
     department: "Design",
@@ -108,7 +108,7 @@ const initialData = [
   {
     id: 7,
     name: "Sarah Johnson",
-    email: "sarah@creative-tim.com",
+    email: "sarah@scarlet-pay.com",
     role: "Manager",
     status: "Active",
     department: "Sales",
@@ -117,7 +117,7 @@ const initialData = [
   {
     id: 8,
     name: "David Wilson",
-    email: "david@creative-tim.com",
+    email: "david@scarlet-pay.com",
     role: "Programator",
     status: "Active",
     department: "Development",
@@ -126,7 +126,7 @@ const initialData = [
   {
     id: 9,
     name: "Emma Thompson",
-    email: "emma@creative-tim.com",
+    email: "emma@scarlet-pay.com",
     role: "Designer",
     status: "Active",
     department: "Design",
@@ -135,7 +135,7 @@ const initialData = [
   {
     id: 10,
     name: "James Brown",
-    email: "james@creative-tim.com",
+    email: "james@scarlet-pay.com",
     role: "Executive",
     status: "Active",
     department: "Marketing",
@@ -274,19 +274,19 @@ function DataTables() {
   return (
     <Container maxWidth={false} sx={{ px: 0 }}>
       {/* Header Section */}
-      <MKBox mb={6}>
-        <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-          <MKTypography variant="h4" fontWeight="bold">
+      <SPBox mb={6}>
+        <SPBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+          <SPTypography variant="h4" fontWeight="bold">
             Data Tables
-          </MKTypography>
-          <MKButton variant="gradient" color="info" size="large" onClick={handleAddNew}>
+          </SPTypography>
+          <SPButton variant="gradient" color="info" size="large" onClick={handleAddNew}>
             Add New Entry
-          </MKButton>
-        </MKBox>
-        <MKTypography variant="body1" color="text">
+          </SPButton>
+        </SPBox>
+        <SPTypography variant="body1" color="text">
           Comprehensive data table with sorting, filtering, and pagination functionality.
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
 
       {/* Filters Section */}
       <Card
@@ -420,7 +420,7 @@ function DataTables() {
           </Grid>
 
           <Grid item xs={12} sm={6} md={2}>
-            <MKButton
+            <SPButton
               variant="outlined"
               color="info"
               fullWidth
@@ -432,7 +432,7 @@ function DataTables() {
               }}
             >
               Clear Filters
-            </MKButton>
+            </SPButton>
           </Grid>
         </Grid>
 
@@ -441,10 +441,10 @@ function DataTables() {
           statusFilter !== "All" ||
           roleFilter !== "All" ||
           departmentFilter !== "All") && (
-          <MKBox mt={2} display="flex" flexWrap="wrap" gap={1} alignItems="center">
-            <MKTypography variant="caption" color="text" mr={1} sx={{ opacity: 0.7 }}>
+          <SPBox mt={2} display="flex" flexWrap="wrap" gap={1} alignItems="center">
+            <SPTypography variant="caption" color="text" mr={1} sx={{ opacity: 0.7 }}>
               Active filters:
-            </MKTypography>
+            </SPTypography>
             {searchQuery && (
               <Chip
                 label={`Search: ${searchQuery}`}
@@ -485,15 +485,15 @@ function DataTables() {
                 size="small"
               />
             )}
-          </MKBox>
+          </SPBox>
         )}
 
         {/* Results Count */}
-        <MKBox mt={2}>
-          <MKTypography variant="caption" color="text" sx={{ opacity: 0.7 }}>
+        <SPBox mt={2}>
+          <SPTypography variant="caption" color="text" sx={{ opacity: 0.7 }}>
             Showing {paginatedData.length} of {filteredAndSortedData.length} results
-          </MKTypography>
-        </MKBox>
+          </SPTypography>
+        </SPBox>
       </Card>
 
       {/* Table Section */}
@@ -538,9 +538,9 @@ function DataTables() {
                     direction={orderBy === "name" ? order : "asc"}
                     onClick={() => handleRequestSort("name")}
                   >
-                    <MKTypography variant="caption" fontWeight="bold" color="secondary">
+                    <SPTypography variant="caption" fontWeight="bold" color="secondary">
                       NAME
-                    </MKTypography>
+                    </SPTypography>
                   </TableSortLabel>
                 </TableCell>
                 <TableCell>
@@ -549,9 +549,9 @@ function DataTables() {
                     direction={orderBy === "email" ? order : "asc"}
                     onClick={() => handleRequestSort("email")}
                   >
-                    <MKTypography variant="caption" fontWeight="bold" color="secondary">
+                    <SPTypography variant="caption" fontWeight="bold" color="secondary">
                       EMAIL
-                    </MKTypography>
+                    </SPTypography>
                   </TableSortLabel>
                 </TableCell>
                 <TableCell>
@@ -560,15 +560,15 @@ function DataTables() {
                     direction={orderBy === "role" ? order : "asc"}
                     onClick={() => handleRequestSort("role")}
                   >
-                    <MKTypography variant="caption" fontWeight="bold" color="secondary">
+                    <SPTypography variant="caption" fontWeight="bold" color="secondary">
                       ROLE
-                    </MKTypography>
+                    </SPTypography>
                   </TableSortLabel>
                 </TableCell>
                 <TableCell align="center" sx={{ width: "120px" }}>
-                  <MKTypography variant="caption" fontWeight="bold" color="secondary">
+                  <SPTypography variant="caption" fontWeight="bold" color="secondary">
                     STATUS
-                  </MKTypography>
+                  </SPTypography>
                 </TableCell>
                 <TableCell>
                   <TableSortLabel
@@ -576,9 +576,9 @@ function DataTables() {
                     direction={orderBy === "department" ? order : "asc"}
                     onClick={() => handleRequestSort("department")}
                   >
-                    <MKTypography variant="caption" fontWeight="bold" color="secondary">
+                    <SPTypography variant="caption" fontWeight="bold" color="secondary">
                       DEPARTMENT
-                    </MKTypography>
+                    </SPTypography>
                   </TableSortLabel>
                 </TableCell>
                 <TableCell>
@@ -587,15 +587,15 @@ function DataTables() {
                     direction={orderBy === "joinDate" ? order : "asc"}
                     onClick={() => handleRequestSort("joinDate")}
                   >
-                    <MKTypography variant="caption" fontWeight="bold" color="secondary">
+                    <SPTypography variant="caption" fontWeight="bold" color="secondary">
                       JOIN DATE
-                    </MKTypography>
+                    </SPTypography>
                   </TableSortLabel>
                 </TableCell>
                 <TableCell align="center" sx={{ width: "100px" }}>
-                  <MKTypography variant="caption" fontWeight="bold" color="secondary">
+                  <SPTypography variant="caption" fontWeight="bold" color="secondary">
                     ACTION
-                  </MKTypography>
+                  </SPTypography>
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -603,9 +603,9 @@ function DataTables() {
               {paginatedData.length === 0 ? (
                 <TableRow>
                   <TableCell colSpan={7} align="center" sx={{ py: 4 }}>
-                    <MKTypography variant="body2" color="text" sx={{ opacity: 0.7 }}>
+                    <SPTypography variant="body2" color="text" sx={{ opacity: 0.7 }}>
                       No data found matching your filters
-                    </MKTypography>
+                    </SPTypography>
                   </TableCell>
                 </TableRow>
               ) : (
@@ -619,8 +619,8 @@ function DataTables() {
                         overflow: "hidden",
                       }}
                     >
-                      <MKBox display="flex" alignItems="center" sx={{ minWidth: 0 }}>
-                        <MKAvatar
+                      <SPBox display="flex" alignItems="center" sx={{ minWidth: 0 }}>
+                        <SPAvatar
                           sx={{
                             width: 32,
                             height: 32,
@@ -630,8 +630,8 @@ function DataTables() {
                           }}
                         >
                           {row.name.charAt(0)}
-                        </MKAvatar>
-                        <MKTypography
+                        </SPAvatar>
+                        <SPTypography
                           variant="button"
                           fontWeight="medium"
                           sx={{
@@ -643,21 +643,21 @@ function DataTables() {
                           }}
                         >
                           {row.name}
-                        </MKTypography>
-                      </MKBox>
+                        </SPTypography>
+                      </SPBox>
                     </TableCell>
                     <TableCell>
-                      <MKTypography variant="caption" color="text">
+                      <SPTypography variant="caption" color="text">
                         {row.email}
-                      </MKTypography>
+                      </SPTypography>
                     </TableCell>
                     <TableCell>
-                      <MKTypography variant="caption" color="text">
+                      <SPTypography variant="caption" color="text">
                         {row.role}
-                      </MKTypography>
+                      </SPTypography>
                     </TableCell>
                     <TableCell align="center" sx={{ width: "120px" }}>
-                      <MKBadge
+                      <SPBadge
                         variant="contained"
                         badgeContent={row.status}
                         color={getStatusColor(row.status)}
@@ -666,17 +666,17 @@ function DataTables() {
                       />
                     </TableCell>
                     <TableCell>
-                      <MKTypography variant="caption" color="text">
+                      <SPTypography variant="caption" color="text">
                         {row.department}
-                      </MKTypography>
+                      </SPTypography>
                     </TableCell>
                     <TableCell>
-                      <MKTypography variant="caption" color="text" sx={{ opacity: 0.7 }}>
+                      <SPTypography variant="caption" color="text" sx={{ opacity: 0.7 }}>
                         {row.joinDate}
-                      </MKTypography>
+                      </SPTypography>
                     </TableCell>
                     <TableCell align="center" sx={{ width: "100px" }}>
-                      <MKButton
+                      <SPButton
                         variant="text"
                         color="info"
                         size="small"
@@ -688,7 +688,7 @@ function DataTables() {
                         }}
                       >
                         Edit
-                      </MKButton>
+                      </SPButton>
                     </TableCell>
                   </TableRow>
                 ))
@@ -710,7 +710,7 @@ function DataTables() {
       </Card>
 
       {/* Snackbar */}
-      <MKSnackbar
+      <SPSnackbar
         color={snackbar.color}
         icon={<Icon>{snackbar.icon}</Icon>}
         title={snackbar.title}

@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,13 +19,13 @@ import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function Footer() {
   return (
-    <MKBox component="footer" py={6}>
+    <SPBox component="footer" py={6}>
       <Container>
         <Grid container>
           <Grid
@@ -36,9 +36,9 @@ function Footer() {
             mr="auto"
             mb={{ xs: 3, lg: 0 }}
           >
-            <MKTypography variant="h6" textTransform="uppercase" mb={{ xs: 2, lg: 3 }}>
+            <SPTypography variant="h6" textTransform="uppercase" mb={{ xs: 2, lg: 3 }}>
               Material Design
-            </MKTypography>
+            </SPTypography>
             <Stack
               component="ul"
               direction="row"
@@ -49,8 +49,8 @@ function Footer() {
               mb={3}
               sx={{ listStyle: "none" }}
             >
-              <MKBox component="li">
-                <MKTypography
+              <SPBox component="li">
+                <SPTypography
                   variant="button"
                   fontWeight="regular"
                   opacity={0.8}
@@ -60,10 +60,10 @@ function Footer() {
                   rel="noreferrer"
                 >
                   Home
-                </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
+                </SPTypography>
+              </SPBox>
+              <SPBox component="li">
+                <SPTypography
                   variant="button"
                   fontWeight="regular"
                   opacity={0.8}
@@ -73,10 +73,10 @@ function Footer() {
                   rel="noreferrer"
                 >
                   About
-                </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
+                </SPTypography>
+              </SPBox>
+              <SPBox component="li">
+                <SPTypography
                   variant="button"
                   fontWeight="regular"
                   opacity={0.8}
@@ -86,10 +86,10 @@ function Footer() {
                   rel="noreferrer"
                 >
                   Blog
-                </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
+                </SPTypography>
+              </SPBox>
+              <SPBox component="li">
+                <SPTypography
                   variant="button"
                   fontWeight="regular"
                   opacity={0.8}
@@ -99,20 +99,20 @@ function Footer() {
                   rel="noreferrer"
                 >
                   Services
-                </MKTypography>
-              </MKBox>
+                </SPTypography>
+              </SPBox>
             </Stack>
-            <MKTypography variant="button" opacity={0.8}>
+            <SPTypography variant="button" opacity={0.8}>
               Copyright © <script>document.write(new Date().getFullYear())</script>2021 Material
-              Design by Creative Tim.
-            </MKTypography>
+              Design by Scarlet Pay Team.
+            </SPTypography>
           </Grid>
           <Grid item xs={12} lg={6} ml="auto" textAlign={{ xs: "center", lg: "right" }}>
-            <MKTypography variant="body1" fontWeight="bold" mb={6} sx={{ fontSize: "1.125rem" }}>
+            <SPTypography variant="body1" fontWeight="bold" mb={6} sx={{ fontSize: "1.125rem" }}>
               The reward for getting on the stage is fame. The price of fame is you can&apos;t get
               off the stage.
-            </MKTypography>
-            <MKTypography
+            </SPTypography>
+            <SPTypography
               component={Link}
               href="#dribbble"
               target="_blank"
@@ -123,8 +123,8 @@ function Footer() {
               mr={3}
             >
               <i className="fab fa-dribbble" />
-            </MKTypography>
-            <MKTypography
+            </SPTypography>
+            <SPTypography
               component={Link}
               href="#twitter"
               target="_blank"
@@ -135,8 +135,8 @@ function Footer() {
               mr={3}
             >
               <i className="fab fa-twitter" />
-            </MKTypography>
-            <MKTypography
+            </SPTypography>
+            <SPTypography
               component={Link}
               href="#pinterest"
               target="_blank"
@@ -147,8 +147,8 @@ function Footer() {
               mr={3}
             >
               <i className="fab fa-pinterest" />
-            </MKTypography>
-            <MKTypography
+            </SPTypography>
+            <SPTypography
               component={Link}
               href="#github"
               target="_blank"
@@ -158,11 +158,11 @@ function Footer() {
               opacity={0.5}
             >
               <i className="fab fa-github" />
-            </MKTypography>
+            </SPTypography>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

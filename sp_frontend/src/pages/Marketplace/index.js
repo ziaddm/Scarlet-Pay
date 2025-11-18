@@ -19,9 +19,9 @@ import Icon from "@mui/material/Icon";
 import CircularProgress from "@mui/material/CircularProgress";
 import Alert from "@mui/material/Alert";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
 
 // Features
 import { useVendors } from "features/vendors";
@@ -69,19 +69,19 @@ function MarketplacePage() {
   ];
 
   return (
-    <MKBox>
+    <SPBox>
       {/* Header */}
-      <MKBox mb={4}>
-        <MKTypography variant="h3" fontWeight="bold" mb={1}>
+      <SPBox mb={4}>
+        <SPTypography variant="h3" fontWeight="bold" mb={1}>
           Marketplace
-        </MKTypography>
-        <MKTypography variant="body1" color="text" sx={{ opacity: 0.8 }}>
+        </SPTypography>
+        <SPTypography variant="body1" color="text" sx={{ opacity: 0.8 }}>
           Browse and pay vendors that accept your Raider card
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
 
       {/* Search Bar */}
-      <MKBox mb={3}>
+      <SPBox mb={3}>
         <TextField
           fullWidth
           placeholder="Search vendors by name, location, or category..."
@@ -100,7 +100,7 @@ function MarketplacePage() {
             },
           }}
         />
-      </MKBox>
+      </SPBox>
 
       {/* Category Tabs */}
       <Card sx={{ mb: 3 }}>
@@ -125,9 +125,9 @@ function MarketplacePage() {
 
       {/* Loading State */}
       {loading && (
-        <MKBox display="flex" justifyContent="center" alignItems="center" minHeight="300px">
+        <SPBox display="flex" justifyContent="center" alignItems="center" minHeight="300px">
           <CircularProgress />
-        </MKBox>
+        </SPBox>
       )}
 
       {/* Error State */}
@@ -149,21 +149,21 @@ function MarketplacePage() {
               ))}
             </Grid>
           ) : (
-            <MKBox textAlign="center" py={6}>
+            <SPBox textAlign="center" py={6}>
               <Icon sx={{ fontSize: "4rem", color: "text.secondary", mb: 2 }}>store</Icon>
-              <MKTypography variant="h5" color="text" mb={1}>
+              <SPTypography variant="h5" color="text" mb={1}>
                 No vendors found
-              </MKTypography>
-              <MKTypography variant="body2" color="text" sx={{ opacity: 0.7 }}>
+              </SPTypography>
+              <SPTypography variant="body2" color="text" sx={{ opacity: 0.7 }}>
                 {searchQuery
                   ? "Try adjusting your search terms"
                   : "No vendors available in this category"}
-              </MKTypography>
-            </MKBox>
+              </SPTypography>
+            </SPBox>
           )}
         </>
       )}
-    </MKBox>
+    </SPBox>
   );
 }
 

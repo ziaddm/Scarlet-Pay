@@ -14,11 +14,11 @@ import "swiper/modules/navigation/navigation.min.css";
 import Container from "@mui/material/Container";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import ComplexReviewCard from "examples/Cards/ReviewCards/ComplexReviewCard";
 
 // Images
@@ -56,7 +56,7 @@ function TestimonialsTwo() {
   const navigationNextRef = useRef(null);
 
   return (
-    <MKBox py={8} position="relative">
+    <SPBox py={8} position="relative">
       <Swiper
         onInit={({ params, navigation }) => {
           const { navigation: nav } = params;
@@ -100,7 +100,7 @@ function TestimonialsTwo() {
             />
           </Container>
         </SwiperSlide>
-        <MKTypography
+        <SPTypography
           variant="h2"
           color="dark"
           sx={{
@@ -110,8 +110,8 @@ function TestimonialsTwo() {
           ref={navigationPrevRef}
         >
           <Icon>chevron_left</Icon>
-        </MKTypography>
-        <MKTypography
+        </SPTypography>
+        <SPTypography
           variant="h2"
           color="dark"
           sx={{
@@ -121,9 +121,9 @@ function TestimonialsTwo() {
           ref={navigationNextRef}
         >
           <Icon>chevron_right</Icon>
-        </MKTypography>
+        </SPTypography>
       </Swiper>
-    </MKBox>
+    </SPBox>
   );
 }
 

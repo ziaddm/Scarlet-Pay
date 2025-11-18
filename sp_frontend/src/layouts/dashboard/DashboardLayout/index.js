@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -23,10 +23,10 @@ import PropTypes from "prop-types";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
 
-// Material Kit 2 PRO React example components
+// Scarlet Pay 2 PRO React example components
 import CenteredFooter from "components/custom/CenteredFooter";
 import Breadcrumbs from "components/custom/Breadcrumbs";
 
@@ -118,15 +118,15 @@ function DashboardLayout({ children }) {
         >
           <Container maxWidth={false} sx={{ px: { xs: 1, sm: 2, md: 3 } }}>
             {location.pathname !== "/home" && (
-              <MKBox width={{ xs: "100%", md: "50%", lg: "25%" }} mb={{ xs: 2, md: 3 }}>
+              <SPBox width={{ xs: "100%", md: "50%", lg: "25%" }} mb={{ xs: 2, md: 3 }}>
                 <Breadcrumbs routes={getBreadcrumbRoutes()} />
-              </MKBox>
+              </SPBox>
             )}
             {children}
           </Container>
         </Box>
 
-        <MKBox
+        <SPBox
           id="dashboard-footer"
           sx={{
             boxShadow: ({ boxShadows: { sm } }) => sm,
@@ -135,7 +135,7 @@ function DashboardLayout({ children }) {
           }}
         >
           <CenteredFooter />
-        </MKBox>
+        </SPBox>
       </Box>
     </Box>
   );

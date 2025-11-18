@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -20,9 +20,9 @@ import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function InfoBackgroundCard({ image, icon, title, label = "" }) {
   return (
@@ -45,17 +45,17 @@ function InfoBackgroundCard({ image, icon, title, label = "" }) {
         justifyContent: "space-between",
       })}
     >
-      <MKBox width="100%" p={3}>
-        <MKTypography variant="h3" color="white">
+      <SPBox width="100%" p={3}>
+        <SPTypography variant="h3" color="white">
           {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
-        </MKTypography>
-      </MKBox>
-      <MKBox width="100%" pt={1} pb={2} px={3} lineHeight={1}>
-        <MKTypography variant="h4" color="white">
+        </SPTypography>
+      </SPBox>
+      <SPBox width="100%" pt={1} pb={2} px={3} lineHeight={1}>
+        <SPTypography variant="h4" color="white">
           {title}
-        </MKTypography>
+        </SPTypography>
         {label && (
-          <MKTypography
+          <SPTypography
             variant="caption"
             textTransform="uppercase"
             fontWeight="bold"
@@ -63,9 +63,9 @@ function InfoBackgroundCard({ image, icon, title, label = "" }) {
             opacity={0.7}
           >
             {label}
-          </MKTypography>
+          </SPTypography>
         )}
-      </MKBox>
+      </SPBox>
     </Card>
   );
 }

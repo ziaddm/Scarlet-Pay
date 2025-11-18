@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,10 +17,10 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 // Images
 import bgPattern from "assets/images/shapes/pattern-lines.svg";
@@ -28,7 +28,7 @@ import laptop from "assets/images/macbook-2.png";
 
 function Banner() {
   return (
-    <MKBox
+    <SPBox
       variant="gradient"
       bgColor="warning"
       position="relative"
@@ -39,7 +39,7 @@ function Banner() {
       px={3}
       sx={{ overflow: "hidden" }}
     >
-      <MKBox
+      <SPBox
         component="img"
         src={bgPattern}
         alt="pattern-lines"
@@ -52,23 +52,23 @@ function Banner() {
       <Container sx={{ position: "relative" }}>
         <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={12} md={7} lg={5} py={{ xs: 0, sm: 6 }} mr="auto" position="relative">
-            <MKTypography variant="h2" color="white" mb={1}>
+            <SPTypography variant="h2" color="white" mb={1}>
               Start building your awesome application
-            </MKTypography>
-            <MKTypography variant="body1" color="white" mb={6}>
+            </SPTypography>
+            <SPTypography variant="body1" color="white" mb={6}>
               Elegance is the end result of hard work, not the starting point. Strive to make your
               work so invisible that the reader thinks they could have written what you published.
               Trusted by 5.000+ clients from all around the world.
-            </MKTypography>
-            <MKButton variant="gradient" color="dark">
+            </SPTypography>
+            <SPButton variant="gradient" color="dark">
               Start now
-            </MKButton>
-            <MKButton variant="text" color="white" sx={{ ml: 1 }}>
+            </SPButton>
+            <SPButton variant="text" color="white" sx={{ ml: 1 }}>
               Read more
-            </MKButton>
+            </SPButton>
           </Grid>
           <Grid item xs={12} position="absolute" left="50%" mr={-32} width="75%">
-            <MKBox
+            <SPBox
               component="img"
               src={laptop}
               alt="macbook"
@@ -78,7 +78,7 @@ function Banner() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

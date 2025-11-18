@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,10 +17,10 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPBadge from "components/SPBadge";
+import SPTypography from "components/SPTypography";
 
 // Images
 import bg1 from "assets/images/bg.jpg";
@@ -32,7 +32,7 @@ import bg6 from "assets/images/examples/content-5.jpg";
 
 function ContentOne() {
   return (
-    <MKBox component="section" py={6}>
+    <SPBox component="section" py={6}>
       <Container>
         <Grid
           container
@@ -44,24 +44,24 @@ function ContentOne() {
           textAlign="center"
           mb={6}
         >
-          <MKBadge
+          <SPBadge
             badgeContent="co-working"
             variant="contained"
             color="info"
             container
             sx={{ mb: 1 }}
           />
-          <MKTypography variant="h2" mb={1}>
+          <SPTypography variant="h2" mb={1}>
             Explore our places in London
-          </MKTypography>
-          <MKTypography variant="body2" color="text">
+          </SPTypography>
+          <SPTypography variant="body2" color="text">
             If you can&apos;t decide, the answer is no. If two equally difficult paths, choose the
             one more painful in the short term (pain avoidance is creating an illusion of equality).
-          </MKTypography>
+          </SPTypography>
         </Grid>
         <Grid container spacing={3} minHeight="40vh">
           <Grid item xs={5} sm={4}>
-            <MKBox
+            <SPBox
               width="100%"
               height="100%"
               borderRadius="lg"
@@ -73,7 +73,7 @@ function ContentOne() {
             />
           </Grid>
           <Grid item xs={7} sm={3}>
-            <MKBox
+            <SPBox
               width="100%"
               height="100%"
               borderRadius="lg"
@@ -85,7 +85,7 @@ function ContentOne() {
             />
           </Grid>
           <Grid item xs={12} sm={5}>
-            <MKBox
+            <SPBox
               width="100%"
               height="100%"
               borderRadius="lg"
@@ -97,7 +97,7 @@ function ContentOne() {
             />
           </Grid>
           <Grid item xs={7} sm={3}>
-            <MKBox
+            <SPBox
               width="100%"
               height="100%"
               borderRadius="lg"
@@ -109,7 +109,7 @@ function ContentOne() {
             />
           </Grid>
           <Grid item xs={5}>
-            <MKBox
+            <SPBox
               width="100%"
               height="100%"
               borderRadius="lg"
@@ -121,7 +121,7 @@ function ContentOne() {
             />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <MKBox
+            <SPBox
               width="100%"
               height="100%"
               borderRadius="lg"
@@ -134,7 +134,7 @@ function ContentOne() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

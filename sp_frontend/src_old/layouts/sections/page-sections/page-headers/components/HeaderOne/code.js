@@ -8,21 +8,21 @@ import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 // Images
 import bgImage from "assets/images/bg-coworking.jpeg";
 
 function HeaderOne() {
   return (
-    <MKBox component="header" position="relative">
-      <MKBox component="nav" position="absolute" top="0.5rem" width="100%">
+    <SPBox component="header" position="relative">
+      <SPBox component="nav" position="absolute" top="0.5rem" width="100%">
         <Container>
           <Grid container flexDirection="row" alignItems="center">
-            <MKTypography
+            <SPTypography
               component={Link}
               href="#"
               variant="button"
@@ -32,15 +32,15 @@ function HeaderOne() {
               mr={2}
             >
               Material Design
-            </MKTypography>
-            <MKButton
+            </SPTypography>
+            <SPButton
               variant="outlined"
               color="white"
               sx={{ display: { xs: "block", lg: "none" }, ml: "auto" }}
             >
-              <MKBox component="i" color="white" className="fas fa-bars" />
-            </MKButton>
-            <MKBox
+              <SPBox component="i" color="white" className="fas fa-bars" />
+            </SPButton>
+            <SPBox
               component="ul"
               display={{ xs: "none", lg: "flex" }}
               p={0}
@@ -48,8 +48,8 @@ function HeaderOne() {
               mx="auto"
               sx={{ listStyle: "none" }}
             >
-              <MKBox component="li">
-                <MKTypography
+              <SPBox component="li">
+                <SPTypography
                   component={Link}
                   href="#"
                   variant="button"
@@ -59,10 +59,10 @@ function HeaderOne() {
                   onClick={(e) => e.preventDefault()}
                 >
                   Home
-                </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
+                </SPTypography>
+              </SPBox>
+              <SPBox component="li">
+                <SPTypography
                   component={Link}
                   href="#"
                   variant="button"
@@ -72,10 +72,10 @@ function HeaderOne() {
                   onClick={(e) => e.preventDefault()}
                 >
                   About Us
-                </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
+                </SPTypography>
+              </SPBox>
+              <SPBox component="li">
+                <SPTypography
                   component={Link}
                   href="#"
                   variant="button"
@@ -85,54 +85,54 @@ function HeaderOne() {
                   onClick={(e) => e.preventDefault()}
                 >
                   Contact Us
-                </MKTypography>
-              </MKBox>
-            </MKBox>
-            <MKBox
+                </SPTypography>
+              </SPBox>
+            </SPBox>
+            <SPBox
               component="ul"
               display={{ xs: "none", lg: "flex" }}
               p={0}
               m={0}
               sx={{ listStyle: "none" }}
             >
-              <MKBox component="li">
-                <MKTypography
+              <SPBox component="li">
+                <SPTypography
                   component={Link}
                   href="#"
                   variant="button"
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox component="i" color="white" className="fab fa-twitter" />
-                </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
+                  <SPBox component="i" color="white" className="fab fa-twitter" />
+                </SPTypography>
+              </SPBox>
+              <SPBox component="li">
+                <SPTypography
                   component={Link}
                   href="#"
                   variant="button"
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox component="i" color="white" className="fab fa-facebook" />
-                </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
+                  <SPBox component="i" color="white" className="fab fa-facebook" />
+                </SPTypography>
+              </SPBox>
+              <SPBox component="li">
+                <SPTypography
                   component={Link}
                   href="#"
                   variant="button"
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox component="i" color="white" className="fab fa-instagram" />
-                </MKTypography>
-              </MKBox>
-            </MKBox>
+                  <SPBox component="i" color="white" className="fab fa-instagram" />
+                </SPTypography>
+              </SPBox>
+            </SPBox>
           </Grid>
         </Container>
-      </MKBox>
-      <MKBox
+      </SPBox>
+      <SPBox
         display="flex"
         alignItems="center"
         minHeight="100vh"
@@ -144,7 +144,7 @@ function HeaderOne() {
       >
         <Container>
           <Grid container item xs={12} md={7} lg={6} flexDirection="column" justifyContent="center">
-            <MKTypography
+            <SPTypography
               variant="h1"
               color="white"
               mb={3}
@@ -154,22 +154,22 @@ function HeaderOne() {
                 },
               })}
             >
-              Material Kit
-            </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} pr={6} mr={6}>
+              Scarlet Pay
+            </SPTypography>
+            <SPTypography variant="body1" color="white" opacity={0.8} pr={6} mr={6}>
               The time is now for it be okay to be great. People in this world shun people for being
               nice.
-            </MKTypography>
+            </SPTypography>
             <Stack direction="row" spacing={1} mt={3}>
-              <MKButton color="white">Get Started</MKButton>
-              <MKButton variant="text" color="white">
+              <SPButton color="white">Get Started</SPButton>
+              <SPButton variant="text" color="white">
                 Read more
-              </MKButton>
+              </SPButton>
             </Stack>
           </Grid>
         </Container>
-      </MKBox>
-    </MKBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,15 +17,15 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPInput from "components/SPInput";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 function ContactUsOne() {
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid
           container
@@ -37,38 +37,38 @@ function ContactUsOne() {
           mb={{ xs: 0, md: 6 }}
           textAlign="center"
         >
-          <MKTypography variant="h3" mb={1}>
+          <SPTypography variant="h3" mb={1}>
             Contact Us
-          </MKTypography>
-          <MKTypography variant="body2" color="text">
+          </SPTypography>
+          <SPTypography variant="body2" color="text">
             For further questions, including partnership opportunities, please email
             hello@creative-tim.com or contact using our contact form.
-          </MKTypography>
+          </SPTypography>
         </Grid>
         <Grid container item xs={12} lg={8} sx={{ mx: "auto" }}>
-          <MKBox width="100%" component="form" method="post" autoComplete="off">
-            <MKBox p={3}>
+          <SPBox width="100%" component="form" method="post" autoComplete="off">
+            <SPBox p={3}>
               <Grid container spacing={3}>
                 <Grid item xs={12} md={6}>
-                  <MKInput label="Full Name" fullWidth />
+                  <SPInput label="Full Name" fullWidth />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <MKInput type="email" label="Email" fullWidth />
+                  <SPInput type="email" label="Email" fullWidth />
                 </Grid>
                 <Grid item xs={12}>
-                  <MKInput label="What can we help you?" multiline fullWidth rows={6} />
+                  <SPInput label="What can we help you?" multiline fullWidth rows={6} />
                 </Grid>
               </Grid>
               <Grid container item justifyContent="center" xs={12} my={6}>
-                <MKButton type="submit" variant="gradient" color="info">
+                <SPButton type="submit" variant="gradient" color="info">
                   Send Message
-                </MKButton>
+                </SPButton>
               </Grid>
-            </MKBox>
-          </MKBox>
+            </SPBox>
+          </SPBox>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

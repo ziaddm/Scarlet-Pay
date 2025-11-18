@@ -7,11 +7,11 @@ import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import SimplePricingCard from "examples/Cards/PricingCards/SimplePricingCard";
 
 function PricingTwo() {
@@ -20,13 +20,13 @@ function PricingTwo() {
   const handleTabType = (event, newValue) => setActiveTab(newValue);
 
   return (
-    <MKBox component="section" py={{ xs: 0, md: 12 }}>
+    <SPBox component="section" py={{ xs: 0, md: 12 }}>
       <Container>
         <Grid container item xs={12} justifyContent="center" md={8} mx="auto" textAlign="center">
-          <MKTypography variant="h3">Pick the best plan for you</MKTypography>
-          <MKTypography variant="body2" color="text">
+          <SPTypography variant="h3">Pick the best plan for you</SPTypography>
+          <SPTypography variant="body2" color="text">
             You have Free Unlimited Updates and Premium Support on each package.
-          </MKTypography>
+          </SPTypography>
         </Grid>
         <Grid
           container
@@ -44,33 +44,33 @@ function PricingTwo() {
               <Tab
                 id="monthly"
                 label={
-                  <MKBox py={0.5} px={2} color="inherit">
+                  <SPBox py={0.5} px={2} color="inherit">
                     Monthly
-                  </MKBox>
+                  </SPBox>
                 }
               />
               <Tab
                 id="quarterly"
                 label={
-                  <MKBox py={0.5} px={2} color="inherit">
+                  <SPBox py={0.5} px={2} color="inherit">
                     Quarterly
-                  </MKBox>
+                  </SPBox>
                 }
               />
               <Tab
                 id="annual"
                 label={
-                  <MKBox py={0.5} px={2} color="inherit">
+                  <SPBox py={0.5} px={2} color="inherit">
                     Annual
-                  </MKBox>
+                  </SPBox>
                 }
               />
               <Tab
                 id="lifetime-access"
                 label={
-                  <MKBox py={0.5} px={2} color="inherit">
+                  <SPBox py={0.5} px={2} color="inherit">
                     Lifetime access
-                  </MKBox>
+                  </SPBox>
                 }
               />
             </Tabs>
@@ -135,7 +135,7 @@ function PricingTwo() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

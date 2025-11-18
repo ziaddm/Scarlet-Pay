@@ -2,12 +2,12 @@ const testimonialsThreeCode = `// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKBadge from "components/MKBadge";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPBadge from "components/SPBadge";
 
-// Material Kit 2 PRO React components
+// Scarlet Pay 2 PRO React components
 import SimpleReviewCard from "examples/Cards/ReviewCards/SimpleReviewCard";
 
 // Images
@@ -18,8 +18,8 @@ import team4 from "assets/images/team-4.jpg";
 
 function TestimonialsThree() {
   return (
-    <MKBox position="relative" variant="gradient" bgColor="dark" py={2} mx={-2}>
-      <MKBox
+    <SPBox position="relative" variant="gradient" bgColor="dark" py={2} mx={-2}>
+      <SPBox
         component="img"
         src={bgPattern}
         alt="background-pattern"
@@ -37,7 +37,7 @@ function TestimonialsThree() {
           sx={{ pt: 8, pb: 5, position: "relative", zIndex: 3 }}
         >
           <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
-            <MKBadge
+            <SPBadge
               badgeContent="testimonials"
               variant="contained"
               color="white"
@@ -45,13 +45,13 @@ function TestimonialsThree() {
               container
               sx={{ mb: 1 }}
             />
-            <MKTypography variant="h2" color="white" mb={1}>
+            <SPTypography variant="h2" color="white" mb={1}>
               Some thoughts from our clients
-            </MKTypography>
-            <MKTypography variant="body1" color="white" fontWeight="light">
+            </SPTypography>
+            <SPTypography variant="body1" color="white" fontWeight="light">
               If you&apos;re selected for them you&apos;ll also get three tickets, opportunity to
               access Investor Office Hours and Mentor Hours and much more all for free.
-            </MKTypography>
+            </SPTypography>
           </Grid>
         </Grid>
         <Grid container spacing={3} sx={{ mt: 10, mb: 6 }}>
@@ -81,7 +81,7 @@ function TestimonialsThree() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

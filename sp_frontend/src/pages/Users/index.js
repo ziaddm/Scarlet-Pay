@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -20,10 +20,10 @@ import Card from "@mui/material/Card";
 import Avatar from "@mui/material/Avatar";
 import Chip from "@mui/material/Chip";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
 
 function Users() {
   const users = [
@@ -36,19 +36,19 @@ function Users() {
   return (
     <Container maxWidth={false} sx={{ px: 0 }}>
       {/* Header Section */}
-      <MKBox mb={6}>
-        <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-          <MKTypography variant="h4" fontWeight="bold">
+      <SPBox mb={6}>
+        <SPBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+          <SPTypography variant="h4" fontWeight="bold">
             User Management
-          </MKTypography>
-          <MKButton variant="gradient" color="info" size="large">
+          </SPTypography>
+          <SPButton variant="gradient" color="info" size="large">
             Add User
-          </MKButton>
-        </MKBox>
-        <MKTypography variant="body1" color="text">
+          </SPButton>
+        </SPBox>
+        <SPTypography variant="body1" color="text">
           Manage your users, roles, and permissions. View and edit user information.
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
 
       {/* Users List */}
       <Grid container spacing={3} sx={{ px: 3 }}>
@@ -68,7 +68,7 @@ function Users() {
                 },
               }}
             >
-              <MKBox display="flex" alignItems="center" mb={2}>
+              <SPBox display="flex" alignItems="center" mb={2}>
                 <Avatar
                   sx={{
                     width: 48,
@@ -79,17 +79,17 @@ function Users() {
                 >
                   {user.name.charAt(0)}
                 </Avatar>
-                <MKBox>
-                  <MKTypography variant="h6" fontWeight="bold" mb={0.5}>
+                <SPBox>
+                  <SPTypography variant="h6" fontWeight="bold" mb={0.5}>
                     {user.name}
-                  </MKTypography>
-                  <MKTypography variant="body2" color="text.secondary">
+                  </SPTypography>
+                  <SPTypography variant="body2" color="text.secondary">
                     {user.email}
-                  </MKTypography>
-                </MKBox>
-              </MKBox>
+                  </SPTypography>
+                </SPBox>
+              </SPBox>
 
-              <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+              <SPBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
                 <Chip label={user.role} size="small" color="primary" sx={{ fontWeight: 500 }} />
                 <Chip
                   label={user.status}
@@ -97,11 +97,11 @@ function Users() {
                   color={user.status === "Active" ? "success" : "default"}
                   sx={{ fontWeight: 500 }}
                 />
-              </MKBox>
+              </SPBox>
 
-              <MKButton variant="outlined" color="info" size="small" fullWidth>
+              <SPButton variant="outlined" color="info" size="small" fullWidth>
                 Edit User
-              </MKButton>
+              </SPButton>
             </Card>
           </Grid>
         ))}
@@ -121,12 +121,12 @@ function Users() {
               boxShadow: "0 8px 32px rgba(102, 126, 234, 0.3)",
             }}
           >
-            <MKTypography variant="h3" fontWeight="bold" mb={1}>
+            <SPTypography variant="h3" fontWeight="bold" mb={1}>
               {users.length}
-            </MKTypography>
-            <MKTypography variant="body2" sx={{ opacity: 0.9 }}>
+            </SPTypography>
+            <SPTypography variant="body2" sx={{ opacity: 0.9 }}>
               Total Users
-            </MKTypography>
+            </SPTypography>
           </Card>
         </Grid>
         <Grid item xs={12} md={4}>
@@ -141,12 +141,12 @@ function Users() {
               boxShadow: "0 8px 32px rgba(240, 147, 251, 0.3)",
             }}
           >
-            <MKTypography variant="h3" fontWeight="bold" mb={1}>
+            <SPTypography variant="h3" fontWeight="bold" mb={1}>
               {users.filter((u) => u.status === "Active").length}
-            </MKTypography>
-            <MKTypography variant="body2" sx={{ opacity: 0.9 }}>
+            </SPTypography>
+            <SPTypography variant="body2" sx={{ opacity: 0.9 }}>
               Active Users
-            </MKTypography>
+            </SPTypography>
           </Card>
         </Grid>
         <Grid item xs={12} md={4}>
@@ -161,12 +161,12 @@ function Users() {
               boxShadow: "0 8px 32px rgba(79, 172, 254, 0.3)",
             }}
           >
-            <MKTypography variant="h3" fontWeight="bold" mb={1}>
+            <SPTypography variant="h3" fontWeight="bold" mb={1}>
               {users.filter((u) => u.role === "Admin").length}
-            </MKTypography>
-            <MKTypography variant="body2" sx={{ opacity: 0.9 }}>
+            </SPTypography>
+            <SPTypography variant="body2" sx={{ opacity: 0.9 }}>
               Administrators
-            </MKTypography>
+            </SPTypography>
           </Card>
         </Grid>
       </Grid>

@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -36,9 +36,9 @@ import SecurityIcon from "@mui/icons-material/Security";
 import HelpIcon from "@mui/icons-material/Help";
 import LogoutIcon from "@mui/icons-material/Logout";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
 
 // Core config
 import { ROUTES } from "core/config";
@@ -74,7 +74,7 @@ function Navbar({ sidebarOpen, onSidebarToggle }) {
   };
 
   return (
-    <MKBox
+    <SPBox
       id="dashboard-top-navbar"
       position="fixed"
       top={0}
@@ -86,7 +86,7 @@ function Navbar({ sidebarOpen, onSidebarToggle }) {
         p: 1,
       }}
     >
-      <MKBox
+      <SPBox
         id="dashboard-navbar-content"
         py={1}
         px={{ xs: 4, sm: 2, lg: 2 }}
@@ -106,13 +106,13 @@ function Navbar({ sidebarOpen, onSidebarToggle }) {
             mode === "dark" ? `1px solid ${grey[300]}` : "none",
         })}
       >
-        <MKBox
+        <SPBox
           id="dashboard-navbar-layout"
           display="flex"
           justifyContent="space-between"
           alignItems="center"
         >
-          <MKBox id="dashboard-navbar-left" display="flex" alignItems="center">
+          <SPBox id="dashboard-navbar-left" display="flex" alignItems="center">
             <IconButton
               id="dashboard-sidebar-toggle"
               color="inherit"
@@ -136,7 +136,7 @@ function Navbar({ sidebarOpen, onSidebarToggle }) {
               <MenuIcon />
             </IconButton>
 
-            <MKTypography
+            <SPTypography
               id="dashboard-page-title"
               variant="h5"
               fontWeight="bold"
@@ -148,12 +148,12 @@ function Navbar({ sidebarOpen, onSidebarToggle }) {
               }}
             >
               Scarlet Pay
-            </MKTypography>
-          </MKBox>
+            </SPTypography>
+          </SPBox>
 
           {/* Right Side - User Info and Settings */}
-          <MKBox id="dashboard-navbar-right" display="flex" alignItems="center" gap={2}>
-            <MKBox
+          <SPBox id="dashboard-navbar-right" display="flex" alignItems="center" gap={2}>
+            <SPBox
               id="dashboard-user-welcome"
               sx={{
                 display: "flex",
@@ -174,13 +174,13 @@ function Navbar({ sidebarOpen, onSidebarToggle }) {
                 transition: "all 200ms ease-out",
               }}
             >
-              <MKTypography variant="body2" color="text.secondary" mr={1}>
+              <SPTypography variant="body2" color="text.secondary" mr={1}>
                 Welcome back,
-              </MKTypography>
-              <MKTypography variant="body2" fontWeight="medium" color="text.primary">
+              </SPTypography>
+              <SPTypography variant="body2" fontWeight="medium" color="text.primary">
                 Admin
-              </MKTypography>
-            </MKBox>
+              </SPTypography>
+            </SPBox>
 
             <IconButton
               id="dashboard-settings-button"
@@ -354,10 +354,10 @@ function Navbar({ sidebarOpen, onSidebarToggle }) {
                 />
               </MenuItem>
             </Menu>
-          </MKBox>
-        </MKBox>
-      </MKBox>
-    </MKBox>
+          </SPBox>
+        </SPBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

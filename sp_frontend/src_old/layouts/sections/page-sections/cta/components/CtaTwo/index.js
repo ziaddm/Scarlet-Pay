@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,23 +18,23 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPSocialButton from "components/SPSocialButton";
 
 function CtaTwo() {
   return (
-    <MKBox component="section" mt={6} py={{ xs: 0, lg: 6 }}>
+    <SPBox component="section" mt={6} py={{ xs: 0, lg: 6 }}>
       <Container>
         <Grid container alignItems="center">
           <Grid item xs={12} lg={6} mb={{ xs: 3, lg: 0 }}>
-            <MKTypography variant="h4" mb={0.5}>
+            <SPTypography variant="h4" mb={0.5}>
               Thank you for your support!
-            </MKTypography>
-            <MKTypography variant="body1" color="text">
+            </SPTypography>
+            <SPTypography variant="body1" color="text">
               Delivering the best products
-            </MKTypography>
+            </SPTypography>
           </Grid>
           <Grid item xs={12} lg={6}>
             <Stack
@@ -43,27 +43,27 @@ function CtaTwo() {
               flexWrap="wrap"
               justifyContent={{ xs: "flex-start", lg: "flex-end" }}
             >
-              <MKSocialButton color="twitter">
+              <SPSocialButton color="twitter">
                 <i className="fab fa-twitter" />
                 &nbsp; twitter
-              </MKSocialButton>
-              <MKSocialButton color="facebook">
+              </SPSocialButton>
+              <SPSocialButton color="facebook">
                 <i className="fab fa-facebook" />
                 &nbsp; facebook
-              </MKSocialButton>
-              <MKSocialButton color="tumblr">
+              </SPSocialButton>
+              <SPSocialButton color="tumblr">
                 <i className="fab fa-tumblr" />
                 &nbsp; tumblr
-              </MKSocialButton>
-              <MKSocialButton color="dribbble">
+              </SPSocialButton>
+              <SPSocialButton color="dribbble">
                 <i className="fab fa-dribbble" />
                 &nbsp; dribbble
-              </MKSocialButton>
+              </SPSocialButton>
             </Stack>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

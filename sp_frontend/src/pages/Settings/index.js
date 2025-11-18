@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -20,24 +20,24 @@ import Card from "@mui/material/Card";
 import Switch from "@mui/material/Switch";
 import FormControlLabel from "@mui/material/FormControlLabel";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
-import MKInput from "components/base/MKInput";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
+import SPInput from "components/base/SPInput";
 
 function Settings() {
   return (
     <Container maxWidth={false} sx={{ px: 0 }}>
       {/* Header Section */}
-      <MKBox mb={6}>
-        <MKTypography variant="h4" fontWeight="bold" mb={2}>
+      <SPBox mb={6}>
+        <SPTypography variant="h4" fontWeight="bold" mb={2}>
           Settings
-        </MKTypography>
-        <MKTypography variant="body1" color="text">
+        </SPTypography>
+        <SPTypography variant="body1" color="text">
           Configure your application settings and preferences.
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
 
       <Grid container spacing={4} sx={{ px: 3 }}>
         {/* Profile Settings */}
@@ -51,26 +51,26 @@ function Settings() {
               border: "1px solid rgba(0,0,0,0.05)",
             }}
           >
-            <MKTypography variant="h5" fontWeight="bold" mb={3}>
+            <SPTypography variant="h5" fontWeight="bold" mb={3}>
               Profile Settings
-            </MKTypography>
-            <MKBox mb={3}>
-              <MKInput type="text" label="Full Name" defaultValue="John Doe" fullWidth />
-            </MKBox>
-            <MKBox mb={3}>
-              <MKInput
+            </SPTypography>
+            <SPBox mb={3}>
+              <SPInput type="text" label="Full Name" defaultValue="John Doe" fullWidth />
+            </SPBox>
+            <SPBox mb={3}>
+              <SPInput
                 type="email"
                 label="Email Address"
                 defaultValue="john@example.com"
                 fullWidth
               />
-            </MKBox>
-            <MKBox mb={3}>
-              <MKInput type="text" label="Company" defaultValue="Creative Tim" fullWidth />
-            </MKBox>
-            <MKButton variant="gradient" color="info" size="large" fullWidth>
+            </SPBox>
+            <SPBox mb={3}>
+              <SPInput type="text" label="Company" defaultValue="Scarlet Pay Team" fullWidth />
+            </SPBox>
+            <SPButton variant="gradient" color="info" size="large" fullWidth>
               Save Changes
-            </MKButton>
+            </SPButton>
           </Card>
         </Grid>
 
@@ -85,24 +85,24 @@ function Settings() {
               border: "1px solid rgba(0,0,0,0.05)",
             }}
           >
-            <MKTypography variant="h5" fontWeight="bold" mb={3}>
+            <SPTypography variant="h5" fontWeight="bold" mb={3}>
               Notifications
-            </MKTypography>
-            <MKBox mb={2}>
+            </SPTypography>
+            <SPBox mb={2}>
               <FormControlLabel control={<Switch defaultChecked />} label="Email Notifications" />
-            </MKBox>
-            <MKBox mb={2}>
+            </SPBox>
+            <SPBox mb={2}>
               <FormControlLabel control={<Switch defaultChecked />} label="Push Notifications" />
-            </MKBox>
-            <MKBox mb={2}>
+            </SPBox>
+            <SPBox mb={2}>
               <FormControlLabel control={<Switch />} label="SMS Notifications" />
-            </MKBox>
-            <MKBox mb={3}>
+            </SPBox>
+            <SPBox mb={3}>
               <FormControlLabel control={<Switch defaultChecked />} label="Weekly Reports" />
-            </MKBox>
-            <MKButton variant="gradient" color="success" size="large" fullWidth>
+            </SPBox>
+            <SPButton variant="gradient" color="success" size="large" fullWidth>
               Update Preferences
-            </MKButton>
+            </SPButton>
           </Card>
         </Grid>
 
@@ -117,21 +117,21 @@ function Settings() {
               border: "1px solid rgba(0,0,0,0.05)",
             }}
           >
-            <MKTypography variant="h5" fontWeight="bold" mb={3}>
+            <SPTypography variant="h5" fontWeight="bold" mb={3}>
               Security
-            </MKTypography>
-            <MKBox mb={3}>
-              <MKInput type="password" label="Current Password" fullWidth />
-            </MKBox>
-            <MKBox mb={3}>
-              <MKInput type="password" label="New Password" fullWidth />
-            </MKBox>
-            <MKBox mb={3}>
-              <MKInput type="password" label="Confirm New Password" fullWidth />
-            </MKBox>
-            <MKButton variant="gradient" color="warning" size="large" fullWidth>
+            </SPTypography>
+            <SPBox mb={3}>
+              <SPInput type="password" label="Current Password" fullWidth />
+            </SPBox>
+            <SPBox mb={3}>
+              <SPInput type="password" label="New Password" fullWidth />
+            </SPBox>
+            <SPBox mb={3}>
+              <SPInput type="password" label="Confirm New Password" fullWidth />
+            </SPBox>
+            <SPButton variant="gradient" color="warning" size="large" fullWidth>
               Change Password
-            </MKButton>
+            </SPButton>
           </Card>
         </Grid>
 
@@ -146,24 +146,24 @@ function Settings() {
               border: "1px solid rgba(0,0,0,0.05)",
             }}
           >
-            <MKTypography variant="h5" fontWeight="bold" mb={3}>
+            <SPTypography variant="h5" fontWeight="bold" mb={3}>
               System Preferences
-            </MKTypography>
-            <MKBox mb={2}>
+            </SPTypography>
+            <SPBox mb={2}>
               <FormControlLabel control={<Switch defaultChecked />} label="Dark Mode" />
-            </MKBox>
-            <MKBox mb={2}>
+            </SPBox>
+            <SPBox mb={2}>
               <FormControlLabel control={<Switch defaultChecked />} label="Auto-save" />
-            </MKBox>
-            <MKBox mb={2}>
+            </SPBox>
+            <SPBox mb={2}>
               <FormControlLabel control={<Switch />} label="Beta Features" />
-            </MKBox>
-            <MKBox mb={3}>
+            </SPBox>
+            <SPBox mb={3}>
               <FormControlLabel control={<Switch defaultChecked />} label="Analytics Tracking" />
-            </MKBox>
-            <MKButton variant="gradient" color="info" size="large" fullWidth>
+            </SPBox>
+            <SPButton variant="gradient" color="info" size="large" fullWidth>
               Save Settings
-            </MKButton>
+            </SPButton>
           </Card>
         </Grid>
       </Grid>

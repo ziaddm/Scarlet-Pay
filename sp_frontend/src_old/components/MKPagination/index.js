@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,16 +18,16 @@ import { forwardRef, createContext, useContext } from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
 
-// Custom styles for MKPagination
-import MKPaginationItemRoot from "components/MKPagination/MKPaginationItemRoot";
+// Custom styles for SPPagination
+import SPPaginationItemRoot from "components/SPPagination/SPPaginationItemRoot";
 
 // The Pagination main context
 const Context = createContext();
 
-const MKPagination = forwardRef(
+const SPPagination = forwardRef(
   (
     {
       item = false,
@@ -54,7 +54,7 @@ const MKPagination = forwardRef(
     return (
       <Context.Provider value={{ variant, color, size }}>
         {item ? (
-          <MKPaginationItemRoot
+          <SPPaginationItemRoot
             {...rest}
             ref={ref}
             variant={active ? context.variant : "outlined"}
@@ -64,24 +64,24 @@ const MKPagination = forwardRef(
             ownerState={{ variant, active, paginationSize }}
           >
             {children}
-          </MKPaginationItemRoot>
+          </SPPaginationItemRoot>
         ) : (
-          <MKBox
+          <SPBox
             display="flex"
             justifyContent={placementValue}
             alignItems="center"
             sx={{ listStyle: "none" }}
           >
             {children}
-          </MKBox>
+          </SPBox>
         )}
       </Context.Provider>
     );
   }
 );
 
-// Typechecking props for the MKPagination
-MKPagination.propTypes = {
+// Typechecking props for the SPPagination
+SPPagination.propTypes = {
   item: PropTypes.bool,
   variant: PropTypes.oneOf(["gradient", "contained"]),
   color: PropTypes.oneOf([
@@ -101,4 +101,4 @@ MKPagination.propTypes = {
   placement: PropTypes.oneOf(["left", "right", "center"]),
 };
 
-export default MKPagination;
+export default SPPagination;

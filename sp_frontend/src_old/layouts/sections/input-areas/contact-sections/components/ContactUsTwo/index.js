@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,21 +17,21 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPInput from "components/SPInput";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 // Images
 import bgImage from "assets/images/examples/blog2.jpg";
 
 function ContactUsTwo() {
   return (
-    <MKBox component="section" py={{ xs: 0, lg: 6 }}>
+    <SPBox component="section" py={{ xs: 0, lg: 6 }}>
       <Container>
         <Grid container item px={6}>
-          <MKBox
+          <SPBox
             width="100%"
             bgColor="white"
             borderRadius="xl"
@@ -41,19 +41,19 @@ function ContactUsTwo() {
           >
             <Grid container spacing={3}>
               <Grid item xs={12} lg={7}>
-                <MKBox component="form" p={2} method="post">
-                  <MKBox px={3} py={{ xs: 2, sm: 6 }}>
-                    <MKTypography variant="h2" mb={1}>
+                <SPBox component="form" p={2} method="post">
+                  <SPBox px={3} py={{ xs: 2, sm: 6 }}>
+                    <SPTypography variant="h2" mb={1}>
                       Say Hi!
-                    </MKTypography>
-                    <MKTypography variant="body1" color="text" mb={2}>
+                    </SPTypography>
+                    <SPTypography variant="body1" color="text" mb={2}>
                       We&apos;d like to talk with you.
-                    </MKTypography>
-                  </MKBox>
-                  <MKBox pt={0.5} pb={3} px={3}>
+                    </SPTypography>
+                  </SPBox>
+                  <SPBox pt={0.5} pb={3} px={3}>
                     <Grid container>
                       <Grid item xs={12} pr={1} mb={3}>
-                        <MKInput
+                        <SPInput
                           variant="standard"
                           label="My name is"
                           placeholder="Full Name"
@@ -62,7 +62,7 @@ function ContactUsTwo() {
                         />
                       </Grid>
                       <Grid item xs={12} pr={1} mb={3}>
-                        <MKInput
+                        <SPInput
                           variant="standard"
                           label="I'm looking for"
                           placeholder="What you love"
@@ -71,7 +71,7 @@ function ContactUsTwo() {
                         />
                       </Grid>
                       <Grid item xs={12} pr={1} mb={3}>
-                        <MKInput
+                        <SPInput
                           variant="standard"
                           label="Your message"
                           placeholder="I want to say that..."
@@ -91,12 +91,12 @@ function ContactUsTwo() {
                       textAlign="right"
                       ml="auto"
                     >
-                      <MKButton variant="gradient" color="info">
+                      <SPButton variant="gradient" color="info">
                         Send Message
-                      </MKButton>
+                      </SPButton>
                     </Grid>
-                  </MKBox>
-                </MKBox>
+                  </SPBox>
+                </SPBox>
               </Grid>
               <Grid
                 item
@@ -116,25 +116,25 @@ function ContactUsTwo() {
                   backgroundSize: "cover",
                 }}
               >
-                <MKBox
+                <SPBox
                   display="flex"
                   justifyContent="center"
                   alignItems="center"
                   width="100%"
                   height="100%"
                 >
-                  <MKBox py={6} pl={6} pr={{ xs: 6, sm: 12 }} my="auto">
-                    <MKTypography variant="h3" color="white" mb={1}>
+                  <SPBox py={6} pl={6} pr={{ xs: 6, sm: 12 }} my="auto">
+                    <SPTypography variant="h3" color="white" mb={1}>
                       Contact Information
-                    </MKTypography>
-                    <MKTypography variant="body2" color="white" opacity={0.8} mb={3}>
+                    </SPTypography>
+                    <SPTypography variant="body2" color="white" opacity={0.8} mb={3}>
                       Fill up the form and our Team will get back to you within 24 hours.
-                    </MKTypography>
-                    <MKBox display="flex" p={1}>
-                      <MKTypography variant="button" color="white">
+                    </SPTypography>
+                    <SPBox display="flex" p={1}>
+                      <SPTypography variant="button" color="white">
                         <i className="fas fa-phone" />
-                      </MKTypography>
-                      <MKTypography
+                      </SPTypography>
+                      <SPTypography
                         component="span"
                         variant="button"
                         color="white"
@@ -143,13 +143,13 @@ function ContactUsTwo() {
                         fontWeight="regular"
                       >
                         (+40) 772 100 200
-                      </MKTypography>
-                    </MKBox>
-                    <MKBox display="flex" color="white" p={1}>
-                      <MKTypography variant="button" color="white">
+                      </SPTypography>
+                    </SPBox>
+                    <SPBox display="flex" color="white" p={1}>
+                      <SPTypography variant="button" color="white">
                         <i className="fas fa-envelope" />
-                      </MKTypography>
-                      <MKTypography
+                      </SPTypography>
+                      <SPTypography
                         component="span"
                         variant="button"
                         color="white"
@@ -158,13 +158,13 @@ function ContactUsTwo() {
                         fontWeight="regular"
                       >
                         hello@creative-tim.com
-                      </MKTypography>
-                    </MKBox>
-                    <MKBox display="flex" color="white" p={1}>
-                      <MKTypography variant="button" color="white">
+                      </SPTypography>
+                    </SPBox>
+                    <SPBox display="flex" color="white" p={1}>
+                      <SPTypography variant="button" color="white">
                         <i className="fas fa-map-marker-alt" />
-                      </MKTypography>
-                      <MKTypography
+                      </SPTypography>
+                      <SPTypography
                         component="span"
                         variant="button"
                         color="white"
@@ -173,30 +173,30 @@ function ContactUsTwo() {
                         fontWeight="regular"
                       >
                         Dyonisie Wolf Bucharest, RO 010458
-                      </MKTypography>
-                    </MKBox>
-                    <MKBox mt={3}>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
+                      </SPTypography>
+                    </SPBox>
+                    <SPBox mt={3}>
+                      <SPButton variant="text" color="white" size="large" iconOnly>
                         <i className="fab fa-facebook" style={{ fontSize: "1.25rem" }} />
-                      </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
+                      </SPButton>
+                      <SPButton variant="text" color="white" size="large" iconOnly>
                         <i className="fab fa-twitter" style={{ fontSize: "1.25rem" }} />
-                      </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
+                      </SPButton>
+                      <SPButton variant="text" color="white" size="large" iconOnly>
                         <i className="fab fa-dribbble" style={{ fontSize: "1.25rem" }} />
-                      </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
+                      </SPButton>
+                      <SPButton variant="text" color="white" size="large" iconOnly>
                         <i className="fab fa-instagram" style={{ fontSize: "1.25rem" }} />
-                      </MKButton>
-                    </MKBox>
-                  </MKBox>
-                </MKBox>
+                      </SPButton>
+                    </SPBox>
+                  </SPBox>
+                </SPBox>
               </Grid>
             </Grid>
-          </MKBox>
+          </SPBox>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

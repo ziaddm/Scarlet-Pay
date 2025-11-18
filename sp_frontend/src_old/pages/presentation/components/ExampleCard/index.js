@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -16,14 +16,14 @@ Coded by www.creative-tim.com
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function ExampleCard({ image, name = "", count = 0, ...rest }) {
   return (
-    <MKBox>
-      <MKBox
+    <SPBox>
+      <SPBox
         bgColor="white"
         borderRadius="xl"
         shadow="lg"
@@ -42,23 +42,23 @@ function ExampleCard({ image, name = "", count = 0, ...rest }) {
         }}
         {...rest}
       >
-        <MKBox component="img" src={image} alt={name} width="100%" my="auto" />
-      </MKBox>
+        <SPBox component="img" src={image} alt={name} width="100%" my="auto" />
+      </SPBox>
       {name || count > 0 ? (
-        <MKBox mt={1} ml={1} lineHeight={1}>
+        <SPBox mt={1} ml={1} lineHeight={1}>
           {name && (
-            <MKTypography variant="h6" fontWeight="bold">
+            <SPTypography variant="h6" fontWeight="bold">
               {name}
-            </MKTypography>
+            </SPTypography>
           )}
           {count > 0 && (
-            <MKTypography variant="button" fontWeight="regular" color="secondary">
+            <SPTypography variant="button" fontWeight="regular" color="secondary">
               {count} {count === 1 ? "Example" : "Examples"}
-            </MKTypography>
+            </SPTypography>
           )}
-        </MKBox>
+        </SPBox>
       ) : null}
-    </MKBox>
+    </SPBox>
   );
 }
 

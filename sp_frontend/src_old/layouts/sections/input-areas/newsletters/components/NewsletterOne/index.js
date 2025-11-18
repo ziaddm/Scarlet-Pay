@@ -1,11 +1,11 @@
 /* eslint-disable no-param-reassign */
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,42 +18,42 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPInput from "components/SPInput";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 function NewsletterOne() {
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={5} mr="auto">
-            <MKTypography variant="h4" mb={1}>
+            <SPTypography variant="h4" mb={1}>
               Get Tips &amp; Tricks every Week!
-            </MKTypography>
-            <MKTypography variant="body2" color="text">
+            </SPTypography>
+            <SPTypography variant="body2" color="text">
               Join our newsletter and get news in your inbox every week!
-            </MKTypography>
+            </SPTypography>
           </Grid>
           <Grid item xs={12} lg={6} flexDirection="column" justifyContent="center" ml="auto">
-            <MKBox component="form" method="" action="">
+            <SPBox component="form" method="" action="">
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={8}>
-                  <MKInput label="Your Email..." fullWidth />
+                  <SPInput label="Your Email..." fullWidth />
                 </Grid>
                 <Grid item xs={12} sm={4}>
-                  <MKButton variant="gradient" color="info" fullWidth sx={{ height: "100%" }}>
+                  <SPButton variant="gradient" color="info" fullWidth sx={{ height: "100%" }}>
                     Subscribe
-                  </MKButton>
+                  </SPButton>
                 </Grid>
               </Grid>
-            </MKBox>
+            </SPBox>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

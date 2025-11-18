@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,10 +19,10 @@ import PropTypes from "prop-types";
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPAvatar from "components/SPAvatar";
+import SPTypography from "components/SPTypography";
 
 function DefaultReviewCard({ color = "transparent", image = "", name, date, review, rating }) {
   const ratings = {
@@ -99,7 +99,7 @@ function DefaultReviewCard({ color = "transparent", image = "", name, date, revi
   };
 
   return (
-    <MKBox
+    <SPBox
       variant={color === "transparent" ? "contained" : "gradient"}
       bgColor={color}
       borderRadius="xl"
@@ -107,7 +107,7 @@ function DefaultReviewCard({ color = "transparent", image = "", name, date, revi
       p={3}
     >
       {image && (
-        <MKAvatar
+        <SPAvatar
           src={image}
           alt={name}
           variant="rounded"
@@ -116,8 +116,8 @@ function DefaultReviewCard({ color = "transparent", image = "", name, date, revi
           sx={{ mt: -5, mb: 1 }}
         />
       )}
-      <MKBox lineHeight={1}>
-        <MKTypography
+      <SPBox lineHeight={1}>
+        <SPTypography
           display="block"
           variant={image ? "button" : "h6"}
           fontWeight="bold"
@@ -125,8 +125,8 @@ function DefaultReviewCard({ color = "transparent", image = "", name, date, revi
           mb={0.5}
         >
           {name}
-        </MKTypography>
-        <MKTypography
+        </SPTypography>
+        <SPTypography
           variant={image ? "caption" : "button"}
           fontWeight="regular"
           lineHeight={1}
@@ -135,16 +135,16 @@ function DefaultReviewCard({ color = "transparent", image = "", name, date, revi
         >
           <Icon>schedule</Icon>&nbsp;
           {date}
-        </MKTypography>
-      </MKBox>
-      <MKTypography
+        </SPTypography>
+      </SPBox>
+      <SPTypography
         variant="body2"
         color={color === "transparent" || color === "light" ? "text" : "white"}
         my={4}
       >
         &quot;{review}&quot;
-      </MKTypography>
-      <MKTypography
+      </SPTypography>
+      <SPTypography
         variant="h4"
         color={color === "transparent" || color === "light" ? "text" : "white"}
         sx={{
@@ -158,8 +158,8 @@ function DefaultReviewCard({ color = "transparent", image = "", name, date, revi
         }}
       >
         {ratings[rating]}
-      </MKTypography>
-    </MKBox>
+      </SPTypography>
+    </SPBox>
   );
 }
 

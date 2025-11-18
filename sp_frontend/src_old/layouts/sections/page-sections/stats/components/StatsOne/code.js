@@ -2,15 +2,15 @@ const statsOneCode = `// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
 
 function StatsOne() {
   return (
-    <MKBox component="section" py={3}>
+    <SPBox component="section" py={3}>
       <Container>
         <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
           <Grid item xs={12} md={4}>
@@ -36,7 +36,7 @@ function StatsOne() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

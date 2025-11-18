@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React React - v1.0.0
+* Scarlet Pay 2 PRO React React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,10 +18,10 @@ import { forwardRef } from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Custom styles for MKButton
-import MKButtonRoot from "components/MKButton/MKButtonRoot";
+// Custom styles for SPButton
+import SPButtonRoot from "components/SPButton/SPButtonRoot";
 
-const MKButton = forwardRef(
+const SPButton = forwardRef(
   (
     {
       color = "white",
@@ -34,7 +34,7 @@ const MKButton = forwardRef(
     },
     ref
   ) => (
-    <MKButtonRoot
+    <SPButtonRoot
       {...rest}
       ref={ref}
       color="primary"
@@ -43,12 +43,12 @@ const MKButton = forwardRef(
       ownerState={{ color, variant, size, circular, iconOnly }}
     >
       {children}
-    </MKButtonRoot>
+    </SPButtonRoot>
   )
 );
 
-// Typechecking props for the MKButton
-MKButton.propTypes = {
+// Typechecking props for the SPButton
+SPButton.propTypes = {
   size: PropTypes.oneOf(["small", "medium", "large"]),
   variant: PropTypes.oneOf(["text", "contained", "outlined", "gradient"]),
   color: PropTypes.oneOf([
@@ -68,4 +68,4 @@ MKButton.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default MKButton;
+export default SPButton;

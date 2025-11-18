@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,11 +18,11 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKPagination from "components/MKPagination";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPPagination from "components/SPPagination";
 
-// Material Kit 2 PRO React components
+// Scarlet Pay 2 PRO React components
 import SimpleBookingCard from "examples/Cards/BookingCards/SimpleBookingCard";
 
 // Images
@@ -42,11 +42,11 @@ function Places() {
   };
 
   return (
-    <MKBox component="section" py={3}>
+    <SPBox component="section" py={3}>
       <Container>
         <Grid container spacing={3} sx={{ mt: 3 }}>
           <Grid item xs={12} md={6} lg={4}>
-            <MKBox mt={3}>
+            <SPBox mt={3}>
               <SimpleBookingCard
                 image={product2}
                 title="Lovely and cosy apartment"
@@ -54,10 +54,10 @@ function Places() {
                 categories={["Entire Apartment", "3 Guests", "2 Beds"]}
                 action={actionProps}
               />
-            </MKBox>
+            </SPBox>
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
-            <MKBox mt={3}>
+            <SPBox mt={3}>
               <SimpleBookingCard
                 image={product1}
                 title="Single room in the center of the city"
@@ -65,10 +65,10 @@ function Places() {
                 categories={["Private Room", "1 Guest", "1 Sofa"]}
                 action={actionProps}
               />
-            </MKBox>
+            </SPBox>
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
-            <MKBox mt={3}>
+            <SPBox mt={3}>
               <SimpleBookingCard
                 image={product3}
                 title="Independent house bedroom kitchen"
@@ -76,10 +76,10 @@ function Places() {
                 categories={["Entire Apartment", "4 Guests", "2 Beds"]}
                 action={actionProps}
               />
-            </MKBox>
+            </SPBox>
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
-            <MKBox mt={3}>
+            <SPBox mt={3}>
               <SimpleBookingCard
                 image={product4}
                 title="Zen Gateway with pool and garden"
@@ -87,10 +87,10 @@ function Places() {
                 categories={["Entire Apartment", "2 Guests", "1 Bed"]}
                 action={actionProps}
               />
-            </MKBox>
+            </SPBox>
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
-            <MKBox mt={3}>
+            <SPBox mt={3}>
               <SimpleBookingCard
                 image={product5}
                 title="Cheapest hotels for a luxury vacation"
@@ -98,10 +98,10 @@ function Places() {
                 categories={["Entire Flat", "8 Guests", "3 Rooms"]}
                 action={actionProps}
               />
-            </MKBox>
+            </SPBox>
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
-            <MKBox mt={3}>
+            <SPBox mt={3}>
               <SimpleBookingCard
                 image={product6}
                 title="Cozy Double Room Near Station"
@@ -109,28 +109,28 @@ function Places() {
                 categories={["Entire Apartment", "2 Guests", "1 Bed"]}
                 action={actionProps}
               />
-            </MKBox>
+            </SPBox>
           </Grid>
         </Grid>
-        <MKBox mt={5}>
-          <MKPagination>
-            <MKPagination item>
+        <SPBox mt={5}>
+          <SPPagination>
+            <SPPagination item>
               <Icon>keyboard_arrow_left</Icon>
-            </MKPagination>
-            <MKPagination item active>
+            </SPPagination>
+            <SPPagination item active>
               1
-            </MKPagination>
-            <MKPagination item>2</MKPagination>
-            <MKPagination item>3</MKPagination>
-            <MKPagination item>4</MKPagination>
-            <MKPagination item>5</MKPagination>
-            <MKPagination item>
+            </SPPagination>
+            <SPPagination item>2</SPPagination>
+            <SPPagination item>3</SPPagination>
+            <SPPagination item>4</SPPagination>
+            <SPPagination item>5</SPPagination>
+            <SPPagination item>
               <Icon>keyboard_arrow_right</Icon>
-            </MKPagination>
-          </MKPagination>
-        </MKBox>
+            </SPPagination>
+          </SPPagination>
+        </SPBox>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

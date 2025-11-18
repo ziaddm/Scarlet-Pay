@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,11 +18,11 @@ Coded by www.creative-tim.com
 // import Grid from "@mui/material/Grid";
 // import Card from "@mui/material/Card";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-// import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+// import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
@@ -44,15 +44,15 @@ function DesktopApp() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-pro-react",
+          route: "https://www.creative-tim.com/product/scarlet-pay-pro-react",
           label: "buy now",
           color: "warning",
         }}
         transparent
         light
       />
-      <MKBox bgColor="white">
-        <MKBox
+      <SPBox bgColor="white">
+        <SPBox
           minHeight="50vh"
           width="100%"
           sx={{
@@ -65,10 +65,10 @@ function DesktopApp() {
         <Features />
         <Testimonials />
         <Pricing />
-        <MKBox pt={6} px={1} mt={6}>
+        <SPBox pt={6} px={1} mt={6}>
           <DefaultFooter content={footerRoutes} />
-        </MKBox>
-      </MKBox>
+        </SPBox>
+      </SPBox>
     </>
   );
 }

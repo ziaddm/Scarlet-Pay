@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -24,9 +24,9 @@ import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function TransparentBlogCard({ image, title, description, action }) {
   const cardActionStyles = {
@@ -46,8 +46,8 @@ function TransparentBlogCard({ image, title, description, action }) {
   };
 
   const imageTemplate = (
-    <MKBox position="relative" borderRadius="lg">
-      <MKBox
+    <SPBox position="relative" borderRadius="lg">
+      <SPBox
         component="img"
         src={image}
         alt={title}
@@ -57,7 +57,7 @@ function TransparentBlogCard({ image, title, description, action }) {
         position="relative"
         zIndex={1}
       />
-      <MKBox
+      <SPBox
         borderRadius="lg"
         shadow="md"
         width="100%"
@@ -72,7 +72,7 @@ function TransparentBlogCard({ image, title, description, action }) {
           backgroundSize: "cover",
         }}
       />
-    </MKBox>
+    </SPBox>
   );
 
   return (
@@ -90,25 +90,25 @@ function TransparentBlogCard({ image, title, description, action }) {
           {imageTemplate}
         </MuiLink>
       )}
-      <MKBox pt={2} pb={3}>
+      <SPBox pt={2} pb={3}>
         {action.type === "internal" ? (
           <Link to={action.route} sx={cardActionStyles}>
-            <MKTypography variant="h5" gutterBottom>
+            <SPTypography variant="h5" gutterBottom>
               {title}
-            </MKTypography>
+            </SPTypography>
           </Link>
         ) : (
           <MuiLink href={action.route} target="_blank" rel="noreferrer" sx={cardActionStyles}>
-            <MKTypography variant="h5" gutterBottom>
+            <SPTypography variant="h5" gutterBottom>
               {title}
-            </MKTypography>
+            </SPTypography>
           </MuiLink>
         )}
-        <MKTypography variant="body2" component="p" color="text" mb={3}>
+        <SPTypography variant="body2" component="p" color="text" mb={3}>
           {description}
-        </MKTypography>
+        </SPTypography>
         {action.type === "internal" ? (
-          <MKTypography
+          <SPTypography
             component={Link}
             to={action.route}
             variant="body2"
@@ -119,9 +119,9 @@ function TransparentBlogCard({ image, title, description, action }) {
           >
             {action.label}
             <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-          </MKTypography>
+          </SPTypography>
         ) : (
-          <MKTypography
+          <SPTypography
             component={MuiLink}
             href={action.route}
             target="_blank"
@@ -134,9 +134,9 @@ function TransparentBlogCard({ image, title, description, action }) {
           >
             {action.label}
             <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-          </MKTypography>
+          </SPTypography>
         )}
-      </MKBox>
+      </SPBox>
     </Card>
   );
 }

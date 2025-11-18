@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,149 +17,149 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function Typography() {
   return (
-    <MKBox component="section" py={8}>
+    <SPBox component="section" py={8}>
       <Container>
-        <MKTypography variant="h2" mb={6}>
+        <SPTypography variant="h2" mb={6}>
           Typography - Font Family Roboto
-        </MKTypography>
+        </SPTypography>
         <Grid container alignItems="center" py={2}>
           <Grid item xs={12} sm={3}>
-            <MKTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
+            <SPTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
               Heading 1
-            </MKTypography>
+            </SPTypography>
           </Grid>
 
           <Grid item xs={12} sm={9}>
-            <MKTypography variant="h1">H1 Material Kit</MKTypography>
+            <SPTypography variant="h1">H1 Scarlet Pay</SPTypography>
           </Grid>
         </Grid>
         <Grid container alignItems="center" py={2}>
           <Grid item xs={12} sm={3}>
-            <MKTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
+            <SPTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
               Heading 2
-            </MKTypography>
+            </SPTypography>
           </Grid>
 
           <Grid item xs={12} sm={9}>
-            <MKTypography variant="h2">H2 Material Kit</MKTypography>
+            <SPTypography variant="h2">H2 Scarlet Pay</SPTypography>
           </Grid>
         </Grid>
         <Grid container alignItems="center" py={2}>
           <Grid item xs={12} sm={3}>
-            <MKTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
+            <SPTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
               Heading 3
-            </MKTypography>
+            </SPTypography>
           </Grid>
 
           <Grid item xs={12} sm={9}>
-            <MKTypography variant="h3">H3 Material Kit</MKTypography>
+            <SPTypography variant="h3">H3 Scarlet Pay</SPTypography>
           </Grid>
         </Grid>
         <Grid container alignItems="center" py={2}>
           <Grid item xs={12} sm={3}>
-            <MKTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
+            <SPTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
               Heading 4
-            </MKTypography>
+            </SPTypography>
           </Grid>
 
           <Grid item xs={12} sm={9}>
-            <MKTypography variant="h4">H4 Material Kit</MKTypography>
+            <SPTypography variant="h4">H4 Scarlet Pay</SPTypography>
           </Grid>
         </Grid>
         <Grid container alignItems="center" py={2}>
           <Grid item xs={12} sm={3}>
-            <MKTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
+            <SPTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
               Heading 5
-            </MKTypography>
+            </SPTypography>
           </Grid>
 
           <Grid item xs={12} sm={9}>
-            <MKTypography variant="h5">H5 Material Kit</MKTypography>
+            <SPTypography variant="h5">H5 Scarlet Pay</SPTypography>
           </Grid>
         </Grid>
         <Grid container alignItems="center" py={2}>
           <Grid item xs={12} sm={3}>
-            <MKTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
+            <SPTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
               Heading 6
-            </MKTypography>
+            </SPTypography>
           </Grid>
 
           <Grid item xs={12} sm={9}>
-            <MKTypography variant="h6">H6 Material Kit</MKTypography>
+            <SPTypography variant="h6">H6 Scarlet Pay</SPTypography>
           </Grid>
         </Grid>
         <Grid container alignItems="center" py={2}>
           <Grid item xs={12} sm={3}>
-            <MKTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
+            <SPTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
               Lead Text
-            </MKTypography>
+            </SPTypography>
           </Grid>
 
           <Grid item xs={12} sm={9}>
-            <MKTypography variant="body1" color="text">
+            <SPTypography variant="body1" color="text">
               I will be the leader of a company that ends up being worth billions of dollars,
               because I got the answers. I understand culture. I am the nucleus. I think that&apos;s
               a responsibility that I have, to push possibilities, to show people, this is the level
               that things could be at.
-            </MKTypography>
+            </SPTypography>
           </Grid>
         </Grid>
         <Grid container alignItems="center" py={2}>
           <Grid item xs={12} sm={3}>
-            <MKTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
+            <SPTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
               Paragraph
-            </MKTypography>
+            </SPTypography>
           </Grid>
 
           <Grid item xs={12} sm={9}>
-            <MKTypography variant="body2" color="text">
+            <SPTypography variant="body2" color="text">
               I will be the leader of a company that ends up being worth billions of dollars,
               because I got the answers. I understand culture. I am the nucleus. I think that&apos;s
               a responsibility that I have, to push possibilities, to show people, this is the level
               that things could be at.
-            </MKTypography>
+            </SPTypography>
           </Grid>
         </Grid>
         <Grid container alignItems="center" py={2}>
           <Grid item xs={12} sm={3}>
-            <MKTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
+            <SPTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
               Small
-            </MKTypography>
+            </SPTypography>
           </Grid>
 
           <Grid item xs={12} sm={9} lineHeight={1}>
-            <MKTypography variant="button" color="text">
+            <SPTypography variant="button" color="text">
               I will be the leader of a company that ends up being worth billions of dollars,
               because I got the answers. I understand culture. I am the nucleus. I think that&apos;s
               a responsibility that I have, to push possibilities, to show people, this is the level
               that things could be at.
-            </MKTypography>
+            </SPTypography>
           </Grid>
         </Grid>
         <Grid container alignItems="center" py={2}>
           <Grid item xs={12} sm={3}>
-            <MKTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
+            <SPTypography variant="button" color="text" fontWeight="bold" textTransform="uppercase">
               Tiny
-            </MKTypography>
+            </SPTypography>
           </Grid>
 
           <Grid item xs={12} sm={9} lineHeight={1}>
-            <MKTypography variant="caption" color="text">
+            <SPTypography variant="caption" color="text">
               I will be the leader of a company that ends up being worth billions of dollars,
               because I got the answers. I understand culture. I am the nucleus. I think that&apos;s
               a responsibility that I have, to push possibilities, to show people, this is the level
               that things could be at.
-            </MKTypography>
+            </SPTypography>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

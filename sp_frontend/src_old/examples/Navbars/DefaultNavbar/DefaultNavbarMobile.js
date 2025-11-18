@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -25,11 +25,11 @@ import PropTypes from "prop-types";
 import Collapse from "@mui/material/Collapse";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 
 function DefaultNavbarMobile({ routes, open }) {
@@ -49,13 +49,13 @@ function DefaultNavbarMobile({ routes, open }) {
         route={route}
         collapse={Boolean(navCollapse)}
       >
-        <MKBox sx={{ height: "15rem", maxHeight: "15rem", overflowY: "scroll" }}>
+        <SPBox sx={{ height: "15rem", maxHeight: "15rem", overflowY: "scroll" }}>
           {routeCollapses &&
             routeCollapses.map((item) => (
-              <MKBox key={item.name} px={2}>
+              <SPBox key={item.name} px={2}>
                 {item.collapse ? (
                   <>
-                    <MKTypography
+                    <SPTypography
                       display="block"
                       variant="button"
                       fontWeight="bold"
@@ -64,9 +64,9 @@ function DefaultNavbarMobile({ routes, open }) {
                       px={0.5}
                     >
                       {item.name}
-                    </MKTypography>
+                    </SPTypography>
                     {item.collapse.map((el) => (
-                      <MKTypography
+                      <SPTypography
                         key={el.name}
                         component={el.route ? Link : MuiLink}
                         to={el.route ? el.route : ""}
@@ -93,11 +93,11 @@ function DefaultNavbarMobile({ routes, open }) {
                         })}
                       >
                         {el.name}
-                      </MKTypography>
+                      </SPTypography>
                     ))}
                   </>
                 ) : (
-                  <MKBox
+                  <SPBox
                     key={item.key}
                     display="block"
                     component={item.route ? Link : MuiLink}
@@ -122,15 +122,15 @@ function DefaultNavbarMobile({ routes, open }) {
                       },
                     })}
                   >
-                    <MKTypography
+                    <SPTypography
                       display="block"
                       variant="button"
                       fontWeight="bold"
                       textTransform="capitalize"
                     >
                       {item.name}
-                    </MKTypography>
-                    <MKTypography
+                    </SPTypography>
+                    <SPTypography
                       display="block"
                       variant="button"
                       color="text"
@@ -138,21 +138,21 @@ function DefaultNavbarMobile({ routes, open }) {
                       sx={{ transition: "all 300ms linear" }}
                     >
                       {item.description}
-                    </MKTypography>
-                  </MKBox>
+                    </SPTypography>
+                  </SPBox>
                 )}
-              </MKBox>
+              </SPBox>
             ))}
-        </MKBox>
+        </SPBox>
       </DefaultNavbarDropdown>
     )
   );
 
   return (
     <Collapse in={Boolean(open)} timeout="auto" unmountOnExit>
-      <MKBox width="calc(100% + 1.625rem)" my={2} ml={-2}>
+      <SPBox width="calc(100% + 1.625rem)" my={2} ml={-2}>
         {renderNavbarItems}
-      </MKBox>
+      </SPBox>
     </Collapse>
   );
 }

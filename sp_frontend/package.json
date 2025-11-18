@@ -1,17 +1,17 @@
 {
-  "name": "material-kit-2-pro-react",
-  "version": "2.1.1",
+  "name": "scarlet-pay-frontend",
+  "version": "1.0.0",
   "private": true,
-  "author": "Creative Tim",
-  "license": "See license in https://www.creative-tim.com/license",
-  "description": "React version of Material Kit 2 PRO by Creative Tim",
+  "author": "Scarlet Pay Team",
+  "license": "MIT",
+  "description": "Scarlet Pay - Modern Payment Platform Frontend",
   "homepage": ".",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/ct-material-kit-pro-react/issues"
+    "url": "https://github.com/scarlet-pay/scarlet-pay/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/ct-material-kit-pro-react.git"
+    "url": "git+https://github.com/scarlet-pay/scarlet-pay.git"
   },
   "dependencies": {
     "@emotion/cache": "11.13.1",

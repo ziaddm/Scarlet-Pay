@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -32,13 +32,13 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Slide from "@mui/material/Slide";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKAlert from "components/MKAlert";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPAlert from "components/SPAlert";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React base styles
+// Scarlet Pay 2 PRO React base styles
 import colors from "assets/theme/base/colors";
 
 function View({ children, code, title, height = "auto", ...rest }) {
@@ -54,7 +54,7 @@ function View({ children, code, title, height = "auto", ...rest }) {
   }, [success]);
 
   return (
-    <MKBox
+    <SPBox
       width="100%"
       position="relative"
       borderRadius="xl"
@@ -63,7 +63,7 @@ function View({ children, code, title, height = "auto", ...rest }) {
       sx={{ overflow: "hidden" }}
       {...rest}
     >
-      <MKBox
+      <SPBox
         px={3}
         sx={{
           borderBottom: ({ borders: { borderWidth, borderColor } }) =>
@@ -72,16 +72,16 @@ function View({ children, code, title, height = "auto", ...rest }) {
       >
         <Grid container spacing={2} justifyContent="space-between" py={1}>
           <Grid item xs={12} lg={3}>
-            <MKTypography variant="body1" pt={0.5}>
+            <SPTypography variant="body1" pt={0.5}>
               {title}
-            </MKTypography>
+            </SPTypography>
           </Grid>
           <Grid item xs={12} lg={3}>
             <AppBar position="static">
               <Tabs value={activeTab} onChange={handleTabType}>
                 <Tab
                   icon={
-                    <MKBox
+                    <SPBox
                       component="i"
                       color="dark"
                       mr={1.25}
@@ -93,7 +93,7 @@ function View({ children, code, title, height = "auto", ...rest }) {
                 />
                 <Tab
                   icon={
-                    <MKBox
+                    <SPBox
                       component="i"
                       color="dark"
                       mr={1.25}
@@ -107,10 +107,10 @@ function View({ children, code, title, height = "auto", ...rest }) {
             </AppBar>
           </Grid>
         </Grid>
-      </MKBox>
-      <MKBox display={activeTab === 0 ? "block" : "none"}>
-        <MKBox width="100%" p={3}>
-          <MKBox
+      </SPBox>
+      <SPBox display={activeTab === 0 ? "block" : "none"}>
+        <SPBox width="100%" p={3}>
+          <SPBox
             bgColor="grey-100"
             width="100%"
             height={height}
@@ -119,11 +119,11 @@ function View({ children, code, title, height = "auto", ...rest }) {
             sx={{ overflowX: "hidden", overflowY: "scroll" }}
           >
             {children}
-          </MKBox>
-        </MKBox>
-      </MKBox>
-      <MKBox display={activeTab === 1 ? "block" : "none"} p={3}>
-        <MKBox
+          </SPBox>
+        </SPBox>
+      </SPBox>
+      <SPBox display={activeTab === 1 ? "block" : "none"} p={3}>
+        <SPBox
           bgColor="grey-100"
           position="relative"
           width="100%"
@@ -131,29 +131,29 @@ function View({ children, code, title, height = "auto", ...rest }) {
           sx={{ overflow: "hidden" }}
         >
           <CopyToClipboard text={code}>
-            <MKButton
+            <SPButton
               variant="gradient"
               color="dark"
               size="small"
               sx={{ position: "absolute", top: "0.5rem", right: "0.5rem" }}
               onClick={() => setSuccess(true)}
             >
-              <MKBox color="white" mr={0.5} className="fas fa-copy" /> Copy
-            </MKButton>
+              <SPBox color="white" mr={0.5} className="fas fa-copy" /> Copy
+            </SPButton>
           </CopyToClipboard>
           <Slide direction="down" in={success} unmountOnExit>
-            <MKBox position="absolute" top="0.5rem" left={0} width="100%">
-              <MKAlert
+            <SPBox position="absolute" top="0.5rem" left={0} width="100%">
+              <SPAlert
                 width="25%"
                 mx="auto"
                 color="success"
                 sx={{ minHeight: "2.5rem !important", py: 1, justifyContent: "center" }}
               >
-                <MKTypography variant="body2" color="white" fontWeight="regular">
+                <SPTypography variant="body2" color="white" fontWeight="regular">
                   Code successfully copied!
-                </MKTypography>
-              </MKAlert>
-            </MKBox>
+                </SPTypography>
+              </SPAlert>
+            </SPBox>
           </Slide>
           <SyntaxHighlighter
             language="jsx"
@@ -171,9 +171,9 @@ function View({ children, code, title, height = "auto", ...rest }) {
           >
             {code}
           </SyntaxHighlighter>
-        </MKBox>
-      </MKBox>
-    </MKBox>
+        </SPBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

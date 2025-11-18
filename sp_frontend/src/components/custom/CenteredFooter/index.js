@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -28,38 +28,38 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
 
 // Core
 import { useTheme } from "core/context";
 
 function CenteredFooter({
-  company = { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company = { href: "https://www.scarlet-pay.com/", name: "Scarlet Pay Team" },
   links = [
-    { href: "https://www.creative-tim.com/", name: "Company" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/presentation", name: "Team" },
-    { href: "https://www.creative-tim.com/templates/react", name: "Products" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "https://www.scarlet-pay.com/", name: "Company" },
+    { href: "https://www.scarlet-pay.com/presentation", name: "About Us" },
+    { href: "https://www.scarlet-pay.com/presentation", name: "Team" },
+    { href: "https://www.scarlet-pay.com/templates/react", name: "Products" },
+    { href: "https://www.scarlet-pay.com/blog", name: "Blog" },
+    { href: "https://www.scarlet-pay.com/license", name: "License" },
   ],
   socials = [
-    { icon: <FacebookIcon fontSize="small" />, link: "https://www.facebook.com/CreativeTim/" },
+    { icon: <FacebookIcon fontSize="small" />, link: "https://www.facebook.com/ScarletPay/" },
     {
       icon: <TwitterIcon fontSize="small" />,
-      link: "https://twitter.com/creativetim",
+      link: "https://twitter.com/scarletpay",
     },
     {
       icon: <InstagramIcon fontSize="small" />,
-      link: "https://www.instagram.com/creativetimofficial/",
+      link: "https://www.instagram.com/scarletpay/",
     },
     {
       icon: <PinterestIcon fontSize="small" />,
-      link: "https://ro.pinterest.com/thecreativetim/",
+      link: "https://www.pinterest.com/scarletpay/",
     },
-    { icon: <GitHubIcon fontSize="small" />, link: "https://github.com/creativetimofficial" },
+    { icon: <GitHubIcon fontSize="small" />, link: "https://github.com/scarlet-pay" },
   ],
   light = false,
 }) {
@@ -69,7 +69,7 @@ function CenteredFooter({
   const year = new Date().getFullYear();
 
   const renderLinks = links.map((link) => (
-    <MKTypography
+    <SPTypography
       key={link.name}
       component={Link}
       href={link.href}
@@ -84,11 +84,11 @@ function CenteredFooter({
       }}
     >
       {link.name}
-    </MKTypography>
+    </SPTypography>
   ));
 
   const renderSocials = socials.map((social) => (
-    <MKTypography
+    <SPTypography
       key={social.link}
       component={Link}
       href={social.link}
@@ -103,11 +103,11 @@ function CenteredFooter({
       }}
     >
       {social.icon}
-    </MKTypography>
+    </SPTypography>
   ));
 
   return (
-    <MKBox component="footer" py={6}>
+    <SPBox component="footer" py={6}>
       <Grid container justifyContent="center">
         <Grid item xs={10} lg={8}>
           <Stack
@@ -126,15 +126,15 @@ function CenteredFooter({
           </Stack>
         </Grid>
         <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
-          <MKTypography
+          <SPTypography
             variant="body2"
             sx={{
               color: ({ palette: { mode, text } }) =>
                 mode === "dark" ? text.main : text.secondary || "#7b809a",
             }}
           >
-            Copyright &copy; {year} Material by{" "}
-            <MKTypography
+            Copyright &copy; {year} Scarlet Pay by{" "}
+            <SPTypography
               component={Link}
               href={href}
               target="_blank"
@@ -149,12 +149,12 @@ function CenteredFooter({
               }}
             >
               {name}
-            </MKTypography>
+            </SPTypography>
             .
-          </MKTypography>
+          </SPTypography>
         </Grid>
       </Grid>
-    </MKBox>
+    </SPBox>
   );
 }
 

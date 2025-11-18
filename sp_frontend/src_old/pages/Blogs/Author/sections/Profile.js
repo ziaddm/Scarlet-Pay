@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,62 +18,62 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPAvatar from "components/SPAvatar";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 // Images
 import profilePicture from "assets/images/bruce-mars.jpg";
 
 function Profile() {
   return (
-    <MKBox component="section" py={{ xs: 6, sm: 12 }}>
+    <SPBox component="section" py={{ xs: 6, sm: 12 }}>
       <Container>
         <Grid container item xs={12} justifyContent="center" mx="auto">
-          <MKBox mt={{ xs: -16, md: -20 }} textAlign="center">
-            <MKAvatar src={profilePicture} alt="Burce Mars" size="xxl" shadow="xl" />
-          </MKBox>
+          <SPBox mt={{ xs: -16, md: -20 }} textAlign="center">
+            <SPAvatar src={profilePicture} alt="Burce Mars" size="xxl" shadow="xl" />
+          </SPBox>
           <Grid container justifyContent="center" py={6}>
             <Grid item xs={12} md={7} mx={{ xs: "auto", sm: 6, md: 1 }}>
-              <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-                <MKTypography variant="h3">Michael Roven</MKTypography>
-                <MKButton variant="outlined" color="info" size="small">
+              <SPBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
+                <SPTypography variant="h3">Michael Roven</SPTypography>
+                <SPButton variant="outlined" color="info" size="small">
                   Follow
-                </MKButton>
-              </MKBox>
+                </SPButton>
+              </SPBox>
               <Grid container spacing={3} mb={3}>
                 <Grid item>
-                  <MKTypography component="span" variant="body2" fontWeight="bold">
+                  <SPTypography component="span" variant="body2" fontWeight="bold">
                     323&nbsp;
-                  </MKTypography>
-                  <MKTypography component="span" variant="body2" color="text">
+                  </SPTypography>
+                  <SPTypography component="span" variant="body2" color="text">
                     Posts
-                  </MKTypography>
+                  </SPTypography>
                 </Grid>
                 <Grid item>
-                  <MKTypography component="span" variant="body2" fontWeight="bold">
+                  <SPTypography component="span" variant="body2" fontWeight="bold">
                     3.5k&nbsp;
-                  </MKTypography>
-                  <MKTypography component="span" variant="body2" color="text">
+                  </SPTypography>
+                  <SPTypography component="span" variant="body2" color="text">
                     Followers
-                  </MKTypography>
+                  </SPTypography>
                 </Grid>
                 <Grid item>
-                  <MKTypography component="span" variant="body2" fontWeight="bold">
+                  <SPTypography component="span" variant="body2" fontWeight="bold">
                     260&nbsp;
-                  </MKTypography>
-                  <MKTypography component="span" variant="body2" color="text">
+                  </SPTypography>
+                  <SPTypography component="span" variant="body2" color="text">
                     Following
-                  </MKTypography>
+                  </SPTypography>
                 </Grid>
               </Grid>
-              <MKTypography variant="body1" fontWeight="light" color="text">
+              <SPTypography variant="body1" fontWeight="light" color="text">
                 Decisions: If you can&apos;t decide, the answer is no. If two equally difficult
                 paths, choose the one more painful in the short term (pain avoidance is creating an
                 illusion of equality). Choose the path that leaves you more equanimous. <br />
-                <MKTypography
+                <SPTypography
                   component="a"
                   href="#"
                   variant="body1"
@@ -96,13 +96,13 @@ function Profile() {
                   }}
                 >
                   More about me <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-                </MKTypography>
-              </MKTypography>
+                </SPTypography>
+              </SPTypography>
             </Grid>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

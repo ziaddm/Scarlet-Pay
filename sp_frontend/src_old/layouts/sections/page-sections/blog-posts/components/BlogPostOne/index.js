@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,17 +18,17 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React components
+// Scarlet Pay 2 PRO React components
 import ColoredBackgroundCard from "examples/Cards/BackgroundCards/ColoredBackgroundCard";
 import InfoBackgroundCard from "examples/Cards/BackgroundCards/InfoBackgroundCard";
 
 function BlogPostOne() {
   return (
-    <MKBox component="section" py={2}>
+    <SPBox component="section" py={2}>
       <Container>
         <Grid
           container
@@ -40,8 +40,8 @@ function BlogPostOne() {
           mx="auto"
           mb={6}
         >
-          <MKBox py={2} px={6} textAlign="center">
-            <MKBox
+          <SPBox py={2} px={6} textAlign="center">
+            <SPBox
               width="4rem"
               height="4rem"
               display="flex"
@@ -55,15 +55,15 @@ function BlogPostOne() {
               mx="auto"
             >
               <Icon fontSize="medium">person</Icon>
-            </MKBox>
-            <MKTypography variant="h2" mt={2} mb={1}>
+            </SPBox>
+            <SPTypography variant="h2" mt={2} mb={1}>
               Check out what&apos;s new
-            </MKTypography>
-            <MKTypography variant="body2" color="text">
+            </SPTypography>
+            <SPTypography variant="body2" color="text">
               We get insulted by others, lose trust for those others. We get back freezes every
               winter
-            </MKTypography>
-          </MKBox>
+            </SPTypography>
+          </SPBox>
         </Grid>
         <Grid container spacing={3} mb={6}>
           <Grid item xs={12} md={6} lg={4}>
@@ -115,7 +115,7 @@ function BlogPostOne() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

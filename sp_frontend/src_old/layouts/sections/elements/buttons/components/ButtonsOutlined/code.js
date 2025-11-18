@@ -3,47 +3,47 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
 
 function ButtonsOutlined() {
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid container justifyContent="center">
           <Stack direction="row" alignItems="flex-end" spacing={1}>
-            <MKButton variant="outlined" color="primary">
+            <SPButton variant="outlined" color="primary">
               primary
-            </MKButton>
-            <MKButton variant="outlined" color="secondary">
+            </SPButton>
+            <SPButton variant="outlined" color="secondary">
               secondary
-            </MKButton>
-            <MKButton variant="outlined" color="info">
+            </SPButton>
+            <SPButton variant="outlined" color="info">
               info
-            </MKButton>
-            <MKButton variant="outlined" color="success">
+            </SPButton>
+            <SPButton variant="outlined" color="success">
               success
-            </MKButton>
-            <MKButton variant="outlined" color="warning">
+            </SPButton>
+            <SPButton variant="outlined" color="warning">
               warning
-            </MKButton>
-            <MKButton variant="outlined" color="error">
+            </SPButton>
+            <SPButton variant="outlined" color="error">
               error
-            </MKButton>
-            <MKButton variant="outlined" color="light">
+            </SPButton>
+            <SPButton variant="outlined" color="light">
               light
-            </MKButton>
-            <MKButton variant="outlined" color="dark">
+            </SPButton>
+            <SPButton variant="outlined" color="dark">
               dark
-            </MKButton>
-            <MKButton variant="outlined" color="white">
+            </SPButton>
+            <SPButton variant="outlined" color="white">
               White
-            </MKButton>
+            </SPButton>
           </Stack>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

@@ -4,12 +4,12 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Slider from "@mui/material/Slider";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
 
 function Sliders() {
   return (
-    <MKBox component="section" bgColor="white" py={12}>
+    <SPBox component="section" bgColor="white" py={12}>
       <Container>
         <Grid container item xs={12} lg={6} justifyContent="center" mx="auto">
           <Stack spacing={2} width="100%">
@@ -18,7 +18,7 @@ function Sliders() {
           </Stack>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,16 +19,16 @@ import PropTypes from "prop-types";
 // @mui material components
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPAvatar from "components/SPAvatar";
+import SPTypography from "components/SPTypography";
 
 function TransparentTeamCard({ image, name, position, description = "", socials = "" }) {
   return (
-    <MKBox display="flex" flexDirection="column">
-      <MKBox position="relative" width="max-content">
-        <MKAvatar
+    <SPBox display="flex" flexDirection="column">
+      <SPBox position="relative" width="max-content">
+        <SPAvatar
           variant="rounded"
           size="xxl"
           src={image}
@@ -39,7 +39,7 @@ function TransparentTeamCard({ image, name, position, description = "", socials 
             zIndex: 2,
           }}
         />
-        <MKBox
+        <SPBox
           borderRadius="lg"
           shadow="md"
           width="100%"
@@ -55,20 +55,20 @@ function TransparentTeamCard({ image, name, position, description = "", socials 
             backgroundSize: "cover",
           }}
         />
-      </MKBox>
-      <MKBox py={2}>
-        <MKTypography variant="h5">{name}</MKTypography>
-        <MKTypography variant="body2" color="text" mb={2}>
+      </SPBox>
+      <SPBox py={2}>
+        <SPTypography variant="h5">{name}</SPTypography>
+        <SPTypography variant="body2" color="text" mb={2}>
           {position}
-        </MKTypography>
-        <MKTypography variant="body2" color="text" mb={2}>
+        </SPTypography>
+        <SPTypography variant="body2" color="text" mb={2}>
           {description}
-        </MKTypography>
+        </SPTypography>
         <Stack direction="row" spacing={4} mt={3}>
           {socials}
         </Stack>
-      </MKBox>
-    </MKBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

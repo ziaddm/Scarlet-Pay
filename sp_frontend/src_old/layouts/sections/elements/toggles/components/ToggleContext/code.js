@@ -5,9 +5,9 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Switch from "@mui/material/Switch";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function ToggleContext() {
   const [checked, setChecked] = useState(false);
@@ -15,23 +15,23 @@ function ToggleContext() {
   const toggleSwitch = () => setChecked(!checked);
 
   return (
-    <MKBox component="section" py={8}>
+    <SPBox component="section" py={8}>
       <Container>
         <Grid container item xs={4} justifyContent="center" mx="auto">
-          <MKBox display="flex" alignItems="center">
+          <SPBox display="flex" alignItems="center">
             <Switch checked={checked} onChange={toggleSwitch} />
-            <MKBox ml={2} lineHeight={0.5}>
-              <MKTypography display="block" variant="button" fontWeight="bold">
+            <SPBox ml={2} lineHeight={0.5}>
+              <SPTypography display="block" variant="button" fontWeight="bold">
                 Remember me
-              </MKTypography>
-              <MKTypography variant="caption" color="text" fontWeight="regular">
+              </SPTypography>
+              <SPTypography variant="caption" color="text" fontWeight="regular">
                 Be sure that you will always be logged in.
-              </MKTypography>
-            </MKBox>
-          </MKBox>
+              </SPTypography>
+            </SPBox>
+          </SPBox>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

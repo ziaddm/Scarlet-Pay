@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -22,10 +22,10 @@ import PropTypes from "prop-types";
 // @mui material components
 import Card from "@mui/material/Card";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 function ColoredBackgroundCard({ color = "info", image, label = "", title, description, action }) {
   return (
@@ -47,9 +47,9 @@ function ColoredBackgroundCard({ color = "info", image, label = "", title, descr
         placeItems: "center",
       })}
     >
-      <MKBox textAlign="center" p={3} my={12}>
+      <SPBox textAlign="center" p={3} my={12}>
         {label && (
-          <MKTypography
+          <SPTypography
             display="block"
             variant="caption"
             color={color === "light" ? "text" : "white"}
@@ -59,21 +59,21 @@ function ColoredBackgroundCard({ color = "info", image, label = "", title, descr
             mb={2}
           >
             {label}
-          </MKTypography>
+          </SPTypography>
         )}
-        <MKTypography variant="h4" color={color === "light" ? "dark" : "white"}>
+        <SPTypography variant="h4" color={color === "light" ? "dark" : "white"}>
           {title}
-        </MKTypography>
-        <MKTypography
+        </SPTypography>
+        <SPTypography
           variant="body2"
           color={color === "light" ? "text" : "white"}
           opacity={0.8}
           mb={3}
         >
           {description}
-        </MKTypography>
+        </SPTypography>
         {action.type === "internal" ? (
-          <MKButton
+          <SPButton
             component={Link}
             to={action.route}
             variant={color === "light" ? "gradient" : "contained"}
@@ -81,9 +81,9 @@ function ColoredBackgroundCard({ color = "info", image, label = "", title, descr
             size="small"
           >
             {action.label}
-          </MKButton>
+          </SPButton>
         ) : (
-          <MKButton
+          <SPButton
             component="a"
             href={action.route}
             target="_blank"
@@ -93,9 +93,9 @@ function ColoredBackgroundCard({ color = "info", image, label = "", title, descr
             size="small"
           >
             {action.label}
-          </MKButton>
+          </SPButton>
         )}
-      </MKBox>
+      </SPBox>
     </Card>
   );
 }

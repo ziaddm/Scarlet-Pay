@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,13 +19,13 @@ import PropTypes from "prop-types";
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function RotatingCardFront({ color = "info", image, icon = "", title, description }) {
   return (
-    <MKBox
+    <SPBox
       display="flex"
       justifyContent="center"
       alignContent="center"
@@ -44,20 +44,20 @@ function RotatingCardFront({ color = "info", image, icon = "", title, descriptio
         backfaceVisibility: "hidden",
       }}
     >
-      <MKBox py={12} px={3} textAlign="center" lineHeight={1}>
+      <SPBox py={12} px={3} textAlign="center" lineHeight={1}>
         {icon && (
-          <MKTypography variant="h2" color="white" my={2}>
+          <SPTypography variant="h2" color="white" my={2}>
             {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
-          </MKTypography>
+          </SPTypography>
         )}
-        <MKTypography variant="h3" color="white" gutterBottom>
+        <SPTypography variant="h3" color="white" gutterBottom>
           {title}
-        </MKTypography>
-        <MKTypography variant="body2" color="white" opacity={0.8}>
+        </SPTypography>
+        <SPTypography variant="body2" color="white" opacity={0.8}>
           {description}
-        </MKTypography>
-      </MKBox>
-    </MKBox>
+        </SPTypography>
+      </SPBox>
+    </SPBox>
   );
 }
 

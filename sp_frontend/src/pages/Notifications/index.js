@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -36,11 +36,11 @@ import ErrorIcon from "@mui/icons-material/Error";
 import WarningIcon from "@mui/icons-material/Warning";
 import InfoIcon from "@mui/icons-material/Info";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
-import MKAvatar from "components/base/MKAvatar";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
+import SPAvatar from "components/base/SPAvatar";
 
 // Sample notifications data
 const allNotifications = [
@@ -190,36 +190,36 @@ function Notifications() {
   return (
     <Container maxWidth={false} sx={{ px: 0 }}>
       {/* Header Section */}
-      <MKBox mb={6}>
-        <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-          <MKBox display="flex" alignItems="center">
+      <SPBox mb={6}>
+        <SPBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+          <SPBox display="flex" alignItems="center">
             <Badge badgeContent={unreadCount} color="error" sx={{ mr: 2 }}>
               <NotificationsIcon sx={{ fontSize: 32 }} />
             </Badge>
-            <MKTypography variant="h4" fontWeight="bold">
+            <SPTypography variant="h4" fontWeight="bold">
               Notification Center
-            </MKTypography>
-          </MKBox>
-          <MKBox display="flex" gap={2}>
+            </SPTypography>
+          </SPBox>
+          <SPBox display="flex" gap={2}>
             {unreadCount > 0 && (
-              <MKButton variant="outlined" color="info" size="large" onClick={markAllAsRead}>
+              <SPButton variant="outlined" color="info" size="large" onClick={markAllAsRead}>
                 Mark All as Read
-              </MKButton>
+              </SPButton>
             )}
-            <MKButton
+            <SPButton
               variant="gradient"
               color="error"
               size="large"
               onClick={deleteAllNotifications}
             >
               Clear All
-            </MKButton>
-          </MKBox>
-        </MKBox>
-        <MKTypography variant="body1" color="text">
+            </SPButton>
+          </SPBox>
+        </SPBox>
+        <SPTypography variant="body1" color="text">
           Manage and view all your notifications in one place.
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
 
       {/* Stats Cards */}
       <Grid container spacing={3} mb={4} sx={{ px: 3 }}>
@@ -235,12 +235,12 @@ function Notifications() {
               boxShadow: "0 8px 32px rgba(102, 126, 234, 0.3)",
             }}
           >
-            <MKTypography variant="h4" fontWeight="bold" mb={1}>
+            <SPTypography variant="h4" fontWeight="bold" mb={1}>
               {notifications.length}
-            </MKTypography>
-            <MKTypography variant="body2" sx={{ opacity: 0.9 }}>
+            </SPTypography>
+            <SPTypography variant="body2" sx={{ opacity: 0.9 }}>
               Total Notifications
-            </MKTypography>
+            </SPTypography>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
@@ -255,12 +255,12 @@ function Notifications() {
               boxShadow: "0 8px 32px rgba(240, 147, 251, 0.3)",
             }}
           >
-            <MKTypography variant="h4" fontWeight="bold" mb={1}>
+            <SPTypography variant="h4" fontWeight="bold" mb={1}>
               {unreadCount}
-            </MKTypography>
-            <MKTypography variant="body2" sx={{ opacity: 0.9 }}>
+            </SPTypography>
+            <SPTypography variant="body2" sx={{ opacity: 0.9 }}>
               Unread
-            </MKTypography>
+            </SPTypography>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
@@ -275,12 +275,12 @@ function Notifications() {
               boxShadow: "0 8px 32px rgba(79, 172, 254, 0.3)",
             }}
           >
-            <MKTypography variant="h4" fontWeight="bold" mb={1}>
+            <SPTypography variant="h4" fontWeight="bold" mb={1}>
               {notifications.filter((n) => n.type === "success").length}
-            </MKTypography>
-            <MKTypography variant="body2" sx={{ opacity: 0.9 }}>
+            </SPTypography>
+            <SPTypography variant="body2" sx={{ opacity: 0.9 }}>
               Success
-            </MKTypography>
+            </SPTypography>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
@@ -295,12 +295,12 @@ function Notifications() {
               boxShadow: "0 8px 32px rgba(250, 112, 154, 0.3)",
             }}
           >
-            <MKTypography variant="h4" fontWeight="bold" mb={1}>
+            <SPTypography variant="h4" fontWeight="bold" mb={1}>
               {notifications.filter((n) => n.type === "error" || n.type === "warning").length}
-            </MKTypography>
-            <MKTypography variant="body2" sx={{ opacity: 0.9 }}>
+            </SPTypography>
+            <SPTypography variant="body2" sx={{ opacity: 0.9 }}>
               Alerts
-            </MKTypography>
+            </SPTypography>
           </Card>
         </Grid>
       </Grid>
@@ -314,57 +314,57 @@ function Notifications() {
           overflow: "hidden",
         }}
       >
-        <MKBox sx={{ borderBottom: 1, borderColor: "divider", px: 3 }}>
+        <SPBox sx={{ borderBottom: 1, borderColor: "divider", px: 3 }}>
           <Tabs value={activeTab} onChange={handleTabChange} aria-label="notification tabs">
             <Tab
               label={
-                <MKBox display="flex" alignItems="center" gap={1}>
+                <SPBox display="flex" alignItems="center" gap={1}>
                   All
                   <Chip label={notifications.length} size="small" color="primary" />
-                </MKBox>
+                </SPBox>
               }
             />
             <Tab
               label={
-                <MKBox display="flex" alignItems="center" gap={1}>
+                <SPBox display="flex" alignItems="center" gap={1}>
                   Unread
                   {unreadCount > 0 && <Chip label={unreadCount} size="small" color="error" />}
-                </MKBox>
+                </SPBox>
               }
             />
             <Tab
               label={
-                <MKBox display="flex" alignItems="center" gap={1}>
+                <SPBox display="flex" alignItems="center" gap={1}>
                   Read
                   <Chip
                     label={notifications.filter((n) => n.read).length}
                     size="small"
                     color="default"
                   />
-                </MKBox>
+                </SPBox>
               }
             />
           </Tabs>
-        </MKBox>
+        </SPBox>
 
         {/* Notifications List */}
-        <MKBox sx={{ maxHeight: "600px", overflowY: "auto" }}>
+        <SPBox sx={{ maxHeight: "600px", overflowY: "auto" }}>
           {filteredNotifications.length === 0 ? (
-            <MKBox p={6} textAlign="center">
+            <SPBox p={6} textAlign="center">
               <NotificationsIcon sx={{ fontSize: 64, color: "text.secondary", mb: 2 }} />
-              <MKTypography variant="h6" color="text.secondary" mb={1}>
+              <SPTypography variant="h6" color="text.secondary" mb={1}>
                 No notifications found
-              </MKTypography>
-              <MKTypography variant="body2" color="text.secondary">
+              </SPTypography>
+              <SPTypography variant="body2" color="text.secondary">
                 {activeTab === 1
                   ? "You're all caught up! No unread notifications."
                   : "You don't have any notifications yet."}
-              </MKTypography>
-            </MKBox>
+              </SPTypography>
+            </SPBox>
           ) : (
             filteredNotifications.map((notification, index) => (
-              <MKBox key={notification.id}>
-                <MKBox
+              <SPBox key={notification.id}>
+                <SPBox
                   display="flex"
                   alignItems="flex-start"
                   p={3}
@@ -376,7 +376,7 @@ function Notifications() {
                     },
                   }}
                 >
-                  <MKAvatar
+                  <SPAvatar
                     color={getTypeColor(notification.type)}
                     sx={{
                       width: 48,
@@ -386,23 +386,23 @@ function Notifications() {
                     }}
                   >
                     {getTypeIcon(notification.type)}
-                  </MKAvatar>
+                  </SPAvatar>
 
-                  <MKBox flex={1}>
-                    <MKBox
+                  <SPBox flex={1}>
+                    <SPBox
                       display="flex"
                       justifyContent="space-between"
                       alignItems="flex-start"
                       mb={1}
                     >
-                      <MKBox>
-                        <MKTypography variant="h6" fontWeight="bold" mb={0.5}>
+                      <SPBox>
+                        <SPTypography variant="h6" fontWeight="bold" mb={0.5}>
                           {notification.title}
-                        </MKTypography>
-                        <MKTypography variant="body2" color="text.secondary">
+                        </SPTypography>
+                        <SPTypography variant="body2" color="text.secondary">
                           {notification.message}
-                        </MKTypography>
-                      </MKBox>
+                        </SPTypography>
+                      </SPBox>
                       <IconButton
                         size="small"
                         onClick={(e) => handleMenuOpen(e, notification.id)}
@@ -410,11 +410,11 @@ function Notifications() {
                       >
                         <MoreVertIcon />
                       </IconButton>
-                    </MKBox>
-                    <MKBox display="flex" justifyContent="space-between" alignItems="center" mt={1}>
-                      <MKTypography variant="caption" color="text.secondary">
+                    </SPBox>
+                    <SPBox display="flex" justifyContent="space-between" alignItems="center" mt={1}>
+                      <SPTypography variant="caption" color="text.secondary">
                         {notification.timestamp}
-                      </MKTypography>
+                      </SPTypography>
                       {!notification.read && (
                         <Chip
                           label="New"
@@ -423,14 +423,14 @@ function Notifications() {
                           sx={{ height: 20, fontSize: "0.65rem" }}
                         />
                       )}
-                    </MKBox>
-                  </MKBox>
-                </MKBox>
+                    </SPBox>
+                  </SPBox>
+                </SPBox>
                 {index < filteredNotifications.length - 1 && <Divider />}
-              </MKBox>
+              </SPBox>
             ))
           )}
-        </MKBox>
+        </SPBox>
       </Card>
 
       {/* Context Menu */}

@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,9 +19,9 @@ import PropTypes from "prop-types";
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function DefaultInfoCard({
   color = "info",
@@ -32,9 +32,9 @@ function DefaultInfoCard({
   small = false,
 }) {
   return (
-    <MKBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction}>
+    <SPBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction}>
       {typeof icon === "string" ? (
-        <MKTypography
+        <SPTypography
           display="block"
           variant={direction === "center" ? "h2" : "h3"}
           color={color}
@@ -42,11 +42,11 @@ function DefaultInfoCard({
         >
           {" "}
           <Icon>{icon}</Icon>{" "}
-        </MKTypography>
+        </SPTypography>
       ) : (
         icon
       )}
-      <MKTypography
+      <SPTypography
         display="block"
         variant="5"
         fontWeight="bold"
@@ -54,8 +54,8 @@ function DefaultInfoCard({
         mb={1.5}
       >
         {title}
-      </MKTypography>
-      <MKTypography
+      </SPTypography>
+      <SPTypography
         display="block"
         variant={small ? "button" : "body2"}
         color="text"
@@ -63,8 +63,8 @@ function DefaultInfoCard({
         pl={direction === "right" ? 6 : 0}
       >
         {description}
-      </MKTypography>
-    </MKBox>
+      </SPTypography>
+    </SPBox>
   );
 }
 

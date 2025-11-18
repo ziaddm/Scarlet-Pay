@@ -4,9 +4,9 @@ const faqCode = `import { useState } from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 // Sections components
 import BaseLayout from "layouts/sections/components/BaseLayout";
@@ -30,19 +30,19 @@ function Faq() {
       ]}
     >
       <View title="Faq" code={faqCode}>
-        <MKBox component="section" py={12}>
+        <SPBox component="section" py={12}>
           <Container>
             <Grid container justifyContent="center">
               <Grid item xs={12} md={6} my={6}>
-                <MKTypography variant="h2" align="center" fontWeight="bold" gutterBottom>
+                <SPTypography variant="h2" align="center" fontWeight="bold" gutterBottom>
                   Frequently Asked Questions
-                </MKTypography>
-                <MKBox mb={2}>
-                  <MKTypography variant="body2" align="center" color="text">
+                </SPTypography>
+                <SPBox mb={2}>
+                  <SPTypography variant="body2" align="center" color="text">
                     A lot of people don&apos;t appreciate the moment until it&apos;s passed.
                     I&apos;m not trying my hardest, and I&apos;m not trying to do
-                  </MKTypography>
-                </MKBox>
+                  </SPTypography>
+                </SPBox>
               </Grid>
               <Grid item xs={12} md={10}>
                 <FaqCollapse
@@ -120,7 +120,7 @@ function Faq() {
               </Grid>
             </Grid>
           </Container>
-        </MKBox>
+        </SPBox>
       </View>
     </BaseLayout>
   );

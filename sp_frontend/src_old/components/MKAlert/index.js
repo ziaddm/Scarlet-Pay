@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -21,14 +21,14 @@ import PropTypes from "prop-types";
 // @mui material components
 import Fade from "@mui/material/Fade";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
 
-// Custom styles for the MKAlert
-import MKAlertRoot from "components/MKAlert/MKAlertRoot";
-import MKAlertCloseIcon from "components/MKAlert/MKAlertCloseIcon";
+// Custom styles for the SPAlert
+import SPAlertRoot from "components/SPAlert/SPAlertRoot";
+import SPAlertCloseIcon from "components/SPAlert/SPAlertCloseIcon";
 
-function MKAlert({ color = "info", dismissible = false, children, ...rest }) {
+function SPAlert({ color = "info", dismissible = false, children, ...rest }) {
   const [alertStatus, setAlertStatus] = useState("mount");
 
   const handleAlertStatus = () => setAlertStatus("fadeOut");
@@ -36,8 +36,8 @@ function MKAlert({ color = "info", dismissible = false, children, ...rest }) {
   // The base template for the alert
   const alertTemplate = (mount = true) => (
     <Fade in={mount} timeout={300}>
-      <MKAlertRoot ownerState={{ color }} {...rest}>
-        <MKBox
+      <SPAlertRoot ownerState={{ color }} {...rest}>
+        <SPBox
           display="flex"
           alignItems="center"
           fontSize="1rem"
@@ -45,11 +45,11 @@ function MKAlert({ color = "info", dismissible = false, children, ...rest }) {
           color={color === "light" ? "dark" : "white"}
         >
           {children}
-        </MKBox>
+        </SPBox>
         {dismissible ? (
-          <MKAlertCloseIcon onClick={mount ? handleAlertStatus : null}>&times;</MKAlertCloseIcon>
+          <SPAlertCloseIcon onClick={mount ? handleAlertStatus : null}>&times;</SPAlertCloseIcon>
         ) : null}
-      </MKAlertRoot>
+      </SPAlertRoot>
     </Fade>
   );
 
@@ -67,8 +67,8 @@ function MKAlert({ color = "info", dismissible = false, children, ...rest }) {
   return null;
 }
 
-// Typechecking props of the MKAlert
-MKAlert.propTypes = {
+// Typechecking props of the SPAlert
+SPAlert.propTypes = {
   color: PropTypes.oneOf([
     "primary",
     "secondary",
@@ -83,4 +83,4 @@ MKAlert.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default MKAlert;
+export default SPAlert;

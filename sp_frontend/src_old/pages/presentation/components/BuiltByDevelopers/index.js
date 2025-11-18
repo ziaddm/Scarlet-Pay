@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,16 +18,16 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function BuiltByDevelopers() {
   const bgImage =
     "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg";
 
   return (
-    <MKBox
+    <SPBox
       display="flex"
       alignItems="center"
       borderRadius="xl"
@@ -45,20 +45,20 @@ function BuiltByDevelopers() {
     >
       <Container>
         <Grid container item xs={12} lg={6} sx={{ ml: { xs: 0, lg: 6 } }}>
-          <MKTypography variant="h4" color="white" fontWeight="bold">
+          <SPTypography variant="h4" color="white" fontWeight="bold">
             Built by developers
-          </MKTypography>
-          <MKTypography variant="h1" color="white" mb={1}>
+          </SPTypography>
+          <SPTypography variant="h1" color="white" mb={1}>
             Complex Documentation
-          </MKTypography>
-          <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
+          </SPTypography>
+          <SPTypography variant="body1" color="white" opacity={0.8} mb={2}>
             From colors, cards, typography to complex elements, you will find the full
             documentation. Play with the utility classes and you will create unlimited combinations
             for our components.
-          </MKTypography>
-          <MKTypography
+          </SPTypography>
+          <SPTypography
             component="a"
-            href="https://www.creative-tim.com/learning-lab/react/overview/material-kit/"
+            href="https://www.creative-tim.com/learning-lab/react/overview/scarlet-pay/"
             target="_blank"
             rel="noreferrer"
             variant="body2"
@@ -80,10 +80,10 @@ function BuiltByDevelopers() {
             }}
           >
             Read docs <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-          </MKTypography>
+          </SPTypography>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

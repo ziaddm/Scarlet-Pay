@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,25 +17,25 @@ Coded by www.creative-tim.com
 import Card from "@mui/material/Card";
 import Tooltip from "@mui/material/Tooltip";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function Emails() {
   return (
     <Card>
-      <MKBox display="flex" justifyContent="space-between" p={3} lineHeight={1}>
-        <MKTypography variant="body2" color="text">
+      <SPBox display="flex" justifyContent="space-between" p={3} lineHeight={1}>
+        <SPTypography variant="body2" color="text">
           Emails (21)
-        </MKTypography>
+        </SPTypography>
         <Tooltip title="Check your emails" placement="top">
-          <MKBox component="a" href="#">
-            <MKTypography variant="body2" fontWeight="regular">
+          <SPBox component="a" href="#">
+            <SPTypography variant="body2" fontWeight="regular">
               Check
-            </MKTypography>
-          </MKBox>
+            </SPTypography>
+          </SPBox>
         </Tooltip>
-      </MKBox>
+      </SPBox>
     </Card>
   );
 }

@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,10 +23,10 @@ import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPButton from "components/SPButton";
 
 function DefaultPricingCard({
   color = "white",
@@ -37,8 +37,8 @@ function DefaultPricingCard({
   shadow = true,
 }) {
   const renderSpecifications = specifications.map(({ label, includes }) => (
-    <MKBox key={label} display="flex" alignItems="center" p={1}>
-      <MKBox
+    <SPBox key={label} display="flex" alignItems="center" p={1}>
+      <SPBox
         display="flex"
         justifyContent="center"
         alignItems="center"
@@ -47,32 +47,32 @@ function DefaultPricingCard({
         mr={2}
         mt={-0.125}
       >
-        <MKTypography
+        <SPTypography
           variant="body1"
           color={color === "white" ? "text" : "white"}
           sx={{ lineHeight: 0 }}
         >
           <Icon>{includes ? "done" : "remove"}</Icon>
-        </MKTypography>
-      </MKBox>
-      <MKTypography
+        </SPTypography>
+      </SPBox>
+      <SPTypography
         variant="body2"
         color={color === "white" ? "text" : "white"}
         fontWeight="regular"
       >
         {label}
-      </MKTypography>
-    </MKBox>
+      </SPTypography>
+    </SPBox>
   ));
 
   return (
     <Card sx={{ boxShadow: ({ boxShadows: { lg } }) => (shadow ? lg : "none") }}>
-      <MKBox
+      <SPBox
         bgColor={color}
         variant={color === "white" ? "contained" : "gradient"}
         borderRadius="xl"
       >
-        <MKBox
+        <SPBox
           bgColor={badge.color}
           width="max-content"
           px={4}
@@ -83,19 +83,19 @@ function DefaultPricingCard({
           borderRadius="section"
           lineHeight={1}
         >
-          <MKTypography
+          <SPTypography
             variant="caption"
             textTransform="uppercase"
             fontWeight="medium"
             color={badge.color === "light" ? "dark" : "white"}
           >
             {badge.label}
-          </MKTypography>
-        </MKBox>
-        <MKBox pt={3} pb={2} px={2} textAlign="center">
-          <MKBox my={1}>
-            <MKTypography variant="h1" color={color === "white" ? "dark" : "white"}>
-              <MKTypography
+          </SPTypography>
+        </SPBox>
+        <SPBox pt={3} pb={2} px={2} textAlign="center">
+          <SPBox my={1}>
+            <SPTypography variant="h1" color={color === "white" ? "dark" : "white"}>
+              <SPTypography
                 display="inline"
                 component="small"
                 variant="h5"
@@ -103,19 +103,19 @@ function DefaultPricingCard({
                 verticalAlign="top"
               >
                 {price.currency}
-              </MKTypography>
+              </SPTypography>
               {price.value}
-              <MKTypography display="inline" component="small" variant="h5" color="inherit">
+              <SPTypography display="inline" component="small" variant="h5" color="inherit">
                 /{price.type}
-              </MKTypography>
-            </MKTypography>
-          </MKBox>
-        </MKBox>
-        <MKBox pb={3} px={3}>
+              </SPTypography>
+            </SPTypography>
+          </SPBox>
+        </SPBox>
+        <SPBox pb={3} px={3}>
           {renderSpecifications}
           {action.type === "internal" ? (
-            <MKBox mt={3}>
-              <MKButton
+            <SPBox mt={3}>
+              <SPButton
                 component={Link}
                 to={action.route}
                 variant="gradient"
@@ -124,11 +124,11 @@ function DefaultPricingCard({
               >
                 {action.label}&nbsp;
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-              </MKButton>
-            </MKBox>
+              </SPButton>
+            </SPBox>
           ) : (
-            <MKBox mt={3}>
-              <MKButton
+            <SPBox mt={3}>
+              <SPButton
                 component="a"
                 href={action.route}
                 target="_blank"
@@ -139,11 +139,11 @@ function DefaultPricingCard({
               >
                 {action.label}&nbsp;
                 <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-              </MKButton>
-            </MKBox>
+              </SPButton>
+            </SPBox>
           )}
-        </MKBox>
-      </MKBox>
+        </SPBox>
+      </SPBox>
     </Card>
   );
 }

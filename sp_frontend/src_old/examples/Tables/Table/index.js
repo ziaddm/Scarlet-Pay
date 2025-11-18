@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -27,10 +27,10 @@ import TableBody from "@mui/material/TableBody";
 import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPAvatar from "components/SPAvatar";
+import SPTypography from "components/SPTypography";
 
 function Table({ columns = [], rows = [{}] }) {
   const renderColumns = columns.map(({ name, align, width }, key) => {
@@ -49,7 +49,7 @@ function Table({ columns = [], rows = [{}] }) {
     }
 
     return (
-      <MKBox
+      <SPBox
         key={name}
         component="th"
         width={width || "auto"}
@@ -67,7 +67,7 @@ function Table({ columns = [], rows = [{}] }) {
         })}
       >
         {name.toUpperCase()}
-      </MKBox>
+      </SPBox>
     );
   });
 
@@ -79,7 +79,7 @@ function Table({ columns = [], rows = [{}] }) {
 
       if (Array.isArray(row[name])) {
         template = (
-          <MKBox
+          <SPBox
             key={uuidv4()}
             component="td"
             p={1}
@@ -87,19 +87,19 @@ function Table({ columns = [], rows = [{}] }) {
               borderBottom: row.hasBorder ? `${borderWidth[1]} solid ${borderColor}` : 0,
             })}
           >
-            <MKBox display="flex" alignItems="center" py={0.5} px={1}>
-              <MKBox mr={2}>
-                <MKAvatar src={row[name][0]} name={row[name][1]} variant="rounded" size="sm" />
-              </MKBox>
-              <MKTypography variant="button" fontWeight="medium" sx={{ width: "max-content" }}>
+            <SPBox display="flex" alignItems="center" py={0.5} px={1}>
+              <SPBox mr={2}>
+                <SPAvatar src={row[name][0]} name={row[name][1]} variant="rounded" size="sm" />
+              </SPBox>
+              <SPTypography variant="button" fontWeight="medium" sx={{ width: "max-content" }}>
                 {row[name][1]}
-              </MKTypography>
-            </MKBox>
-          </MKBox>
+              </SPTypography>
+            </SPBox>
+          </SPBox>
         );
       } else {
         template = (
-          <MKBox
+          <SPBox
             key={uuidv4()}
             component="td"
             p={1}
@@ -108,15 +108,15 @@ function Table({ columns = [], rows = [{}] }) {
               borderBottom: row.hasBorder ? `${borderWidth[1]} solid ${borderColor}` : 0,
             })}
           >
-            <MKTypography
+            <SPTypography
               variant="button"
               fontWeight="regular"
               color="secondary"
               sx={{ display: "inline-block", width: "max-content" }}
             >
               {row[name]}
-            </MKTypography>
-          </MKBox>
+            </SPTypography>
+          </SPBox>
         );
       }
 
@@ -130,9 +130,9 @@ function Table({ columns = [], rows = [{}] }) {
     () => (
       <TableContainer>
         <MuiTable>
-          <MKBox component="thead">
+          <SPBox component="thead">
             <TableRow>{renderColumns}</TableRow>
-          </MKBox>
+          </SPBox>
           <TableBody>{renderRows}</TableBody>
         </MuiTable>
       </TableContainer>

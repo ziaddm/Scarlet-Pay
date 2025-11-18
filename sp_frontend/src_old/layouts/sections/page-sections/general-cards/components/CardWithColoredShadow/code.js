@@ -1,10 +1,10 @@
 const cardWithColoredShadowCode = `// @mui material components
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import TransparentBlogCard from "examples/Cards/BlogCards/TransparentBlogCard";
 
 // Images
@@ -12,7 +12,7 @@ import image from "assets/images/products/product-1-min.jpg";
 
 function CardWithColoredShadow() {
   return (
-    <MKBox pt={6} pb={3} px={3}>
+    <SPBox pt={6} pb={3} px={3}>
       <Grid container item xs={12} lg={6} sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}>
         <TransparentBlogCard
           image={image}
@@ -26,7 +26,7 @@ function CardWithColoredShadow() {
           }}
         />
       </Grid>
-    </MKBox>
+    </SPBox>
   );
 }
 

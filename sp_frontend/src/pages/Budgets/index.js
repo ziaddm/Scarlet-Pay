@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 *
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 *
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 *
  =========================================================
 *
@@ -44,12 +44,12 @@ import WarningIcon from "@mui/icons-material/Warning";
 import ErrorIcon from "@mui/icons-material/Error";
 import RefreshIcon from "@mui/icons-material/Refresh";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKButton from "components/base/MKButton";
-import MKInput from "components/base/MKInput";
-import MKSnackbar from "components/base/MKSnackbar";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPButton from "components/base/SPButton";
+import SPInput from "components/base/SPInput";
+import SPSnackbar from "components/base/SPSnackbar";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -277,9 +277,9 @@ function Budgets() {
   if (loading) {
     return (
       <Container maxWidth={false} sx={{ px: 0 }}>
-        <MKBox display="flex" justifyContent="center" alignItems="center" minHeight="400px">
+        <SPBox display="flex" justifyContent="center" alignItems="center" minHeight="400px">
           <CircularProgress />
-        </MKBox>
+        </SPBox>
       </Container>
     );
   }
@@ -287,13 +287,13 @@ function Budgets() {
   return (
     <Container maxWidth={false} sx={{ px: 0 }}>
       {/* Header Section */}
-      <MKBox mb={6}>
-        <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-          <MKTypography variant="h4" fontWeight="bold">
+      <SPBox mb={6}>
+        <SPBox display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+          <SPTypography variant="h4" fontWeight="bold">
             Budget Management
-          </MKTypography>
-          <MKBox display="flex" gap={2}>
-            <MKButton
+          </SPTypography>
+          <SPBox display="flex" gap={2}>
+            <SPButton
               variant="outlined"
               color="info"
               size="large"
@@ -302,8 +302,8 @@ function Budgets() {
               disabled={loading}
             >
               Refresh
-            </MKButton>
-            <MKButton
+            </SPButton>
+            <SPButton
               variant="gradient"
               color="info"
               size="large"
@@ -311,36 +311,36 @@ function Budgets() {
               startIcon={<AddIcon />}
             >
               Create Budget
-            </MKButton>
-          </MKBox>
-        </MKBox>
-        <MKTypography variant="body1" color="text">
+            </SPButton>
+          </SPBox>
+        </SPBox>
+        <SPTypography variant="body1" color="text">
           Track and manage your spending budgets. Monitor your expenses and stay within your limits.
-        </MKTypography>
-      </MKBox>
+        </SPTypography>
+      </SPBox>
 
       {/* Error Message */}
       {error && (
-        <MKBox mb={3} sx={{ px: 3 }}>
-          <MKTypography variant="body2" color="error">
+        <SPBox mb={3} sx={{ px: 3 }}>
+          <SPTypography variant="body2" color="error">
             Error: {error}
-          </MKTypography>
-        </MKBox>
+          </SPTypography>
+        </SPBox>
       )}
 
       {/* Budgets List */}
       {!budgets || budgets.length === 0 ? (
-        <MKBox sx={{ px: 3, textAlign: "center", py: 8 }}>
-          <MKTypography variant="h6" color="text.secondary" mb={2}>
+        <SPBox sx={{ px: 3, textAlign: "center", py: 8 }}>
+          <SPTypography variant="h6" color="text.secondary" mb={2}>
             No budgets found
-          </MKTypography>
-          <MKTypography variant="body2" color="text.secondary" mb={3}>
+          </SPTypography>
+          <SPTypography variant="body2" color="text.secondary" mb={3}>
             Create your first budget to start tracking your expenses.
-          </MKTypography>
-          <MKButton variant="gradient" color="info" onClick={() => handleOpenDialog()}>
+          </SPTypography>
+          <SPButton variant="gradient" color="info" onClick={() => handleOpenDialog()}>
             Create Budget
-          </MKButton>
-        </MKBox>
+          </SPButton>
+        </SPBox>
       ) : (
         <Grid container spacing={3} sx={{ px: 3 }}>
           {budgets.map((budget, index) => {
@@ -364,15 +364,15 @@ function Budgets() {
                     },
                   }}
                 >
-                  <MKBox display="flex" justifyContent="space-between" alignItems="start" mb={2}>
-                    <MKBox>
-                      <MKTypography variant="h5" fontWeight="bold" mb={0.5}>
+                  <SPBox display="flex" justifyContent="space-between" alignItems="start" mb={2}>
+                    <SPBox>
+                      <SPTypography variant="h5" fontWeight="bold" mb={0.5}>
                         {budget.category.charAt(0).toUpperCase() + budget.category.slice(1)}
-                      </MKTypography>
-                      <MKTypography variant="body2" color="text.secondary">
+                      </SPTypography>
+                      <SPTypography variant="body2" color="text.secondary">
                         {budget.period.charAt(0).toUpperCase() + budget.period.slice(1)} Budget
-                      </MKTypography>
-                    </MKBox>
+                      </SPTypography>
+                    </SPBox>
                     <IconButton
                       size="small"
                       onClick={(e) => handleMenuOpen(e, budget.id)}
@@ -380,24 +380,24 @@ function Budgets() {
                     >
                       <MoreVertIcon />
                     </IconButton>
-                  </MKBox>
+                  </SPBox>
 
                   {hasTracking && (
                     <>
-                      <MKBox mb={2}>
-                        <MKBox
+                      <SPBox mb={2}>
+                        <SPBox
                           display="flex"
                           justifyContent="space-between"
                           alignItems="center"
                           mb={1}
                         >
-                          <MKTypography variant="body2" color="text.secondary">
+                          <SPTypography variant="body2" color="text.secondary">
                             Spent: {formatCurrency(budget.current_spending)}
-                          </MKTypography>
-                          <MKTypography variant="body2" color="text.secondary">
+                          </SPTypography>
+                          <SPTypography variant="body2" color="text.secondary">
                             Limit: {formatCurrency(budget.limit_amount)}
-                          </MKTypography>
-                        </MKBox>
+                          </SPTypography>
+                        </SPBox>
                         <LinearProgress
                           variant="determinate"
                           value={Math.min(budget.percentage_used || 0, 100)}
@@ -415,15 +415,15 @@ function Budgets() {
                             },
                           }}
                         />
-                        <MKBox
+                        <SPBox
                           display="flex"
                           justifyContent="space-between"
                           alignItems="center"
                           mt={0.5}
                         >
-                          <MKTypography variant="caption" color="text.secondary">
+                          <SPTypography variant="caption" color="text.secondary">
                             {budget.percentage_used?.toFixed(1)}% used
-                          </MKTypography>
+                          </SPTypography>
                           <Chip
                             icon={getStatusIcon(budget.status)}
                             label={budget.status?.replace("_", " ").toUpperCase()}
@@ -431,10 +431,10 @@ function Budgets() {
                             color={getStatusColor(budget.status)}
                             sx={{ fontWeight: 600, fontSize: "0.7rem" }}
                           />
-                        </MKBox>
-                      </MKBox>
+                        </SPBox>
+                      </SPBox>
 
-                      <MKBox
+                      <SPBox
                         sx={{
                           p: 2,
                           borderRadius: 2,
@@ -442,21 +442,21 @@ function Budgets() {
                           mb: 2,
                         }}
                       >
-                        <MKTypography variant="body2" color="text.secondary" mb={0.5}>
+                        <SPTypography variant="body2" color="text.secondary" mb={0.5}>
                           Remaining
-                        </MKTypography>
-                        <MKTypography variant="h6" fontWeight="bold" color="success.main">
+                        </SPTypography>
+                        <SPTypography variant="h6" fontWeight="bold" color="success.main">
                           {formatCurrency(budget.remaining_amount)}
-                        </MKTypography>
-                      </MKBox>
+                        </SPTypography>
+                      </SPBox>
                     </>
                   )}
 
-                  <MKBox>
-                    <MKTypography variant="caption" color="text.secondary">
+                  <SPBox>
+                    <SPTypography variant="caption" color="text.secondary">
                       Period: {formatDate(budget.start_date)} - {formatDate(budget.end_date)}
-                    </MKTypography>
-                  </MKBox>
+                    </SPTypography>
+                  </SPBox>
                 </Card>
               </Grid>
             );
@@ -467,14 +467,14 @@ function Budgets() {
       {/* Create/Edit Budget Dialog */}
       <Dialog open={openDialog} onClose={handleCloseDialog} maxWidth="sm" fullWidth>
         <DialogTitle>
-          <MKTypography variant="h5" fontWeight="bold">
+          <SPTypography variant="h5" fontWeight="bold">
             {editingBudget ? "Edit Budget" : "Create New Budget"}
-          </MKTypography>
+          </SPTypography>
         </DialogTitle>
         <DialogContent>
-          <MKBox sx={{ pt: 2 }}>
-            <MKBox mb={2}>
-              <MKInput
+          <SPBox sx={{ pt: 2 }}>
+            <SPBox mb={2}>
+              <SPInput
                 type="text"
                 label="Category"
                 name="category"
@@ -484,9 +484,9 @@ function Budgets() {
                 helperText={formErrors.category}
                 fullWidth
               />
-            </MKBox>
-            <MKBox mb={2}>
-              <MKInput
+            </SPBox>
+            <SPBox mb={2}>
+              <SPInput
                 type="number"
                 label="Limit Amount ($)"
                 name="limit_amount"
@@ -497,8 +497,8 @@ function Budgets() {
                 fullWidth
                 inputProps={{ min: 0, step: 0.01 }}
               />
-            </MKBox>
-            <MKBox mb={2}>
+            </SPBox>
+            <SPBox mb={2}>
               <FormControl fullWidth error={!!formErrors.period}>
                 <InputLabel>Period</InputLabel>
                 <Select
@@ -511,9 +511,9 @@ function Budgets() {
                 </Select>
                 {formErrors.period && <FormHelperText>{formErrors.period}</FormHelperText>}
               </FormControl>
-            </MKBox>
-            <MKBox mb={2}>
-              <MKInput
+            </SPBox>
+            <SPBox mb={2}>
+              <SPInput
                 type="date"
                 label="Start Date"
                 name="start_date"
@@ -523,9 +523,9 @@ function Budgets() {
                 helperText={formErrors.start_date}
                 fullWidth
               />
-            </MKBox>
-            <MKBox mb={2}>
-              <MKInput
+            </SPBox>
+            <SPBox mb={2}>
+              <SPInput
                 type="date"
                 label="End Date"
                 name="end_date"
@@ -535,16 +535,16 @@ function Budgets() {
                 helperText={formErrors.end_date}
                 fullWidth
               />
-            </MKBox>
-          </MKBox>
+            </SPBox>
+          </SPBox>
         </DialogContent>
         <DialogActions sx={{ p: 2 }}>
-          <MKButton onClick={handleCloseDialog} color="secondary">
+          <SPButton onClick={handleCloseDialog} color="secondary">
             Cancel
-          </MKButton>
-          <MKButton onClick={handleSubmit} variant="gradient" color="info" disabled={submitting}>
+          </SPButton>
+          <SPButton onClick={handleSubmit} variant="gradient" color="info" disabled={submitting}>
             {submitting ? "Saving..." : editingBudget ? "Update" : "Create"}
-          </MKButton>
+          </SPButton>
         </DialogActions>
       </Dialog>
 
@@ -573,7 +573,7 @@ function Budgets() {
       </Menu>
 
       {/* Snackbar */}
-      <MKSnackbar
+      <SPSnackbar
         color={snackbar.color}
         icon={<Icon>{snackbar.icon}</Icon>}
         title={snackbar.title}

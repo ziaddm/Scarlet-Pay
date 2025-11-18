@@ -1,12 +1,12 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.scarlet-pay.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.scarlet-pay.com)
 
-Coded by www.creative-tim.com
+Coded by www.scarlet-pay.com
 
  =========================================================
 
@@ -21,12 +21,12 @@ import { Link } from "react-router-dom";
 // @mui material components
 import Switch from "@mui/material/Switch";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKInput from "components/base/MKInput";
-import MKButton from "components/base/MKButton";
-import MKSnackbar from "components/base/MKSnackbar";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPInput from "components/base/SPInput";
+import SPButton from "components/base/SPButton";
+import SPSnackbar from "components/base/SPSnackbar";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -156,9 +156,9 @@ function Register() {
 
   return (
     <>
-      <MKBox component="form" role="form" onSubmit={handleSubmit}>
-        <MKBox mb={2}>
-          <MKInput
+      <SPBox component="form" role="form" onSubmit={handleSubmit}>
+        <SPBox mb={2}>
+          <SPInput
             type="text"
             label="Full Name"
             name="name"
@@ -168,9 +168,9 @@ function Register() {
             helperText={errors.name}
             fullWidth
           />
-        </MKBox>
-        <MKBox mb={2}>
-          <MKInput
+        </SPBox>
+        <SPBox mb={2}>
+          <SPInput
             type="email"
             label="Email"
             name="email"
@@ -180,9 +180,9 @@ function Register() {
             helperText={errors.email}
             fullWidth
           />
-        </MKBox>
-        <MKBox mb={2}>
-          <MKInput
+        </SPBox>
+        <SPBox mb={2}>
+          <SPInput
             type="password"
             label="Password"
             name="password"
@@ -192,9 +192,9 @@ function Register() {
             helperText={errors.password}
             fullWidth
           />
-        </MKBox>
-        <MKBox mb={2}>
-          <MKInput
+        </SPBox>
+        <SPBox mb={2}>
+          <SPInput
             type="password"
             label="Confirm Password"
             name="confirmPassword"
@@ -204,9 +204,9 @@ function Register() {
             helperText={errors.confirmPassword}
             fullWidth
           />
-        </MKBox>
-        <MKBox mb={2}>
-          <MKInput
+        </SPBox>
+        <SPBox mb={2}>
+          <SPInput
             type="text"
             label="Student ID"
             name="studentId"
@@ -216,9 +216,9 @@ function Register() {
             helperText={errors.studentId}
             fullWidth
           />
-        </MKBox>
-        <MKBox mb={2}>
-          <MKInput
+        </SPBox>
+        <SPBox mb={2}>
+          <SPInput
             type="text"
             label="Major"
             name="major"
@@ -228,9 +228,9 @@ function Register() {
             helperText={errors.major}
             fullWidth
           />
-        </MKBox>
-        <MKBox mb={2}>
-          <MKInput
+        </SPBox>
+        <SPBox mb={2}>
+          <SPInput
             type="text"
             label="Class Year"
             name="classYear"
@@ -240,10 +240,10 @@ function Register() {
             helperText={errors.classYear}
             fullWidth
           />
-        </MKBox>
-        <MKBox display="flex" alignItems="center" ml={-1}>
+        </SPBox>
+        <SPBox display="flex" alignItems="center" ml={-1}>
           <Switch checked={agreeTerms} onChange={handleSetAgreeTerms} />
-          <MKTypography
+          <SPTypography
             variant="button"
             fontWeight="regular"
             color={errors.agreeTerms ? "error" : "text"}
@@ -251,7 +251,7 @@ function Register() {
             sx={{ cursor: "pointer", userSelect: "none", ml: -1 }}
           >
             &nbsp;&nbsp;I agree the{" "}
-            <MKTypography
+            <SPTypography
               component="a"
               href="#"
               variant="button"
@@ -260,18 +260,18 @@ function Register() {
               textGradient
             >
               Terms and Conditions
-            </MKTypography>
-          </MKTypography>
-        </MKBox>
+            </SPTypography>
+          </SPTypography>
+        </SPBox>
         {errors.agreeTerms && (
-          <MKBox mt={-2} mb={1}>
-            <MKTypography variant="caption" color="error">
+          <SPBox mt={-2} mb={1}>
+            <SPTypography variant="caption" color="error">
               {errors.agreeTerms}
-            </MKTypography>
-          </MKBox>
+            </SPTypography>
+          </SPBox>
         )}
-        <MKBox mt={4} mb={1}>
-          <MKButton
+        <SPBox mt={4} mb={1}>
+          <SPButton
             variant="gradient"
             color="info"
             size="large"
@@ -280,12 +280,12 @@ function Register() {
             disabled={loading}
           >
             {loading ? "Creating account..." : "sign up"}
-          </MKButton>
-        </MKBox>
-        <MKBox mt={3} textAlign="center">
-          <MKTypography variant="button" color="text">
+          </SPButton>
+        </SPBox>
+        <SPBox mt={3} textAlign="center">
+          <SPTypography variant="button" color="text">
             Already have an account?{" "}
-            <MKTypography
+            <SPTypography
               component={Link}
               to={ROUTES.LOGIN}
               variant="button"
@@ -294,13 +294,13 @@ function Register() {
               textGradient
             >
               Sign in
-            </MKTypography>
-          </MKTypography>
-        </MKBox>
-      </MKBox>
+            </SPTypography>
+          </SPTypography>
+        </SPBox>
+      </SPBox>
 
       {/* Snackbar */}
-      <MKSnackbar
+      <SPSnackbar
         color={snackbar.color}
         icon={<Icon>{snackbar.icon}</Icon>}
         title={snackbar.title}

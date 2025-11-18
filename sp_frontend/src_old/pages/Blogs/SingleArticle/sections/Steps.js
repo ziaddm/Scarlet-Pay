@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -29,9 +29,9 @@ import "swiper/css/navigation";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function Steps() {
   // install SwiperJS modules
@@ -107,7 +107,7 @@ function Steps() {
   };
 
   return (
-    <MKBox component="section" py={12} position="relative">
+    <SPBox component="section" py={12} position="relative">
       <Container>
         <Swiper
           onInit={(swiper) => {
@@ -132,8 +132,8 @@ function Steps() {
             <SwiperSlide key={label}>
               <Grid container spacing={3} alignItems="center" sx={{ mb: { xs: 6, md: 0 } }}>
                 <Grid item xs={12} md={5} ml={{ xs: 0, lg: "auto" }}>
-                  <MKBox p={2}>
-                    <MKBox
+                  <SPBox p={2}>
+                    <SPBox
                       component="img"
                       src={image}
                       alt={title}
@@ -141,10 +141,10 @@ function Steps() {
                       borderRadius="xl"
                       maxHeight="37.5rem"
                     />
-                  </MKBox>
+                  </SPBox>
                 </Grid>
                 <Grid item xs={12} md={5} mr={{ xs: 0, lg: "auto" }} position="relative">
-                  <MKTypography
+                  <SPTypography
                     component="h6"
                     variant="button"
                     opacity={0.7}
@@ -152,8 +152,8 @@ function Steps() {
                     fontWeight="bold"
                   >
                     {label}
-                  </MKTypography>
-                  <MKTypography
+                  </SPTypography>
+                  <SPTypography
                     variant="h1"
                     fontWeight="bold"
                     sx={{
@@ -164,39 +164,39 @@ function Steps() {
                     }}
                   >
                     {title}
-                  </MKTypography>
-                  <MKTypography variant="body1" my={3}>
+                  </SPTypography>
+                  <SPTypography variant="body1" my={3}>
                     {description}
-                  </MKTypography>
+                  </SPTypography>
                 </Grid>
               </Grid>
             </SwiperSlide>
           ))}
-          <MKBox
+          <SPBox
             display="flex"
             position="absolute"
             bottom={{ xs: 0, lg: "10%" }}
             right="5%"
             zIndex={2}
           >
-            <MKTypography
+            <SPTypography
               variant="h2"
               ref={navigationPrevRef}
               color="dark"
               mr={{ xs: 8, md: 2, lg: 8 }}
               sx={navigationStyles}
             >
-              <MKBox className="fas fa-chevron-left" />
-            </MKTypography>
-            <MKTypography variant="h2" ref={navigationNextRef} color="dark" sx={navigationStyles}>
-              <MKBox className="fas fa-chevron-right" />
-            </MKTypography>
-          </MKBox>
+              <SPBox className="fas fa-chevron-left" />
+            </SPTypography>
+            <SPTypography variant="h2" ref={navigationNextRef} color="dark" sx={navigationStyles}>
+              <SPBox className="fas fa-chevron-right" />
+            </SPTypography>
+          </SPBox>
         </Swiper>
         <Grid container mt={16}>
           {steps.map(({ number, label }, index) => (
             <Grid key={label} item xs={6} lg={3} textAlign="center">
-              <MKTypography
+              <SPTypography
                 variant="body1"
                 color="success"
                 fontWeight="bold"
@@ -205,16 +205,16 @@ function Steps() {
                 sx={{ fontFamily: ({ typography: { h1 } }) => h1.fontFamily, cursor: "pointer" }}
                 onClick={() => slideTo(index + 1)}
               >
-                <MKBox component="span">{number}</MKBox>
-                <MKBox component="span" ml={1}>
+                <SPBox component="span">{number}</SPBox>
+                <SPBox component="span" ml={1}>
                   {label}
-                </MKBox>
-              </MKTypography>
+                </SPBox>
+              </SPTypography>
             </Grid>
           ))}
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

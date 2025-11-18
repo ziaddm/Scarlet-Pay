@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -21,8 +21,8 @@ import PropTypes from "prop-types";
 // @mui material components
 import Card from "@mui/material/Card";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
 
 function RotatingCard({ children }) {
   const [rotate, setRotate] = useState(false);
@@ -31,7 +31,7 @@ function RotatingCard({ children }) {
   const rotate180 = () => setRotate(true);
 
   return (
-    <MKBox sx={{ perspective: "50rem" }} onMouseEnter={rotate180} onMouseLeave={rotate0}>
+    <SPBox sx={{ perspective: "50rem" }} onMouseEnter={rotate180} onMouseLeave={rotate0}>
       <Card
         sx={{
           backgroundColor: "transparent",
@@ -44,7 +44,7 @@ function RotatingCard({ children }) {
       >
         {children}
       </Card>
-    </MKBox>
+    </SPBox>
   );
 }
 

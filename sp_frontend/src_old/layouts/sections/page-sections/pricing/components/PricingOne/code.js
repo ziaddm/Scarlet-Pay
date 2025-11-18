@@ -7,11 +7,11 @@ import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultPricingCard from "examples/Cards/PricingCards/DefaultPricingCard";
 
 function PricingOne() {
@@ -24,7 +24,7 @@ function PricingOne() {
   };
 
   return (
-    <MKBox component="section" variant="gradient" bgColor="dark" py={{ xs: 0, lg: 7 }}>
+    <SPBox component="section" variant="gradient" bgColor="dark" py={{ xs: 0, lg: 7 }}>
       <Container sx={{ pb: { xs: 12, lg: 22 }, pt: 12 }}>
         <Grid
           container
@@ -35,15 +35,15 @@ function PricingOne() {
           md={8}
           sx={{ mx: "auto", textAlign: "center" }}
         >
-          <MKTypography variant="h3" color="white" mb={2}>
+          <SPTypography variant="h3" color="white" mb={2}>
             See our pricing
-          </MKTypography>
-          <MKTypography variant="body2" color="white">
+          </SPTypography>
+          <SPTypography variant="body2" color="white">
             You have Free Unlimited Updates and Premium Support on each package.
-          </MKTypography>
+          </SPTypography>
         </Grid>
       </Container>
-      <MKBox mt={-16}>
+      <SPBox mt={-16}>
         <Container>
           <Grid container sx={{ mb: 6 }}>
             <Grid item xs={7} md={6} lg={4} sx={{ mx: "auto", textAlign: "center" }}>
@@ -52,24 +52,24 @@ function PricingOne() {
                   <Tab
                     id="monthly"
                     label={
-                      <MKBox py={0.5} px={2} color="inherit">
+                      <SPBox py={0.5} px={2} color="inherit">
                         Monthly
-                      </MKBox>
+                      </SPBox>
                     }
                   />
                   <Tab
                     id="annual"
                     label={
-                      <MKBox py={0.5} px={2} color="inherit">
+                      <SPBox py={0.5} px={2} color="inherit">
                         Annual
-                      </MKBox>
+                      </SPBox>
                     }
                   />
                 </Tabs>
               </AppBar>
             </Grid>
           </Grid>
-          <MKBox position="relative" zIndex={10} px={{ xs: 1, sm: 0 }}>
+          <SPBox position="relative" zIndex={10} px={{ xs: 1, sm: 0 }}>
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={12} lg={4}>
                 <DefaultPricingCard
@@ -133,10 +133,10 @@ function PricingOne() {
                 />
               </Grid>
             </Grid>
-          </MKBox>
+          </SPBox>
         </Container>
-      </MKBox>
-    </MKBox>
+      </SPBox>
+    </SPBox>
   );
 }
 

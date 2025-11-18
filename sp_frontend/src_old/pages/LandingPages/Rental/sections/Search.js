@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,52 +18,52 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Autocomplete from "@mui/material/Autocomplete";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKInput from "components/MKInput";
-// import MKDatePicker from "components/MKDatePicker";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPInput from "components/SPInput";
+// import SPDatePicker from "components/SPDatePicker";
+import SPButton from "components/SPButton";
 
 function Search() {
   return (
-    <MKBox component="section">
+    <SPBox component="section">
       <Container>
         <Grid container spacing={{ xs: 0, lg: 3 }} sx={{ pt: 2, pb: 3, px: 2, mx: "auto" }}>
           <Grid item xs={12} lg={3} sx={{ mt: 2 }}>
-            <MKTypography display="block" variant="button" fontWeight="regular" color="text" mb={1}>
+            <SPTypography display="block" variant="button" fontWeight="regular" color="text" mb={1}>
               Leave From
-            </MKTypography>
+            </SPTypography>
             <Autocomplete
               defaultValue="Bucharest"
               options={["Brazil", "Bucharest", "London", "USA"]}
-              renderInput={(params) => <MKInput {...params} variant="standard" />}
+              renderInput={(params) => <SPInput {...params} variant="standard" />}
             />
           </Grid>
           <Grid item xs={12} lg={3} sx={{ mt: 2 }}>
-            <MKTypography display="block" variant="button" fontWeight="regular" color="text" mb={1}>
+            <SPTypography display="block" variant="button" fontWeight="regular" color="text" mb={1}>
               To
-            </MKTypography>
+            </SPTypography>
             <Autocomplete
               defaultValue="Italy"
               options={["Denmark", "Italy", "Poland", "Spain"]}
-              renderInput={(params) => <MKInput {...params} variant="standard" />}
+              renderInput={(params) => <SPInput {...params} variant="standard" />}
             />
           </Grid>
           <Grid item xs={12} lg={3} sx={{ mt: 2 }}>
-            <MKTypography display="block" variant="button" fontWeight="regular" color="text" mb={1}>
+            <SPTypography display="block" variant="button" fontWeight="regular" color="text" mb={1}>
               Depart
-            </MKTypography>
-            <MKInput type="date" variant="standard" placeholder="Please select date" fullWidth />
+            </SPTypography>
+            <SPInput type="date" variant="standard" placeholder="Please select date" fullWidth />
           </Grid>
           <Grid item xs={12} lg={3} sx={{ mt: 4 }}>
-            <MKButton variant="gradient" color="info" fullWidth>
+            <SPButton variant="gradient" color="info" fullWidth>
               search
-            </MKButton>
+            </SPButton>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

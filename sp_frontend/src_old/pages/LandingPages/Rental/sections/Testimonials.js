@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -17,12 +17,12 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKBadge from "components/MKBadge";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPBadge from "components/SPBadge";
 
-// Material Kit 2 PRO React components
+// Scarlet Pay 2 PRO React components
 import SimpleReviewCard from "examples/Cards/ReviewCards/SimpleReviewCard";
 
 // Images
@@ -33,8 +33,8 @@ import team4 from "assets/images/team-4.jpg";
 
 function Testimonials() {
   return (
-    <MKBox position="relative" variant="gradient" bgColor="dark" mt={6} py={2} mx={-2}>
-      <MKBox
+    <SPBox position="relative" variant="gradient" bgColor="dark" mt={6} py={2} mx={-2}>
+      <SPBox
         component="img"
         src={bgPattern}
         alt="background-pattern"
@@ -52,7 +52,7 @@ function Testimonials() {
           sx={{ pt: 8, pb: 5, position: "relative", zIndex: 3 }}
         >
           <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
-            <MKBadge
+            <SPBadge
               badgeContent="testimonials"
               variant="contained"
               color="white"
@@ -60,13 +60,13 @@ function Testimonials() {
               container
               sx={{ mb: 1 }}
             />
-            <MKTypography variant="h2" color="white" mb={1}>
+            <SPTypography variant="h2" color="white" mb={1}>
               Some thoughts from our clients
-            </MKTypography>
-            <MKTypography variant="body1" color="white" fontWeight="light">
+            </SPTypography>
+            <SPTypography variant="body1" color="white" fontWeight="light">
               If you&apos;re selected for them you&apos;ll also get three tickets, opportunity to
               access Investor Office Hours and Mentor Hours and much more all for free.
-            </MKTypography>
+            </SPTypography>
           </Grid>
         </Grid>
         <Grid container spacing={3} sx={{ mt: 10, mb: 6 }}>
@@ -96,7 +96,7 @@ function Testimonials() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

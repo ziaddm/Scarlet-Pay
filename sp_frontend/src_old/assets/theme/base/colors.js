@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -14,9 +14,9 @@ Coded by www.creative-tim.com
 */
 
 /**
- * The base colors for the Material Kit 2 PRO React.
+ * The base colors for the Scarlet Pay 2 PRO React.
  * You can add new color using this file.
- * You can customized the colors for the entire Material Kit 2 PRO React using thie file.
+ * You can customized the colors for the entire Scarlet Pay 2 PRO React using thie file.
  */
 
 export default {

@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -20,11 +20,11 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Switch from "@mui/material/Switch";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
-import MKButton from "components/MKButton";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPInput from "components/SPInput";
+import SPButton from "components/SPButton";
+import SPTypography from "components/SPTypography";
 
 function FormSimple() {
   const [checked, setChecked] = useState(true);
@@ -32,32 +32,32 @@ function FormSimple() {
   const handleChecked = () => setChecked(!checked);
 
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid container item justifyContent="center" xs={10} lg={7} mx="auto" textAlign="center">
-          <MKTypography variant="h3" mb={1}>
+          <SPTypography variant="h3" mb={1}>
             Contact Us
-          </MKTypography>
+          </SPTypography>
         </Grid>
         <Grid container item xs={12} lg={7} sx={{ mx: "auto" }}>
-          <MKBox width="100%" component="form" method="post" autoComplete="off">
-            <MKBox p={3}>
+          <SPBox width="100%" component="form" method="post" autoComplete="off">
+            <SPBox p={3}>
               <Grid container spacing={3}>
                 <Grid item xs={12} md={6}>
-                  <MKInput variant="standard" label="First Name" fullWidth />
+                  <SPInput variant="standard" label="First Name" fullWidth />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <MKInput variant="standard" label="Last Name" fullWidth />
+                  <SPInput variant="standard" label="Last Name" fullWidth />
                 </Grid>
                 <Grid item xs={12}>
-                  <MKInput variant="standard" type="email" label="Email Address" fullWidth />
+                  <SPInput variant="standard" type="email" label="Email Address" fullWidth />
                 </Grid>
                 <Grid item xs={12}>
-                  <MKInput variant="standard" label="Your Message" multiline fullWidth rows={6} />
+                  <SPInput variant="standard" label="Your Message" multiline fullWidth rows={6} />
                 </Grid>
                 <Grid item xs={12} alignItems="center" ml={-1}>
                   <Switch checked={checked} onChange={handleChecked} />
-                  <MKTypography
+                  <SPTypography
                     variant="button"
                     fontWeight="regular"
                     color="text"
@@ -66,8 +66,8 @@ function FormSimple() {
                     onClick={handleChecked}
                   >
                     &nbsp;&nbsp;I agree the&nbsp;
-                  </MKTypography>
-                  <MKTypography
+                  </SPTypography>
+                  <SPTypography
                     component="a"
                     href="#"
                     variant="button"
@@ -75,19 +75,19 @@ function FormSimple() {
                     color="dark"
                   >
                     Terms and Conditions
-                  </MKTypography>
+                  </SPTypography>
                 </Grid>
               </Grid>
               <Grid container item justifyContent="center" xs={12} my={2}>
-                <MKButton type="submit" variant="gradient" color="dark" fullWidth>
+                <SPButton type="submit" variant="gradient" color="dark" fullWidth>
                   Send Message
-                </MKButton>
+                </SPButton>
               </Grid>
-            </MKBox>
-          </MKBox>
+            </SPBox>
+          </SPBox>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -20,10 +20,10 @@ import { Link } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPButton from "components/SPButton";
 
 // Presentation page components
 import ExampleCard from "pages/presentation/components/ExampleCard";
@@ -41,8 +41,8 @@ function AuthPages() {
     "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/account/signin-basic.jpg";
 
   return (
-    <MKBox position="relative" variant="gradient" bgColor="dark" mt={{ xs: 0, lg: 12 }} mx={-2}>
-      <MKBox
+    <SPBox position="relative" variant="gradient" bgColor="dark" mt={{ xs: 0, lg: 12 }} mx={-2}>
+      <SPBox
         component="img"
         src={bgPattern}
         alt="background-pattern"
@@ -61,22 +61,22 @@ function AuthPages() {
             lg={4}
             sx={{ my: "auto", py: 6, pr: { xs: 3, lg: 2 }, pl: { xs: 3, lg: 0 } }}
           >
-            <MKTypography variant="h2" color="white" mb={3}>
+            <SPTypography variant="h2" color="white" mb={3}>
               Account Pages for beautiful webapps
-            </MKTypography>
-            <MKTypography variant="body2" color="white" mb={2} opacity={0.8}>
+            </SPTypography>
+            <SPTypography variant="body2" color="white" mb={2} opacity={0.8}>
               We created many examples for pages like Signup, Signin, Forgot Password, 2FA
               Authentification and so on. Just choose between a Basic Design, an illustration or a
               cover and you are good to go!
-            </MKTypography>
-            <MKBox display="flex" alignItems="center">
-              <MKButton variant="gradient" color="info" sx={{ mt: 3, mb: 2, mr: 1 }}>
+            </SPTypography>
+            <SPBox display="flex" alignItems="center">
+              <SPButton variant="gradient" color="info" sx={{ mt: 3, mb: 2, mr: 1 }}>
                 view pages
-              </MKButton>
-              <MKButton variant="text" color="white" sx={{ mt: 3, mb: 2 }}>
+              </SPButton>
+              <SPButton variant="text" color="white" sx={{ mt: 3, mb: 2 }}>
                 view signup pages
-              </MKButton>
-            </MKBox>
+              </SPButton>
+            </SPBox>
           </Grid>
           <Grid item xs={12} lg={8} sx={{ pl: { xs: 3, lg: 6 }, pr: { xs: 3, lg: 6 }, pb: 4 }}>
             <Grid container spacing={3}>
@@ -99,7 +99,7 @@ function AuthPages() {
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

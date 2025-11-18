@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -24,10 +24,10 @@ import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 import Divider from "@mui/material/Divider";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPButton from "components/SPButton";
 
 function SimplePricingCard({
   variant = "contained",
@@ -53,8 +53,8 @@ function SimplePricingCard({
   }
 
   const renderSpecifications = specifications.map((specification) => (
-    <MKBox key={specification} display="flex" alignItems="center" pb={2}>
-      <MKBox
+    <SPBox key={specification} display="flex" alignItems="center" pb={2}>
+      <SPBox
         display="flex"
         justifyContent="center"
         alignItems="center"
@@ -64,11 +64,11 @@ function SimplePricingCard({
         mt={-0.125}
         lineHeight={0}
       >
-        <MKTypography variant="body1" color={titleColor} sx={{ lineHeight: 0 }}>
+        <SPTypography variant="body1" color={titleColor} sx={{ lineHeight: 0 }}>
           <Icon>done</Icon>
-        </MKTypography>
-      </MKBox>
-      <MKTypography
+        </SPTypography>
+      </SPBox>
+      <SPTypography
         variant="button"
         color={
           variant === "contained" || (variant === "gradient" && color === "light")
@@ -78,18 +78,18 @@ function SimplePricingCard({
         fontWeight="regular"
       >
         {specification}
-      </MKTypography>
-    </MKBox>
+      </SPTypography>
+    </SPBox>
   ));
 
   return (
     <Card sx={{ width: "100%", height: "100%", overflow: "hidden" }}>
-      <MKBox variant={variant} bgColor={variant === "gradient" ? color : "white"} height="100%">
-        <MKBox p={3} lineHeight={1}>
-          <MKTypography variant="h5" fontWeight="bold" color={titleColor} mb={0.5}>
+      <SPBox variant={variant} bgColor={variant === "gradient" ? color : "white"} height="100%">
+        <SPBox p={3} lineHeight={1}>
+          <SPTypography variant="h5" fontWeight="bold" color={titleColor} mb={0.5}>
             {title}
-          </MKTypography>
-          <MKTypography
+          </SPTypography>
+          <SPTypography
             variant="button"
             color={
               variant === "contained" || (variant === "gradient" && color === "light")
@@ -99,11 +99,11 @@ function SimplePricingCard({
             mb={2}
           >
             {description}
-          </MKTypography>
-          <MKTypography variant="h3" color={priceColor} mt={2} mb={1}>
+          </SPTypography>
+          <SPTypography variant="h3" color={priceColor} mt={2} mb={1}>
             {price.value}&nbsp;
             {price.type && (
-              <MKTypography
+              <SPTypography
                 display="inline"
                 component="small"
                 variant="h6"
@@ -117,12 +117,12 @@ function SimplePricingCard({
                 }}
               >
                 / {price.type}
-              </MKTypography>
+              </SPTypography>
             )}
-          </MKTypography>
+          </SPTypography>
           {action.type === "internal" ? (
-            <MKBox mt={3}>
-              <MKButton
+            <SPBox mt={3}>
+              <SPButton
                 component={Link}
                 to={action.route}
                 variant={variant === "gradient" ? "contained" : "gradient"}
@@ -131,11 +131,11 @@ function SimplePricingCard({
                 fullWidth
               >
                 {action.label}
-              </MKButton>
-            </MKBox>
+              </SPButton>
+            </SPBox>
           ) : (
-            <MKBox mt={3}>
-              <MKButton
+            <SPBox mt={3}>
+              <SPButton
                 component="a"
                 href={action.route}
                 target="_blank"
@@ -146,16 +146,16 @@ function SimplePricingCard({
                 fullWidth
               >
                 {action.label}
-              </MKButton>
-            </MKBox>
+              </SPButton>
+            </SPBox>
           )}
-        </MKBox>
+        </SPBox>
         <Divider
           light={variant === "gradient" || (variant === "gradient" && color === "light")}
           sx={{ my: 0, opacity: variant === "gradient" ? 0.5 : 0.25 }}
         />
-        <MKBox p={3}>{renderSpecifications}</MKBox>
-      </MKBox>
+        <SPBox p={3}>{renderSpecifications}</SPBox>
+      </SPBox>
     </Card>
   );
 }

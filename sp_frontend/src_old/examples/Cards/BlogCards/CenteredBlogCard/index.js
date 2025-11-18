@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,16 +23,16 @@ import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPButton from "components/SPButton";
 
 function CenteredBlogCard({ image, title, description, action }) {
   return (
     <Card>
-      <MKBox position="relative" borderRadius="lg" mx={2} mt={-3}>
-        <MKBox
+      <SPBox position="relative" borderRadius="lg" mx={2} mt={-3}>
+        <SPBox
           component="img"
           src={image}
           alt={title}
@@ -41,7 +41,7 @@ function CenteredBlogCard({ image, title, description, action }) {
           position="relative"
           zIndex={1}
         />
-        <MKBox
+        <SPBox
           borderRadius="lg"
           shadow="md"
           width="100%"
@@ -56,18 +56,18 @@ function CenteredBlogCard({ image, title, description, action }) {
             backgroundSize: "cover",
           }}
         />
-      </MKBox>
-      <MKBox p={3} mt={-1} textAlign="center">
-        <MKTypography display="inline" variant="h5" textTransform="capitalize" fontWeight="regular">
+      </SPBox>
+      <SPBox p={3} mt={-1} textAlign="center">
+        <SPTypography display="inline" variant="h5" textTransform="capitalize" fontWeight="regular">
           {title}
-        </MKTypography>
-        <MKBox mt={1} mb={3}>
-          <MKTypography variant="body2" component="p" color="text">
+        </SPTypography>
+        <SPBox mt={1} mb={3}>
+          <SPTypography variant="body2" component="p" color="text">
             {description}
-          </MKTypography>
-        </MKBox>
+          </SPTypography>
+        </SPBox>
         {action.type === "external" ? (
-          <MKButton
+          <SPButton
             component={MuiLink}
             href={action.route}
             target="_blank"
@@ -77,9 +77,9 @@ function CenteredBlogCard({ image, title, description, action }) {
             color={action.color ? action.color : "dark"}
           >
             {action.label}
-          </MKButton>
+          </SPButton>
         ) : (
-          <MKButton
+          <SPButton
             component={Link}
             to={action.route}
             variant="gradient"
@@ -87,9 +87,9 @@ function CenteredBlogCard({ image, title, description, action }) {
             color={action.color ? action.color : "dark"}
           >
             {action.label}
-          </MKButton>
+          </SPButton>
         )}
-      </MKBox>
+      </SPBox>
     </Card>
   );
 }

@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,9 +18,9 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
 
 function AboutUs() {
   const data = [
@@ -57,44 +57,44 @@ function AboutUs() {
   ];
 
   return (
-    <MKBox component="section" py={12} px={1}>
+    <SPBox component="section" py={12} px={1}>
       <Container>
         <Grid container item xs={12} lg={8}>
-          <MKTypography variant="h3">Read More About Us</MKTypography>
-          <MKTypography variant="body2" fontWeight="regular" color="text">
+          <SPTypography variant="h3">Read More About Us</SPTypography>
+          <SPTypography variant="body2" fontWeight="regular" color="text">
             Pain is what we go through as we become older. We get insulted by others, lose trust for
             those others. We get back stabbed by friends. It becomes harder for us to give others a
             hand.
-          </MKTypography>
+          </SPTypography>
         </Grid>
         <Grid container sx={{ mt: 6 }}>
           {data.map(({ icon, title, items }) => (
             <Grid key={icon} item xs={12} md={4}>
-              <MKBox py={2} pr={2}>
-                <MKTypography variant="h3" color="info">
+              <SPBox py={2} pr={2}>
+                <SPTypography variant="h3" color="info">
                   <Icon>{icon}</Icon>
-                </MKTypography>
-                <MKTypography variant="h5" mt={2} mb={3}>
+                </SPTypography>
+                <SPTypography variant="h5" mt={2} mb={3}>
                   {title}
-                </MKTypography>
+                </SPTypography>
                 {items.map((item) => (
-                  <MKBox key={item} display="flex" lineHeight={1.25}>
-                    <MKTypography variant="body1" color="info">
+                  <SPBox key={item} display="flex" lineHeight={1.25}>
+                    <SPTypography variant="body1" color="info">
                       <Icon sx={{ fontWeight: "bold" }}>done</Icon>
-                    </MKTypography>
-                    <MKBox pl={2}>
-                      <MKTypography variant="button" color="text" fontWeight="bold">
+                    </SPTypography>
+                    <SPBox pl={2}>
+                      <SPTypography variant="button" color="text" fontWeight="bold">
                         {item}
-                      </MKTypography>
-                    </MKBox>
-                  </MKBox>
+                      </SPTypography>
+                    </SPBox>
+                  </SPBox>
                 ))}
-              </MKBox>
+              </SPBox>
             </Grid>
           ))}
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

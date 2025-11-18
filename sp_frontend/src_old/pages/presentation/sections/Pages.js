@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -20,10 +20,10 @@ import { Link } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
-import MKTypography from "components/MKTypography";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPBadge from "components/SPBadge";
+import SPTypography from "components/SPTypography";
 
 // Presentation page components
 import ExampleCard from "pages/presentation/components/ExampleCard";
@@ -41,7 +41,7 @@ function Pages() {
   ));
 
   return (
-    <MKBox component="section" py={6}>
+    <SPBox component="section" py={6}>
       <Container>
         <Grid
           container
@@ -52,20 +52,20 @@ function Pages() {
           alignItems="center"
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
-          <MKBadge
+          <SPBadge
             variant="contained"
             color="info"
             badgeContent="boost creativity"
             container
             sx={{ mb: 2 }}
           />
-          <MKTypography variant="h2" fontWeight="bold">
+          <SPTypography variant="h2" fontWeight="bold">
             With our coded pages
-          </MKTypography>
-          <MKTypography variant="body1" color="text">
+          </SPTypography>
+          <SPTypography variant="body1" color="text">
             The easiest way to get started is to use one of our
             <br /> pre-built example pages.
-          </MKTypography>
+          </SPTypography>
         </Grid>
       </Container>
       <Container sx={{ mt: { xs: 8, lg: 16 } }}>
@@ -76,19 +76,19 @@ function Pages() {
             </Grid>
           </Grid>
           <Grid item xs={12} lg={3}>
-            <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
-              <MKTypography variant="h3" fontWeight="bold" mb={1}>
+            <SPBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
+              <SPTypography variant="h3" fontWeight="bold" mb={1}>
                 Presentation Pages for Company, Landing Pages, Blogs and Support
-              </MKTypography>
-              <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
+              </SPTypography>
+              <SPTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
                 These is just a small selection of the multiple possibitilies you have. Focus on the
                 business, not on the design.
-              </MKTypography>
-            </MKBox>
+              </SPTypography>
+            </SPBox>
           </Grid>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

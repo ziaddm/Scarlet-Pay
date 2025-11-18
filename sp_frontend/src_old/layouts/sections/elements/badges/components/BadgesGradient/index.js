@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,28 +18,28 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPBadge from "components/SPBadge";
 
 function BadgesGradient() {
   return (
-    <MKBox component="section" py={12}>
+    <SPBox component="section" py={12}>
       <Container>
         <Grid container justifyContent="center">
           <Stack direction="row" alignItems="flex-end" spacing={0.5}>
-            <MKBadge badgeContent="primary" color="primary" container />
-            <MKBadge badgeContent="secondary" color="secondary" container />
-            <MKBadge badgeContent="success" color="success" container />
-            <MKBadge badgeContent="error" color="error" container />
-            <MKBadge badgeContent="warning" color="warning" container />
-            <MKBadge badgeContent="info" color="info" container />
-            <MKBadge badgeContent="light" color="light" container />
-            <MKBadge badgeContent="dark" color="dark" container />
+            <SPBadge badgeContent="primary" color="primary" container />
+            <SPBadge badgeContent="secondary" color="secondary" container />
+            <SPBadge badgeContent="success" color="success" container />
+            <SPBadge badgeContent="error" color="error" container />
+            <SPBadge badgeContent="warning" color="warning" container />
+            <SPBadge badgeContent="info" color="info" container />
+            <SPBadge badgeContent="light" color="light" container />
+            <SPBadge badgeContent="dark" color="dark" container />
           </Stack>
         </Grid>
       </Container>
-    </MKBox>
+    </SPBox>
   );
 }
 

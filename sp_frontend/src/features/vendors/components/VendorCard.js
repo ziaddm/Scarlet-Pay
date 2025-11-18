@@ -6,9 +6,9 @@
 */
 
 import PropTypes from "prop-types";
-import MKBox from "components/base/MKBox";
-import MKTypography from "components/base/MKTypography";
-import MKBadge from "components/base/MKBadge";
+import SPBox from "components/base/SPBox";
+import SPTypography from "components/base/SPTypography";
+import SPBadge from "components/base/SPBadge";
 import Icon from "@mui/material/Icon";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -57,10 +57,10 @@ function VendorCard({ vendor, onClick }) {
       onClick={onClick}
     >
       <CardContent>
-        <MKBox>
+        <SPBox>
           {/* Header with icon and badge */}
-          <MKBox display="flex" alignItems="center" justifyContent="space-between" mb={2}>
-            <MKBox
+          <SPBox display="flex" alignItems="center" justifyContent="space-between" mb={2}>
+            <SPBox
               display="flex"
               alignItems="center"
               justifyContent="center"
@@ -76,33 +76,33 @@ function VendorCard({ vendor, onClick }) {
               }}
             >
               <Icon fontSize="medium">{getCategoryIcon(vendor.category)}</Icon>
-            </MKBox>
-            <MKBadge
+            </SPBox>
+            <SPBadge
               variant="contained"
               badgeContent={vendor.category}
               color={getCategoryColor(vendor.category)}
               size="sm"
             />
-          </MKBox>
+          </SPBox>
 
           {/* Vendor name */}
-          <MKTypography variant="h6" fontWeight="bold" mb={1}>
+          <SPTypography variant="h6" fontWeight="bold" mb={1}>
             {vendor.name}
-          </MKTypography>
+          </SPTypography>
 
           {/* Location */}
-          <MKBox display="flex" alignItems="center" mb={1}>
+          <SPBox display="flex" alignItems="center" mb={1}>
             <Icon fontSize="small" sx={{ mr: 0.5, color: "text.secondary" }}>
               location_on
             </Icon>
-            <MKTypography variant="caption" color="text" sx={{ opacity: 0.8 }}>
+            <SPTypography variant="caption" color="text" sx={{ opacity: 0.8 }}>
               {vendor.location || "Campus Location"}
-            </MKTypography>
-          </MKBox>
+            </SPTypography>
+          </SPBox>
 
           {/* Description */}
           {vendor.description && (
-            <MKTypography
+            <SPTypography
               variant="body2"
               color="text"
               sx={{
@@ -116,9 +116,9 @@ function VendorCard({ vendor, onClick }) {
               }}
             >
               {vendor.description}
-            </MKTypography>
+            </SPTypography>
           )}
-        </MKBox>
+        </SPBox>
       </CardContent>
     </Card>
   );

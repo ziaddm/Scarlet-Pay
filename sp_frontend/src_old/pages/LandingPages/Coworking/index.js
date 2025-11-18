@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 PRO React - v2.1.1
+* Scarlet Pay 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/scarlet-pay-pro-react
+* Copyright 2024 Scarlet Pay Team (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,12 +19,12 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 PRO React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+// Scarlet Pay 2 PRO React components
+import SPBox from "components/SPBox";
+import SPTypography from "components/SPTypography";
+import SPButton from "components/SPButton";
 
-// Material Kit 2 PRO React examples
+// Scarlet Pay 2 PRO React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
@@ -48,13 +48,13 @@ function Coworking() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-pro-react",
+          route: "https://www.creative-tim.com/product/scarlet-pay-pro-react",
           label: "buy now",
           color: "info",
         }}
         sticky
       />
-      <MKBox
+      <SPBox
         minHeight="75vh"
         width="100%"
         sx={{
@@ -78,7 +78,7 @@ function Coworking() {
             justifyContent={{ xs: "center", md: "start" }}
             sx={{ textAlign: { xs: "center", md: "left" } }}
           >
-            <MKTypography
+            <SPTypography
               variant="h1"
               color="white"
               sx={({ breakpoints, typography: { size } }) => ({
@@ -88,8 +88,8 @@ function Coworking() {
               })}
             >
               Your Perfect Place for Work
-            </MKTypography>
-            <MKTypography
+            </SPTypography>
+            <SPTypography
               variant="body1"
               color="white"
               mt={1}
@@ -98,18 +98,18 @@ function Coworking() {
             >
               The time is now for it be okay to be great. People in this world shun people for being
               nice.
-            </MKTypography>
+            </SPTypography>
             <Stack direction="row" spacing={1} mt={6} mb={3}>
-              <MKButton variant="gradient" color="info">
+              <SPButton variant="gradient" color="info">
                 get started
-              </MKButton>
-              <MKButton variant="text" color="white">
+              </SPButton>
+              <SPButton variant="text" color="white">
                 read more
-              </MKButton>
+              </SPButton>
             </Stack>
           </Grid>
         </Container>
-      </MKBox>
+      </SPBox>
       <Card
         sx={{
           p: 2,
@@ -126,7 +126,7 @@ function Coworking() {
         <AboutUs />
         <Places />
         <Container>
-          <MKBox
+          <SPBox
             display="flex"
             justifyContent="space-between"
             alignItems="center"
@@ -140,25 +140,25 @@ function Coworking() {
           >
             <Grid container spacing={3} alignItems="center">
               <Grid item xs={12} md={8} lg={5}>
-                <MKTypography variant="h5" color="white" fontWeight="bold">
+                <SPTypography variant="h5" color="white" fontWeight="bold">
                   For being a bright color. For standing out. But the time is now to be okay to be
                   the greatest you.
-                </MKTypography>
+                </SPTypography>
               </Grid>
               <Grid item xs={12} lg={6} sx={{ ml: "auto" }}>
-                <MKBox width="12rem" ml="auto">
-                  <MKButton variant="gradient" color="warning" fullWidth sx={{ boxShadow: "none" }}>
+                <SPBox width="12rem" ml="auto">
+                  <SPButton variant="gradient" color="warning" fullWidth sx={{ boxShadow: "none" }}>
                     start now
-                  </MKButton>
-                </MKBox>
+                  </SPButton>
+                </SPBox>
               </Grid>
             </Grid>
-          </MKBox>
+          </SPBox>
         </Container>
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
+      <SPBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      </SPBox>
     </>
   );
 }
