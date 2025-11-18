@@ -185,7 +185,7 @@ function ResetPassword() {
         <SPBox component="form" role="form" onSubmit={handleForgotPassword}>
           <SPBox mb={2}>
             <SPTypography variant="h4" fontWeight="medium" mb={1}>
-              Forgot Password?
+              Reset Password
             </SPTypography>
             <SPTypography variant="body2" color="text" mb={3}>
               Enter your email address and we&apos;ll send you a password reset token.

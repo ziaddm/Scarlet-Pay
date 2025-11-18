@@ -111,10 +111,11 @@ function Privacy() {
                     Managing Your Information
                   </SPTypography>
                   <SPTypography variant="body2" color="text">
-                    Unless otherwise stated, Scarlet Pay Team and/or its licensors own the intellectual
-                    property rights for all material on Scarlet Pay Team. All intellectual property
-                    rights are reserved. You may access this from Scarlet Pay Team for your own personal
-                    use subjected to restrictions set in these terms and conditions.
+                    Unless otherwise stated, Scarlet Pay Team and/or its licensors own the
+                    intellectual property rights for all material on Scarlet Pay Team. All
+                    intellectual property rights are reserved. You may access this from Scarlet Pay
+                    Team for your own personal use subjected to restrictions set in these terms and
+                    conditions.
                   </SPTypography>
                   <SPTypography variant="body2" color="text">
                     You must not:
@@ -170,14 +171,14 @@ function Privacy() {
                   </SPTypography>
                   <SPTypography variant="body2" color="text">
                     Parts of this website offer an opportunity for users to post and exchange
-                    opinions and information in certain areas of the website. Scarlet Pay Team does not
-                    filter, edit, publish or review Comments prior to their presence on the website.
-                    Comments do not reflect the views and opinions of Scarlet Pay Team,its agents and/or
-                    affiliates. Comments reflect the views and opinions of the person who post their
-                    views and opinions. To the extent permitted by applicable laws, Scarlet Pay Team
-                    shall not be liable for the Comments or for any liability, damages or expenses
-                    caused and/or suffered as a result of any use of and/or posting of and/or
-                    appearance of the Comments on this website.
+                    opinions and information in certain areas of the website. Scarlet Pay Team does
+                    not filter, edit, publish or review Comments prior to their presence on the
+                    website. Comments do not reflect the views and opinions of Scarlet Pay Team,its
+                    agents and/or affiliates. Comments reflect the views and opinions of the person
+                    who post their views and opinions. To the extent permitted by applicable laws,
+                    Scarlet Pay Team shall not be liable for the Comments or for any liability,
+                    damages or expenses caused and/or suffered as a result of any use of and/or
+                    posting of and/or appearance of the Comments on this website.
                   </SPTypography>
                   <SPTypography variant="body2" color="text">
                     Scarlet Pay Team reserves the right to monitor all Comments and to remove any

@@ -32,11 +32,13 @@ Scarlet Pay is a modern payment platform built with React and Material-UI. This 
 ### Installation
 
 1. Navigate to the frontend directory:
+
 ```bash
 cd sp_frontend
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -44,6 +46,7 @@ yarn install
 ```
 
 3. Start the development server:
+
 ```bash
 npm start
 # or

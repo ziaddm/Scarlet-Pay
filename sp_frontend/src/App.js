@@ -58,9 +58,10 @@ import RestaurantsPage from "pages/Restaurants";
 import MapPage from "pages/Map";
 
 // Images
-import signinImage from "assets/images/illustrations/illustration-signin.jpg";
-import signupImage from "assets/images/illustrations/illustration-signup.jpg";
-import resetImage from "assets/images/illustrations/illustration-reset.jpg";
+import signinImage from "assets/images/large_images/login_page.png";
+import signupImage from "assets/images/large_images/login_page.png";
+import resetImage from "assets/images/large_images/login_page.png";
+import logo from "assets/images/logos/sp_logo.png";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -83,11 +84,7 @@ export default function App() {
                 path={ROUTES.LOGIN}
                 element={
                   <PublicRoute>
-                    <IllustrationLayout
-                      title="Sign In"
-                      description="Enter your email and password to sign in"
-                      illustration={signinImage}
-                    >
+                    <IllustrationLayout title="Sign In" illustration={signinImage} logo={logo}>
                       <LoginPage />
                     </IllustrationLayout>
                   </PublicRoute>
@@ -111,11 +108,7 @@ export default function App() {
                 path={ROUTES.RESET_PASSWORD}
                 element={
                   <PublicRoute>
-                    <IllustrationLayout
-                      title="Reset Password"
-                      description="You will receive an e-mail in maximum 60 seconds"
-                      illustration={resetImage}
-                    >
+                    <IllustrationLayout illustration={resetImage} logo={logo}>
                       <ResetPasswordPage />
                     </IllustrationLayout>
                   </PublicRoute>
