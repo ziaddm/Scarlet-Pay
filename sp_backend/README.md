@@ -54,7 +54,7 @@ cp .env.example .env
 5. Set up the database:
 ```bash
 # Using Docker Compose
-docker-compose up -d postgres
+docker compose up -d postgres
 
 # Or use your own PostgreSQL instance
 # Update DATABASE_URL in .env
