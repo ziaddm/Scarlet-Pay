@@ -27,7 +27,6 @@ A full-stack web application designed to help students manage campus payments, b
 - **Router**: React Router DOM 6.26.1
 - **Charts**: Recharts 3.4.1
 - **HTTP Client**: Axios
-- **Design System**: Material Kit 2 PRO
 
 ## Project Structure
 
